@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="my_ls"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_ls">
+				<Option output="/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/my_ls" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_ls"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_ls/fast">
+				<Option output="/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/my_ls" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_ls/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/marchyshyn/Documents/C/my_ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/annulation_opt.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/ft_ls.h">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/is_option.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_atoi.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_bzero.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_isalnum.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_isalpha.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_isascii.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_isdigit.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_isprint.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_itoa.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_lstadd.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_lstascii.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_lstdel.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_lstdelone.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_lstiter.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_lstmap.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_lstnew.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_memalloc.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_memccpy.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_memchr.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_memcmp.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_memcpy.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_memdel.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_memmove.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_memset.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_power.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/active_bits.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/annulation.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/check_flags_modif.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/color_off.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/count_bytes.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/ft_printf.h">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/ibs.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/ibs_uns.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/if_color.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/is_flag_mod.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/is_modificator.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/is_parse_char.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/is_type.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/m_putchar.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/m_putstr.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/modificator_dec.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/modificator_hex.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/modificator_octal.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/modificator_uns.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/prec_diff.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_binary.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_c.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_dec.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_float.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_hex.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_lc.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_ls.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_octal.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_p.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_padding.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_percent.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_s.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_unknown_type.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/put_unsigned.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/putstr_ls.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/set_to_zero.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_printf/strlen_ls.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_putchar.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_putnbr.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_putstr.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strcat.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strchr.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strclr.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strcmp.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strcpy.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strdel.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strdup.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strequ.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_striter.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_striteri.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strjoin.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strlcat.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strlen.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strmap.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strmapi.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strncat.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strncmp.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strncpy.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strnequ.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strnew.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strnstr.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strrchr.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strsplit.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strstr.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strsub.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_strtrim.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_tolower.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/ft_toupper.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/get_next_line.c">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/get_next_line.h">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/libft/libft.h">
+			<Option target="my_ls"/>
+		</Unit>
+		<Unit filename="/Users/marchyshyn/Documents/C/my_ls/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
