@@ -20,12 +20,6 @@
 #include <errno.h>
 #include <dirent.h>
 
-typedef struct		indents
-{
-	unsigned char	file;
-	unsigned char	dir;
-}					f_indents;
-
 typedef struct		opt
 {
 	unsigned char	long_format;
@@ -33,9 +27,6 @@ typedef struct		opt
 	unsigned char	include_dot;
 	unsigned char	rev_lexic;
 	unsigned char	sort_mtime;
-	unsigned char	hyphen_file;
-	f_indents		f;
-
 }					t_opt;
 
 int				is_option(char c);

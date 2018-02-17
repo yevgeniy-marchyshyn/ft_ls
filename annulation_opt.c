@@ -19,5 +19,4 @@ void	annulation_opt(t_opt *opt)
 	opt->include_dot = 0;
 	opt->rev_lexic = 0;
 	opt->sort_mtime = 0;
-	opt->hyphen_file = 0;
 }

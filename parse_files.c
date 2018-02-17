@@ -58,7 +58,8 @@ void		parse_files(char **argv, int n, t_opt *opt)
 	{
 		if (lstat(files[k], &buf) == -1)
 		{
-			ft_printf("ft_ls: ");
+			//ft_printf("ft_ls: ");
+			write(2, "ft_ls: ", 7);
 			perror(files[k]);
 		}
 		else
@@ -68,11 +69,11 @@ void		parse_files(char **argv, int n, t_opt *opt)
 		}
 		k++;
 	}
-	t_list *lst;
-	lst = head;
+//	t_list *lst;
+//	lst = head;
 //	while (lst != NULL)
 //	{
-//		ft_printf("%s has type '%c'");
+//		ft_printf("%s has a type '%c'\n", lst->content, lst->content_size);
 //		lst = lst->next;
 //	}
 	ft_ls(head, opt);
