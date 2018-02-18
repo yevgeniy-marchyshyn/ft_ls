@@ -20,11 +20,12 @@ FT_LS = main.c\
 		annulation_opt.c\
 		is_option.c\
 		parse_options.c\
-		parse_files.c\
+		parse_arguments.c\
 		ft_ls.c\
 		define_type.c\
 		sort_ascii_bubble.c\
-		parse_files2.c\
+		parse_files.c\
+		ft_ls_recursion.c\
 
 all: $(NAME)
 

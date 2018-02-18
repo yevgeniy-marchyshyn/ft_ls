@@ -1,44 +1,55 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_files.c                                      :+:      :+:    :+:   */
+/*   parse_arguments.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/18 18:29:00 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/18 18:29:00 by ymarchys         ###   ########.fr       */
+/*   Created: 2018/02/18 17:53:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/02/18 17:53:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-void		parse_files(char **files, t_opt *opt, char *path)
+static char			**fill_files(char **argv, int n)
+{
+	char	**files;
+	int		i;
+
+	i = 0;
+	files = (char**)malloc(sizeof(char*) * (n + 1));
+	while (*argv)
+		files[i++] = *argv++;
+	files[i] = NULL;
+	sort_ascii_bubble(files, n);
+	return (files);
+}
+
+void				parse_arguments(char **argv, int n, t_opt *opt)
 {
 	struct stat		buf;
+	char			**files;
 	t_list			*head;
 	t_list			*elem;
-	char 			*path2;
 	int 			i;
 
 	i = 0;
 	head = NULL;
-	path2 = ft_strjoin(path, "/");
+	files = fill_files(argv, n);
 	while (files[i])
 	{
-		if (lstat(ft_strjoin(path2, files[i]), &buf) == -1)
+		if (lstat(files[i], &buf) == -1)
 		{
 			write(2, "ft_ls: ", 7);
 			perror(files[i]);
 		}
 		else
 		{
-			if (ft_strcmp(files[i], ".") != 0 && ft_strcmp(files[i], "..") != 0 && files[i][0] != '.')
-			{
-				elem = ft_lstnew(files[i], define_type(&buf));
-				ft_lst_push_back(&head, elem);
-			}
+			elem = ft_lstnew(files[i], define_type(&buf));
+			ft_lst_push_back(&head, elem);
 		}
 		i++;
 	}
-	ft_ls_recursion(head, opt, path);
+	ft_ls(head, opt);
 }
