@@ -23,6 +23,8 @@ FT_LS = main.c\
 		parse_files.c\
 		ft_ls.c\
 		define_type.c\
+		sort_ascii_bubble.c\
+		parse_files2.c\
 
 all: $(NAME)
 

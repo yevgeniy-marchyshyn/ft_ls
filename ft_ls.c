@@ -22,11 +22,9 @@ static int		ls_count_files(char *dirname)
 	dir = opendir(dirname);
 	if (dir == NULL)
 	{
-		ft_printf("\n%s:\nft_ls: ", dirname);
 		perror(dirname);
 		return (n);
 	}
-	ft_printf("\n%s\n", dirname);
 	if (dir)
 	{
 		while ((sd = readdir(dir)) != NULL)
@@ -36,7 +34,7 @@ static int		ls_count_files(char *dirname)
 	return (n);
 }
 
-static char		**read_files(char **files, char *dirname)
+static char		**read_files(char **files, char *dirname, int n)
 {
 	DIR					*dir;
 	struct dirent		*sd;
@@ -44,14 +42,13 @@ static char		**read_files(char **files, char *dirname)
 
 	i = 0;
 	dir = opendir(dirname);
-	if (dir == NULL)
-		return (NULL);
-	else
-		while ((sd = readdir(dir)) != NULL)
-		{
-			files[i++] = ft_strdup(sd->d_name);
-		}
+	while ((sd = readdir(dir)) != NULL)
+	{
+		files[i] = ft_strdup(sd->d_name);
+		i++;
+	}
 	files[i] = NULL;
+	sort_ascii_bubble(files, n);
 	closedir(dir);
 	return (files);
 }
@@ -60,14 +57,26 @@ static void		ls_readdir(char *dirname, t_opt *opt)
 {
 	char			**files;
 	int				n;
+	int 			i;
 
 	if ((n = ls_count_files(dirname)))
 	{
-		ft_printf("n = %d\n", n);
 		files = (char **)malloc(sizeof(char *) * (n + 1));
-		//exit(1);
-		if ((files = read_files(files, dirname)))
-			parse_files(files, n, opt);
+		files = read_files(files, dirname, n);
+		if (opt->recursively)
+			parse_files2(dirname, files, opt);
+		else
+		{
+			i = 0;
+			while (i < n)
+			{
+				if ((ft_strcmp(files[i], ".") == 0 ||
+						ft_strcmp(files[i], "..") == 0 || files[i][0] == '.') && !opt->include_dot)
+					i++;
+				else
+					ft_printf("%s\n", files[i++]);
+			}
+		}
 	}
 	else
 		return ;
@@ -88,7 +97,10 @@ void			ft_ls(t_list *head, t_opt *opt)
 	while (lst != NULL)
 	{
 		if (lst->content_size == 'd')
+		{
+			ft_printf("\n%s:\n", lst->content);
 			ls_readdir(lst->content, opt);
+		}
 		lst = lst->next;
 	}
 }

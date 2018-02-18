@@ -35,6 +35,8 @@ int				parse_options(t_opt *opt, char *argv);
 void			parse_files(char **argv, int n, t_opt *opt);
 void			ft_ls(t_list *head, t_opt *opt);
 char			define_type(struct stat *buf);
+void			sort_ascii_bubble(char **file, int n);
+void			parse_files2(char *dirname, char **files, t_opt *opt);
 //void			is_error(t_list **head);
 //void			ft_ls(t_list *head, t_opt *opt);
 //void			indents(t_list *head, t_opt *opt);
