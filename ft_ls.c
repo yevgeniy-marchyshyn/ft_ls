@@ -67,18 +67,18 @@ static void		ls_readdir(char *dirname, t_ls *ls, char *path)
 		else
 		{
 			i = 0;
-//			if (ls->include_dot)
-//				while (i < n)
-//					ft_printf("%s\n", files[i++]);
-//			else
-//			{
+			if (ls->include_dot)
+				while (i < n)
+					ft_printf("%s\n", files[i++]);
+			else
+			{
 				while (i < n)
 				{
-//					if (files[i][0] != '.')
+					if (files[i][0] != '.')
 					ft_printf("%s\n", files[i]);
 					i++;
 				}
-//			}
+			}
 		}
 	}
 	else

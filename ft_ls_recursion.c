@@ -71,12 +71,7 @@ static void		ls_readdir(char *dirname, t_ls *ls, char *path)
 		{
 			i = 0;
 			while (i < n)
-			{
-				//if (files[i][0] == '.' && !ls->include_dot)
-				//	i++;
-				//else
 					ft_printf("%s\n", files[i++]);
-			}
 		}
 	}
 	else
@@ -90,15 +85,17 @@ void			ft_ls_recursion(t_list *head, t_ls *ls, char *path)
 	lst = head;
 	while (lst != NULL)
 	{
-		//if ((((char*)lst->content)[0] == '.' && ls->include_dot) ||
-		//		((char*)lst->content)[0] != '.')
-		ft_printf("%s\n", lst->content);
+		if ((ls->include_dot && ((char*)lst->content)[0] == '.') ||
+				((char*)lst->content)[0] != '.')
+			ft_printf("%s\n", lst->content);
 		lst = lst->next;
 	}
 	lst = head;
 	while (lst != NULL)
 	{
-		if (lst->content_size == 'd')
+		if (lst->content_size == 'd' &&
+				(ft_strcmp(lst->content, ".") != 0 &&
+				ft_strcmp(lst->content, "..") != 0))
 		{
 			ft_printf("\n%s%s:\n", path, lst->content);
 			ls_readdir(lst->content, ls, path);

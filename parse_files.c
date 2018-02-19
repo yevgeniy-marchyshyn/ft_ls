@@ -30,12 +30,12 @@ void				parse_files(char **files, t_ls *ls, char *path)
 		}
 		else
 		{
-			if (ft_strcmp(files[i], ".") != 0 &&
-					ft_strcmp(files[i], "..") != 0 && files[i][0] != '.')
-			{
+//			if (ft_strcmp(files[i], ".") != 0 &&
+//					ft_strcmp(files[i], "..") != 0 && files[i][0] != '.')
+//			{
 				elem = ft_lstnew(files[i], (size_t)define_type(&buf));
 				ft_lst_push_back(&head, elem);
-			}
+//			}
 		}
 		i++;
 	}
