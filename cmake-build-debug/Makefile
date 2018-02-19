@@ -2796,6 +2796,60 @@ libft/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/libft/get_next_line.c.s
 .PHONY : libft/get_next_line.c.s
 
+ls_list_sort.o: ls_list_sort.c.o
+
+.PHONY : ls_list_sort.o
+
+# target to build an object file
+ls_list_sort.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_list_sort.c.o
+.PHONY : ls_list_sort.c.o
+
+ls_list_sort.i: ls_list_sort.c.i
+
+.PHONY : ls_list_sort.i
+
+# target to preprocess a source file
+ls_list_sort.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_list_sort.c.i
+.PHONY : ls_list_sort.c.i
+
+ls_list_sort.s: ls_list_sort.c.s
+
+.PHONY : ls_list_sort.s
+
+# target to generate assembly for a file
+ls_list_sort.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_list_sort.c.s
+.PHONY : ls_list_sort.c.s
+
+ls_sort.o: ls_sort.c.o
+
+.PHONY : ls_sort.o
+
+# target to build an object file
+ls_sort.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_sort.c.o
+.PHONY : ls_sort.c.o
+
+ls_sort.i: ls_sort.c.i
+
+.PHONY : ls_sort.i
+
+# target to preprocess a source file
+ls_sort.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_sort.c.i
+.PHONY : ls_sort.c.i
+
+ls_sort.s: ls_sort.c.s
+
+.PHONY : ls_sort.s
+
+# target to generate assembly for a file
+ls_sort.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_sort.c.s
+.PHONY : ls_sort.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -2877,33 +2931,6 @@ parse_files.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/parse_files.c.s
 .PHONY : parse_files.c.s
 
-parse_files2.o: parse_files2.c.o
-
-.PHONY : parse_files2.o
-
-# target to build an object file
-parse_files2.c.o:
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/parse_files2.c.o
-.PHONY : parse_files2.c.o
-
-parse_files2.i: parse_files2.c.i
-
-.PHONY : parse_files2.i
-
-# target to preprocess a source file
-parse_files2.c.i:
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/parse_files2.c.i
-.PHONY : parse_files2.c.i
-
-parse_files2.s: parse_files2.c.s
-
-.PHONY : parse_files2.s
-
-# target to generate assembly for a file
-parse_files2.c.s:
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/parse_files2.c.s
-.PHONY : parse_files2.c.s
-
 parse_options.o: parse_options.c.o
 
 .PHONY : parse_options.o
@@ -2930,33 +2957,6 @@ parse_options.s: parse_options.c.s
 parse_options.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/parse_options.c.s
 .PHONY : parse_options.c.s
-
-remove_reduntant_dashes.o: remove_reduntant_dashes.c.o
-
-.PHONY : remove_reduntant_dashes.o
-
-# target to build an object file
-remove_reduntant_dashes.c.o:
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/remove_reduntant_dashes.c.o
-.PHONY : remove_reduntant_dashes.c.o
-
-remove_reduntant_dashes.i: remove_reduntant_dashes.c.i
-
-.PHONY : remove_reduntant_dashes.i
-
-# target to preprocess a source file
-remove_reduntant_dashes.c.i:
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/remove_reduntant_dashes.c.i
-.PHONY : remove_reduntant_dashes.c.i
-
-remove_reduntant_dashes.s: remove_reduntant_dashes.c.s
-
-.PHONY : remove_reduntant_dashes.s
-
-# target to generate assembly for a file
-remove_reduntant_dashes.c.s:
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/remove_reduntant_dashes.c.s
-.PHONY : remove_reduntant_dashes.c.s
 
 sort_ascii_bubble.o: sort_ascii_bubble.c.o
 
@@ -3291,6 +3291,12 @@ help:
 	@echo "... libft/get_next_line.o"
 	@echo "... libft/get_next_line.i"
 	@echo "... libft/get_next_line.s"
+	@echo "... ls_list_sort.o"
+	@echo "... ls_list_sort.i"
+	@echo "... ls_list_sort.s"
+	@echo "... ls_sort.o"
+	@echo "... ls_sort.i"
+	@echo "... ls_sort.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -3300,15 +3306,9 @@ help:
 	@echo "... parse_files.o"
 	@echo "... parse_files.i"
 	@echo "... parse_files.s"
-	@echo "... parse_files2.o"
-	@echo "... parse_files2.i"
-	@echo "... parse_files2.s"
 	@echo "... parse_options.o"
 	@echo "... parse_options.i"
 	@echo "... parse_options.s"
-	@echo "... remove_reduntant_dashes.o"
-	@echo "... remove_reduntant_dashes.i"
-	@echo "... remove_reduntant_dashes.s"
 	@echo "... sort_ascii_bubble.o"
 	@echo "... sort_ascii_bubble.i"
 	@echo "... sort_ascii_bubble.s"

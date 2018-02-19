@@ -391,6 +391,12 @@
 		<Unit filename="/Users/ymarchys/Documents/ft_ls/libft/libft.h">
 			<Option target="ft_ls"/>
 		</Unit>
+		<Unit filename="/Users/ymarchys/Documents/ft_ls/ls_list_sort.c">
+			<Option target="ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/ymarchys/Documents/ft_ls/ls_sort.c">
+			<Option target="ft_ls"/>
+		</Unit>
 		<Unit filename="/Users/ymarchys/Documents/ft_ls/main.c">
 			<Option target="ft_ls"/>
 		</Unit>
@@ -400,13 +406,7 @@
 		<Unit filename="/Users/ymarchys/Documents/ft_ls/parse_files.c">
 			<Option target="ft_ls"/>
 		</Unit>
-		<Unit filename="/Users/ymarchys/Documents/ft_ls/parse_files2.c">
-			<Option target="ft_ls"/>
-		</Unit>
 		<Unit filename="/Users/ymarchys/Documents/ft_ls/parse_options.c">
-			<Option target="ft_ls"/>
-		</Unit>
-		<Unit filename="/Users/ymarchys/Documents/ft_ls/remove_reduntant_dashes.c">
 			<Option target="ft_ls"/>
 		</Unit>
 		<Unit filename="/Users/ymarchys/Documents/ft_ls/sort_ascii_bubble.c">

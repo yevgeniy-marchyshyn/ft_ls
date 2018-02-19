@@ -26,6 +26,7 @@ FT_LS = main.c\
 		sort_ascii_bubble.c\
 		parse_files.c\
 		ft_ls_recursion.c\
+		ls_sort.c\
 
 all: $(NAME)
 

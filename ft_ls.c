@@ -62,6 +62,7 @@ static void		ls_readdir(char *dirname, t_ls *ls, char *path)
 	{
 		files = (char **)malloc(sizeof(char *) * (n + 1));
 		files = ls_read_files(files, dirname, n);
+		ls_sort(files, n, ls);
 		if (ls->recursively)
 			parse_files(files, ls, path);
 		else

@@ -101,10 +101,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_ls.dir/main.c.o"
   "CMakeFiles/ft_ls.dir/parse_arguments.c.o"
   "CMakeFiles/ft_ls.dir/parse_files.c.o"
-  "CMakeFiles/ft_ls.dir/parse_files2.c.o"
   "CMakeFiles/ft_ls.dir/parse_options.c.o"
   "CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.o"
-  "CMakeFiles/ft_ls.dir/remove_reduntant_dashes.c.o"
+  "CMakeFiles/ft_ls.dir/ls_list_sort.c.o"
+  "CMakeFiles/ft_ls.dir/ls_sort.c.o"
   "ft_ls.pdb"
   "ft_ls"
 )

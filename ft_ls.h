@@ -40,5 +40,7 @@ char			define_type(struct stat *buf);
 void			sort_ascii_bubble(char **file, int n);
 void			parse_files(char **files, t_ls *ls, char *path);
 void			ft_ls_recursion(t_list *head, t_ls *ls, char *path);
+//void			ls_list_sort(t_list *head, t_ls *ls);
+void			ls_sort(char **files, int n, t_ls *ls);
 
 # endif
