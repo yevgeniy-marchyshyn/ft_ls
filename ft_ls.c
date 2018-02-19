@@ -27,9 +27,7 @@ static int		ls_count_files(char *dirname)
 	}
 	if (dir)
 		while ((sd = readdir(dir)) != NULL)
-		{
 			n++;
-		}
 	closedir(dir);
 	return (n);
 }

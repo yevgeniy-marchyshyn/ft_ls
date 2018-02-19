@@ -12,20 +12,18 @@
 
 #include "ft_ls.h"
 
-void		parse_files(char **files, t_opt *opt, char *path)
+void				parse_files(char **files, t_opt *opt, char *path)
 {
 	struct stat		buf;
 	t_list			*head;
 	t_list			*elem;
-	char 			*path2;
 	int 			i;
 
 	i = 0;
 	head = NULL;
-	path2 = ft_strjoin(path, "/");
 	while (files[i])
 	{
-		if (lstat(ft_strjoin(path2, files[i]), &buf) == -1)
+		if (lstat(ft_strjoin(path, files[i]), &buf) == -1)
 		{
 			write(2, "ft_ls: ", 7);
 			perror(files[i]);

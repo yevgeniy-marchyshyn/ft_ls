@@ -23,6 +23,7 @@ static char			**fill_files(char **argv, int n)
 		files[i++] = *argv++;
 	files[i] = NULL;
 	sort_ascii_bubble(files, n);
+
 	return (files);
 }
 

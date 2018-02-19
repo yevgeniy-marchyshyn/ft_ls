@@ -57,16 +57,18 @@ static void		ls_readdir(char *dirname, t_opt *opt, char *path)
 {
 	char			**files;
 	char 			*path2;
+	char 			*path3;
 	int				n;
 	int 			i;
 
-	path2 = ft_strjoin(path, "/");
-	if ((n = ls_count_files(dirname, path)))
+	path2 = ft_strjoin(path, dirname);
+	path3 = ft_strjoin(path2, "/");
+	if ((n = ls_count_files(dirname, path3)))
 	{
 		files = (char **)malloc(sizeof(char *) * (n + 1));
-		files = read_files(files, ft_strjoin(path2, dirname), n);
+		files = read_files(files, path3, n);
 		if (opt->recursively)
-			parse_files(files, opt, ft_strjoin(path2, dirname));
+			parse_files(files, opt, path3);
 		else
 		{
 			i = 0;
@@ -91,8 +93,7 @@ void			ft_ls_recursion(t_list *head, t_opt *opt, char *path)
 	lst = head;
 	while (lst != NULL)
 	{
-		if (lst->content_size != 'd')
-			ft_printf("%s\n", lst->content);
+		ft_printf("%s\n", lst->content);
 		lst = lst->next;
 	}
 	lst = head;
@@ -100,7 +101,8 @@ void			ft_ls_recursion(t_list *head, t_opt *opt, char *path)
 	{
 		if (lst->content_size == 'd')
 		{
-			ft_printf("\n%s:\n", lst->content);
+
+			ft_printf("\n%s%s:\n", path, lst->content);
 			ls_readdir(lst->content, opt, path);
 		}
 		lst = lst->next;
