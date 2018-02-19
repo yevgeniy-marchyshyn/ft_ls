@@ -12,20 +12,20 @@
 
 #include "ft_ls.h"
 
-int				parse_options(t_opt *opt, char *argv)
+int				parse_options(t_ls *ls, char *argv)
 {
 	while (*argv && is_option(*argv))
 	{
 		if (*argv == 'l')
-			opt->long_format = 1;
+			ls->long_format = 1;
 		else if (*argv == 'R')
-			opt->recursively = 1;
+			ls->recursively = 1;
 		else if (*argv == 'a')
-			opt->include_dot = 1;
+			ls->include_dot = 1;
 		else if (*argv == 'r')
-			opt->rev_lexic = 1;
+			ls->rev_lexic = 1;
 		else if (*argv == 't')
-			opt->sort_mtime = 1;
+			ls->sort_mtime = 1;
 		argv++;
 	}
 	if (!argv[0])

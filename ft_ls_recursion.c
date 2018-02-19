@@ -27,14 +27,12 @@ static int		ls_count_files(char *dirname, char *path)
 	}
 	if (dir)
 		while ((sd = readdir(dir)) != NULL)
-		{
 			n++;
-		}
 	closedir(dir);
 	return (n);
 }
 
-static char		**read_files(char **files, char *path, int n)
+static char		**ls_fill_files(char **files, char *path, int n)
 {
 	DIR					*dir;
 	struct dirent		*sd;
@@ -53,7 +51,7 @@ static char		**read_files(char **files, char *path, int n)
 	return (files);
 }
 
-static void		ls_readdir(char *dirname, t_opt *opt, char *path)
+static void		ls_readdir(char *dirname, t_ls *ls, char *path)
 {
 	char			**files;
 	char 			*path2;
@@ -66,18 +64,17 @@ static void		ls_readdir(char *dirname, t_opt *opt, char *path)
 	if ((n = ls_count_files(dirname, path3)))
 	{
 		files = (char **)malloc(sizeof(char *) * (n + 1));
-		files = read_files(files, path3, n);
-		if (opt->recursively)
-			parse_files(files, opt, path3);
+		files = ls_fill_files(files, path3, n);
+		if (ls->recursively)
+			parse_files(files, ls, path3);
 		else
 		{
 			i = 0;
 			while (i < n)
 			{
-				if ((ft_strcmp(files[i], ".") == 0 ||
-						ft_strcmp(files[i], "..") == 0 || files[i][0] == '.') && !opt->include_dot)
-					i++;
-				else
+				//if (files[i][0] == '.' && !ls->include_dot)
+				//	i++;
+				//else
 					ft_printf("%s\n", files[i++]);
 			}
 		}
@@ -86,13 +83,15 @@ static void		ls_readdir(char *dirname, t_opt *opt, char *path)
 		return ;
 }
 
-void			ft_ls_recursion(t_list *head, t_opt *opt, char *path)
+void			ft_ls_recursion(t_list *head, t_ls *ls, char *path)
 {
 	t_list	*lst;
 
 	lst = head;
 	while (lst != NULL)
 	{
+		//if ((((char*)lst->content)[0] == '.' && ls->include_dot) ||
+		//		((char*)lst->content)[0] != '.')
 		ft_printf("%s\n", lst->content);
 		lst = lst->next;
 	}
@@ -101,9 +100,8 @@ void			ft_ls_recursion(t_list *head, t_opt *opt, char *path)
 	{
 		if (lst->content_size == 'd')
 		{
-
 			ft_printf("\n%s%s:\n", path, lst->content);
-			ls_readdir(lst->content, opt, path);
+			ls_readdir(lst->content, ls, path);
 		}
 		lst = lst->next;
 	}

@@ -14,20 +14,20 @@
 
 int 			main(int argc, char **argv)
 {
-	t_opt	opt;
+	t_ls	ls;
 	int 	i;
 
 	i = 1;
-	annulation_opt(&opt);
+	annulation_opt(&ls);
 	if (argc > 1)
 	{
 		while (argv[i] && argv[i][0] == '-')
-			if (parse_options(&opt, ++argv[i++]) == 1)
+			if (parse_options(&ls, ++argv[i++]) == 1)
 				break;
 	}
 	if (argv[i])
-		parse_arguments(argv + i, argc - i, &opt);
+		parse_arguments(argv + i, argc - i, &ls);
 	else
-		ft_ls(ft_lstnew(".", 'd'), &opt);
+		ft_ls(ft_lstnew(".", 'd'), &ls);
 	return (0);
 }

@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-int	is_option(char c)
+int		is_option(char c)
 {
 	return (c == 'l' || c == 'R' || c == 'a' || c == 'r' || c == 't');
 }

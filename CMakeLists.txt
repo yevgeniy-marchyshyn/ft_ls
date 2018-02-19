@@ -110,6 +110,5 @@ add_executable(ft_ls
         main.c
         parse_arguments.c
         parse_files.c
-        parse_files2.c
         parse_options.c
-        sort_ascii_bubble.c remove_reduntant_dashes.c)
+        sort_ascii_bubble.c)

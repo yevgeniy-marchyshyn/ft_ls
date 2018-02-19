@@ -20,26 +20,25 @@
 #include <errno.h>
 #include <dirent.h>
 
-typedef struct		opt
+typedef struct		ls
 {
 	unsigned char	long_format;
 	unsigned char	recursively;
 	unsigned char	include_dot;
 	unsigned char	rev_lexic;
 	unsigned char	sort_mtime;
-}					t_opt;
+	unsigned char	indents;
+	unsigned char	first_directory;
+}					t_ls;
 
 int				is_option(char c);
-void			annulation_opt(t_opt *opt);
-int				parse_options(t_opt *opt, char *argv);
-void			parse_arguments(char **argv, int n, t_opt *opt);
-void			ft_ls(t_list *head, t_opt *opt);
+void			annulation_opt(t_ls *ls);
+int				parse_options(t_ls *ls, char *argv);
+void			parse_arguments(char **argv, int n, t_ls *ls);
+void			ft_ls(t_list *head, t_ls *ls);
 char			define_type(struct stat *buf);
 void			sort_ascii_bubble(char **file, int n);
-void			parse_files(char **files, t_opt *opt, char *path);
-void			ft_ls_recursion(t_list *head, t_opt *opt, char *path);
-//void			is_error(t_list **head);
-//void			ft_ls(t_list *head, t_opt *opt);
-//void			indents(t_list *head, t_opt *opt);
+void			parse_files(char **files, t_ls *ls, char *path);
+void			ft_ls_recursion(t_list *head, t_ls *ls, char *path);
 
 # endif

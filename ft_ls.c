@@ -32,7 +32,7 @@ static int		ls_count_files(char *dirname)
 	return (n);
 }
 
-static char		**read_files(char **files, char *dirname, int n)
+static char		**ls_read_files(char **files, char *dirname, int n)
 {
 	DIR					*dir;
 	struct dirent		*sd;
@@ -51,7 +51,7 @@ static char		**read_files(char **files, char *dirname, int n)
 	return (files);
 }
 
-static void		ls_readdir(char *dirname, t_opt *opt, char *path)
+static void		ls_readdir(char *dirname, t_ls *ls, char *path)
 {
 	char			**files;
 	int				n;
@@ -61,27 +61,31 @@ static void		ls_readdir(char *dirname, t_opt *opt, char *path)
 	if ((n = ls_count_files(dirname)))
 	{
 		files = (char **)malloc(sizeof(char *) * (n + 1));
-		files = read_files(files, dirname, n);
-		if (opt->recursively)
-			parse_files(files, opt, path);
+		files = ls_read_files(files, dirname, n);
+		if (ls->recursively)
+			parse_files(files, ls, path);
 		else
 		{
 			i = 0;
-			while (i < n)
-			{
-				if ((ft_strcmp(files[i], ".") == 0 ||
-						ft_strcmp(files[i], "..") == 0 || files[i][0] == '.') && !opt->include_dot)
+//			if (ls->include_dot)
+//				while (i < n)
+//					ft_printf("%s\n", files[i++]);
+//			else
+//			{
+				while (i < n)
+				{
+//					if (files[i][0] != '.')
+					ft_printf("%s\n", files[i]);
 					i++;
-				else
-					ft_printf("%s\n", files[i++]);
-			}
+				}
+//			}
 		}
 	}
 	else
 		return ;
 }
 
-void			ft_ls(t_list *head, t_opt *opt)
+void			ft_ls(t_list *head, t_ls *ls)
 {
 	t_list	*lst;
 	char 	*path;
@@ -91,7 +95,10 @@ void			ft_ls(t_list *head, t_opt *opt)
 	while (lst != NULL)
 	{
 		if (lst->content_size != 'd')
+		{
 			ft_printf("%s\n", lst->content);
+			ls->indents = 1;
+		}
 		lst = lst->next;
 	}
 	lst = head;
@@ -99,8 +106,10 @@ void			ft_ls(t_list *head, t_opt *opt)
 	{
 		if (lst->content_size == 'd')
 		{
-			ft_printf("\n%s:\n", lst->content);
-			ls_readdir(lst->content, opt, path);
+			ls->indents ? ft_printf("\n") : 0;
+			ls->first_directory || ls->indents ? ft_printf("%s:\n", lst->content) : 0;
+			ls->first_directory = 1;
+			ls_readdir(lst->content, ls, path);
 		}
 		lst = lst->next;
 	}

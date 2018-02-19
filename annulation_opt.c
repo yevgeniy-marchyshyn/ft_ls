@@ -12,11 +12,13 @@
 
 #include "ft_ls.h"
 
-void	annulation_opt(t_opt *opt)
+void	annulation_opt(t_ls *ls)
 {
-	opt->long_format = 0;
-	opt->recursively = 0;
-	opt->include_dot = 0;
-	opt->rev_lexic = 0;
-	opt->sort_mtime = 0;
+	ls->long_format = 0;
+	ls->recursively = 0;
+	ls->include_dot = 0;
+	ls->rev_lexic = 0;
+	ls->sort_mtime = 0;
+	ls->indents = 0;
+	ls->first_directory = 0;
 }

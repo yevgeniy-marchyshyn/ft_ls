@@ -23,11 +23,10 @@ static char			**fill_files(char **argv, int n)
 		files[i++] = *argv++;
 	files[i] = NULL;
 	sort_ascii_bubble(files, n);
-
 	return (files);
 }
 
-void				parse_arguments(char **argv, int n, t_opt *opt)
+void				parse_arguments(char **argv, int n, t_ls *ls)
 {
 	struct stat		buf;
 	char			**files;
@@ -44,13 +43,14 @@ void				parse_arguments(char **argv, int n, t_opt *opt)
 		{
 			write(2, "ft_ls: ", 7);
 			perror(files[i]);
+			ls->indents = 1;
 		}
 		else
 		{
-			elem = ft_lstnew(files[i], define_type(&buf));
+			elem = ft_lstnew(files[i], (size_t)define_type(&buf));
 			ft_lst_push_back(&head, elem);
 		}
 		i++;
 	}
-	ft_ls(head, opt);
+	ft_ls(head, ls);
 }
