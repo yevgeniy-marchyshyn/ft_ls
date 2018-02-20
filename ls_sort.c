@@ -12,7 +12,35 @@
 
 #include "ft_ls.h"
 
-static void		ls_sort_rev(char **file, int n)
+static int			timecmp(char *file1, char *file2)
+{
+	struct stat		buf;
+	time_t			s1;
+	time_t			s2;
+	long			ns1;
+	long			ns2;
+
+	stat(file1, &buf);
+	s1 = buf.st_mtimespec.tv_sec;
+	ns1 = buf.st_mtimespec.tv_nsec;
+	stat(file2, &buf);
+	s2 = buf.st_mtimespec.tv_sec;
+	ns2 = buf.st_mtimespec.tv_nsec;
+	if (s1 > s2)
+		return (2);
+	else
+	{
+		if (s1 == s2)
+		{
+			if (ns1 > ns2)
+				return (2);
+			return (ns1 == ns2 ? 1 : 0);
+		}
+		return (0);
+	}
+}
+
+static void		sort_rev(char **file, int n)
 {
 	char 	*tmp;
 	int		i;
@@ -20,7 +48,7 @@ static void		ls_sort_rev(char **file, int n)
 
 	i = 0;
 	k = 0;
-	while (k < n)
+	while (k < n - 1)
 	{
 		i = 0;
 		while (file[i])
@@ -37,37 +65,7 @@ static void		ls_sort_rev(char **file, int n)
 	}
 }
 
-static int			timecmp(char *file1, char *file2)
-{
-	struct stat	buf;
-	time_t 		s1;
-	time_t 		s2;
-	long		ns1;
-	long		ns2;
-
-	stat(file1, &buf);
-	s1 = buf.st_mtimespec.tv_sec;
-	ns1 = buf.st_mtimespec.tv_nsec;
-	stat(file2, &buf);
-	s2 = buf.st_mtimespec.tv_sec;
-	ns2 = buf.st_mtimespec.tv_nsec;
-	if (s1 > s2)
-		return (1);
-	else
-	{
-		if (s1 == s2)
-		{
-			if (ns1 >= ns2)
-				return (1);
-			else
-				return (0);
-		}
-		else
-			return (0);
-	}
-}
-
-static void			ls_sort_mtime_rev(char **files, int n)
+static void			sort_mtime_rev(char **files, int n)
 {
 	char 	*tmp;
 	int		i;
@@ -75,12 +73,12 @@ static void			ls_sort_mtime_rev(char **files, int n)
 
 	i = 0;
 	k = 0;
-	while (k < n)
+	while (k < n - 1)
 	{
 		i = 0;
 		while (files[i])
 		{
-			if (files[i + 1] && timecmp(files[i], files[i + 1]))
+			if (files[i + 1] && timecmp(files[i], files[i + 1]) > 1)
 			{
 				tmp = files[i];
 				files[i] = files[i + 1];
@@ -92,7 +90,7 @@ static void			ls_sort_mtime_rev(char **files, int n)
 	}
 }
 
-static void			ls_sort_mtime(char **files, int n)
+static void			sort_mtime(char **files, int n)
 {
 	char 	*tmp;
 	int		i;
@@ -100,7 +98,7 @@ static void			ls_sort_mtime(char **files, int n)
 
 	i = 0;
 	k = 0;
-	while (k < n)
+	while (k < n - 1)
 	{
 		i = 0;
 		while (files[i])
@@ -120,12 +118,12 @@ static void			ls_sort_mtime(char **files, int n)
 void				ls_sort(char **files, int n, t_ls *ls)
 {
 	if (ls->rev_lexic && !ls->sort_mtime)
-		ls_sort_rev(files, n);
+		sort_rev(files, n);
 	else if (ls->sort_mtime && !ls->rev_lexic)
-		ls_sort_mtime(files, n);
+		sort_mtime(files, n);
 	else if (ls->sort_mtime && ls->rev_lexic)
 	{
-		ls_sort_rev(files, n);
-		ls_sort_mtime_rev(files, n);
+		sort_rev(files, n);
+		sort_mtime_rev(files, n);
 	}
 }

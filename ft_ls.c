@@ -108,7 +108,8 @@ void			ft_ls(t_list *head, t_ls *ls)
 		if (lst->content_size == 'd')
 		{
 			ls->indents ? ft_printf("\n") : 0;
-			ls->first_directory || ls->indents ? ft_printf("%s:\n", lst->content) : 0;
+			ls->first_directory || ls->indents ?
+			ft_printf("%s:\n", lst->content) : 0;
 			ls->first_directory = 1;
 			ls_readdir(lst->content, ls, path);
 		}

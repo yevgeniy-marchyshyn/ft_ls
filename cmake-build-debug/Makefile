@@ -2796,33 +2796,6 @@ libft/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/libft/get_next_line.c.s
 .PHONY : libft/get_next_line.c.s
 
-ls_list_sort.o: ls_list_sort.c.o
-
-.PHONY : ls_list_sort.o
-
-# target to build an object file
-ls_list_sort.c.o:
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_list_sort.c.o
-.PHONY : ls_list_sort.c.o
-
-ls_list_sort.i: ls_list_sort.c.i
-
-.PHONY : ls_list_sort.i
-
-# target to preprocess a source file
-ls_list_sort.c.i:
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_list_sort.c.i
-.PHONY : ls_list_sort.c.i
-
-ls_list_sort.s: ls_list_sort.c.s
-
-.PHONY : ls_list_sort.s
-
-# target to generate assembly for a file
-ls_list_sort.c.s:
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_list_sort.c.s
-.PHONY : ls_list_sort.c.s
-
 ls_sort.o: ls_sort.c.o
 
 .PHONY : ls_sort.o
@@ -2957,6 +2930,60 @@ parse_options.s: parse_options.c.s
 parse_options.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/parse_options.c.s
 .PHONY : parse_options.c.s
+
+print_dot.o: print_dot.c.o
+
+.PHONY : print_dot.o
+
+# target to build an object file
+print_dot.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_dot.c.o
+.PHONY : print_dot.c.o
+
+print_dot.i: print_dot.c.i
+
+.PHONY : print_dot.i
+
+# target to preprocess a source file
+print_dot.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_dot.c.i
+.PHONY : print_dot.c.i
+
+print_dot.s: print_dot.c.s
+
+.PHONY : print_dot.s
+
+# target to generate assembly for a file
+print_dot.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_dot.c.s
+.PHONY : print_dot.c.s
+
+skip_dots.o: skip_dots.c.o
+
+.PHONY : skip_dots.o
+
+# target to build an object file
+skip_dots.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/skip_dots.c.o
+.PHONY : skip_dots.c.o
+
+skip_dots.i: skip_dots.c.i
+
+.PHONY : skip_dots.i
+
+# target to preprocess a source file
+skip_dots.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/skip_dots.c.i
+.PHONY : skip_dots.c.i
+
+skip_dots.s: skip_dots.c.s
+
+.PHONY : skip_dots.s
+
+# target to generate assembly for a file
+skip_dots.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/skip_dots.c.s
+.PHONY : skip_dots.c.s
 
 sort_ascii_bubble.o: sort_ascii_bubble.c.o
 
@@ -3291,9 +3318,6 @@ help:
 	@echo "... libft/get_next_line.o"
 	@echo "... libft/get_next_line.i"
 	@echo "... libft/get_next_line.s"
-	@echo "... ls_list_sort.o"
-	@echo "... ls_list_sort.i"
-	@echo "... ls_list_sort.s"
 	@echo "... ls_sort.o"
 	@echo "... ls_sort.i"
 	@echo "... ls_sort.s"
@@ -3309,6 +3333,12 @@ help:
 	@echo "... parse_options.o"
 	@echo "... parse_options.i"
 	@echo "... parse_options.s"
+	@echo "... print_dot.o"
+	@echo "... print_dot.i"
+	@echo "... print_dot.s"
+	@echo "... skip_dots.o"
+	@echo "... skip_dots.i"
+	@echo "... skip_dots.s"
 	@echo "... sort_ascii_bubble.o"
 	@echo "... sort_ascii_bubble.i"
 	@echo "... sort_ascii_bubble.s"

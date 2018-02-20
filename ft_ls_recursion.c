@@ -85,20 +85,26 @@ void			ft_ls_recursion(t_list *head, t_ls *ls, char *path)
 	lst = head;
 	while (lst != NULL)
 	{
-		if ((ls->include_dot && ((char*)lst->content)[0] == '.') ||
-				((char*)lst->content)[0] != '.')
+//		if ((ls->include_dot && ((char*)lst->content)[0] == '.') ||
+//				((char*)lst->content)[0] != '.')
+		if (print_dot(lst->content, ls))
 			ft_printf("%s\n", lst->content);
 		lst = lst->next;
 	}
 	lst = head;
 	while (lst != NULL)
 	{
-		if (lst->content_size == 'd' &&
-				(ft_strcmp(lst->content, ".") != 0 &&
-				ft_strcmp(lst->content, "..") != 0))
+		if (lst->content_size == 'd' && skip_dots(lst->content))
+//		if (lst->content_size == 'd' && ft_strcmp(lst->content, ".") != 0 &&
+//				ft_strcmp(lst->content, "..") != 0)
 		{
-			ft_printf("\n%s%s:\n", path, lst->content);
-			ls_readdir(lst->content, ls, path);
+//			if ((ls->include_dot && ((char*)lst->content)[0] == '.') ||
+//					((char*)lst->content)[0] != '.')
+			if (print_dot(lst->content, ls))
+			{
+				ft_printf("\n%s%s:\n", path, lst->content);
+				ls_readdir(lst->content, ls, path);
+			}
 		}
 		lst = lst->next;
 	}

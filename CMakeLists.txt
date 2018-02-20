@@ -111,4 +111,4 @@ add_executable(ft_ls
         parse_arguments.c
         parse_files.c
         parse_options.c
-        sort_ascii_bubble.c ls_sort.c)
+        sort_ascii_bubble.c ls_sort.c skip_dots.c print_dot.c)

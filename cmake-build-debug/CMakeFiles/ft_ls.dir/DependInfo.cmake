@@ -103,12 +103,13 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/ymarchys/Documents/ft_ls/libft/ft_tolower.c" "/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/libft/ft_tolower.c.o"
   "/Users/ymarchys/Documents/ft_ls/libft/ft_toupper.c" "/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/libft/ft_toupper.c.o"
   "/Users/ymarchys/Documents/ft_ls/libft/get_next_line.c" "/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/libft/get_next_line.c.o"
-  "/Users/ymarchys/Documents/ft_ls/ls_list_sort.c" "/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/ls_list_sort.c.o"
   "/Users/ymarchys/Documents/ft_ls/ls_sort.c" "/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/ls_sort.c.o"
   "/Users/ymarchys/Documents/ft_ls/main.c" "/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/main.c.o"
   "/Users/ymarchys/Documents/ft_ls/parse_arguments.c" "/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/parse_arguments.c.o"
   "/Users/ymarchys/Documents/ft_ls/parse_files.c" "/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/parse_files.c.o"
   "/Users/ymarchys/Documents/ft_ls/parse_options.c" "/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/parse_options.c.o"
+  "/Users/ymarchys/Documents/ft_ls/print_dot.c" "/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/print_dot.c.o"
+  "/Users/ymarchys/Documents/ft_ls/skip_dots.c" "/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/skip_dots.c.o"
   "/Users/ymarchys/Documents/ft_ls/sort_ascii_bubble.c" "/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

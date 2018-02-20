@@ -103,8 +103,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_ls.dir/parse_files.c.o"
   "CMakeFiles/ft_ls.dir/parse_options.c.o"
   "CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.o"
-  "CMakeFiles/ft_ls.dir/ls_list_sort.c.o"
   "CMakeFiles/ft_ls.dir/ls_sort.c.o"
+  "CMakeFiles/ft_ls.dir/skip_dots.c.o"
+  "CMakeFiles/ft_ls.dir/print_dot.c.o"
   "ft_ls.pdb"
   "ft_ls"
 )

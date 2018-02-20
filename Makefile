@@ -27,6 +27,8 @@ FT_LS = main.c\
 		parse_files.c\
 		ft_ls_recursion.c\
 		ls_sort.c\
+		skip_dots.c\
+		print_dot.c\
 
 all: $(NAME)
 

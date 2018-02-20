@@ -52,6 +52,5 @@ void				parse_arguments(char **argv, int n, t_ls *ls)
 		}
 		i++;
 	}
-//	ls_list_sort(head, ls);
 	ft_ls(head, ls);
 }

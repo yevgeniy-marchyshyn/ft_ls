@@ -391,9 +391,6 @@
 		<Unit filename="/Users/ymarchys/Documents/ft_ls/libft/libft.h">
 			<Option target="ft_ls"/>
 		</Unit>
-		<Unit filename="/Users/ymarchys/Documents/ft_ls/ls_list_sort.c">
-			<Option target="ft_ls"/>
-		</Unit>
 		<Unit filename="/Users/ymarchys/Documents/ft_ls/ls_sort.c">
 			<Option target="ft_ls"/>
 		</Unit>
@@ -407,6 +404,12 @@
 			<Option target="ft_ls"/>
 		</Unit>
 		<Unit filename="/Users/ymarchys/Documents/ft_ls/parse_options.c">
+			<Option target="ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/ymarchys/Documents/ft_ls/print_dot.c">
+			<Option target="ft_ls"/>
+		</Unit>
+		<Unit filename="/Users/ymarchys/Documents/ft_ls/skip_dots.c">
 			<Option target="ft_ls"/>
 		</Unit>
 		<Unit filename="/Users/ymarchys/Documents/ft_ls/sort_ascii_bubble.c">

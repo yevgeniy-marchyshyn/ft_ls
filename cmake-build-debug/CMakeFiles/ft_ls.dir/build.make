@@ -2553,33 +2553,9 @@ CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.o.provides: CMakeFiles/ft_ls.dir/sort_a
 CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.o.provides.build: CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.o
 
 
-CMakeFiles/ft_ls.dir/ls_list_sort.c.o: CMakeFiles/ft_ls.dir/flags.make
-CMakeFiles/ft_ls.dir/ls_list_sort.c.o: ../ls_list_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/ft_ls.dir/ls_list_sort.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_ls.dir/ls_list_sort.c.o   -c /Users/ymarchys/Documents/ft_ls/ls_list_sort.c
-
-CMakeFiles/ft_ls.dir/ls_list_sort.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_ls.dir/ls_list_sort.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ymarchys/Documents/ft_ls/ls_list_sort.c > CMakeFiles/ft_ls.dir/ls_list_sort.c.i
-
-CMakeFiles/ft_ls.dir/ls_list_sort.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_ls.dir/ls_list_sort.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ymarchys/Documents/ft_ls/ls_list_sort.c -o CMakeFiles/ft_ls.dir/ls_list_sort.c.s
-
-CMakeFiles/ft_ls.dir/ls_list_sort.c.o.requires:
-
-.PHONY : CMakeFiles/ft_ls.dir/ls_list_sort.c.o.requires
-
-CMakeFiles/ft_ls.dir/ls_list_sort.c.o.provides: CMakeFiles/ft_ls.dir/ls_list_sort.c.o.requires
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_list_sort.c.o.provides.build
-.PHONY : CMakeFiles/ft_ls.dir/ls_list_sort.c.o.provides
-
-CMakeFiles/ft_ls.dir/ls_list_sort.c.o.provides.build: CMakeFiles/ft_ls.dir/ls_list_sort.c.o
-
-
 CMakeFiles/ft_ls.dir/ls_sort.c.o: CMakeFiles/ft_ls.dir/flags.make
 CMakeFiles/ft_ls.dir/ls_sort.c.o: ../ls_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/ft_ls.dir/ls_sort.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/ft_ls.dir/ls_sort.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_ls.dir/ls_sort.c.o   -c /Users/ymarchys/Documents/ft_ls/ls_sort.c
 
 CMakeFiles/ft_ls.dir/ls_sort.c.i: cmake_force
@@ -2599,6 +2575,54 @@ CMakeFiles/ft_ls.dir/ls_sort.c.o.provides: CMakeFiles/ft_ls.dir/ls_sort.c.o.requ
 .PHONY : CMakeFiles/ft_ls.dir/ls_sort.c.o.provides
 
 CMakeFiles/ft_ls.dir/ls_sort.c.o.provides.build: CMakeFiles/ft_ls.dir/ls_sort.c.o
+
+
+CMakeFiles/ft_ls.dir/skip_dots.c.o: CMakeFiles/ft_ls.dir/flags.make
+CMakeFiles/ft_ls.dir/skip_dots.c.o: ../skip_dots.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/ft_ls.dir/skip_dots.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_ls.dir/skip_dots.c.o   -c /Users/ymarchys/Documents/ft_ls/skip_dots.c
+
+CMakeFiles/ft_ls.dir/skip_dots.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_ls.dir/skip_dots.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ymarchys/Documents/ft_ls/skip_dots.c > CMakeFiles/ft_ls.dir/skip_dots.c.i
+
+CMakeFiles/ft_ls.dir/skip_dots.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_ls.dir/skip_dots.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ymarchys/Documents/ft_ls/skip_dots.c -o CMakeFiles/ft_ls.dir/skip_dots.c.s
+
+CMakeFiles/ft_ls.dir/skip_dots.c.o.requires:
+
+.PHONY : CMakeFiles/ft_ls.dir/skip_dots.c.o.requires
+
+CMakeFiles/ft_ls.dir/skip_dots.c.o.provides: CMakeFiles/ft_ls.dir/skip_dots.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/skip_dots.c.o.provides.build
+.PHONY : CMakeFiles/ft_ls.dir/skip_dots.c.o.provides
+
+CMakeFiles/ft_ls.dir/skip_dots.c.o.provides.build: CMakeFiles/ft_ls.dir/skip_dots.c.o
+
+
+CMakeFiles/ft_ls.dir/print_dot.c.o: CMakeFiles/ft_ls.dir/flags.make
+CMakeFiles/ft_ls.dir/print_dot.c.o: ../print_dot.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/ft_ls.dir/print_dot.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_ls.dir/print_dot.c.o   -c /Users/ymarchys/Documents/ft_ls/print_dot.c
+
+CMakeFiles/ft_ls.dir/print_dot.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_ls.dir/print_dot.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ymarchys/Documents/ft_ls/print_dot.c > CMakeFiles/ft_ls.dir/print_dot.c.i
+
+CMakeFiles/ft_ls.dir/print_dot.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_ls.dir/print_dot.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ymarchys/Documents/ft_ls/print_dot.c -o CMakeFiles/ft_ls.dir/print_dot.c.s
+
+CMakeFiles/ft_ls.dir/print_dot.c.o.requires:
+
+.PHONY : CMakeFiles/ft_ls.dir/print_dot.c.o.requires
+
+CMakeFiles/ft_ls.dir/print_dot.c.o.provides: CMakeFiles/ft_ls.dir/print_dot.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_dot.c.o.provides.build
+.PHONY : CMakeFiles/ft_ls.dir/print_dot.c.o.provides
+
+CMakeFiles/ft_ls.dir/print_dot.c.o.provides.build: CMakeFiles/ft_ls.dir/print_dot.c.o
 
 
 # Object files for target ft_ls
@@ -2707,8 +2731,9 @@ ft_ls_OBJECTS = \
 "CMakeFiles/ft_ls.dir/parse_files.c.o" \
 "CMakeFiles/ft_ls.dir/parse_options.c.o" \
 "CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.o" \
-"CMakeFiles/ft_ls.dir/ls_list_sort.c.o" \
-"CMakeFiles/ft_ls.dir/ls_sort.c.o"
+"CMakeFiles/ft_ls.dir/ls_sort.c.o" \
+"CMakeFiles/ft_ls.dir/skip_dots.c.o" \
+"CMakeFiles/ft_ls.dir/print_dot.c.o"
 
 # External object files for target ft_ls
 ft_ls_EXTERNAL_OBJECTS =
@@ -2817,11 +2842,12 @@ ft_ls: CMakeFiles/ft_ls.dir/parse_arguments.c.o
 ft_ls: CMakeFiles/ft_ls.dir/parse_files.c.o
 ft_ls: CMakeFiles/ft_ls.dir/parse_options.c.o
 ft_ls: CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.o
-ft_ls: CMakeFiles/ft_ls.dir/ls_list_sort.c.o
 ft_ls: CMakeFiles/ft_ls.dir/ls_sort.c.o
+ft_ls: CMakeFiles/ft_ls.dir/skip_dots.c.o
+ft_ls: CMakeFiles/ft_ls.dir/print_dot.c.o
 ft_ls: CMakeFiles/ft_ls.dir/build.make
 ft_ls: CMakeFiles/ft_ls.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Linking C executable ft_ls"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Linking C executable ft_ls"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_ls.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2933,8 +2959,9 @@ CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/parse_arguments.c.o.requires
 CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/parse_files.c.o.requires
 CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/parse_options.c.o.requires
 CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.o.requires
-CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/ls_list_sort.c.o.requires
 CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/ls_sort.c.o.requires
+CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/skip_dots.c.o.requires
+CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/print_dot.c.o.requires
 
 .PHONY : CMakeFiles/ft_ls.dir/requires
 
