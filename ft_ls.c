@@ -51,11 +51,34 @@ static char		**ls_read_files(char **files, char *dirname, int n)
 	return (files);
 }
 
-static void		ls_readdir(char *dirname, t_ls *ls, char *path)
+static void		ls_dir_ext(t_ls *ls, char **files, char *path, int n)
+{
+	int i;
+
+	if (ls->recursively)
+		parse_files(files, ls, path);
+	else
+	{
+		i = 0;
+		if (ls->include_dot)
+			while (i < n)
+				ft_printf("%s\n", files[i++]);
+		else
+		{
+			while (i < n)
+			{
+				if (files[i][0] != '.')
+					ft_printf("%s\n", files[i]);
+				i++;
+			}
+		}
+	}
+}
+
+static void		ls_dir(char *dirname, t_ls *ls, char *path)
 {
 	char			**files;
 	int				n;
-	int 			i;
 
 	path = ft_strjoin(dirname, "/");
 	if ((n = ls_count_files(dirname)))
@@ -63,27 +86,8 @@ static void		ls_readdir(char *dirname, t_ls *ls, char *path)
 		files = (char **)malloc(sizeof(char *) * (n + 1));
 		files = ls_read_files(files, dirname, n);
 		ls_sort(files, n, ls);
-		if (ls->recursively)
-			parse_files(files, ls, path);
-		else
-		{
-			i = 0;
-			if (ls->include_dot)
-				while (i < n)
-					ft_printf("%s\n", files[i++]);
-			else
-			{
-				while (i < n)
-				{
-					if (files[i][0] != '.')
-					ft_printf("%s\n", files[i]);
-					i++;
-				}
-			}
-		}
+		ls_dir_ext(ls, files, path, n);
 	}
-	else
-		return ;
 }
 
 void			ft_ls(t_list *head, t_ls *ls)
@@ -111,7 +115,7 @@ void			ft_ls(t_list *head, t_ls *ls)
 			ls->first_directory || ls->indents ?
 			ft_printf("%s:\n", lst->content) : 0;
 			ls->first_directory = 1;
-			ls_readdir(lst->content, ls, path);
+			ls_dir(lst->content, ls, path);
 		}
 		lst = lst->next;
 	}

@@ -29,6 +29,7 @@ FT_LS = main.c\
 		ls_sort.c\
 		skip_dots.c\
 		print_dot.c\
+		ls_total_lst.c\
 
 all: $(NAME)
 

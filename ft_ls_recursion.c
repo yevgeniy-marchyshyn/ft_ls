@@ -51,13 +51,27 @@ static char		**ls_fill_files(char **files, char *path, int n)
 	return (files);
 }
 
-static void		ls_readdir(char *dirname, t_ls *ls, char *path)
+static void		ls_dir_ext(t_ls *ls, char **files, char *path3, int n)
+{
+	int i;
+
+	i = 0;
+	if (ls->recursively)
+		parse_files(files, ls, path3);
+	else
+	{
+		i = 0;
+		while (i < n)
+			ft_printf("%s\n", files[i++]);
+	}
+}
+
+static void		ls_dir(char *dirname, t_ls *ls, char *path)
 {
 	char			**files;
 	char 			*path2;
 	char 			*path3;
 	int				n;
-	int 			i;
 
 	path2 = ft_strjoin(path, dirname);
 	path3 = ft_strjoin(path2, "/");
@@ -65,17 +79,8 @@ static void		ls_readdir(char *dirname, t_ls *ls, char *path)
 	{
 		files = (char **)malloc(sizeof(char *) * (n + 1));
 		files = ls_fill_files(files, path3, n);
-		if (ls->recursively)
-			parse_files(files, ls, path3);
-		else
-		{
-			i = 0;
-			while (i < n)
-					ft_printf("%s\n", files[i++]);
-		}
+		ls_dir_ext(ls, files, path3, n);
 	}
-	else
-		return ;
 }
 
 void			ft_ls_recursion(t_list *head, t_ls *ls, char *path)
@@ -85,8 +90,6 @@ void			ft_ls_recursion(t_list *head, t_ls *ls, char *path)
 	lst = head;
 	while (lst != NULL)
 	{
-//		if ((ls->include_dot && ((char*)lst->content)[0] == '.') ||
-//				((char*)lst->content)[0] != '.')
 		if (print_dot(lst->content, ls))
 			ft_printf("%s\n", lst->content);
 		lst = lst->next;
@@ -95,15 +98,11 @@ void			ft_ls_recursion(t_list *head, t_ls *ls, char *path)
 	while (lst != NULL)
 	{
 		if (lst->content_size == 'd' && skip_dots(lst->content))
-//		if (lst->content_size == 'd' && ft_strcmp(lst->content, ".") != 0 &&
-//				ft_strcmp(lst->content, "..") != 0)
 		{
-//			if ((ls->include_dot && ((char*)lst->content)[0] == '.') ||
-//					((char*)lst->content)[0] != '.')
 			if (print_dot(lst->content, ls))
 			{
 				ft_printf("\n%s%s:\n", path, lst->content);
-				ls_readdir(lst->content, ls, path);
+				ls_dir(lst->content, ls, path);
 			}
 		}
 		lst = lst->next;
