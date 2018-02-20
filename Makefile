@@ -30,6 +30,9 @@ FT_LS = main.c\
 		skip_dots.c\
 		print_dot.c\
 		ls_total_lst.c\
+		long_format.c\
+		ls_total.c\
+		access_flag.c\
 
 all: $(NAME)
 

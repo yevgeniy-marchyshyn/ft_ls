@@ -1,1 +1,1 @@
-CMakeLists.txt not found in /Users/ymarchys/Documents/ft_ls
+CMakeLists.txt not found in /Users/marchyshyn/Documents/C/ft_ls

@@ -20,6 +20,10 @@
 #include <sys/types.h>
 #include <errno.h>
 #include <dirent.h>
+#include <pwd.h>
+#include <uuid/uuid.h>
+#include <grp.h>
+#include <time.h>
 
 typedef struct		ls
 {
@@ -55,7 +59,9 @@ void			ls_sort(char **files, int n, t_ls *ls);
 int				skip_dots(void *content);
 int 			print_dot(void *content, t_ls *ls);
 quad_t			ls_total_lst(t_list *head);
-//quad_t			ls_total(char **files, int n);
+void			long_format(char **files, int n, t_ls *ls);
+quad_t			ls_total(char **files, int n, t_ls *ls);
+void			access_flag(int value);
 //void			lf_lst(t_list *head);
 
 # endif

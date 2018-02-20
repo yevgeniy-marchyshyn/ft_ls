@@ -84,6 +84,7 @@ void				ft_lstascii(t_list *head);
 void				ft_lst_push_back(t_list **head, t_list *lst);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_itoa(int nbr);
+int 				ft_itoa_len(ssize_t n);
 size_t				ft_power(size_t value, unsigned int power);
 
 #endif

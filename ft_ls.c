@@ -51,14 +51,14 @@ static char		**ls_read_files(char **files, char *dirname, int n)
 	return (files);
 }
 
-static void		ls_dir_ext(t_ls *ls, char **files, char *path, int n)
+static void		ls_dir_ext(t_ls *ls, char **files, int n) // char *path
 {
 	int i;
 
-	if (ls->recursively)
-		parse_files(files, ls, path);
-	else
-	{
+//	if (ls->recursively)
+//		parse_files(files, ls, path);
+//	else
+//	{
 		i = 0;
 		if (ls->include_dot)
 			while (i < n)
@@ -72,7 +72,7 @@ static void		ls_dir_ext(t_ls *ls, char **files, char *path, int n)
 				i++;
 			}
 		}
-	}
+//	}
 }
 
 static void		ls_dir(char *dirname, t_ls *ls, char *path)
@@ -86,7 +86,12 @@ static void		ls_dir(char *dirname, t_ls *ls, char *path)
 		files = (char **)malloc(sizeof(char *) * (n + 1));
 		files = ls_read_files(files, dirname, n);
 		ls_sort(files, n, ls);
-		ls_dir_ext(ls, files, path, n);
+		if (ls->recursively)
+			parse_files(files, ls, path);
+		else if (ls->long_format)
+			long_format(files, n, ls);
+		else
+			ls_dir_ext(ls, files, n);
 	}
 }
 
@@ -97,6 +102,7 @@ void			ft_ls(t_list *head, t_ls *ls)
 
 	lst = head;
 	path = NULL;
+
 	while (lst != NULL)
 	{
 		if (lst->content_size != 'd')

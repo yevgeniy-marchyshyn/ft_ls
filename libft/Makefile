@@ -110,6 +110,7 @@ LIBFT = ft_memset.c\
 		ft_power.c\
 		ft_strsplit.c\
 		ft_itoa.c\
+		ft_itoa_len.c\
 		get_next_line.c\
 
 

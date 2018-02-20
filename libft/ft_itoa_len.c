@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_itoa_len.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/21 00:26:00 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/21 00:26:00 by ymarchys         ###   ########.fr       */
+/*   Created: 2018/02/21 00:00:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/02/21 00:00:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-#include "ft_ls.h"
-
-int 	main(void)
+int		ft_itoa_len(ssize_t n)
 {
-	int x;
+	int size;
 
-	x = 255;
-	ft_printf("%d\n", ft_itoa_len(x));
-	return (0);
+	size = (n <= 0) ? 1 : 0;
+	while (n != 0)
+	{
+		n /= 10;
+		size++;
+	}
+	return (size);
 }
