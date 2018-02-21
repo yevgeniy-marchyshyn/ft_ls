@@ -73,7 +73,6 @@ static void		print_long_format(char *filename, int w1, int w2)
 	if (define_type(&buf) == 'l')
 	{
 		link_path = linkpath(filename);
-//		ft_printf("link_path: %s\n", link_path);
 		ft_printf(" %s -> %s\n", filename, link_path);
 		ft_strdel(&link_path);
 	}

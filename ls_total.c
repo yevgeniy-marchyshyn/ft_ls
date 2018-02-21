@@ -24,7 +24,7 @@ int		ls_total(char **files, int n, t_ls *ls)
 	{
 		if (print_dot(files[i], ls))
 		{
-			stat(files[i++], &buf);
+			lstat(files[i++], &buf);
 			sum += buf.st_blocks;
 		}
 		else
