@@ -34,27 +34,36 @@ static void		print_access(mode_t st_mode)
 	ft_strdel(&o);
 }
 
+static char 	*time_format(time_t n)
+{
+	char *time;
+	char *time_format;
+
+	time = ctime(&n);
+	time_format = ft_strsub(time, 4, 12);
+	return (time_format);
+}
+
 static void		print_long_format(char *filename, int w1, int w2)
 {
 	struct stat		buf;
 	struct passwd	*pw;
 	struct group	*gr;
-	char 			*time;
 
 	lstat(filename, &buf);
 	pw = getpwuid(buf.st_uid);
 	gr = getgrgid(buf.st_gid);
-	time = ctime(&buf.st_mtime);
 	ft_printf("%c", define_type(&buf));
 	print_access(buf.st_mode);
 	ft_printf("  %*zu", w1 - ft_itoa_len(buf.st_nlink), buf.st_nlink);
 	ft_printf("  %s", pw->pw_name);
 	ft_printf("  %s", gr->gr_name);
 	ft_printf("  %*zu", w2 - ft_itoa_len(buf.st_size), buf.st_size);
-	ft_printf("  %s", );
-	ft_printf("\n");
+	ft_printf("  %s", time_format(buf.st_mtime));
+	ft_printf("  %s\n", filename);
 }
-
+// abc  12346
+// abc    123
 nlink_t 			lf_length_1(char **files, int n)
 {
 	struct stat		buf;
@@ -100,5 +109,9 @@ void				long_format(char **files, int n, t_ls *ls)
 	w2 = lf_length_2(files, n);
 	ft_printf("total: %zu\n", ls_total(files, n, ls));
 	while (i < n)
-		print_long_format(files[i++], w1, w2);
+	{
+		if (print_dot(files[i], ls))
+			print_long_format(files[i], w1, w2);
+		i++;
+	}
 }
