@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cded2b83-46ac-46c3-aa37-0f8ee71d8a07" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/libft.a" afterPath="$PROJECT_DIR$/libft.a" />
-      <change beforePath="$PROJECT_DIR$/long_format.c" afterPath="$PROJECT_DIR$/long_format.c" />
-      <change beforePath="$PROJECT_DIR$/ls_total.c" afterPath="$PROJECT_DIR$/ls_total.c" />
+      <change beforePath="$PROJECT_DIR$/ft_ls.c" afterPath="$PROJECT_DIR$/ft_ls.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,17 +66,17 @@
           <file leaf-file-name="ft_ls.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ft_ls.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="97">
-                  <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+                <state relative-caret-position="1273">
+                  <caret line="108" column="12" lean-forward="false" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="long_format.c" pinned="false" current-in-tab="false">
+          <file leaf-file-name="long_format.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/long_format.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="595">
+                <state relative-caret-position="1155">
                   <caret line="77" column="4" lean-forward="false" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
                   <folding />
                 </state>
@@ -105,7 +103,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ls_total.c" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ls_total.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ls_total.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="390">
@@ -163,7 +161,6 @@
         <option value="$PROJECT_DIR$/ls_total_lst.c" />
         <option value="$PROJECT_DIR$/access_flag.c" />
         <option value="$PROJECT_DIR$/Makefile" />
-        <option value="$PROJECT_DIR$/ft_ls.c" />
         <option value="$PROJECT_DIR$/libft/ft_itoa_len.c" />
         <option value="$PROJECT_DIR$/libft/ft_itoa.c" />
         <option value="$PROJECT_DIR$/libft/Makefile" />
@@ -174,6 +171,7 @@
         <option value="$PROJECT_DIR$/ft_ls.h" />
         <option value="$PROJECT_DIR$/long_format.c" />
         <option value="$PROJECT_DIR$/ls_total.c" />
+        <option value="$PROJECT_DIR$/ft_ls.c" />
       </list>
     </option>
   </component>
@@ -286,12 +284,12 @@
       <workItem from="1519210506783" duration="894000" />
       <workItem from="1519214611593" duration="1245000" />
       <workItem from="1519215984283" duration="1134000" />
-      <workItem from="1519220824761" duration="2938000" />
+      <workItem from="1519220824761" duration="3221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62599000" />
+    <option name="totallyTimeSpent" value="62882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -612,14 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ft_ls.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/define_type.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -628,18 +618,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/long_format.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="77" column="4" lean-forward="false" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ls_total.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ft_ls.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="108" column="12" lean-forward="false" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/long_format.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" column="4" lean-forward="false" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
           <folding />
         </state>
       </provider>
