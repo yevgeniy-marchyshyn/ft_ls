@@ -102,10 +102,13 @@ void			ft_ls(t_list *head, t_ls *ls)
 
 	lst = head;
 	path = NULL;
+//	if (ls->long_format)
+//		long_format_lst()
 	while (lst != NULL)
 	{
 		if (lst->content_size != 'd')
 		{
+
 			ft_printf("%s\n", lst->content);
 			ls->indents = 1;
 		}

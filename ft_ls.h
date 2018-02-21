@@ -62,6 +62,10 @@ quad_t			ls_total_lst(t_list *head);
 void			long_format(char **files, int n, t_ls *ls);
 int				ls_total(char **files, int n, t_ls *ls);
 void			access_flag(int value);
+void			print_long_format(char *filename, int w1, int w2);
+void			print_access(mode_t st_mode);
+char 			*time_format(time_t n);
+char			*linkpath(char *filename);
 //void			lf_lst(t_list *head);
 
 # endif
