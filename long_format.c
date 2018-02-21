@@ -55,20 +55,19 @@ static void		print_long_format(char *filename, int w1, int w2)
 	gr = getgrgid(buf.st_gid);
 	ft_printf("%c", define_type(&buf));
 	print_access(buf.st_mode);
-	ft_printf("  %*zu", w1 - ft_itoa_len(buf.st_nlink), buf.st_nlink);
-	ft_printf("  %s", pw->pw_name);
+	ft_printf(" %*zu", w1 + 1, buf.st_nlink);
+	ft_printf(" %s", pw->pw_name);
 	ft_printf("  %s", gr->gr_name);
-	ft_printf("  %*zu", w2 - ft_itoa_len(buf.st_size), buf.st_size);
-	ft_printf("  %s", time_format(buf.st_mtime));
-	ft_printf("  %s\n", filename);
+	ft_printf(" %*zu", w2 + 1, buf.st_size);
+	ft_printf(" %s", time_format(buf.st_mtime));
+	ft_printf(" %s\n", filename);
 }
-// abc  12346
-// abc    123
-nlink_t 			lf_length_1(char **files, int n)
+
+int 			lf_length_1(char **files, int n)
 {
 	struct stat		buf;
 	int				i;
-	nlink_t			max_length;
+	int				max_length;
 
 	i = 0;
 	max_length = 0;
@@ -81,11 +80,11 @@ nlink_t 			lf_length_1(char **files, int n)
 	return (max_length);
 }
 
-off_t				lf_length_2(char **files, int n)
+int				lf_length_2(char **files, int n)
 {
 	struct stat		buf;
 	int				i;
-	nlink_t			max_length;
+	int				max_length;
 
 	i = 0;
 	max_length = 0;
@@ -101,13 +100,13 @@ off_t				lf_length_2(char **files, int n)
 void				long_format(char **files, int n, t_ls *ls)
 {
 	int			i;
-	nlink_t		w1;
-	off_t		w2;
+	int			w1;
+	int			w2;
 
 	i = 0;
 	w1 = lf_length_1(files, n);
 	w2 = lf_length_2(files, n);
-	ft_printf("total: %zu\n", ls_total(files, n, ls));
+	ft_printf("total %lld\n", ls_total(files, n, ls));
 	while (i < n)
 	{
 		if (print_dot(files[i], ls))

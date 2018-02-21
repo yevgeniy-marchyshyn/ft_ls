@@ -12,23 +12,31 @@
 
 #include "ft_ls.h"
 
-quad_t		ls_total(char **files, int n, t_ls *ls)
+int		ls_total(char **files, int n, t_ls *ls)
 {
 	struct stat		buf;
 	int				i;
-	quad_t			sum;
+	int				sum;
 
 	i = 0;
 	sum = 0;
 	while (i < n)
 	{
-		if (!ls->include_dot && skip_dots(files[i]))
-			i++;
-		else
+		if (print_dot(files[i], ls))
 		{
 			stat(files[i++], &buf);
 			sum += buf.st_blocks;
 		}
+		else
+			i++;
+//
+//		if (ls->include_dot && skip_dots(files[i]))
+//		{
+//			stat(files[i++], &buf);
+//			sum += buf.st_blocks;
+//		}
+//		else
+//			i++;
 	}
 	return (sum);
 }

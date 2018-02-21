@@ -14,5 +14,5 @@
 
 int		skip_dots(void *content)
 {
-	return (ft_strcmp(content, ".") != 0 && ft_strcmp(content, "..") != 0);
+	return (ft_strcmp(content, ".") != 0 || ft_strcmp(content, "..") != 0);
 }

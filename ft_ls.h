@@ -60,7 +60,7 @@ int				skip_dots(void *content);
 int 			print_dot(void *content, t_ls *ls);
 quad_t			ls_total_lst(t_list *head);
 void			long_format(char **files, int n, t_ls *ls);
-quad_t			ls_total(char **files, int n, t_ls *ls);
+int				ls_total(char **files, int n, t_ls *ls);
 void			access_flag(int value);
 //void			lf_lst(t_list *head);
 
