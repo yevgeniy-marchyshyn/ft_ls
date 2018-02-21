@@ -13,110 +13,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cded2b83-46ac-46c3-aa37-0f8ee71d8a07" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
       <change beforePath="$PROJECT_DIR$/ft_ls" afterPath="$PROJECT_DIR$/ft_ls" />
-      <change beforePath="$PROJECT_DIR$/ft_ls.h" afterPath="$PROJECT_DIR$/ft_ls.h" />
       <change beforePath="$PROJECT_DIR$/libft.a" afterPath="$PROJECT_DIR$/libft.a" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_atoi.o" afterPath="$PROJECT_DIR$/libft/ft_atoi.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_bzero.o" afterPath="$PROJECT_DIR$/libft/ft_bzero.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isalnum.o" afterPath="$PROJECT_DIR$/libft/ft_isalnum.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isalpha.o" afterPath="$PROJECT_DIR$/libft/ft_isalpha.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isascii.o" afterPath="$PROJECT_DIR$/libft/ft_isascii.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isdigit.o" afterPath="$PROJECT_DIR$/libft/ft_isdigit.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isprint.o" afterPath="$PROJECT_DIR$/libft/ft_isprint.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_itoa.o" afterPath="$PROJECT_DIR$/libft/ft_itoa.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_itoa_len.o" afterPath="$PROJECT_DIR$/libft/ft_itoa_len.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lst_push_back.o" afterPath="$PROJECT_DIR$/libft/ft_lst_push_back.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstadd.o" afterPath="$PROJECT_DIR$/libft/ft_lstadd.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstascii.o" afterPath="$PROJECT_DIR$/libft/ft_lstascii.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstdel.o" afterPath="$PROJECT_DIR$/libft/ft_lstdel.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstdelone.o" afterPath="$PROJECT_DIR$/libft/ft_lstdelone.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstiter.o" afterPath="$PROJECT_DIR$/libft/ft_lstiter.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstmap.o" afterPath="$PROJECT_DIR$/libft/ft_lstmap.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_lstnew.o" afterPath="$PROJECT_DIR$/libft/ft_lstnew.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memalloc.o" afterPath="$PROJECT_DIR$/libft/ft_memalloc.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memccpy.o" afterPath="$PROJECT_DIR$/libft/ft_memccpy.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memchr.o" afterPath="$PROJECT_DIR$/libft/ft_memchr.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memcmp.o" afterPath="$PROJECT_DIR$/libft/ft_memcmp.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memcpy.o" afterPath="$PROJECT_DIR$/libft/ft_memcpy.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memdel.o" afterPath="$PROJECT_DIR$/libft/ft_memdel.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memmove.o" afterPath="$PROJECT_DIR$/libft/ft_memmove.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_memset.o" afterPath="$PROJECT_DIR$/libft/ft_memset.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_power.o" afterPath="$PROJECT_DIR$/libft/ft_power.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf.o" afterPath="$PROJECT_DIR$/libft/ft_printf.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/active_bits.o" afterPath="$PROJECT_DIR$/libft/ft_printf/active_bits.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/annulation.o" afterPath="$PROJECT_DIR$/libft/ft_printf/annulation.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/check_flags_modif.o" afterPath="$PROJECT_DIR$/libft/ft_printf/check_flags_modif.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/color_off.o" afterPath="$PROJECT_DIR$/libft/ft_printf/color_off.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/count_bytes.o" afterPath="$PROJECT_DIR$/libft/ft_printf/count_bytes.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/ibs.o" afterPath="$PROJECT_DIR$/libft/ft_printf/ibs.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/ibs_uns.o" afterPath="$PROJECT_DIR$/libft/ft_printf/ibs_uns.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/if_color.o" afterPath="$PROJECT_DIR$/libft/ft_printf/if_color.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/is_flag_mod.o" afterPath="$PROJECT_DIR$/libft/ft_printf/is_flag_mod.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/is_modificator.o" afterPath="$PROJECT_DIR$/libft/ft_printf/is_modificator.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/is_parse_char.o" afterPath="$PROJECT_DIR$/libft/ft_printf/is_parse_char.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/is_type.o" afterPath="$PROJECT_DIR$/libft/ft_printf/is_type.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/m_putchar.o" afterPath="$PROJECT_DIR$/libft/ft_printf/m_putchar.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/m_putstr.o" afterPath="$PROJECT_DIR$/libft/ft_printf/m_putstr.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/modificator_dec.o" afterPath="$PROJECT_DIR$/libft/ft_printf/modificator_dec.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/modificator_hex.o" afterPath="$PROJECT_DIR$/libft/ft_printf/modificator_hex.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/modificator_octal.o" afterPath="$PROJECT_DIR$/libft/ft_printf/modificator_octal.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/modificator_uns.o" afterPath="$PROJECT_DIR$/libft/ft_printf/modificator_uns.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/prec_diff.o" afterPath="$PROJECT_DIR$/libft/ft_printf/prec_diff.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_binary.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_binary.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_c.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_c.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_dec.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_dec.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_float.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_float.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_hex.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_hex.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_lc.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_lc.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_ls.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_ls.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_octal.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_octal.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_p.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_p.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_padding.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_padding.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_percent.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_percent.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_s.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_s.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_unknown_type.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_unknown_type.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/put_unsigned.o" afterPath="$PROJECT_DIR$/libft/ft_printf/put_unsigned.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/putstr_ls.o" afterPath="$PROJECT_DIR$/libft/ft_printf/putstr_ls.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/set_to_zero.o" afterPath="$PROJECT_DIR$/libft/ft_printf/set_to_zero.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/strlen_ls.o" afterPath="$PROJECT_DIR$/libft/ft_printf/strlen_ls.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putchar.o" afterPath="$PROJECT_DIR$/libft/ft_putchar.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putnbr.o" afterPath="$PROJECT_DIR$/libft/ft_putnbr.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putstr.o" afterPath="$PROJECT_DIR$/libft/ft_putstr.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strcat.o" afterPath="$PROJECT_DIR$/libft/ft_strcat.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strchr.o" afterPath="$PROJECT_DIR$/libft/ft_strchr.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strclr.o" afterPath="$PROJECT_DIR$/libft/ft_strclr.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strcmp.o" afterPath="$PROJECT_DIR$/libft/ft_strcmp.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strcpy.o" afterPath="$PROJECT_DIR$/libft/ft_strcpy.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strdel.o" afterPath="$PROJECT_DIR$/libft/ft_strdel.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strdup.o" afterPath="$PROJECT_DIR$/libft/ft_strdup.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strequ.o" afterPath="$PROJECT_DIR$/libft/ft_strequ.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_striter.o" afterPath="$PROJECT_DIR$/libft/ft_striter.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_striteri.o" afterPath="$PROJECT_DIR$/libft/ft_striteri.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strjoin.o" afterPath="$PROJECT_DIR$/libft/ft_strjoin.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strlcat.o" afterPath="$PROJECT_DIR$/libft/ft_strlcat.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strlen.o" afterPath="$PROJECT_DIR$/libft/ft_strlen.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strmap.o" afterPath="$PROJECT_DIR$/libft/ft_strmap.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strmapi.o" afterPath="$PROJECT_DIR$/libft/ft_strmapi.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strncat.o" afterPath="$PROJECT_DIR$/libft/ft_strncat.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strncmp.o" afterPath="$PROJECT_DIR$/libft/ft_strncmp.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strncpy.o" afterPath="$PROJECT_DIR$/libft/ft_strncpy.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strnequ.o" afterPath="$PROJECT_DIR$/libft/ft_strnequ.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strnew.o" afterPath="$PROJECT_DIR$/libft/ft_strnew.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strnstr.o" afterPath="$PROJECT_DIR$/libft/ft_strnstr.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strrchr.o" afterPath="$PROJECT_DIR$/libft/ft_strrchr.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strsplit.o" afterPath="$PROJECT_DIR$/libft/ft_strsplit.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strstr.o" afterPath="$PROJECT_DIR$/libft/ft_strstr.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strsub.o" afterPath="$PROJECT_DIR$/libft/ft_strsub.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strtrim.o" afterPath="$PROJECT_DIR$/libft/ft_strtrim.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_tolower.o" afterPath="$PROJECT_DIR$/libft/ft_tolower.o" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_toupper.o" afterPath="$PROJECT_DIR$/libft/ft_toupper.o" />
-      <change beforePath="$PROJECT_DIR$/libft/get_next_line.o" afterPath="$PROJECT_DIR$/libft/get_next_line.o" />
-      <change beforePath="$PROJECT_DIR$/link" afterPath="" />
       <change beforePath="$PROJECT_DIR$/long_format.c" afterPath="$PROJECT_DIR$/long_format.c" />
       <change beforePath="$PROJECT_DIR$/ls_total.c" afterPath="$PROJECT_DIR$/ls_total.c" />
-      <change beforePath="$PROJECT_DIR$/skip_dots.c" afterPath="$PROJECT_DIR$/skip_dots.c" />
-      <change beforePath="$PROJECT_DIR$/test.c" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -177,11 +77,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="long_format.c" pinned="false" current-in-tab="false">
+          <file leaf-file-name="long_format.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/long_format.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1620">
-                  <caret line="108" column="52" lean-forward="false" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
+                <state relative-caret-position="442">
+                  <caret line="80" column="36" lean-forward="false" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="define_type.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/define_type.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -197,11 +107,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ls_total.c" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ls_total.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ls_total.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+                <state relative-caret-position="465">
+                  <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -264,8 +174,8 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/skip_dots.c" />
         <option value="$PROJECT_DIR$/ft_ls.h" />
-        <option value="$PROJECT_DIR$/long_format.c" />
         <option value="$PROJECT_DIR$/ls_total.c" />
+        <option value="$PROJECT_DIR$/long_format.c" />
       </list>
     </option>
   </component>
@@ -378,12 +288,12 @@
       <workItem from="1519210506783" duration="894000" />
       <workItem from="1519214611593" duration="1245000" />
       <workItem from="1519215984283" duration="1134000" />
-      <workItem from="1519220824761" duration="1473000" />
+      <workItem from="1519220824761" duration="2808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61134000" />
+    <option name="totallyTimeSpent" value="62469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -608,14 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/define_type.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/access_flag.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -686,22 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/long_format.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="108" column="52" lean-forward="false" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft_ls.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skip_dots.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -730,8 +616,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ls_total.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        <state relative-caret-position="465">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ft_ls.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/define_type.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/long_format.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="80" column="36" lean-forward="false" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
           <folding />
         </state>
       </provider>

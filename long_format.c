@@ -44,11 +44,21 @@ static char 	*time_format(time_t n)
 	return (time_format);
 }
 
+static char		*linkpath(char *filename)
+{
+	char	*buff;
+
+	buff = ft_strnew(128);
+	readlink(filename, buff, 127);
+	return (buff);
+}
+
 static void		print_long_format(char *filename, int w1, int w2)
 {
 	struct stat		buf;
 	struct passwd	*pw;
 	struct group	*gr;
+	char 			*link_path;
 
 	lstat(filename, &buf);
 	pw = getpwuid(buf.st_uid);
@@ -60,7 +70,16 @@ static void		print_long_format(char *filename, int w1, int w2)
 	ft_printf("  %s", gr->gr_name);
 	ft_printf(" %*zu", w2 + 1, buf.st_size);
 	ft_printf(" %s", time_format(buf.st_mtime));
-	ft_printf(" %s\n", filename);
+	if (define_type(&buf) == 'l')
+	{
+		link_path = linkpath(filename);
+//		ft_printf("link_path: %s\n", link_path);
+		ft_printf(" %s -> %s\n", filename, link_path);
+		ft_strdel(&link_path);
+	}
+	else
+		ft_printf(" %s\n", filename);
+
 }
 
 int 			lf_length_1(char **files, int n)

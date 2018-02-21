@@ -29,14 +29,6 @@ int		ls_total(char **files, int n, t_ls *ls)
 		}
 		else
 			i++;
-//
-//		if (ls->include_dot && skip_dots(files[i]))
-//		{
-//			stat(files[i++], &buf);
-//			sum += buf.st_blocks;
-//		}
-//		else
-//			i++;
 	}
 	return (sum);
 }
