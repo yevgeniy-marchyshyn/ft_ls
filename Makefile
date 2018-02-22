@@ -37,8 +37,12 @@ FT_LS = main.c\
 		print_access.c\
 		time_format.c\
 		linkpath.c\
-		lf_length_1.c\
-		lf_length_2.c\
+		print_files.c\
+		lf_print_files.c\
+	    max_size.c\
+	    max_links.c\
+	    max_size_lst.c\
+	    max_links_lst.c\
 
 all: $(NAME)
 

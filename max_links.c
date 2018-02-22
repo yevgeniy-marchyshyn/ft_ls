@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   long_format.c                                      :+:      :+:    :+:   */
+/*   max_links.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: marchyshyn <ymarchys@student.unit.ua>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/20 13:30:00 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/20 13:30:00 by ymarchys         ###   ########.fr       */
+/*   Created: 2018/02/22 13:04:22 by marchyshy         #+#    #+#             */
+/*   Updated: 2018/02/22 13:04:25 by marchyshy        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-void				long_format(char **files, int n, t_ls *ls)
+int 			max_links(char **files, int n)
 {
-	int			i;
-	int			w1;
-	int			w2;
+	struct stat		buf;
+	int				i;
+	int				max_length;
 
 	i = 0;
-	w1 = max_links(files, n);
-	w2 = max_size(files, n);
-	ft_printf("total %lld\n", ls_total(files, n, ls));
+	max_length = 0;
 	while (i < n)
 	{
-		if (print_dot(files[i], ls))
-			print_long_format(files[i], w1, w2);
-		i++;
+		lstat(files[i++], &buf);
+		if (ft_itoa_len(buf.st_nlink) > max_length)
+			max_length = ft_itoa_len(buf.st_nlink);
 	}
+	return (max_length);
 }

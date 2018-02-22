@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   long_format.c                                      :+:      :+:    :+:   */
+/*   print_files.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/20 13:30:00 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/20 13:30:00 by ymarchys         ###   ########.fr       */
+/*   Created: 2018/02/22 12:52:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/02/22 12:52:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-void				long_format(char **files, int n, t_ls *ls)
+void	print_files(t_list *head, t_ls *ls)
 {
-	int			i;
-	int			w1;
-	int			w2;
+	t_list *lst;
 
-	i = 0;
-	w1 = max_links(files, n);
-	w2 = max_size(files, n);
-	ft_printf("total %lld\n", ls_total(files, n, ls));
-	while (i < n)
+	lst = head;
+	while (lst != NULL)
 	{
-		if (print_dot(files[i], ls))
-			print_long_format(files[i], w1, w2);
-		i++;
+		if (lst->content_size != 'd')
+		{
+			ft_printf("%s\n", lst->content);
+			ls->indents = 1;
+		}
+		lst = lst->next;
 	}
 }

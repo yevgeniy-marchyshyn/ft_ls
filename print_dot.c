@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "ft_ls.h"
-//(ls->include_dot && ((char*)lst->content)[0] == '.') ||
-//((char*)lst->content)[0] != '.')
 
 int 	print_dot(void *content, t_ls *ls)
 {

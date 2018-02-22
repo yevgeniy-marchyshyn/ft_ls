@@ -56,8 +56,12 @@ void			print_long_format(char *filename, int w1, int w2);
 void			print_access(mode_t st_mode);
 char 			*time_format(time_t n);
 char			*linkpath(char *filename);
-int 			lf_length_1(char **files, int n);
-int 			lf_length_2(char **files, int n);
+int 			max_links(char **files, int n);
+int 			max_size(char **files, int n);
+int 			max_links_lst(t_list *head);
+int 			max_size_lst(t_list *head);
+void			print_files(t_list *head, t_ls *ls);
+void			lf_print_files(t_list *head, t_ls *ls);
 //void			lf_lst(t_list *head);
 
 # endif

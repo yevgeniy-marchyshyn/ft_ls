@@ -100,17 +100,22 @@ void			ft_ls(t_list *head, t_ls *ls)
 	t_list	*lst;
 	char 	*path;
 
-	lst = head;
+//	lst = head;
 	path = NULL;
-	while (lst != NULL)
-	{
-		if (lst->content_size != 'd')
-		{
-			ft_printf("%s\n", lst->content);
-			ls->indents = 1;
-		}
-		lst = lst->next;
-	}
+	if (ls->long_format)
+		lf_print_files(head, ls);
+	else
+		print_files(head, ls);
+//	if (ls_print_non_dir)
+//	while (lst != NULL)
+//	{
+//		if (lst->content_size != 'd')
+//		{
+//			ft_printf("%s\n", lst->content);
+//			ls->indents = 1;
+//		}
+//		lst = lst->next;
+//	}
 	lst = head;
 	while (lst != NULL)
 	{
