@@ -34,8 +34,8 @@ void		print_long_format(char *filename, int *w, char *path)
 	ft_printf("%c", define_type(&buf));
 	print_access(buf.st_mode);
 	ft_printf(" %*zu", w[0] + 1, buf.st_nlink);
-	ft_printf("%*s ", w[1] + 1, pw->pw_name);
-	ft_printf("%*s ", w[2] + 1, gr->gr_name);
+	ft_printf(" %-*s ", w[1] + 1, pw->pw_name);
+	ft_printf(" %*s ", w[2] + 1, gr->gr_name);
 	ft_printf("%*zu", w[3] + 1, buf.st_size);
 	ft_printf(" %s", time_format(buf.st_mtime));
 	if (define_type(&buf) == 'l')
