@@ -37,6 +37,8 @@ FT_LS = main.c\
 		print_access.c\
 		time_format.c\
 		linkpath.c\
+		lf_length_1.c\
+		lf_length_2.c\
 
 all: $(NAME)
 

@@ -36,16 +36,6 @@ typedef struct		ls
 	unsigned char	first_directory;
 }					t_ls;
 
-//typedef struct		long_format
-//{
-//	quad_t			sum;
-//	nlink_t			hard_links;
-//	char 			*username;
-//	char 			*groupname;
-//	size_t			size;
-//	time_t			lst_mtime;
-//}					t_lf;
-
 int				is_option(char c);
 void			annulation_opt(t_ls *ls);
 int				parse_options(t_ls *ls, char *argv);
@@ -66,6 +56,8 @@ void			print_long_format(char *filename, int w1, int w2);
 void			print_access(mode_t st_mode);
 char 			*time_format(time_t n);
 char			*linkpath(char *filename);
+int 			lf_length_1(char **files, int n);
+int 			lf_length_2(char **files, int n);
 //void			lf_lst(t_list *head);
 
 # endif
