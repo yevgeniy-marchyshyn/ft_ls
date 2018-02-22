@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/marchyshyn/Documents/C/ft_ls
+CMAKE_SOURCE_DIR = /Users/ymarchys/Documents/ft_ls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ymarchys/Documents/ft_ls/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles /Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -311,6 +311,33 @@ lf_lst.s: lf_lst.c.s
 lf_lst.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/lf_lst.c.s
 .PHONY : lf_lst.c.s
+
+lf_print_files.o: lf_print_files.c.o
+
+.PHONY : lf_print_files.o
+
+# target to build an object file
+lf_print_files.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/lf_print_files.c.o
+.PHONY : lf_print_files.c.o
+
+lf_print_files.i: lf_print_files.c.i
+
+.PHONY : lf_print_files.i
+
+# target to preprocess a source file
+lf_print_files.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/lf_print_files.c.i
+.PHONY : lf_print_files.c.i
+
+lf_print_files.s: lf_print_files.c.s
+
+.PHONY : lf_print_files.s
+
+# target to generate assembly for a file
+lf_print_files.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/lf_print_files.c.s
+.PHONY : lf_print_files.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
@@ -2877,6 +2904,33 @@ libft/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/libft/get_next_line.c.s
 .PHONY : libft/get_next_line.c.s
 
+linkpath.o: linkpath.c.o
+
+.PHONY : linkpath.o
+
+# target to build an object file
+linkpath.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/linkpath.c.o
+.PHONY : linkpath.c.o
+
+linkpath.i: linkpath.c.i
+
+.PHONY : linkpath.i
+
+# target to preprocess a source file
+linkpath.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/linkpath.c.i
+.PHONY : linkpath.c.i
+
+linkpath.s: linkpath.c.s
+
+.PHONY : linkpath.s
+
+# target to generate assembly for a file
+linkpath.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/linkpath.c.s
+.PHONY : linkpath.c.s
+
 long_format.o: long_format.c.o
 
 .PHONY : long_format.o
@@ -2903,6 +2957,33 @@ long_format.s: long_format.c.s
 long_format.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/long_format.c.s
 .PHONY : long_format.c.s
+
+long_format_lst.o: long_format_lst.c.o
+
+.PHONY : long_format_lst.o
+
+# target to build an object file
+long_format_lst.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/long_format_lst.c.o
+.PHONY : long_format_lst.c.o
+
+long_format_lst.i: long_format_lst.c.i
+
+.PHONY : long_format_lst.i
+
+# target to preprocess a source file
+long_format_lst.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/long_format_lst.c.i
+.PHONY : long_format_lst.c.i
+
+long_format_lst.s: long_format_lst.c.s
+
+.PHONY : long_format_lst.s
+
+# target to generate assembly for a file
+long_format_lst.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/long_format_lst.c.s
+.PHONY : long_format_lst.c.s
 
 ls_sort.o: ls_sort.c.o
 
@@ -3012,6 +3093,222 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/main.c.s
 .PHONY : main.c.s
 
+max_len_group.o: max_len_group.c.o
+
+.PHONY : max_len_group.o
+
+# target to build an object file
+max_len_group.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_len_group.c.o
+.PHONY : max_len_group.c.o
+
+max_len_group.i: max_len_group.c.i
+
+.PHONY : max_len_group.i
+
+# target to preprocess a source file
+max_len_group.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_len_group.c.i
+.PHONY : max_len_group.c.i
+
+max_len_group.s: max_len_group.c.s
+
+.PHONY : max_len_group.s
+
+# target to generate assembly for a file
+max_len_group.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_len_group.c.s
+.PHONY : max_len_group.c.s
+
+max_len_group_lst.o: max_len_group_lst.c.o
+
+.PHONY : max_len_group_lst.o
+
+# target to build an object file
+max_len_group_lst.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_len_group_lst.c.o
+.PHONY : max_len_group_lst.c.o
+
+max_len_group_lst.i: max_len_group_lst.c.i
+
+.PHONY : max_len_group_lst.i
+
+# target to preprocess a source file
+max_len_group_lst.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_len_group_lst.c.i
+.PHONY : max_len_group_lst.c.i
+
+max_len_group_lst.s: max_len_group_lst.c.s
+
+.PHONY : max_len_group_lst.s
+
+# target to generate assembly for a file
+max_len_group_lst.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_len_group_lst.c.s
+.PHONY : max_len_group_lst.c.s
+
+max_len_user.o: max_len_user.c.o
+
+.PHONY : max_len_user.o
+
+# target to build an object file
+max_len_user.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_len_user.c.o
+.PHONY : max_len_user.c.o
+
+max_len_user.i: max_len_user.c.i
+
+.PHONY : max_len_user.i
+
+# target to preprocess a source file
+max_len_user.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_len_user.c.i
+.PHONY : max_len_user.c.i
+
+max_len_user.s: max_len_user.c.s
+
+.PHONY : max_len_user.s
+
+# target to generate assembly for a file
+max_len_user.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_len_user.c.s
+.PHONY : max_len_user.c.s
+
+max_len_user_lst.o: max_len_user_lst.c.o
+
+.PHONY : max_len_user_lst.o
+
+# target to build an object file
+max_len_user_lst.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_len_user_lst.c.o
+.PHONY : max_len_user_lst.c.o
+
+max_len_user_lst.i: max_len_user_lst.c.i
+
+.PHONY : max_len_user_lst.i
+
+# target to preprocess a source file
+max_len_user_lst.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_len_user_lst.c.i
+.PHONY : max_len_user_lst.c.i
+
+max_len_user_lst.s: max_len_user_lst.c.s
+
+.PHONY : max_len_user_lst.s
+
+# target to generate assembly for a file
+max_len_user_lst.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_len_user_lst.c.s
+.PHONY : max_len_user_lst.c.s
+
+max_links.o: max_links.c.o
+
+.PHONY : max_links.o
+
+# target to build an object file
+max_links.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_links.c.o
+.PHONY : max_links.c.o
+
+max_links.i: max_links.c.i
+
+.PHONY : max_links.i
+
+# target to preprocess a source file
+max_links.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_links.c.i
+.PHONY : max_links.c.i
+
+max_links.s: max_links.c.s
+
+.PHONY : max_links.s
+
+# target to generate assembly for a file
+max_links.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_links.c.s
+.PHONY : max_links.c.s
+
+max_links_lst.o: max_links_lst.c.o
+
+.PHONY : max_links_lst.o
+
+# target to build an object file
+max_links_lst.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_links_lst.c.o
+.PHONY : max_links_lst.c.o
+
+max_links_lst.i: max_links_lst.c.i
+
+.PHONY : max_links_lst.i
+
+# target to preprocess a source file
+max_links_lst.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_links_lst.c.i
+.PHONY : max_links_lst.c.i
+
+max_links_lst.s: max_links_lst.c.s
+
+.PHONY : max_links_lst.s
+
+# target to generate assembly for a file
+max_links_lst.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_links_lst.c.s
+.PHONY : max_links_lst.c.s
+
+max_size.o: max_size.c.o
+
+.PHONY : max_size.o
+
+# target to build an object file
+max_size.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_size.c.o
+.PHONY : max_size.c.o
+
+max_size.i: max_size.c.i
+
+.PHONY : max_size.i
+
+# target to preprocess a source file
+max_size.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_size.c.i
+.PHONY : max_size.c.i
+
+max_size.s: max_size.c.s
+
+.PHONY : max_size.s
+
+# target to generate assembly for a file
+max_size.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_size.c.s
+.PHONY : max_size.c.s
+
+max_size_lst.o: max_size_lst.c.o
+
+.PHONY : max_size_lst.o
+
+# target to build an object file
+max_size_lst.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_size_lst.c.o
+.PHONY : max_size_lst.c.o
+
+max_size_lst.i: max_size_lst.c.i
+
+.PHONY : max_size_lst.i
+
+# target to preprocess a source file
+max_size_lst.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_size_lst.c.i
+.PHONY : max_size_lst.c.i
+
+max_size_lst.s: max_size_lst.c.s
+
+.PHONY : max_size_lst.s
+
+# target to generate assembly for a file
+max_size_lst.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_size_lst.c.s
+.PHONY : max_size_lst.c.s
+
 parse_arguments.o: parse_arguments.c.o
 
 .PHONY : parse_arguments.o
@@ -3093,6 +3390,33 @@ parse_options.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/parse_options.c.s
 .PHONY : parse_options.c.s
 
+print_access.o: print_access.c.o
+
+.PHONY : print_access.o
+
+# target to build an object file
+print_access.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_access.c.o
+.PHONY : print_access.c.o
+
+print_access.i: print_access.c.i
+
+.PHONY : print_access.i
+
+# target to preprocess a source file
+print_access.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_access.c.i
+.PHONY : print_access.c.i
+
+print_access.s: print_access.c.s
+
+.PHONY : print_access.s
+
+# target to generate assembly for a file
+print_access.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_access.c.s
+.PHONY : print_access.c.s
+
 print_dot.o: print_dot.c.o
 
 .PHONY : print_dot.o
@@ -3119,6 +3443,60 @@ print_dot.s: print_dot.c.s
 print_dot.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_dot.c.s
 .PHONY : print_dot.c.s
+
+print_files.o: print_files.c.o
+
+.PHONY : print_files.o
+
+# target to build an object file
+print_files.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_files.c.o
+.PHONY : print_files.c.o
+
+print_files.i: print_files.c.i
+
+.PHONY : print_files.i
+
+# target to preprocess a source file
+print_files.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_files.c.i
+.PHONY : print_files.c.i
+
+print_files.s: print_files.c.s
+
+.PHONY : print_files.s
+
+# target to generate assembly for a file
+print_files.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_files.c.s
+.PHONY : print_files.c.s
+
+print_long_format.o: print_long_format.c.o
+
+.PHONY : print_long_format.o
+
+# target to build an object file
+print_long_format.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_long_format.c.o
+.PHONY : print_long_format.c.o
+
+print_long_format.i: print_long_format.c.i
+
+.PHONY : print_long_format.i
+
+# target to preprocess a source file
+print_long_format.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_long_format.c.i
+.PHONY : print_long_format.c.i
+
+print_long_format.s: print_long_format.c.s
+
+.PHONY : print_long_format.s
+
+# target to generate assembly for a file
+print_long_format.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_long_format.c.s
+.PHONY : print_long_format.c.s
 
 skip_dots.o: skip_dots.c.o
 
@@ -3174,6 +3552,33 @@ sort_ascii_bubble.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.s
 .PHONY : sort_ascii_bubble.c.s
 
+time_format.o: time_format.c.o
+
+.PHONY : time_format.o
+
+# target to build an object file
+time_format.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/time_format.c.o
+.PHONY : time_format.c.o
+
+time_format.i: time_format.c.i
+
+.PHONY : time_format.i
+
+# target to preprocess a source file
+time_format.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/time_format.c.i
+.PHONY : time_format.c.i
+
+time_format.s: time_format.c.s
+
+.PHONY : time_format.s
+
+# target to generate assembly for a file
+time_format.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/time_format.c.s
+.PHONY : time_format.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3204,6 +3609,9 @@ help:
 	@echo "... lf_lst.o"
 	@echo "... lf_lst.i"
 	@echo "... lf_lst.s"
+	@echo "... lf_print_files.o"
+	@echo "... lf_print_files.i"
+	@echo "... lf_print_files.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -3489,9 +3897,15 @@ help:
 	@echo "... libft/get_next_line.o"
 	@echo "... libft/get_next_line.i"
 	@echo "... libft/get_next_line.s"
+	@echo "... linkpath.o"
+	@echo "... linkpath.i"
+	@echo "... linkpath.s"
 	@echo "... long_format.o"
 	@echo "... long_format.i"
 	@echo "... long_format.s"
+	@echo "... long_format_lst.o"
+	@echo "... long_format_lst.i"
+	@echo "... long_format_lst.s"
 	@echo "... ls_sort.o"
 	@echo "... ls_sort.i"
 	@echo "... ls_sort.s"
@@ -3504,6 +3918,30 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... max_len_group.o"
+	@echo "... max_len_group.i"
+	@echo "... max_len_group.s"
+	@echo "... max_len_group_lst.o"
+	@echo "... max_len_group_lst.i"
+	@echo "... max_len_group_lst.s"
+	@echo "... max_len_user.o"
+	@echo "... max_len_user.i"
+	@echo "... max_len_user.s"
+	@echo "... max_len_user_lst.o"
+	@echo "... max_len_user_lst.i"
+	@echo "... max_len_user_lst.s"
+	@echo "... max_links.o"
+	@echo "... max_links.i"
+	@echo "... max_links.s"
+	@echo "... max_links_lst.o"
+	@echo "... max_links_lst.i"
+	@echo "... max_links_lst.s"
+	@echo "... max_size.o"
+	@echo "... max_size.i"
+	@echo "... max_size.s"
+	@echo "... max_size_lst.o"
+	@echo "... max_size_lst.i"
+	@echo "... max_size_lst.s"
 	@echo "... parse_arguments.o"
 	@echo "... parse_arguments.i"
 	@echo "... parse_arguments.s"
@@ -3513,15 +3951,27 @@ help:
 	@echo "... parse_options.o"
 	@echo "... parse_options.i"
 	@echo "... parse_options.s"
+	@echo "... print_access.o"
+	@echo "... print_access.i"
+	@echo "... print_access.s"
 	@echo "... print_dot.o"
 	@echo "... print_dot.i"
 	@echo "... print_dot.s"
+	@echo "... print_files.o"
+	@echo "... print_files.i"
+	@echo "... print_files.s"
+	@echo "... print_long_format.o"
+	@echo "... print_long_format.i"
+	@echo "... print_long_format.s"
 	@echo "... skip_dots.o"
 	@echo "... skip_dots.i"
 	@echo "... skip_dots.s"
 	@echo "... sort_ascii_bubble.o"
 	@echo "... sort_ascii_bubble.i"
 	@echo "... sort_ascii_bubble.s"
+	@echo "... time_format.o"
+	@echo "... time_format.i"
+	@echo "... time_format.s"
 .PHONY : help
 
 

@@ -41,8 +41,12 @@ FT_LS = main.c\
 		lf_print_files.c\
 	    max_size.c\
 	    max_links.c\
+	    max_len_user.c\
+	    max_len_group.c\
 	    max_size_lst.c\
 	    max_links_lst.c\
+	    max_len_user_lst.c\
+	    max_len_group_lst.c\
 
 all: $(NAME)
 

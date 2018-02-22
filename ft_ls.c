@@ -55,24 +55,19 @@ static void		ls_dir_ext(t_ls *ls, char **files, int n) // char *path
 {
 	int i;
 
-//	if (ls->recursively)
-//		parse_files(files, ls, path);
-//	else
-//	{
-		i = 0;
-		if (ls->include_dot)
-			while (i < n)
-				ft_printf("%s\n", files[i++]);
-		else
+	i = 0;
+	if (ls->include_dot)
+		while (i < n)
+			ft_printf("%s\n", files[i++]);
+	else
+	{
+		while (i < n)
 		{
-			while (i < n)
-			{
-				if (files[i][0] != '.')
-					ft_printf("%s\n", files[i]);
-				i++;
-			}
+			if (files[i][0] != '.')
+				ft_printf("%s\n", files[i]);
+			i++;
 		}
-//	}
+	}
 }
 
 static void		ls_dir(char *dirname, t_ls *ls, char *path)
@@ -89,7 +84,7 @@ static void		ls_dir(char *dirname, t_ls *ls, char *path)
 		if (ls->recursively)
 			parse_files(files, ls, path);
 		else if (ls->long_format)
-			long_format(files, n, ls);
+			long_format(files, n, ls, path);
 		else
 			ls_dir_ext(ls, files, n);
 	}
@@ -100,23 +95,12 @@ void			ft_ls(t_list *head, t_ls *ls)
 	t_list	*lst;
 	char 	*path;
 
-//	lst = head;
 	path = NULL;
+	lst = head;
 	if (ls->long_format)
-		lf_print_files(head, ls);
+		lf_print_files(head, ls, path);
 	else
 		print_files(head, ls);
-//	if (ls_print_non_dir)
-//	while (lst != NULL)
-//	{
-//		if (lst->content_size != 'd')
-//		{
-//			ft_printf("%s\n", lst->content);
-//			ls->indents = 1;
-//		}
-//		lst = lst->next;
-//	}
-	lst = head;
 	while (lst != NULL)
 	{
 		if (lst->content_size == 'd')

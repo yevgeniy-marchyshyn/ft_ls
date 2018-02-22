@@ -1,3 +1,3 @@
-/Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir
+/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir

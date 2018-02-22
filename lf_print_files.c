@@ -12,20 +12,21 @@
 
 #include "ft_ls.h"
 
-void			lf_print_files(t_list *head, t_ls *ls)
+void			lf_print_files(t_list *head, t_ls *ls, char *path)
 {
 	t_list	*lst;
-	int 	w1;
-	int 	w2;
+	int 	w[4];
 
 	lst = head;
-	w1 = max_links_lst(head);
-	w2 = max_size_lst(head);
+	w[0] = max_links_lst(head);
+	w[1] = max_len_user_lst(head);
+	w[2] = max_len_group_lst(head);
+	w[3] = max_size_lst(head);
 	while (lst != NULL)
 	{
 		if (lst->content_size != 'd')
 		{
-			print_long_format(lst->content, w1, w2);
+			print_long_format(lst->content, w, path);
 			ls->indents = 1;
 		}
 		lst = lst->next;
