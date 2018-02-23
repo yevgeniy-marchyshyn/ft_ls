@@ -48,7 +48,7 @@ void			ft_ls_recursion(t_list *head, t_ls *ls, char *path);
 void			ls_sort(char **files, int n, t_ls *ls);
 int				skip_dots(void *content);
 int 			print_dot(void *content, t_ls *ls);
-quad_t			ls_total_lst(t_list *head);
+int				ls_total_lst(t_list *head);
 void			long_format(char **files, int n, t_ls *ls, char *path);
 int				ls_total(char **files, int n, t_ls *ls);
 void			access_flag(int value);

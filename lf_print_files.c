@@ -24,7 +24,7 @@ void			lf_print_files(t_list *head, t_ls *ls, char *path)
 	w[3] = max_size_lst(head);
 	while (lst != NULL)
 	{
-		if (lst->content_size != 'd')
+		if (lst->content_size != 'd' && print_dot(lst->content, ls))
 		{
 			print_long_format(lst->content, w, path);
 			ls->indents = 1;

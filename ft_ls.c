@@ -108,6 +108,7 @@ void			ft_ls(t_list *head, t_ls *ls)
 			ls->indents ? ft_printf("\n") : 0;
 			ls->first_directory || ls->indents ?
 			ft_printf("%s:\n", lst->content) : 0;
+//			ls->long_format ? ls_total_lst(head) : 0;
 			ls->first_directory = 1;
 			ls_dir(lst->content, ls, path);
 		}

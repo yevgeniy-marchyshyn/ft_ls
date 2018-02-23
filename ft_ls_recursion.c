@@ -88,12 +88,16 @@ void			ft_ls_recursion(t_list *head, t_ls *ls, char *path)
 	t_list	*lst;
 
 	lst = head;
-	while (lst != NULL)
-	{
-		if (print_dot(lst->content, ls))
-			ft_printf("%s\n", lst->content);
-		lst = lst->next;
-	}
+	if (ls->long_format)
+		lf_print_files(head, ls, path);
+	else
+		print_files(head, ls);
+//	while (lst != NULL)
+//	{
+//		if (print_dot(lst->content, ls))
+//			ft_printf("%s\n", lst->content);
+//		lst = lst->next;
+//	}
 	lst = head;
 	while (lst != NULL)
 	{

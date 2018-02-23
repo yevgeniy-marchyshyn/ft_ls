@@ -12,11 +12,11 @@
 
 #include "ft_ls.h"
 
-quad_t		ls_total_lst(t_list *head)
+int		ls_total_lst(t_list *head)
 {
 	struct stat		buf;
 	t_list			*lst;
-	quad_t			sum;
+	int				sum;
 
 	sum = 0;
 	lst = head;
