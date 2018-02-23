@@ -25,7 +25,8 @@ int 		max_len_user(char **files, int n)
 	while (i < n)
 	{
 		lstat(files[i++], &buf);
-		pw = getpwuid(buf.st_uid);
+		if (!(pw = getpwuid(buf.st_uid)))
+			return (-1);
 		len = ft_strlen(pw->pw_name);
 		if (len > max_length)
 			max_length = len;

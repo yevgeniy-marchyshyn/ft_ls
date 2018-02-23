@@ -87,10 +87,10 @@ void			ft_ls_recursion(t_list *head, t_ls *ls, char *path)
 {
 	t_list	*lst;
 
-	lst = head; // ~/
+	lst = head;
 	if (ls->long_format)
 	{
-		ft_printf("total: %d\n", ls_total_lst(head, ls, path));
+		ft_printf("total %d\n", ls_total_lst(head, ls, path));
 		lf_print_files(head, ls, path);
 	}
 	else

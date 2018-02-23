@@ -28,7 +28,8 @@ int 		max_len_user_lst(t_list *head, char *path)
 			lstat(lst->content, &buf);
 		else
 			lstat(ft_strjoin(path, lst->content), &buf);
-		pw = getpwuid(buf.st_uid);
+		if (!(pw = getpwuid(buf.st_uid)))
+			return (-1);
 		len = ft_strlen(pw->pw_name);
 		if (len > max_length)
 			max_length = len;

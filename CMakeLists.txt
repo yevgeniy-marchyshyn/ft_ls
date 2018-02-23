@@ -112,7 +112,6 @@ add_executable(ft_ls
         lf_print_files.c
         linkpath.c
         long_format.c
-        long_format_lst.c
         ls_sort.c
         ls_total.c
         ls_total_lst.c

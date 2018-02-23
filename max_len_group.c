@@ -25,7 +25,8 @@ int 		max_len_group(char **files, int n)
 	while (i < n)
 	{
 		lstat(files[i++], &buf);
-		gr = getgrgid(buf.st_gid);
+		if (!(gr = getgrgid(buf.st_gid)))
+			return (-1);
 		len = ft_strlen(gr->gr_name);
 		if (len > max_length)
 			max_length = len;

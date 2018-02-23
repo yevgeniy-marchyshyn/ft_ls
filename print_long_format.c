@@ -37,8 +37,10 @@ void		print_long_format(char *filename, int *w, char *path)
 	}
 	else
 		lstat(filename, &buf);
-	pw = getpwuid(buf.st_uid);
-	gr = getgrgid(buf.st_gid);
+	if (!(pw = getpwuid(buf.st_uid)))
+		return ;
+	if (!(gr = getgrgid(buf.st_gid)))
+		return ;
 	ft_printf("%c", define_type(&buf));
 	print_access(buf.st_mode);
 	ft_printf(" %*zu", w[0] + 1, buf.st_nlink);

@@ -19,7 +19,10 @@ void				long_format(char **files, int n, t_ls *ls, char *path)
 
 	i = 0;
 	w[0] = max_links(files, n);
-	w[1] = max_len_user(files, n);
+	if ((w[1] = max_len_user(files, n)) == -1)
+		return ;
+	if ((w[2] = max_len_group(files, n)) == -1)
+		return ;
 	w[2] = max_len_group(files, n);
 	w[3] = max_size(files, n);
 	ft_printf("total %lld\n", ls_total(files, n, ls));

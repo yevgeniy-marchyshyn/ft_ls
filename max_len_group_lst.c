@@ -28,7 +28,8 @@ int 		max_len_group_lst(t_list *head, char *path)
 			lstat(lst->content, &buf);
 		else
 			lstat(ft_strjoin(path, lst->content), &buf);
-		gr = getgrgid(buf.st_gid);
+		if (!(gr = getgrgid(buf.st_gid)))
+			return (-1);
 		len = ft_strlen(gr->gr_name);
 		if (len > max_length)
 			max_length = len;

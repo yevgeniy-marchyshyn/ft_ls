@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-int		ls_total_lst(t_list *head, t_ls *ls, char *path) // t_ls *ls
+int		ls_total_lst(t_list *head, t_ls *ls, char *path)
 {
 	struct stat		buf;
 	t_list			*lst;
@@ -20,7 +20,6 @@ int		ls_total_lst(t_list *head, t_ls *ls, char *path) // t_ls *ls
 
 	sum = 0;
 	lst = head;
-//	ft_printf("path: %s\n", path);
 	while (lst != NULL)
 	{
 		if (print_dot(lst->content, ls))
