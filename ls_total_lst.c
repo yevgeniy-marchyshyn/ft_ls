@@ -22,8 +22,7 @@ int		ls_total_lst(t_list *head)
 	lst = head;
 	while (lst != NULL)
 	{
-		stat(lst->content, &buf);
-		ft_printf("block: %zu", buf.st_blocks);
+		lstat(lst->content, &buf);
 		sum += buf.st_blocks;
 		lst = lst->next;
 	}

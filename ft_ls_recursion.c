@@ -89,15 +89,12 @@ void			ft_ls_recursion(t_list *head, t_ls *ls, char *path)
 
 	lst = head;
 	if (ls->long_format)
+	{
+		ft_printf("total: %d\n", ls_total_lst(head));
 		lf_print_files(head, ls, path);
+	}
 	else
 		print_files(head, ls);
-//	while (lst != NULL)
-//	{
-//		if (print_dot(lst->content, ls))
-//			ft_printf("%s\n", lst->content);
-//		lst = lst->next;
-//	}
 	lst = head;
 	while (lst != NULL)
 	{
@@ -106,6 +103,7 @@ void			ft_ls_recursion(t_list *head, t_ls *ls, char *path)
 			if (print_dot(lst->content, ls))
 			{
 				ft_printf("\n%s%s:\n", path, lst->content);
+//				ls_total_lst(head);
 				ls_dir(lst->content, ls, path);
 			}
 		}

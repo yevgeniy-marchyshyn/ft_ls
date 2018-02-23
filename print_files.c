@@ -19,7 +19,7 @@ void	print_files(t_list *head, t_ls *ls)
 	lst = head;
 	while (lst != NULL)
 	{
-		if (lst->content_size != 'd')
+		if (print_dot(lst->content, ls))
 		{
 			ft_printf("%s\n", lst->content);
 			ls->indents = 1;
