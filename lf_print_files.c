@@ -18,10 +18,10 @@ void			lf_print_files(t_list *head, t_ls *ls, char *path)
 	int 	w[4];
 
 	lst = head;
-	w[0] = max_links_lst(head);
-	w[1] = max_len_user_lst(head);
-	w[2] = max_len_group_lst(head);
-	w[3] = max_size_lst(head);
+	w[0] = max_links_lst(head, path);
+	w[1] = max_len_user_lst(head, path);
+	w[2] = max_len_group_lst(head, path);
+	w[3] = max_size_lst(head, path);
 	while (lst != NULL)
 	{
 		if ((lst->content_size != 'd' || ls->recursively) &&

@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-int 		max_len_user_lst(t_list *head)
+int 		max_len_user_lst(t_list *head, char *path)
 {
 	struct stat		buf;
 	struct passwd	*pw;
@@ -24,7 +24,10 @@ int 		max_len_user_lst(t_list *head)
 	lst = head;
 	while (lst != NULL)
 	{
-		lstat(lst->content, &buf);
+		if (path == NULL)
+			lstat(lst->content, &buf);
+		else
+			lstat(ft_strjoin(path, lst->content), &buf);
 		pw = getpwuid(buf.st_uid);
 		len = ft_strlen(pw->pw_name);
 		if (len > max_length)

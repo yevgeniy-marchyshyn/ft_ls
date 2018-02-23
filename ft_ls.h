@@ -27,8 +27,8 @@
 
 typedef struct		ls
 {
-	unsigned char	long_format;
-	unsigned char	recursively;
+	unsigned char	long_format; // l
+	unsigned char	recursively; // r
 	unsigned char	include_dot;
 	unsigned char	rev_lexic;
 	unsigned char	sort_mtime;
@@ -48,7 +48,7 @@ void			ft_ls_recursion(t_list *head, t_ls *ls, char *path);
 void			ls_sort(char **files, int n, t_ls *ls);
 int				skip_dots(void *content);
 int 			print_dot(void *content, t_ls *ls);
-int				ls_total_lst(t_list *head);
+int				ls_total_lst(t_list *head, t_ls *ls, char *path);
 void			long_format(char **files, int n, t_ls *ls, char *path);
 int				ls_total(char **files, int n, t_ls *ls);
 void			access_flag(int value);
@@ -60,10 +60,10 @@ int 			max_links(char **files, int n);
 int 			max_size(char **files, int n);
 int 			max_len_user(char **files, int n);
 int 			max_len_group(char **files, int n);
-int 			max_links_lst(t_list *head);
-int 			max_size_lst(t_list *head);
-int 			max_len_user_lst(t_list *head);
-int 			max_len_group_lst(t_list *head);
+int 			max_links_lst(t_list *head, char *path);
+int 			max_size_lst(t_list *head, char *path);
+int 			max_len_user_lst(t_list *head, char *path);
+int 			max_len_group_lst(t_list *head, char *path);
 void			print_files(t_list *head, t_ls *ls);
 void			lf_print_files(t_list *head, t_ls *ls, char *path);
 

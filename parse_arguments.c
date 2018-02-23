@@ -19,7 +19,7 @@ static char			**fill_files(char **argv, int n)
 
 	i = 0;
 	files = (char**)malloc(sizeof(char*) * (n + 1));
-	while (*argv)
+	while (i < n)
 		files[i++] = *argv++;
 	files[i] = NULL;
 	sort_ascii_bubble(files, n);

@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-int 			max_links_lst(t_list *head)
+int 			max_links_lst(t_list *head, char *path)
 {
 	struct stat		buf;
 	t_list			*lst;
@@ -22,7 +22,10 @@ int 			max_links_lst(t_list *head)
 	lst = head;
 	while (lst != NULL)
 	{
-		lstat(lst->content, &buf);
+		if (path == NULL)
+			lstat(lst->content, &buf);
+		else
+			lstat(ft_strjoin(path, lst->content), &buf);
 		if (ft_itoa_len(buf.st_nlink) > max_length)
 			max_length = ft_itoa_len(buf.st_nlink);
 		lst = lst->next;

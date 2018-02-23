@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-int 		max_len_group_lst(t_list *head)
+int 		max_len_group_lst(t_list *head, char *path)
 {
 	struct stat		buf;
 	struct group	*gr;
@@ -24,7 +24,10 @@ int 		max_len_group_lst(t_list *head)
 	lst = head;
 	while (lst != NULL)
 	{
-		lstat(lst->content, &buf);
+		if (path == NULL)
+			lstat(lst->content, &buf);
+		else
+			lstat(ft_strjoin(path, lst->content), &buf);
 		gr = getgrgid(buf.st_gid);
 		len = ft_strlen(gr->gr_name);
 		if (len > max_length)

@@ -17,7 +17,7 @@ void	ft_lst_push_back(t_list **head, t_list *lst)
 	t_list *current;
 
 	current = *head;
-	if (!*head)
+	if (!current)
 		*head = lst;
 	else
 	{

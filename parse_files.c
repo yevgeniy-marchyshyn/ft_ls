@@ -35,7 +35,5 @@ void				parse_files(char **files, t_ls *ls, char *path)
 		}
 		i++;
 	}
-//	if (ls->long_format)
-//		ft_printf("total %d\n", ls_total_lst(head));
 	ft_ls_recursion(head, ls, path);
 }
