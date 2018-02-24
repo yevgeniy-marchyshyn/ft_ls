@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-int		ls_total(char **files, int n, t_ls *ls)
+int		ls_total(char **files, t_ls *ls, char *path)
 {
 	struct stat		buf;
 	int				i;
@@ -20,11 +20,14 @@ int		ls_total(char **files, int n, t_ls *ls)
 
 	i = 0;
 	sum = 0;
-	while (i < n)
+	while (files[i])
 	{
 		if (print_dot(files[i], ls))
 		{
-			lstat(files[i++], &buf);
+			if (path == NULL)
+				lstat(files[i++], &buf);
+			else
+				lstat(ft_strjoin(path, files[i++]), &buf);
 			sum += buf.st_blocks;
 		}
 		else

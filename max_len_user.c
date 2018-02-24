@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-int 		max_len_user(char **files, int n)
+int 		max_len_user(char **files)
 {
 	struct stat		buf;
 	struct passwd	*pw;
@@ -22,7 +22,7 @@ int 		max_len_user(char **files, int n)
 
 	i = 0;
 	max_length = 0;
-	while (i < n)
+	while (files[i])
 	{
 		lstat(files[i++], &buf);
 		if (!(pw = getpwuid(buf.st_uid)))

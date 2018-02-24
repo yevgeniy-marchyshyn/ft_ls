@@ -12,21 +12,21 @@
 
 #include "ft_ls.h"
 
-void				long_format(char **files, int n, t_ls *ls, char *path)
+void				long_format(char **files, t_ls *ls, char *path)
 {
 	int			i;
 	int 		w[4];
 
 	i = 0;
-	w[0] = max_links(files, n);
-	if ((w[1] = max_len_user(files, n)) == -1)
+	w[0] = max_links(files);
+	if ((w[1] = max_len_user(files)) == -1)
 		return ;
-	if ((w[2] = max_len_group(files, n)) == -1)
+	if ((w[2] = max_len_group(files)) == -1)
 		return ;
-	w[2] = max_len_group(files, n);
-	w[3] = max_size(files, n);
-	ft_printf("total %lld\n", ls_total(files, n, ls));
-	while (i < n)
+	w[2] = max_len_group(files);
+	w[3] = max_size(files);
+	ft_printf("total %lld\n", ls_total(files, ls, path));
+	while (files[i])
 	{
 		if (print_dot(files[i], ls))
 			print_long_format(files[i], w, path);

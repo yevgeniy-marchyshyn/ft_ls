@@ -108,22 +108,18 @@ add_executable(ft_ls
         ft_ls.c
         ft_ls.h
         ft_ls_recursion.c
+        is_dir.c
         is_option.c
-        lf_print_files.c
         linkpath.c
         long_format.c
+        long_format_not_dirs.c
         ls_sort.c
         ls_total.c
-        ls_total_lst.c
         main.c
         max_len_group.c
-        max_len_group_lst.c
         max_len_user.c
-        max_len_user_lst.c
         max_links.c
-        max_links_lst.c
         max_size.c
-        max_size_lst.c
         parse_arguments.c
         parse_files.c
         parse_options.c

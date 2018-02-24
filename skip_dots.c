@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-int		skip_dots(void *content)
+int		skip_dots(char *filename)
 {
-	return (ft_strcmp(content, ".") != 0 || ft_strcmp(content, "..") != 0);
+	return (ft_strcmp(filename, ".") != 0 && ft_strcmp(filename, "..") != 0);
 }

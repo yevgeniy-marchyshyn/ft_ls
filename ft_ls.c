@@ -32,7 +32,7 @@ static int		ls_count_files(char *dirname)
 	return (n);
 }
 
-static char		**ls_read_files(char **files, char *dirname, int n)
+static char		**ls_read_files(char **files, char *dirname)
 {
 	DIR					*dir;
 	struct dirent		*sd;
@@ -46,16 +46,16 @@ static char		**ls_read_files(char **files, char *dirname, int n)
 		i++;
 	}
 	files[i] = NULL;
-	sort_ascii_bubble(files, n);
 	closedir(dir);
 	return (files);
 }
 
-static void		ls_dir_ext(t_ls *ls, char **files, int n) // char *path
+static void		ls_dir_ext(char **files, int n, t_ls *ls)
 {
 	int i;
 
 	i = 0;
+	ls_sort(files, n, ls);
 	if (ls->include_dot)
 		while (i < n)
 			ft_printf("%s\n", files[i++]);
@@ -79,38 +79,42 @@ static void		ls_dir(char *dirname, t_ls *ls, char *path)
 	if ((n = ls_count_files(dirname)))
 	{
 		files = (char **)malloc(sizeof(char *) * (n + 1));
-		files = ls_read_files(files, dirname, n);
-		ls_sort(files, n, ls);
+		files = ls_read_files(files, dirname);
+		sort_ascii_bubble(files, n);
 		if (ls->recursively)
-			parse_files(files, ls, path);
+			parse_files(files, n, ls, path);
 		else if (ls->long_format)
-			long_format(files, n, ls, path);
+		{
+			ls_sort(files, n, ls);
+			long_format(files, ls, path);
+		}
 		else
-			ls_dir_ext(ls, files, n);
+			ls_dir_ext(files, n, ls);
 	}
 }
 
-void			ft_ls(t_list *head, t_ls *ls)
+void			ft_ls(char **files, t_ls *ls)
 {
-	t_list	*lst;
 	char 	*path;
+	int 	i;
 
 	path = NULL;
-	lst = head;
-	if (ls->long_format)
-		lf_print_files(head, ls, path);
+	i = 0;
+	if (!ls->long_format)
+		print_files(files, ls);
 	else
-		print_files(head, ls);
-	while (lst != NULL)
+		ls->indents = long_format_not_dirs(files, ls, path);
+	while (files[i])
 	{
-		if (lst->content_size == 'd')
+		if (is_dir(files[i]))
 		{
-			ls->indents ? ft_printf("\n") : 0;
-			ls->first_directory || ls->indents ?
-			ft_printf("%s:\n", lst->content) : 0;
+			if (ls->indents)
+				ft_printf("\n");
+			if (ls->first_directory || ls->indents)
+				ft_printf("%s:\n", files[i]);
 			ls->first_directory = 1;
-			ls_dir(lst->content, ls, path);
+			ls_dir(files[i], ls, path);
 		}
-		lst = lst->next;
+		i++;
 	}
 }

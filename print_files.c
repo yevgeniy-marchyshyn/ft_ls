@@ -12,18 +12,18 @@
 
 #include "ft_ls.h"
 
-void	print_files(t_list *head, t_ls *ls)
+void			print_files(char **files, t_ls *ls)
 {
-	t_list *lst;
+	int i;
 
-	lst = head;
-	while (lst != NULL)
+	i = 0;
+	while (files[i])
 	{
-		if (print_dot(lst->content, ls))
+		if ((!is_dir(files[i])  || ls->recursively) && print_dot(files[i], ls))
 		{
-			ft_printf("%s\n", lst->content);
+			ft_printf("%s\n", files[i]);
 			ls->indents = 1;
 		}
-		lst = lst->next;
+		i++;
 	}
 }

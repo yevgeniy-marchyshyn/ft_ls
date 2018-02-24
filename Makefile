@@ -29,7 +29,6 @@ FT_LS = main.c\
 		ls_sort.c\
 		skip_dots.c\
 		print_dot.c\
-		ls_total_lst.c\
 		long_format.c\
 		ls_total.c\
 		access_flag.c\
@@ -38,15 +37,12 @@ FT_LS = main.c\
 		time_format.c\
 		linkpath.c\
 		print_files.c\
-		lf_print_files.c\
 	    max_size.c\
 	    max_links.c\
 	    max_len_user.c\
 	    max_len_group.c\
-	    max_size_lst.c\
-	    max_links_lst.c\
-	    max_len_user_lst.c\
-	    max_len_group_lst.c\
+	    is_dir.c\
+	    long_format_not_dirs.c\
 
 all: $(NAME)
 

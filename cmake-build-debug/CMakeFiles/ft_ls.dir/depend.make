@@ -41,6 +41,14 @@ CMakeFiles/ft_ls.dir/ft_ls_recursion.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/ft_ls_recursion.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/ft_ls_recursion.c.o: ../ft_ls_recursion.c
 
+CMakeFiles/ft_ls.dir/is_dir.c.o: .././libft/././libft.h
+CMakeFiles/ft_ls.dir/is_dir.c.o: .././libft/./ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/is_dir.c.o: .././libft/./get_next_line.h
+CMakeFiles/ft_ls.dir/is_dir.c.o: .././libft/ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/is_dir.c.o: .././libft/libft.h
+CMakeFiles/ft_ls.dir/is_dir.c.o: ../ft_ls.h
+CMakeFiles/ft_ls.dir/is_dir.c.o: ../is_dir.c
+
 CMakeFiles/ft_ls.dir/is_option.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/is_option.c.o: .././libft/./ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/is_option.c.o: .././libft/./get_next_line.h
@@ -48,14 +56,6 @@ CMakeFiles/ft_ls.dir/is_option.c.o: .././libft/ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/is_option.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/is_option.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/is_option.c.o: ../is_option.c
-
-CMakeFiles/ft_ls.dir/lf_print_files.c.o: .././libft/././libft.h
-CMakeFiles/ft_ls.dir/lf_print_files.c.o: .././libft/./ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/lf_print_files.c.o: .././libft/./get_next_line.h
-CMakeFiles/ft_ls.dir/lf_print_files.c.o: .././libft/ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/lf_print_files.c.o: .././libft/libft.h
-CMakeFiles/ft_ls.dir/lf_print_files.c.o: ../ft_ls.h
-CMakeFiles/ft_ls.dir/lf_print_files.c.o: ../lf_print_files.c
 
 CMakeFiles/ft_ls.dir/libft/ft_atoi.c.o: ../libft/././libft.h
 CMakeFiles/ft_ls.dir/libft/ft_atoi.c.o: ../libft/./ft_printf/ft_printf.h
@@ -737,13 +737,13 @@ CMakeFiles/ft_ls.dir/long_format.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/long_format.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/long_format.c.o: ../long_format.c
 
-CMakeFiles/ft_ls.dir/long_format_lst.c.o: .././libft/././libft.h
-CMakeFiles/ft_ls.dir/long_format_lst.c.o: .././libft/./ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/long_format_lst.c.o: .././libft/./get_next_line.h
-CMakeFiles/ft_ls.dir/long_format_lst.c.o: .././libft/ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/long_format_lst.c.o: .././libft/libft.h
-CMakeFiles/ft_ls.dir/long_format_lst.c.o: ../ft_ls.h
-CMakeFiles/ft_ls.dir/long_format_lst.c.o: ../long_format_lst.c
+CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: .././libft/././libft.h
+CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: .././libft/./ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: .././libft/./get_next_line.h
+CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: .././libft/ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: .././libft/libft.h
+CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: ../ft_ls.h
+CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: ../long_format_not_dirs.c
 
 CMakeFiles/ft_ls.dir/ls_sort.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/ls_sort.c.o: .././libft/./ft_printf/ft_printf.h
@@ -761,14 +761,6 @@ CMakeFiles/ft_ls.dir/ls_total.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/ls_total.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/ls_total.c.o: ../ls_total.c
 
-CMakeFiles/ft_ls.dir/ls_total_lst.c.o: .././libft/././libft.h
-CMakeFiles/ft_ls.dir/ls_total_lst.c.o: .././libft/./ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/ls_total_lst.c.o: .././libft/./get_next_line.h
-CMakeFiles/ft_ls.dir/ls_total_lst.c.o: .././libft/ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/ls_total_lst.c.o: .././libft/libft.h
-CMakeFiles/ft_ls.dir/ls_total_lst.c.o: ../ft_ls.h
-CMakeFiles/ft_ls.dir/ls_total_lst.c.o: ../ls_total_lst.c
-
 CMakeFiles/ft_ls.dir/main.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/main.c.o: .././libft/./ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/main.c.o: .././libft/./get_next_line.h
@@ -785,14 +777,6 @@ CMakeFiles/ft_ls.dir/max_len_group.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/max_len_group.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/max_len_group.c.o: ../max_len_group.c
 
-CMakeFiles/ft_ls.dir/max_len_group_lst.c.o: .././libft/././libft.h
-CMakeFiles/ft_ls.dir/max_len_group_lst.c.o: .././libft/./ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/max_len_group_lst.c.o: .././libft/./get_next_line.h
-CMakeFiles/ft_ls.dir/max_len_group_lst.c.o: .././libft/ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/max_len_group_lst.c.o: .././libft/libft.h
-CMakeFiles/ft_ls.dir/max_len_group_lst.c.o: ../ft_ls.h
-CMakeFiles/ft_ls.dir/max_len_group_lst.c.o: ../max_len_group_lst.c
-
 CMakeFiles/ft_ls.dir/max_len_user.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/max_len_user.c.o: .././libft/./ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/max_len_user.c.o: .././libft/./get_next_line.h
@@ -800,14 +784,6 @@ CMakeFiles/ft_ls.dir/max_len_user.c.o: .././libft/ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/max_len_user.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/max_len_user.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/max_len_user.c.o: ../max_len_user.c
-
-CMakeFiles/ft_ls.dir/max_len_user_lst.c.o: .././libft/././libft.h
-CMakeFiles/ft_ls.dir/max_len_user_lst.c.o: .././libft/./ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/max_len_user_lst.c.o: .././libft/./get_next_line.h
-CMakeFiles/ft_ls.dir/max_len_user_lst.c.o: .././libft/ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/max_len_user_lst.c.o: .././libft/libft.h
-CMakeFiles/ft_ls.dir/max_len_user_lst.c.o: ../ft_ls.h
-CMakeFiles/ft_ls.dir/max_len_user_lst.c.o: ../max_len_user_lst.c
 
 CMakeFiles/ft_ls.dir/max_links.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/max_links.c.o: .././libft/./ft_printf/ft_printf.h
@@ -817,14 +793,6 @@ CMakeFiles/ft_ls.dir/max_links.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/max_links.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/max_links.c.o: ../max_links.c
 
-CMakeFiles/ft_ls.dir/max_links_lst.c.o: .././libft/././libft.h
-CMakeFiles/ft_ls.dir/max_links_lst.c.o: .././libft/./ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/max_links_lst.c.o: .././libft/./get_next_line.h
-CMakeFiles/ft_ls.dir/max_links_lst.c.o: .././libft/ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/max_links_lst.c.o: .././libft/libft.h
-CMakeFiles/ft_ls.dir/max_links_lst.c.o: ../ft_ls.h
-CMakeFiles/ft_ls.dir/max_links_lst.c.o: ../max_links_lst.c
-
 CMakeFiles/ft_ls.dir/max_size.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/max_size.c.o: .././libft/./ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/max_size.c.o: .././libft/./get_next_line.h
@@ -832,14 +800,6 @@ CMakeFiles/ft_ls.dir/max_size.c.o: .././libft/ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/max_size.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/max_size.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/max_size.c.o: ../max_size.c
-
-CMakeFiles/ft_ls.dir/max_size_lst.c.o: .././libft/././libft.h
-CMakeFiles/ft_ls.dir/max_size_lst.c.o: .././libft/./ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/max_size_lst.c.o: .././libft/./get_next_line.h
-CMakeFiles/ft_ls.dir/max_size_lst.c.o: .././libft/ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/max_size_lst.c.o: .././libft/libft.h
-CMakeFiles/ft_ls.dir/max_size_lst.c.o: ../ft_ls.h
-CMakeFiles/ft_ls.dir/max_size_lst.c.o: ../max_size_lst.c
 
 CMakeFiles/ft_ls.dir/parse_arguments.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/parse_arguments.c.o: .././libft/./ft_printf/ft_printf.h

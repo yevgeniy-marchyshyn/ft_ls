@@ -1,33 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ls_total_lst.c                                     :+:      :+:    :+:   */
+/*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ymarchys <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/20 14:35:27 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/20 14:37:24 by ymarchys         ###   ########.fr       */
+/*   Created: 2018/02/24 21:24:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/02/24 21:24:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-int		ls_total_lst(t_list *head, t_ls *ls, char *path)
+int 	main(void)
 {
 	struct stat		buf;
-	t_list			*lst;
-	int				sum;
 
-	sum = 0;
-	lst = head;
-	while (lst != NULL)
-	{
-		if (print_dot(lst->content, ls))
-		{
-			lstat(ft_strjoin(path, lst->content), &buf);
-			sum += buf.st_blocks;
-		}
-		lst = lst->next;
-	}
-	return (sum);
+	lstat()
+	ft_printf("%c\n", define_type())
+	return (0);
 }

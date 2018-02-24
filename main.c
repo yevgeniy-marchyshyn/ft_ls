@@ -12,6 +12,16 @@
 
 #include "ft_ls.h"
 
+static char 	**current_directory(void)
+{
+	char **files;
+
+	files = (char**)malloc(sizeof(char*) * 2);
+	files[0] = ft_strdup(".");
+	files[1] = NULL;
+	return (files);
+}
+
 int 			main(int argc, char **argv)
 {
 	t_ls	ls;
@@ -28,6 +38,6 @@ int 			main(int argc, char **argv)
 	if (argv[i])
 		parse_arguments(argv + i, argc - i, &ls);
 	else
-		ft_ls(ft_lstnew(".", 'd'), &ls);
+		ft_ls(current_directory(), &ls);
 	return (0);
 }

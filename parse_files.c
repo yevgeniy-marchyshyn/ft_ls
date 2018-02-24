@@ -12,28 +12,36 @@
 
 #include "ft_ls.h"
 
-void				parse_files(char **files, t_ls *ls, char *path)
+static void			remove_file(char **files, int i)
+{
+	while (files[i])
+	{
+		ft_strdel(&files[i]);
+		files[i] = ft_strdup(files[i + 1]);
+		i++;
+	}
+}
+
+void				parse_files(char **files, int n, t_ls *ls, char *path)
 {
 	struct stat		buf;
-	t_list			*head;
-	t_list			*elem;
 	int 			i;
+	int 			count_removed;
 
 	i = 0;
-	head = NULL;
+	count_removed = 0;
 	while (files[i])
 	{
 		if (lstat(ft_strjoin(path, files[i]), &buf) == -1)
 		{
 			write(2, "ft_ls: ", 7);
 			perror(files[i]);
+			remove_file(files, i);
+			count_removed++;
 		}
 		else
-		{
-			elem = ft_lstnew(files[i], (size_t)define_type(&buf));
-			ft_lst_push_back(&head, elem);
-		}
-		i++;
+			i++;
 	}
-	ft_ls_recursion(head, ls, path);
+	ls_sort(files, n - count_removed, ls);
+	ft_ls_recursion(files, ls, path);
 }

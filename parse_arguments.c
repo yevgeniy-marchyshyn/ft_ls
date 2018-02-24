@@ -26,16 +26,24 @@ static char			**fill_files(char **argv, int n)
 	return (files);
 }
 
+static void			remove_file(char **files, int i)
+{
+	while (files[i])
+	{
+		files[i] = files[i + 1];
+		i++;
+	}
+}
+
 void				parse_arguments(char **argv, int n, t_ls *ls)
 {
 	struct stat		buf;
 	char			**files;
-	t_list			*head;
-	t_list			*elem;
 	int 			i;
+	int 			count_removed;
 
 	i = 0;
-	head = NULL;
+	count_removed = 0;
 	files = fill_files(argv, n);
 	while (files[i])
 	{
@@ -43,14 +51,12 @@ void				parse_arguments(char **argv, int n, t_ls *ls)
 		{
 			write(2, "ft_ls: ", 7);
 			perror(files[i]);
-			ls->indents = 1;
+			remove_file(files, i);
+			count_removed++;
 		}
 		else
-		{
-			elem = ft_lstnew(files[i], (size_t)define_type(&buf));
-			ft_lst_push_back(&head, elem);
-		}
-		i++;
+			i++;
 	}
-	ft_ls(head, ls);
+	ls_sort(files, n - count_removed, ls);
+	ft_ls(files, ls);
 }

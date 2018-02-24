@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-int 			max_links(char **files, int n)
+int 			max_links(char **files)
 {
 	struct stat		buf;
 	int				i;
@@ -20,7 +20,7 @@ int 			max_links(char **files, int n)
 
 	i = 0;
 	max_length = 0;
-	while (i < n)
+	while (files[i])
 	{
 		lstat(files[i++], &buf);
 		if (ft_itoa_len(buf.st_nlink) > max_length)

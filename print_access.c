@@ -21,8 +21,9 @@ void		print_access(mode_t st_mode)
 
 	o = ibs_uns(st_mode, 8);
 	value = ft_atoi(o);
-	value %= 1000;
-	div = 100;
+	value %= 10000;
+	ft_printf("%ld\n", value);
+	div = 1000;
 	i = 0;
 	while (i != 3)
 	{

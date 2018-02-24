@@ -32,7 +32,7 @@ static int		ls_count_files(char *dirname, char *path)
 	return (n);
 }
 
-static char		**ls_fill_files(char **files, char *path, int n)
+static char		**ls_fill_files(char **files, char *path)
 {
 	DIR					*dir;
 	struct dirent		*sd;
@@ -41,12 +41,8 @@ static char		**ls_fill_files(char **files, char *path, int n)
 	i = 0;
 	dir = opendir(path);
 	while ((sd = readdir(dir)) != NULL)
-	{
-		files[i] = ft_strdup(sd->d_name);
-		i++;
-	}
+		files[i++] = ft_strdup(sd->d_name);
 	files[i] = NULL;
-	sort_ascii_bubble(files, n);
 	closedir(dir);
 	return (files);
 }
@@ -56,10 +52,12 @@ static void		ls_dir_ext(t_ls *ls, char **files, char *path3, int n)
 	int i;
 
 	i = 0;
+	sort_ascii_bubble(files, n);
 	if (ls->recursively)
-		parse_files(files, ls, path3);
+		parse_files(files, n, ls, path3);
 	else
 	{
+		ls_sort(files, n, ls);
 		i = 0;
 		while (i < n)
 			ft_printf("%s\n", files[i++]);
@@ -78,34 +76,30 @@ static void		ls_dir(char *dirname, t_ls *ls, char *path)
 	if ((n = ls_count_files(dirname, path3)))
 	{
 		files = (char **)malloc(sizeof(char *) * (n + 1));
-		files = ls_fill_files(files, path3, n);
+		files = ls_fill_files(files, path3);
 		ls_dir_ext(ls, files, path3, n);
 	}
 }
 
-void			ft_ls_recursion(t_list *head, t_ls *ls, char *path)
+void			ft_ls_recursion(char **files, t_ls *ls, char *path)
 {
-	t_list	*lst;
+	int 	i;
 
-	lst = head;
+	i = 0;
 	if (ls->long_format)
-	{
-		ft_printf("total %d\n", ls_total_lst(head, ls, path));
-		lf_print_files(head, ls, path);
-	}
+		long_format(files, ls, path);
 	else
-		print_files(head, ls);
-	lst = head;
-	while (lst != NULL)
+		print_files(files, ls);
+	while (files[i])
 	{
-		if (lst->content_size == 'd' && skip_dots(lst->content))
+		if (is_dir(ft_strjoin(path, files[i])))
 		{
-			if (print_dot(lst->content, ls))
+			if (print_dot(files[i], ls) && skip_dots(files[i]))
 			{
-				ft_printf("\n%s%s:\n", path, lst->content);
-				ls_dir(lst->content, ls, path);
+				ft_printf("\n%s%s:\n", path, files[i]);
+				ls_dir(files[i], ls, path);
 			}
 		}
-		lst = lst->next;
+		i++;
 	}
 }
