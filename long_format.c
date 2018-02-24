@@ -19,13 +19,11 @@ void				long_format(char **files, t_ls *ls, char *path)
 
 	i = 0;
 	w[0] = max_links(files);
-	if ((w[1] = max_len_user(files)) == -1)
-		return ;
-	if ((w[2] = max_len_group(files)) == -1)
-		return ;
+	w[1] = max_len_user(files);
 	w[2] = max_len_group(files);
 	w[3] = max_size(files);
-	ft_printf("total %lld\n", ls_total(files, ls, path));
+	if (not_empty_directory(path, ls))
+		ft_printf("total %lld\n", ls_total(files, ls, path));
 	while (files[i])
 	{
 		if (print_dot(files[i], ls))

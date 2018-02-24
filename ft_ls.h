@@ -47,7 +47,7 @@ void			parse_files(char **files, int n, t_ls *ls, char *path);
 void			ft_ls_recursion(char **files, t_ls *ls, char *path);
 void			ls_sort(char **files, int n, t_ls *ls);
 int				skip_dots(char *filename);
-int 			print_dot(void *content, t_ls *ls);
+int 			print_dot(char *filename, t_ls *ls);
 void			long_format(char **files, t_ls *ls, char *path);
 unsigned char	long_format_not_dirs(char **files, t_ls *ls, char *path);
 int				ls_total(char **files, t_ls *ls, char *path);
@@ -62,5 +62,7 @@ int 			max_len_user(char **files);
 int 			max_len_group(char **files);
 void			print_files(char **files, t_ls *ls);
 int				is_dir(char *filename);
+int				ls_count_files(char *dirname, char *path);
+int 			not_empty_directory(char *dirname, t_ls *ls);
 
 # endif

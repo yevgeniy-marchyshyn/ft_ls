@@ -1,35 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_access.c                                     :+:      :+:    :+:   */
+/*   ls_count_files.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/21 18:13:00 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/21 18:13:00 by ymarchys         ###   ########.fr       */
+/*   Created: 2018/02/25 00:17:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/02/25 00:17:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-void		print_access(mode_t st_mode)
+int		ls_count_files(char *dirname, char *path)
 {
-	char		*o;
-	ssize_t 	value;
-	int 		div;
-	int 		i;
+	DIR				*dir;
+	struct dirent	*sd;
+	int 			n;
 
-	o = ibs_uns(st_mode, 8);
-	value = ft_atoi(o);
-	value %= 1000;
-	div = 100;
-	i = 0;
-	while (i != 3)
+	n = 0;
+	if (path == NULL)
+		dir = opendir(dirname);
+	else
+		dir = opendir(path);
+	if (dir == NULL)
 	{
-		access_flag(value / div);
-		value %= div;
-		div /= 10;
-		i++;
+		perror(dirname);
+		return (n);
 	}
-	ft_strdel(&o);
+	if (dir)
+		while ((sd = readdir(dir)) != NULL)
+			n++;
+	closedir(dir);
+	return (n);
 }

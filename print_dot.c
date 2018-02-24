@@ -12,8 +12,8 @@
 
 #include "ft_ls.h"
 
-int 	print_dot(void *content, t_ls *ls)
+int 	print_dot(char *filename, t_ls *ls)
 {
-	return ((ls->include_dot && ((char*)content)[0] == '.') ||
-	((char*)content)[0] != '.');
+	return ((ls->include_dot && ((char*)filename)[0] == '.') ||
+	((char*)filename)[0] != '.');
 }

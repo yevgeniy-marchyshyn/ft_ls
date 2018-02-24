@@ -43,6 +43,8 @@ FT_LS = main.c\
 	    max_len_group.c\
 	    is_dir.c\
 	    long_format_not_dirs.c\
+	    ls_count_files.c\
+	    not_empty_directory.c\
 
 all: $(NAME)
 

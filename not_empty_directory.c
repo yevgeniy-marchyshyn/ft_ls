@@ -1,35 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_access.c                                     :+:      :+:    :+:   */
+/*   not_empty_directory.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/21 18:13:00 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/21 18:13:00 by ymarchys         ###   ########.fr       */
+/*   Created: 2018/02/25 00:35:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/02/25 00:35:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-void		print_access(mode_t st_mode)
+int 	not_empty_directory(char *dirname, t_ls *ls)
 {
-	char		*o;
-	ssize_t 	value;
-	int 		div;
-	int 		i;
+	DIR				*dir;
+	struct dirent	*sd;
+	int 			n;
 
-	o = ibs_uns(st_mode, 8);
-	value = ft_atoi(o);
-	value %= 1000;
-	div = 100;
-	i = 0;
-	while (i != 3)
+	n = 0;
+	dir = opendir(dirname);
+	if (dir == NULL)
 	{
-		access_flag(value / div);
-		value %= div;
-		div /= 10;
-		i++;
+		perror(dirname);
+		return (n);
 	}
-	ft_strdel(&o);
+	if (dir)
+	{
+		while ((sd = readdir(dir)) != NULL)
+		{
+			if (print_dot(sd->d_name, ls))
+				n++;
+		}
+	}
+	closedir(dir);
+	return (n);
 }

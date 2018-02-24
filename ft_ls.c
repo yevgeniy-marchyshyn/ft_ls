@@ -12,25 +12,25 @@
 
 #include "ft_ls.h"
 
-static int		ls_count_files(char *dirname)
-{
-	DIR				*dir;
-	struct dirent	*sd;
-	int 			n;
-
-	n = 0;
-	dir = opendir(dirname);
-	if (dir == NULL)
-	{
-		perror(dirname);
-		return (n);
-	}
-	if (dir)
-		while ((sd = readdir(dir)) != NULL)
-			n++;
-	closedir(dir);
-	return (n);
-}
+//static int		ls_count_files(char *dirname)
+//{
+//	DIR				*dir;
+//	struct dirent	*sd;
+//	int 			n;
+//
+//	n = 0;
+//	dir = opendir(dirname);
+//	if (dir == NULL)
+//	{
+//		perror(dirname);
+//		return (n);
+//	}
+//	if (dir)
+//		while ((sd = readdir(dir)) != NULL)
+//			n++;
+//	closedir(dir);
+//	return (n);
+//}
 
 static char		**ls_read_files(char **files, char *dirname)
 {
@@ -76,7 +76,7 @@ static void		ls_dir(char *dirname, t_ls *ls, char *path)
 	int				n;
 
 	path = ft_strjoin(dirname, "/");
-	if ((n = ls_count_files(dirname)))
+	if ((n = ls_count_files(dirname, NULL)))
 	{
 		files = (char **)malloc(sizeof(char *) * (n + 1));
 		files = ls_read_files(files, dirname);
