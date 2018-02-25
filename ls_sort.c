@@ -12,34 +12,6 @@
 
 #include "ft_ls.h"
 
-//static int			timecmp(char *file1, char *file2, char *path)
-//{
-//	struct stat		buf;
-//	time_t			s1;
-//	time_t			s2;
-//	long			ns1;
-//	long			ns2;
-//
-//	lstat(file1, &buf);
-//	s1 = buf.st_mtimespec.tv_sec;
-//	ns1 = buf.st_mtimespec.tv_nsec;
-//	lstat(file2, &buf);
-//	s2 = buf.st_mtimespec.tv_sec;
-//	ns2 = buf.st_mtimespec.tv_nsec;
-//	if (s1 > s2)
-//		return (2);
-//	else
-//	{
-//		if (s1 == s2)
-//		{
-//			if (ns1 > ns2)
-//				return (2);
-//			return (ns1 == ns2 ? 1 : 0);
-//		}
-//		return (0);
-//	}
-//}
-
 static int			timecmp(char *file1, char *file2, char *path)
 {
 	struct stat		buf;
@@ -48,7 +20,6 @@ static int			timecmp(char *file1, char *file2, char *path)
 	long			ns1;
 	long			ns2;
 
-//	ft_printf("%s\n", path);
 	lstat(ft_strjoin(path, file1), &buf);
 	s1 = buf.st_mtimespec.tv_sec;
 	ns1 = buf.st_mtimespec.tv_nsec;

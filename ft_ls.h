@@ -64,6 +64,5 @@ void			print_files(char **files, t_ls *ls);
 int				is_dir(char *filename);
 int				ls_count_files(char *dirname, char *path);
 int 			not_empty_directory(char *dirname, t_ls *ls);
-//char 			*join_into_a_path(char *file1, char *file2);
 
 # endif
