@@ -53,6 +53,7 @@ static void		ls_dir(char *dirname, t_ls *ls, char *path)
 
 	path2 = ft_strjoin(path, dirname);
 	path3 = ft_strjoin(path2, "/");
+	ft_strdel(&path2);
 	if ((n = ls_count_files(dirname, path3)))
 	{
 		files = (char **)malloc(sizeof(char *) * (n + 1));
@@ -64,6 +65,7 @@ static void		ls_dir(char *dirname, t_ls *ls, char *path)
 void			ft_ls_recursion(char **files, t_ls *ls, char *path)
 {
 	int 	i;
+	char 	*path2;
 
 	i = 0;
 	if (ls->long_format)
@@ -72,7 +74,10 @@ void			ft_ls_recursion(char **files, t_ls *ls, char *path)
 		print_files(files, ls);
 	while (files[i])
 	{
-		if (is_dir(ft_strjoin(path, files[i])))
+		if (path2)
+			ft_strdel(&path2);
+		path2 = ft_strjoin(path, files[i]);
+		if (is_dir(path2))
 		{
 			if (print_dot(files[i], ls) && skip_dots(files[i]))
 			{
