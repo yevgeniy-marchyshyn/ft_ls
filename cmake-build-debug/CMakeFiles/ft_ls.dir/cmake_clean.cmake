@@ -104,6 +104,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_ls.dir/linkpath.c.o"
   "CMakeFiles/ft_ls.dir/long_format.c.o"
   "CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o"
+  "CMakeFiles/ft_ls.dir/ls_count_files.c.o"
   "CMakeFiles/ft_ls.dir/ls_sort.c.o"
   "CMakeFiles/ft_ls.dir/ls_total.c.o"
   "CMakeFiles/ft_ls.dir/main.c.o"
@@ -111,6 +112,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_ls.dir/max_len_user.c.o"
   "CMakeFiles/ft_ls.dir/max_links.c.o"
   "CMakeFiles/ft_ls.dir/max_size.c.o"
+  "CMakeFiles/ft_ls.dir/not_empty_directory.c.o"
   "CMakeFiles/ft_ls.dir/parse_arguments.c.o"
   "CMakeFiles/ft_ls.dir/parse_files.c.o"
   "CMakeFiles/ft_ls.dir/parse_options.c.o"
@@ -121,6 +123,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_ls.dir/skip_dots.c.o"
   "CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.o"
   "CMakeFiles/ft_ls.dir/time_format.c.o"
+  "CMakeFiles/ft_ls.dir/join_into_a_path.c.o"
   "ft_ls.pdb"
   "ft_ls"
 )

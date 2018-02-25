@@ -57,6 +57,6 @@ void				parse_arguments(char **argv, int n, t_ls *ls)
 		else
 			i++;
 	}
-	ls_sort(files, n - count_removed, ls);
+	ls_sort(files, n - count_removed, ls, NULL);
 	ft_ls(files, ls);
 }

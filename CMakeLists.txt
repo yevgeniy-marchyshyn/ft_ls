@@ -113,6 +113,7 @@ add_executable(ft_ls
         linkpath.c
         long_format.c
         long_format_not_dirs.c
+        ls_count_files.c
         ls_sort.c
         ls_total.c
         main.c
@@ -120,6 +121,7 @@ add_executable(ft_ls
         max_len_user.c
         max_links.c
         max_size.c
+        not_empty_directory.c
         parse_arguments.c
         parse_files.c
         parse_options.c
@@ -129,4 +131,4 @@ add_executable(ft_ls
         print_long_format.c
         skip_dots.c
         sort_ascii_bubble.c
-        time_format.c)
+        time_format.c join_into_a_path.c)

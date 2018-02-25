@@ -27,8 +27,8 @@
 
 typedef struct		ls
 {
-	unsigned char	long_format; // l
-	unsigned char	recursively; // r
+	unsigned char	long_format;
+	unsigned char	recursively;
 	unsigned char	include_dot;
 	unsigned char	rev_lexic;
 	unsigned char	sort_mtime;
@@ -45,7 +45,7 @@ char			define_type(struct stat *buf);
 void			sort_ascii_bubble(char **file, int n);
 void			parse_files(char **files, int n, t_ls *ls, char *path);
 void			ft_ls_recursion(char **files, t_ls *ls, char *path);
-void			ls_sort(char **files, int n, t_ls *ls);
+void			ls_sort(char **files, int n, t_ls *ls, char *path);
 int				skip_dots(char *filename);
 int 			print_dot(char *filename, t_ls *ls);
 void			long_format(char **files, t_ls *ls, char *path);
@@ -64,5 +64,6 @@ void			print_files(char **files, t_ls *ls);
 int				is_dir(char *filename);
 int				ls_count_files(char *dirname, char *path);
 int 			not_empty_directory(char *dirname, t_ls *ls);
+//char 			*join_into_a_path(char *file1, char *file2);
 
 # endif

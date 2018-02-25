@@ -55,7 +55,7 @@ static void		ls_dir_ext(char **files, int n, t_ls *ls)
 	int i;
 
 	i = 0;
-	ls_sort(files, n, ls);
+	ls_sort(files, n, ls, NULL);
 	if (ls->include_dot)
 		while (i < n)
 			ft_printf("%s\n", files[i++]);
@@ -85,7 +85,7 @@ static void		ls_dir(char *dirname, t_ls *ls, char *path)
 			parse_files(files, n, ls, path);
 		else if (ls->long_format)
 		{
-			ls_sort(files, n, ls);
+			ls_sort(files, n, ls, NULL);
 			long_format(files, ls, path);
 		}
 		else

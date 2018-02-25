@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   join_into_a_path.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/24 21:24:00 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/24 21:24:00 by ymarchys         ###   ########.fr       */
+/*   Created: 2018/02/25 14:24:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/02/25 14:24:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-int 	main(void)
+char 	*join_into_a_path(char *file1, char *file2)
 {
-	struct stat		buf;
+	char 	*result;
 
-	lstat()
-	ft_printf("%c\n", define_type())
-	return (0);
+	result = ft_strjoin(file1, file2);
+	if (file1)
+		ft_strdel(&file1);
+	if (file2)
+		ft_strdel(&file2);
+	return (result);
 }

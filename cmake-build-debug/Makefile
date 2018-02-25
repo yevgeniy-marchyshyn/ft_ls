@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/marchyshyn/Documents/C/ft_ls
+CMAKE_SOURCE_DIR = /Users/ymarchys/Documents/ft_ls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ymarchys/Documents/ft_ls/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles /Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -311,6 +311,33 @@ is_option.s: is_option.c.s
 is_option.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/is_option.c.s
 .PHONY : is_option.c.s
+
+join_into_a_path.o: join_into_a_path.c.o
+
+.PHONY : join_into_a_path.o
+
+# target to build an object file
+join_into_a_path.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/join_into_a_path.c.o
+.PHONY : join_into_a_path.c.o
+
+join_into_a_path.i: join_into_a_path.c.i
+
+.PHONY : join_into_a_path.i
+
+# target to preprocess a source file
+join_into_a_path.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/join_into_a_path.c.i
+.PHONY : join_into_a_path.c.i
+
+join_into_a_path.s: join_into_a_path.c.s
+
+.PHONY : join_into_a_path.s
+
+# target to generate assembly for a file
+join_into_a_path.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/join_into_a_path.c.s
+.PHONY : join_into_a_path.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
@@ -2958,6 +2985,33 @@ long_format_not_dirs.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/long_format_not_dirs.c.s
 .PHONY : long_format_not_dirs.c.s
 
+ls_count_files.o: ls_count_files.c.o
+
+.PHONY : ls_count_files.o
+
+# target to build an object file
+ls_count_files.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_count_files.c.o
+.PHONY : ls_count_files.c.o
+
+ls_count_files.i: ls_count_files.c.i
+
+.PHONY : ls_count_files.i
+
+# target to preprocess a source file
+ls_count_files.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_count_files.c.i
+.PHONY : ls_count_files.c.i
+
+ls_count_files.s: ls_count_files.c.s
+
+.PHONY : ls_count_files.s
+
+# target to generate assembly for a file
+ls_count_files.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ls_count_files.c.s
+.PHONY : ls_count_files.c.s
+
 ls_sort.o: ls_sort.c.o
 
 .PHONY : ls_sort.o
@@ -3146,6 +3200,33 @@ max_size.s: max_size.c.s
 max_size.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/max_size.c.s
 .PHONY : max_size.c.s
+
+not_empty_directory.o: not_empty_directory.c.o
+
+.PHONY : not_empty_directory.o
+
+# target to build an object file
+not_empty_directory.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/not_empty_directory.c.o
+.PHONY : not_empty_directory.c.o
+
+not_empty_directory.i: not_empty_directory.c.i
+
+.PHONY : not_empty_directory.i
+
+# target to preprocess a source file
+not_empty_directory.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/not_empty_directory.c.i
+.PHONY : not_empty_directory.c.i
+
+not_empty_directory.s: not_empty_directory.c.s
+
+.PHONY : not_empty_directory.s
+
+# target to generate assembly for a file
+not_empty_directory.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/not_empty_directory.c.s
+.PHONY : not_empty_directory.c.s
 
 parse_arguments.o: parse_arguments.c.o
 
@@ -3447,6 +3528,9 @@ help:
 	@echo "... is_option.o"
 	@echo "... is_option.i"
 	@echo "... is_option.s"
+	@echo "... join_into_a_path.o"
+	@echo "... join_into_a_path.i"
+	@echo "... join_into_a_path.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -3741,6 +3825,9 @@ help:
 	@echo "... long_format_not_dirs.o"
 	@echo "... long_format_not_dirs.i"
 	@echo "... long_format_not_dirs.s"
+	@echo "... ls_count_files.o"
+	@echo "... ls_count_files.i"
+	@echo "... ls_count_files.s"
 	@echo "... ls_sort.o"
 	@echo "... ls_sort.i"
 	@echo "... ls_sort.s"
@@ -3762,6 +3849,9 @@ help:
 	@echo "... max_size.o"
 	@echo "... max_size.i"
 	@echo "... max_size.s"
+	@echo "... not_empty_directory.o"
+	@echo "... not_empty_directory.i"
+	@echo "... not_empty_directory.s"
 	@echo "... parse_arguments.o"
 	@echo "... parse_arguments.i"
 	@echo "... parse_arguments.s"

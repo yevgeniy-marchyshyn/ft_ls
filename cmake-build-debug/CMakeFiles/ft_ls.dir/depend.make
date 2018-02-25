@@ -745,6 +745,14 @@ CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: ../long_format_not_dirs.c
 
+CMakeFiles/ft_ls.dir/ls_count_files.c.o: .././libft/././libft.h
+CMakeFiles/ft_ls.dir/ls_count_files.c.o: .././libft/./ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/ls_count_files.c.o: .././libft/./get_next_line.h
+CMakeFiles/ft_ls.dir/ls_count_files.c.o: .././libft/ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/ls_count_files.c.o: .././libft/libft.h
+CMakeFiles/ft_ls.dir/ls_count_files.c.o: ../ft_ls.h
+CMakeFiles/ft_ls.dir/ls_count_files.c.o: ../ls_count_files.c
+
 CMakeFiles/ft_ls.dir/ls_sort.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/ls_sort.c.o: .././libft/./ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/ls_sort.c.o: .././libft/./get_next_line.h
@@ -800,6 +808,14 @@ CMakeFiles/ft_ls.dir/max_size.c.o: .././libft/ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/max_size.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/max_size.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/max_size.c.o: ../max_size.c
+
+CMakeFiles/ft_ls.dir/not_empty_directory.c.o: .././libft/././libft.h
+CMakeFiles/ft_ls.dir/not_empty_directory.c.o: .././libft/./ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/not_empty_directory.c.o: .././libft/./get_next_line.h
+CMakeFiles/ft_ls.dir/not_empty_directory.c.o: .././libft/ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/not_empty_directory.c.o: .././libft/libft.h
+CMakeFiles/ft_ls.dir/not_empty_directory.c.o: ../ft_ls.h
+CMakeFiles/ft_ls.dir/not_empty_directory.c.o: ../not_empty_directory.c
 
 CMakeFiles/ft_ls.dir/parse_arguments.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/parse_arguments.c.o: .././libft/./ft_printf/ft_printf.h
