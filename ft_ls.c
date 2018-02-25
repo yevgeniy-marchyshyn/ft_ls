@@ -12,26 +12,6 @@
 
 #include "ft_ls.h"
 
-//static int		ls_count_files(char *dirname)
-//{
-//	DIR				*dir;
-//	struct dirent	*sd;
-//	int 			n;
-//
-//	n = 0;
-//	dir = opendir(dirname);
-//	if (dir == NULL)
-//	{
-//		perror(dirname);
-//		return (n);
-//	}
-//	if (dir)
-//		while ((sd = readdir(dir)) != NULL)
-//			n++;
-//	closedir(dir);
-//	return (n);
-//}
-
 static char		**ls_read_files(char **files, char *dirname)
 {
 	DIR					*dir;
