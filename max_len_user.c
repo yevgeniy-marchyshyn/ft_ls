@@ -12,12 +12,12 @@
 
 #include "ft_ls.h"
 
-int 		max_len_user(char **files)
+int					max_len_user(char **files)
 {
 	struct stat		buf;
 	struct passwd	*pw;
 	int				i;
-	int 			len;
+	int				len;
 	int				max_length;
 
 	i = 0;

@@ -14,8 +14,8 @@
 
 int		is_dir(char *filename, char *path)
 {
-	struct stat		buf;
-	char 			type;
+	struct stat			buf;
+	char				type;
 
 	if (!path)
 		lstat(filename, &buf);

@@ -14,9 +14,9 @@
 
 ssize_t		ft_atoi(const char *str)
 {
-	int			i;
-	ssize_t 	res;
-	int			is_neg;
+	int				i;
+	ssize_t			res;
+	int				is_neg;
 
 	i = 0;
 	res = 0;

@@ -11,20 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdlib.h>
-
-//int		ft_itoa_len(long long int n)
-//{
-//	int size;
-//
-//	size = (n <= 0) ? 1 : 0;
-//	while (n != 0)
-//	{
-//		n /= 10;
-//		size++;
-//	}
-//	return (size);
-//}
 
 char	*ft_itoa(int nbr)
 {

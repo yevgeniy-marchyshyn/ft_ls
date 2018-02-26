@@ -14,9 +14,9 @@
 
 void		sort_ascii_bubble(char **file, int n)
 {
-	char 	*tmp;
-	int		i;
-	int 	k;
+	char		*tmp;
+	int			i;
+	int			k;
 
 	i = 0;
 	k = 0;

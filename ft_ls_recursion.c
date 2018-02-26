@@ -12,11 +12,11 @@
 
 #include "ft_ls.h"
 
-static char		**ls_fill_files(char **files, char *path)
+static char		**ls_read_files_recursion(char **files, char *path)
 {
 	DIR					*dir;
 	struct dirent		*sd;
-	int 				i;
+	int					i;
 
 	i = 0;
 	dir = opendir(path);
@@ -27,7 +27,7 @@ static char		**ls_fill_files(char **files, char *path)
 	return (files);
 }
 
-static void		ls_dir_ext(t_ls *ls, char **files, char *path3, int n)
+static void		ls_dir_ext_recurs(t_ls *ls, char **files, char *path3, int n)
 {
 	int i;
 
@@ -44,11 +44,11 @@ static void		ls_dir_ext(t_ls *ls, char **files, char *path3, int n)
 	}
 }
 
-static void		ls_dir(char *dirname, t_ls *ls, char *path)
+static void		ls_dir_recursion(char *dirname, t_ls *ls, char *path)
 {
 	char			**files;
-	char 			*path2;
-	char 			*path3;
+	char			*path2;
+	char			*path3;
 	int				n;
 
 	path2 = ft_strjoin(path, dirname);
@@ -56,14 +56,14 @@ static void		ls_dir(char *dirname, t_ls *ls, char *path)
 	if ((n = ls_count_files(dirname, path3)))
 	{
 		files = (char **)malloc(sizeof(char *) * (n + 1));
-		files = ls_fill_files(files, path3);
-		ls_dir_ext(ls, files, path3, n);
+		files = ls_read_files_recursion(files, path3);
+		ls_dir_ext_recurs(ls, files, path3, n);
 	}
 }
 
 void			ft_ls_recursion(char **files, t_ls *ls, char *path)
 {
-	int 	i;
+	int i;
 
 	i = 0;
 	if (ls->long_format)
@@ -77,7 +77,7 @@ void			ft_ls_recursion(char **files, t_ls *ls, char *path)
 			if (print_dot(files[i], ls) && skip_dots(files[i]))
 			{
 				ft_printf("\n%s%s:\n", path, files[i]);
-				ls_dir(files[i], ls, path);
+				ls_dir_recursion(files[i], ls, path);
 			}
 		}
 		i++;

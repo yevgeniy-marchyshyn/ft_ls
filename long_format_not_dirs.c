@@ -14,9 +14,9 @@
 
 static char			**fill_files(char **files, int count_not_dirs, char *path)
 {
-	int 	i;
-	int 	k;
-	char 	**not_dirs;
+	int			i;
+	int			k;
+	char		**not_dirs;
 
 	if (!(not_dirs = (char**)malloc(sizeof(char*) * (count_not_dirs + 1))))
 		return (NULL);
@@ -32,10 +32,10 @@ static char			**fill_files(char **files, int count_not_dirs, char *path)
 	return (not_dirs);
 }
 
-int 				count_not_dirs(char **files, char *path)
+int					count_not_dirs(char **files, char *path)
 {
-	int		i;
-	int 	not_dirs;
+	int			i;
+	int			not_dirs;
 
 	i = 0;
 	not_dirs = 0;
@@ -48,12 +48,12 @@ int 				count_not_dirs(char **files, char *path)
 	return (not_dirs);
 }
 
-int		long_format_not_dirs(char **files, t_ls *ls, char *path)
+int					long_format_not_dirs(char **files, t_ls *ls, char *path)
 {
 	int			i;
-	int 		n;
-	char 		**not_dirs;
-	int 		w[4];
+	int			n;
+	char		**not_dirs;
+	int			w[4];
 
 	i = 0;
 	if ((n = count_not_dirs(files, path)) < 1)

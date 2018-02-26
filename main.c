@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-static char 	**current_directory(void)
+static char		**current_directory(void)
 {
 	char **files;
 
@@ -22,18 +22,18 @@ static char 	**current_directory(void)
 	return (files);
 }
 
-int 			main(int argc, char **argv)
+int				main(int argc, char **argv)
 {
-	t_ls	ls;
-	int 	i;
+	t_ls		ls;
+	int			i;
 
 	i = 1;
 	annulation_opt(&ls);
 	if (argc > 1)
 	{
-		while (argv[i] && argv[i][0] == '-')
+		while (argv[i] && argv[i][0] == '-' && argv[i][1] != '\0')
 			if (parse_options(&ls, ++argv[i++]) == 1)
-				break;
+				break ;
 	}
 	if (argv[i])
 		parse_arguments(argv + i, argc - i, &ls);

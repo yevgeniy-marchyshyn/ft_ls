@@ -41,6 +41,11 @@ FT_LS = main.c\
 	    long_format_not_dirs.c\
 	    ls_count_files.c\
 	    not_empty_directory.c\
+	    link_to_dir.c\
+	    ls_read_files.c\
+	    ls_dir.c\
+	    ls_dir_ext.c\
+	    ls_link.c\
 
 OBJ = $(FT_LS:.c=.o)
 

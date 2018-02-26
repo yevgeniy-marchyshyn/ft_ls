@@ -12,13 +12,13 @@
 
 #include "ft_ls.h"
 
-int 		max_len_group(char **files)
+int				max_len_group(char **files)
 {
-	struct stat		buf;
-	struct group	*gr;
-	int				i;
-	int 			len;
-	int				max_length;
+	struct stat			buf;
+	struct group		*gr;
+	int					i;
+	int					len;
+	int					max_length;
 
 	i = 0;
 	max_length = 0;

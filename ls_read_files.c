@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   max_links.c                                        :+:      :+:    :+:   */
+/*   ls_read_files.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marchyshyn <ymarchys@student.unit.ua>      +#+  +:+       +#+        */
+/*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/22 13:04:22 by marchyshy         #+#    #+#             */
-/*   Updated: 2018/02/22 13:04:25 by marchyshy        ###   ########.fr       */
+/*   Created: 2018/02/26 20:35:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/02/26 20:35:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-int					max_links(char **files)
+char		**ls_read_files(char **files, char *dirname)
 {
-	struct stat		buf;
-	int				i;
-	int				max_length;
+	DIR					*dir;
+	struct dirent		*sd;
+	int					i;
 
 	i = 0;
-	max_length = 0;
-	while (files[i])
+	dir = opendir(dirname);
+	while ((sd = readdir(dir)) != NULL)
 	{
-		lstat(files[i++], &buf);
-		if (ft_itoa_len(buf.st_nlink) > max_length)
-			max_length = ft_itoa_len(buf.st_nlink);
+		files[i] = ft_strdup(sd->d_name);
+		i++;
 	}
-	return (max_length);
+	files[i] = NULL;
+	closedir(dir);
+	return (files);
 }

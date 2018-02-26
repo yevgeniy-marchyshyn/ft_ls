@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   max_links.c                                        :+:      :+:    :+:   */
+/*   ls_link.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marchyshyn <ymarchys@student.unit.ua>      +#+  +:+       +#+        */
+/*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/22 13:04:22 by marchyshy         #+#    #+#             */
-/*   Updated: 2018/02/22 13:04:25 by marchyshy        ###   ########.fr       */
+/*   Created: 2018/02/26 20:21:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/02/26 20:21:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-int					max_links(char **files)
+void		ls_link(char *linkname, t_ls *ls, char *path)
 {
-	struct stat		buf;
-	int				i;
-	int				max_length;
+	char		*link_path;
+	char		*tmp;
 
-	i = 0;
-	max_length = 0;
-	while (files[i])
+	if (path)
 	{
-		lstat(files[i++], &buf);
-		if (ft_itoa_len(buf.st_nlink) > max_length)
-			max_length = ft_itoa_len(buf.st_nlink);
+		tmp = ft_strjoin(path, linkname);
+		link_path = linkpath(tmp);
+		ft_strdel(&tmp);
 	}
-	return (max_length);
+	else
+		link_path = linkpath(linkname);
+	ls_dir(link_path, ls, NULL);
 }

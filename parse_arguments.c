@@ -37,10 +37,10 @@ static void			remove_file(char **files, int i)
 
 void				parse_arguments(char **argv, int n, t_ls *ls)
 {
-	struct stat		buf;
-	char			**files;
-	int 			i;
-	int 			count_removed;
+	struct stat			buf;
+	char				**files;
+	int					i;
+	int					count_removed;
 
 	i = 0;
 	count_removed = 0;
@@ -49,7 +49,7 @@ void				parse_arguments(char **argv, int n, t_ls *ls)
 	{
 		if (lstat(files[i], &buf) == -1)
 		{
-			write(2, "ft_ls: ", 7);
+			write(2, "ls: ", 4);
 			perror(files[i]);
 			remove_file(files, i);
 			count_removed++;

@@ -1,19 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_dot.c                                        :+:      :+:    :+:   */
+/*   link_to_dir.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/20 13:00:00 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/20 13:00:00 by ymarchys         ###   ########.fr       */
+/*   Created: 2018/02/26 19:58:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/02/26 19:58:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-int			print_dot(char *filename, t_ls *ls)
+int					link_to_dir(char *filename, char *path)
 {
-	return ((ls->include_dot && ((char*)filename)[0] == '.') ||
-	((char*)filename)[0] != '.');
+	struct stat		buf;
+	char			type;
+	char			*tmp;
+
+	if (!path)
+		lstat(filename, &buf);
+	else
+	{
+		tmp = ft_strjoin(path, filename);
+		lstat(tmp, &buf);
+	}
+	type = define_type(&buf);
+	if (type == 'l')
+	{
+		stat(path ? tmp : filename, &buf);
+		type = define_type(&buf);
+		if (type == 'd')
+			return (1);
+		else
+			return (0);
+	}
+	return (0);
 }

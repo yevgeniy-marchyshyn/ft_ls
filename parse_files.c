@@ -25,8 +25,8 @@ static void			remove_file(char **files, int i)
 void				parse_files(char **files, int n, t_ls *ls, char *path)
 {
 	struct stat		buf;
-	int 			i;
-	int 			count_removed;
+	int				i;
+	int				count_removed;
 
 	i = 0;
 	count_removed = 0;
@@ -34,7 +34,7 @@ void				parse_files(char **files, int n, t_ls *ls, char *path)
 	{
 		if (lstat(ft_strjoin(path, files[i]), &buf) == -1)
 		{
-			write(2, "ft_ls: ", 7);
+			write(2, "ls: ", 4);
 			perror(files[i]);
 			remove_file(files, i);
 			count_removed++;

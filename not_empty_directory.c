@@ -12,11 +12,11 @@
 
 #include "ft_ls.h"
 
-int 	not_empty_directory(char *dirname, t_ls *ls)
+int					not_empty_directory(char *dirname, t_ls *ls)
 {
-	DIR				*dir;
-	struct dirent	*sd;
-	int 			n;
+	DIR					*dir;
+	struct dirent		*sd;
+	int					n;
 
 	n = 0;
 	dir = opendir(dirname);

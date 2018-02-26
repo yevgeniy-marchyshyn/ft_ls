@@ -15,7 +15,7 @@
 void				long_format(char **files, t_ls *ls, char *path)
 {
 	int			i;
-	int 		w[4];
+	int			w[4];
 
 	i = 0;
 	w[0] = max_links(files);
