@@ -58,8 +58,8 @@ int 			max_links(char **files);
 int 			max_size(char **files);
 int 			max_len_user(char **files);
 int 			max_len_group(char **files);
-int				print_files(char **files, t_ls *ls);
-int				is_dir(char *filename);
+int				print_files(char **files, t_ls *ls, char *path);
+int				is_dir(char *filename, char *path);
 int				ls_count_files(char *dirname, char *path);
 int 			not_empty_directory(char *dirname, t_ls *ls);
 

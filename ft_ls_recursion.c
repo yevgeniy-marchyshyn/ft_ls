@@ -69,10 +69,10 @@ void			ft_ls_recursion(char **files, t_ls *ls, char *path)
 	if (ls->long_format)
 		long_format(files, ls, path);
 	else
-		print_files(files, ls);
+		print_files(files, ls, path);
 	while (files[i])
 	{
-		if (is_dir(ft_strjoin(path, files[i])))
+		if (is_dir(ft_strjoin(path, files[i]), NULL))
 		{
 			if (print_dot(files[i], ls) && skip_dots(files[i]))
 			{

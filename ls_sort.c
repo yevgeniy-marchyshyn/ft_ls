@@ -20,10 +20,16 @@ static int			timecmp(char *file1, char *file2, char *path)
 	long			ns1;
 	long			ns2;
 
-	lstat(ft_strjoin(path, file1), &buf);
+	if (!path)
+		lstat(file1, &buf);
+	else
+		lstat(ft_strjoin(path, file1), &buf);
 	s1 = buf.st_mtimespec.tv_sec;
 	ns1 = buf.st_mtimespec.tv_nsec;
-	lstat(ft_strjoin(path, file2), &buf);
+	if (!path)
+		lstat(file2, &buf);
+	else
+		lstat(ft_strjoin(path, file2), &buf);
 	s2 = buf.st_mtimespec.tv_sec;
 	ns2 = buf.st_mtimespec.tv_nsec;
 	if (s1 > s2)

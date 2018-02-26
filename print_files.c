@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-static int 				count_dirs(char **files)
+static int 				count_dirs(char **files, char *path)
 {
 	int		i;
 	int 	dirs;
@@ -21,23 +21,23 @@ static int 				count_dirs(char **files)
 	dirs = 0;
 	while (files[i])
 	{
-		if (is_dir(files[i]))
+		if (is_dir(files[i], path))
 			dirs++;
 		i++;
 	}
 	return (dirs);
 }
 
-int				print_files(char **files, t_ls *ls)
+int				print_files(char **files, t_ls *ls, char *path)
 {
 	int			i;
 	int 		dirs;
 
 	i = 0;
-	dirs = count_dirs(files);
+	dirs = count_dirs(files, path);
 	while (files[i])
 	{
-		if ((!is_dir(files[i])  || ls->recursively) && print_dot(files[i], ls))
+		if ((!is_dir(files[i], path) || ls->count_directories) && print_dot(files[i], ls))
 		{
 			ft_printf("%s\n", files[i]);
 			ls->indents = 1;

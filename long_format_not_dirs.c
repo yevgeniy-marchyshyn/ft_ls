@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-static char			**fill_files(char **files, int count_not_dirs)
+static char			**fill_files(char **files, int count_not_dirs, char *path)
 {
 	int 	i;
 	int 	k;
@@ -24,7 +24,7 @@ static char			**fill_files(char **files, int count_not_dirs)
 	k = 0;
 	while (files[i])
 	{
-		if (!(is_dir(files[i])))
+		if (!(is_dir(files[i], path)))
 			not_dirs[k++] = ft_strdup(files[i]);
 		i++;
 	}
@@ -32,7 +32,7 @@ static char			**fill_files(char **files, int count_not_dirs)
 	return (not_dirs);
 }
 
-int 				count_not_dirs(char **files)
+int 				count_not_dirs(char **files, char *path)
 {
 	int		i;
 	int 	not_dirs;
@@ -41,7 +41,7 @@ int 				count_not_dirs(char **files)
 	not_dirs = 0;
 	while (files[i])
 	{
-		if (!is_dir(files[i]))
+		if (!is_dir(files[i], path))
 			not_dirs++;
 		i++;
 	}
@@ -56,9 +56,9 @@ int		long_format_not_dirs(char **files, t_ls *ls, char *path)
 	int 		w[4];
 
 	i = 0;
-	if ((n = count_not_dirs(files)) < 1)
+	if ((n = count_not_dirs(files, path)) < 1)
 		return (0);
-	not_dirs = fill_files(files, n);
+	not_dirs = fill_files(files, n, path);
 	w[0] = max_links(not_dirs);
 	if ((w[1] = max_len_user(not_dirs)) == -1)
 		return (0);
