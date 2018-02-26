@@ -110,6 +110,7 @@ add_executable(ft_ls
         ft_ls_recursion.c
         is_dir.c
         is_option.c
+        join_into_a_path.c
         linkpath.c
         long_format.c
         long_format_not_dirs.c
@@ -130,5 +131,4 @@ add_executable(ft_ls
         print_files.c
         print_long_format.c
         skip_dots.c
-        sort_ascii_bubble.c
-        time_format.c join_into_a_path.c)
+        sort_ascii_bubble.c)

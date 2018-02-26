@@ -14,5 +14,6 @@
 
 int		is_option(char c)
 {
-	return (c == 'l' || c == 'R' || c == 'a' || c == 'r' || c == 't');
+	return (c == 'l' || c == 'R' || c == 'a' || c == 'r' || c == 't' ||
+			c == '1');
 }

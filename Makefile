@@ -11,10 +11,8 @@
 # **************************************************************************** #
 
 NAME = ft_ls
-
-FLAGS = -Wall -Wextra -Werror -o
-
-LIBRARY = libft.a
+CC = @gcc
+CFLAGS = -Wall -Wextra -Werror -Ilib/includes
 
 FT_LS = main.c\
 		annulation_opt.c\
@@ -34,7 +32,6 @@ FT_LS = main.c\
 		access_flag.c\
 		print_long_format.c\
 		print_access.c\
-		time_format.c\
 		linkpath.c\
 		print_files.c\
 	    max_size.c\
@@ -46,18 +43,24 @@ FT_LS = main.c\
 	    ls_count_files.c\
 	    not_empty_directory.c\
 
+OBJ = $(FT_LS:.c=.o)
+
 all: $(NAME)
 
-$(NAME):
-	cd libft && make && mv libft.a .. && cd ..
-	gcc $(FLAGS) $(NAME) $(LIBRARY) $(FT_LS)
+$(NAME): $(OBJ)
+	@echo "Compiling libft wait..."
+	@make -C ./libft/
+	@echo "Compiling ft_ls wait..."
+	@gcc -L ./libft/ -lft $(OBJ) -o $(NAME)
+	@echo "Done."
 
 clean:
-	cd libft && make clean && cd ..
+	@make -C ./libft/ clean
+	@/bin/rm -f $(OBJ)
 
 fclean: clean
-	cd libft && make fclean & cd ..
-	/bin/rm -f $(NAME)
+	@make -C ./libft/ fclean
+	@/bin/rm -f $(NAME)
 
 re: fclean all
 

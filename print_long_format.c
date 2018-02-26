@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-void		device_number(struct stat *buf)
+static void		device_number(struct stat *buf)
 {
 	ft_printf("%lld", buf->st_rdev >> 24 & 0xff);
 	ft_printf(",    ");
@@ -20,7 +20,37 @@ void		device_number(struct stat *buf)
 	ft_printf(" ");
 }
 
-void		print_long_format(char *filename, int *w, char *path)
+static void 	print_time(time_t n)
+{
+	time_t 		current_time;
+	char		*ctime_format;
+	char		*mtime;
+	char 		*end_of_line;
+	char 		*year;
+
+	ctime_format = ctime(&n);
+	if ((end_of_line = ft_strchr(ctime_format, '\n')))
+		*end_of_line = '\0';
+	current_time = time(NULL);
+	year = NULL;
+	mtime = NULL;
+	if (ABS(current_time - n) > 15778463)
+	{
+		mtime = ft_strsub(ctime_format, 4, 7);
+		year = ft_strsub(ctime_format, 20, 23);
+		ft_printf(" %s ", mtime);
+		ft_printf("%s ", year);
+	}
+	else
+	{
+		mtime = ft_strsub(ctime_format, 4, 12);
+		ft_printf(" %s ", mtime);
+	}
+	ft_strdel(&mtime);
+	year ? ft_strdel(&year) : 0;
+}
+
+void			print_long_format(char *filename, int *w, char *path)
 {
 	struct stat		buf;
 	struct passwd	*pw;
@@ -49,14 +79,14 @@ void		print_long_format(char *filename, int *w, char *path)
 	if (define_type(&buf) == 'c' || define_type(&buf) == 'b')
 		device_number(&buf);
 	else
-		ft_printf("%*zu", w[3] + 1, buf.st_size);
-	ft_printf(" %s", time_format(buf.st_mtime));
+		ft_printf("%*zu", w[3], buf.st_size);
+	print_time(buf.st_mtime);
 	if (define_type(&buf) == 'l')
 	{
 		link_path = linkpath(path ? path3 : filename);
-		ft_printf(" %s -> %s\n", filename, link_path);
+		ft_printf("%s -> %s\n", filename, link_path);
 		ft_strdel(&link_path);
 	}
 	else
-		ft_printf(" %s\n", filename);
+		ft_printf("%s\n", filename);
 }
