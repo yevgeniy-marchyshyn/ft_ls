@@ -102,7 +102,6 @@ add_executable(ft_ls
         libft/get_next_line.c
         libft/get_next_line.h
         libft/libft.h
-        access_flag.c
         annulation_opt.c
         define_type.c
         ft_ls.c
@@ -110,7 +109,6 @@ add_executable(ft_ls
         ft_ls_recursion.c
         is_dir.c
         is_option.c
-        join_into_a_path.c
         linkpath.c
         long_format.c
         long_format_not_dirs.c

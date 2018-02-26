@@ -29,7 +29,6 @@ FT_LS = main.c\
 		print_dot.c\
 		long_format.c\
 		ls_total.c\
-		access_flag.c\
 		print_long_format.c\
 		print_access.c\
 		linkpath.c\

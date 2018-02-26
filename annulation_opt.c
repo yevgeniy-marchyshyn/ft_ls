@@ -20,5 +20,5 @@ void	annulation_opt(t_ls *ls)
 	ls->rev_lexic = 0;
 	ls->sort_mtime = 0;
 	ls->indents = 0;
-	ls->first_directory = 0;
+	ls->count_directories = 0;
 }

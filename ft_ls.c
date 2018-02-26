@@ -80,19 +80,24 @@ void			ft_ls(char **files, t_ls *ls)
 
 	path = NULL;
 	i = 0;
-	if (!ls->long_format)
-		print_files(files, ls);
-	else
+	if (ls->long_format)
 		ls->indents = long_format_not_dirs(files, ls, path);
+	else
+		ls->count_directories = print_files(files, ls);
+//	if (!ls->long_format)
+//		print_files(files, ls);
+//	else
+//		ls->indents = long_format_not_dirs(files, ls, path);
 	while (files[i])
 	{
 		if (is_dir(files[i]))
 		{
 			if (ls->indents)
 				ft_printf("\n");
-			if (ls->first_directory || ls->indents)
-				ft_printf("%s:\n", files[i]);
-			ls->first_directory = 1;
+			if (ls->count_directories > 1 || ls->indents)
+			ft_printf("%s:\n", files[i]);
+			ls->count_directories += 1;
+			ls->indents = 1;
 			ls_dir(files[i], ls, path);
 		}
 		i++;

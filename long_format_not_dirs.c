@@ -48,7 +48,7 @@ int 				count_not_dirs(char **files)
 	return (not_dirs);
 }
 
-unsigned char		long_format_not_dirs(char **files, t_ls *ls, char *path)
+int		long_format_not_dirs(char **files, t_ls *ls, char *path)
 {
 	int			i;
 	int 		n;
