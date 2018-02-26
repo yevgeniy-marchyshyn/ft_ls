@@ -1,461 +1,472 @@
--
-CMakeLists.txt
-Makefile
-annulation_opt.c
-annulation_opt.o
-author
-cmake-build-debug
-define_type.c
-define_type.o
-diff_ls
-diff_my
-dir
-ft_ls
-ft_ls.c
-ft_ls.h
-ft_ls.o
-ft_ls_recursion.c
-ft_ls_recursion.o
-is_dir.c
-is_dir.o
-is_option.c
-is_option.o
-libft
-libft.a
-linkpath.c
-linkpath.o
-long_format.c
-long_format.o
-long_format_not_dirs.c
-long_format_not_dirs.o
-ls_count_files.c
-ls_count_files.o
-ls_sort.c
-ls_sort.o
-ls_total.c
-ls_total.o
-main.c
-main.o
-max_len_group.c
-max_len_group.o
-max_len_user.c
-max_len_user.o
-max_links.c
-max_links.o
-max_size.c
-max_size.o
-not_empty_directory.c
-not_empty_directory.o
-parse_arguments.c
-parse_arguments.o
-parse_files.c
-parse_files.o
-parse_options.c
-parse_options.o
-print_access.c
-print_access.o
-print_dot.c
-print_dot.o
-print_files.c
-print_files.o
-print_long_format.c
-print_long_format.o
-skip_dots.c
-skip_dots.o
-sort_ascii_bubble.c
-sort_ascii_bubble.o
-zzz.sh
-
-./-:
+total 872
+-rw-r--r--    1 ymarchys  2017    2674 Feb 25 16:44 print_long_format.c
+-rw-r--r--    1 ymarchys  2017    1221 Feb 26 12:36 sort_ascii_bubble.c
+-rw-r--r--    1 ymarchys  2017    1021 Feb 26 12:36 skip_dots.c
+-rw-r--r--    1 ymarchys  2017    1048 Feb 26 12:36 print_dot.c
+-rw-r--r--    1 ymarchys  2017    3434 Feb 26 12:36 print_access.c
+-rw-r--r--    1 ymarchys  2017    1465 Feb 26 12:36 parse_options.c
+-rw-r--r--    1 ymarchys  2017    1480 Feb 26 12:36 parse_files.c
+-rw-r--r--    1 ymarchys  2017    1688 Feb 26 12:36 parse_arguments.c
+-rw-r--r--    1 ymarchys  2017    1236 Feb 26 12:36 not_empty_directory.c
+-rw-r--r--    1 ymarchys  2017    1182 Feb 26 12:36 max_size.c
+-rw-r--r--    1 ymarchys  2017    1185 Feb 26 12:36 max_links.c
+-rw-r--r--    1 ymarchys  2017    1259 Feb 26 12:36 max_len_user.c
+-rw-r--r--    1 ymarchys  2017    1259 Feb 26 12:36 max_len_group.c
+-rwxr-xr-x    1 ymarchys  2017    1396 Feb 26 12:36 main.c
+-rw-r--r--    1 ymarchys  2017    1251 Feb 26 12:36 ls_total.c
+-rw-r--r--    1 ymarchys  2017    2683 Feb 26 12:36 ls_sort.c
+-rw-r--r--    1 ymarchys  2017    1233 Feb 26 12:36 ls_count_files.c
+-rw-r--r--    1 ymarchys  2017    1308 Feb 26 12:36 long_format.c
+-rw-r--r--    1 ymarchys  2017    1033 Feb 26 12:36 linkpath.c
+-rw-r--r--    1 ymarchys  2017  117736 Feb 26 12:36 libft.a
+-rw-r--r--    1 ymarchys  2017    1082 Feb 26 12:36 is_dir.c
+-rw-r--r--    1 ymarchys  2017    2217 Feb 26 12:36 ft_ls_recursion.c
+-rw-r--r--    1 ymarchys  2017    1342 Feb 26 12:36 define_type.c
+-rw-r--r--    1 ymarchys  2017       9 Feb 26 13:02 author
+-rw-r--r--    1 ymarchys  2017    1022 Feb 26 13:05 is_option.c
+-rw-r--r--    1 ymarchys  2017    1988 Feb 26 13:25 long_format_not_dirs.c
+-rw-r--r--    1 ymarchys  2017    1787 Feb 26 13:42 Makefile
+-rw-r--r--    1 ymarchys  2017    3713 Feb 26 13:46 CMakeLists.txt
+drwxr-xr-x    8 ymarchys  2017     272 Feb 26 13:50 cmake-build-debug
+-rw-r--r--    1 ymarchys  2017    1367 Feb 26 13:55 print_files.c
+-rw-r--r--    1 ymarchys  2017    2551 Feb 26 13:56 ft_ls.h
+-rw-r--r--    1 ymarchys  2017    1099 Feb 26 13:58 annulation_opt.c
+-rw-r--r--    1 ymarchys  2017     880 Feb 26 17:38 sort_ascii_bubble.o
+-rw-r--r--    1 ymarchys  2017    1252 Feb 26 17:38 parse_options.o
+-rw-r--r--    1 ymarchys  2017    1496 Feb 26 17:38 parse_files.o
+-rw-r--r--    1 ymarchys  2017    1700 Feb 26 17:38 parse_arguments.o
+-rw-r--r--    1 ymarchys  2017    1364 Feb 26 17:38 main.o
+-rw-r--r--    1 ymarchys  2017    2432 Feb 26 17:38 ls_sort.o
+-rw-r--r--    1 ymarchys  2017     724 Feb 26 17:38 is_option.o
+-rw-r--r--    1 ymarchys  2017    2444 Feb 26 17:38 ft_ls_recursion.o
+-rw-r--r--    1 ymarchys  2017    2596 Feb 26 17:38 ft_ls.o
+-rw-r--r--    1 ymarchys  2017     832 Feb 26 17:38 define_type.o
+-rw-r--r--    1 ymarchys  2017     676 Feb 26 17:38 annulation_opt.o
+-rw-r--r--    1 ymarchys  2017     824 Feb 26 17:38 skip_dots.o
+-rw-r--r--    1 ymarchys  2017    2880 Feb 26 17:38 print_long_format.o
+-rw-r--r--    1 ymarchys  2017    1216 Feb 26 17:38 print_files.o
+-rw-r--r--    1 ymarchys  2017     676 Feb 26 17:38 print_dot.o
+-rw-r--r--    1 ymarchys  2017    2584 Feb 26 17:38 print_access.o
+-rw-r--r--    1 ymarchys  2017     976 Feb 26 17:38 not_empty_directory.o
+-rw-r--r--    1 ymarchys  2017     840 Feb 26 17:38 max_size.o
+-rw-r--r--    1 ymarchys  2017     856 Feb 26 17:38 max_links.o
+-rw-r--r--    1 ymarchys  2017     932 Feb 26 17:38 max_len_user.o
+-rw-r--r--    1 ymarchys  2017     932 Feb 26 17:38 max_len_group.o
+-rw-r--r--    1 ymarchys  2017     996 Feb 26 17:38 ls_total.o
+-rw-r--r--    1 ymarchys  2017     944 Feb 26 17:38 ls_count_files.o
+-rw-r--r--    1 ymarchys  2017    1932 Feb 26 17:38 long_format_not_dirs.o
+-rw-r--r--    1 ymarchys  2017    1392 Feb 26 17:38 long_format.o
+-rw-r--r--    1 ymarchys  2017     736 Feb 26 17:38 linkpath.o
+-rw-r--r--    1 ymarchys  2017     776 Feb 26 17:38 is_dir.o
+drwxr-xr-x  127 ymarchys  2017    4318 Feb 26 17:38 libft
+-rwxr-xr-x    1 ymarchys  2017   55880 Feb 26 17:38 ft_ls
+-rw-r--r--    1 ymarchys  2017       0 Feb 26 17:40 rootfile
+drwxr-xr-x    3 ymarchys  2017     102 Feb 26 17:40 A
+-rw-r--r--    1 ymarchys  2017    2459 Feb 26 17:41 ft_ls.c
+-rw-r--r--    1 ymarchys  2017    4202 Feb 26 17:43 diff_my
+-rw-r--r--    1 ymarchys  2017   28160 Feb 26 17:43 diff_ls
+-rwxrwxrwx    1 ymarchys  2017     105 Nov  3  2020 zzz.sh
 
 ./cmake-build-debug:
-CMakeCache.txt
-CMakeFiles
-Makefile
-cmake_install.cmake
-ft_ls
-ft_ls.cbp
+total 552
+-rw-r--r--   1 ymarchys 2017    1257 Feb 26 13:46 cmake_install.cmake
+-rw-r--r--   1 ymarchys 2017   110929 Feb 26 13:46 Makefile
+-rw-r--r--   1 ymarchys 2017   38891 Feb 26 13:46 CMakeCache.txt
+-rw-r--r--   1 ymarchys 2017   19590 Feb 26 13:46 ft_ls.cbp
+-rwxr-xr-x   1 ymarchys 2017   101544 Feb 26 13:50 ft_ls
+drwxr-xr-x  17 ymarchys 2017     578 Feb 26 13:50 CMakeFiles
 
 ./cmake-build-debug/CMakeFiles:
-3.9.4
-CMakeDirectoryInformation.cmake
-CMakeOutput.log
-CMakeTmp
-Makefile.cmake
-Makefile2
-TargetDirectories.txt
-clion-environment.txt
-clion-log.txt
-cmake.check_cache
-feature_tests.bin
-feature_tests.c
-feature_tests.cxx
-ft_ls.dir
-progress.marks
-
-./cmake-build-debug/CMakeFiles/3.9.4:
-CMakeCCompiler.cmake
-CMakeCXXCompiler.cmake
-CMakeDetermineCompilerABI_C.bin
-CMakeDetermineCompilerABI_CXX.bin
-CMakeSystem.cmake
-CompilerIdC
-CompilerIdCXX
-
-./cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC:
-CMakeCCompilerId.c
-a.out
-tmp
-
-./cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/tmp:
-
-./cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX:
-CMakeCXXCompilerId.cpp
-a.out
-tmp
-
-./cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/tmp:
+total 192
+-rw-r--r--   1 ymarchys 2017    728 Feb 26 13:46 feature_tests.c
+-rw-r--r--   1 ymarchys 2017   8844 Feb 26 13:46 feature_tests.cxx
+-rwxr-xr-x   1 ymarchys 2017   8376 Feb 26 13:46 feature_tests.bin
+-rw-r--r--   1 ymarchys 2017     19 Feb 26 13:46 clion-environment.txt
+drwxr-xr-x   2 ymarchys 2017     68 Feb 26 13:46 CMakeTmp
+-rw-r--r--   1 ymarchys 2017   34125 Feb 26 13:46 CMakeOutput.log
+-rw-r--r--   1 ymarchys 2017    655 Feb 26 13:46 CMakeDirectoryInformation.cmake
+drwxr-xr-x   9 ymarchys 2017    306 Feb 26 13:46 3.9.4
+-rw-r--r--   1 ymarchys 2017      4 Feb 26 13:46 progress.marks
+-rw-r--r--   1 ymarchys 2017     85 Feb 26 13:46 cmake.check_cache
+-rw-r--r--   1 ymarchys 2017    269 Feb 26 13:46 clion-log.txt
+-rw-r--r--   1 ymarchys 2017    226 Feb 26 13:46 TargetDirectories.txt
+-rw-r--r--   1 ymarchys 2017   3528 Feb 26 13:46 Makefile2
+-rw-r--r--   1 ymarchys 2017   3114 Feb 26 13:46 Makefile.cmake
+drwxr-xr-x  39 ymarchys 2017   1326 Feb 26 13:50 ft_ls.dir
 
 ./cmake-build-debug/CMakeFiles/CMakeTmp:
 
+./cmake-build-debug/CMakeFiles/3.9.4:
+total 64
+drwxr-xr-x   5 ymarchys 2017    170 Feb 26 13:46 CompilerIdCXX
+drwxr-xr-x   5 ymarchys 2017    170 Feb 26 13:46 CompilerIdC
+-rw-r--r--   1 ymarchys 2017    362 Feb 26 13:46 CMakeSystem.cmake
+-rwxr-xr-x   1 ymarchys 2017   4288 Feb 26 13:46 CMakeDetermineCompilerABI_CXX.bin
+-rwxr-xr-x   1 ymarchys 2017   4304 Feb 26 13:46 CMakeDetermineCompilerABI_C.bin
+-rw-r--r--   1 ymarchys 2017   2385 Feb 26 13:46 CMakeCCompiler.cmake
+-rw-r--r--   1 ymarchys 2017   5007 Feb 26 13:46 CMakeCXXCompiler.cmake
+
+./cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX:
+total 64
+drwxr-xr-x   2 ymarchys 2017     68 Feb 26 13:46 tmp
+-rwxr-xr-x   1 ymarchys 2017   8600 Feb 26 13:46 a.out
+-rw-r--r--   1 ymarchys 2017   16539 Feb 26 13:46 CMakeCXXCompilerId.cpp
+
+./cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/tmp:
+
+./cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC:
+total 64
+drwxr-xr-x   2 ymarchys 2017     68 Feb 26 13:46 tmp
+-rwxr-xr-x   1 ymarchys 2017   8616 Feb 26 13:46 a.out
+-rw-r--r--   1 ymarchys 2017   17086 Feb 26 13:46 CMakeCCompilerId.c
+
+./cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/tmp:
+
 ./cmake-build-debug/CMakeFiles/ft_ls.dir:
-C.includecache
-DependInfo.cmake
-annulation_opt.c.o
-build.make
-cmake_clean.cmake
-define_type.c.o
-depend.internal
-depend.make
-flags.make
-ft_ls.c.o
-ft_ls_recursion.c.o
-is_dir.c.o
-is_option.c.o
-libft
-link.txt
-linkpath.c.o
-long_format.c.o
-long_format_not_dirs.c.o
-ls_count_files.c.o
-ls_sort.c.o
-ls_total.c.o
-main.c.o
-max_len_group.c.o
-max_len_user.c.o
-max_links.c.o
-max_size.c.o
-not_empty_directory.c.o
-parse_arguments.c.o
-parse_files.c.o
-parse_options.c.o
-print_access.c.o
-print_dot.c.o
-print_files.c.o
-print_long_format.c.o
-progress.make
-skip_dots.c.o
-sort_ascii_bubble.c.o
+total 1216
+-rw-r--r--    1 ymarchys 2017   5499 Feb 26 13:46 link.txt
+-rw-r--r--    1 ymarchys 2017    251 Feb 26 13:46 flags.make
+-rw-r--r--    1 ymarchys 2017   6021 Feb 26 13:46 cmake_clean.cmake
+-rw-r--r--    1 ymarchys 2017   265540 Feb 26 13:46 build.make
+-rw-r--r--    1 ymarchys 2017   19064 Feb 26 13:46 DependInfo.cmake
+-rw-r--r--    1 ymarchys 2017   2791 Feb 26 13:46 progress.make
+-rw-r--r--    1 ymarchys 2017   2836 Feb 26 13:46 sort_ascii_bubble.c.o
+-rw-r--r--    1 ymarchys 2017   2584 Feb 26 13:46 skip_dots.c.o
+-rw-r--r--    1 ymarchys 2017   8344 Feb 26 13:46 print_long_format.c.o
+-rw-r--r--    1 ymarchys 2017   2832 Feb 26 13:46 print_dot.c.o
+-rw-r--r--    1 ymarchys 2017   5868 Feb 26 13:46 print_access.c.o
+-rw-r--r--    1 ymarchys 2017   3576 Feb 26 13:46 parse_options.c.o
+-rw-r--r--    1 ymarchys 2017   6232 Feb 26 13:46 parse_files.c.o
+-rw-r--r--    1 ymarchys 2017   6684 Feb 26 13:46 parse_arguments.c.o
+-rw-r--r--    1 ymarchys 2017   4532 Feb 26 13:46 not_empty_directory.c.o
+-rw-r--r--    1 ymarchys 2017   4956 Feb 26 13:46 max_size.c.o
+-rw-r--r--    1 ymarchys 2017   4972 Feb 26 13:46 max_links.c.o
+-rw-r--r--    1 ymarchys 2017   5424 Feb 26 13:46 max_len_user.c.o
+-rw-r--r--    1 ymarchys 2017   5292 Feb 26 13:46 max_len_group.c.o
+-rw-r--r--    1 ymarchys 2017   3784 Feb 26 13:46 main.c.o
+-rw-r--r--    1 ymarchys 2017   5516 Feb 26 13:46 ls_total.c.o
+-rw-r--r--    1 ymarchys 2017   8256 Feb 26 13:46 ls_sort.c.o
+-rw-r--r--    1 ymarchys 2017   4208 Feb 26 13:46 ls_count_files.c.o
+-rw-r--r--    1 ymarchys 2017   4848 Feb 26 13:46 long_format_not_dirs.c.o
+-rw-r--r--    1 ymarchys 2017   3736 Feb 26 13:46 long_format.c.o
+-rw-r--r--    1 ymarchys 2017   2476 Feb 26 13:46 linkpath.c.o
+drwxr-xr-x   62 ymarchys 2017   2108 Feb 26 13:46 libft
+-rw-r--r--    1 ymarchys 2017   2492 Feb 26 13:46 is_option.c.o
+-rw-r--r--    1 ymarchys 2017   4832 Feb 26 13:46 is_dir.c.o
+-rw-r--r--    1 ymarchys 2017   6816 Feb 26 13:46 ft_ls_recursion.c.o
+-rw-r--r--    1 ymarchys 2017   6928 Feb 26 13:46 ft_ls.c.o
+-rw-r--r--    1 ymarchys 2017   4916 Feb 26 13:46 define_type.c.o
+-rw-r--r--    1 ymarchys 2017   2792 Feb 26 13:46 annulation_opt.c.o
+-rw-r--r--    1 ymarchys 2017   3680 Feb 26 13:50 print_files.c.o
+-rw-r--r--    1 ymarchys 2017   52462 Feb 26 13:50 depend.make
+-rw-r--r--    1 ymarchys 2017   46669 Feb 26 13:50 depend.internal
+-rw-r--r--    1 ymarchys 2017   17116 Feb 26 13:50 C.includecache
 
 ./cmake-build-debug/CMakeFiles/ft_ls.dir/libft:
-ft_atoi.c.o
-ft_bzero.c.o
-ft_isalnum.c.o
-ft_isalpha.c.o
-ft_isascii.c.o
-ft_isdigit.c.o
-ft_isprint.c.o
-ft_itoa.c.o
-ft_itoa_len.c.o
-ft_lst_push_back.c.o
-ft_lstadd.c.o
-ft_lstascii.c.o
-ft_lstdel.c.o
-ft_lstdelone.c.o
-ft_lstiter.c.o
-ft_lstmap.c.o
-ft_lstnew.c.o
-ft_memalloc.c.o
-ft_memccpy.c.o
-ft_memchr.c.o
-ft_memcmp.c.o
-ft_memcpy.c.o
-ft_memdel.c.o
-ft_memmove.c.o
-ft_memset.c.o
-ft_power.c.o
-ft_printf
-ft_printf.c.o
-ft_putchar.c.o
-ft_putnbr.c.o
-ft_putstr.c.o
-ft_strcat.c.o
-ft_strchr.c.o
-ft_strclr.c.o
-ft_strcmp.c.o
-ft_strcpy.c.o
-ft_strdel.c.o
-ft_strdup.c.o
-ft_strequ.c.o
-ft_striter.c.o
-ft_striteri.c.o
-ft_strjoin.c.o
-ft_strlcat.c.o
-ft_strlen.c.o
-ft_strmap.c.o
-ft_strmapi.c.o
-ft_strncat.c.o
-ft_strncmp.c.o
-ft_strncpy.c.o
-ft_strnequ.c.o
-ft_strnew.c.o
-ft_strnstr.c.o
-ft_strrchr.c.o
-ft_strsplit.c.o
-ft_strstr.c.o
-ft_strsub.c.o
-ft_strtrim.c.o
-ft_tolower.c.o
-ft_toupper.c.o
-get_next_line.c.o
+total 504
+drwxr-xr-x  38 ymarchys 2017   1292 Feb 26 13:46 ft_printf
+-rw-r--r--   1 ymarchys 2017   2700 Feb 26 13:46 ft_bzero.c.o
+-rw-r--r--   1 ymarchys 2017   3144 Feb 26 13:46 ft_atoi.c.o
+-rw-r--r--   1 ymarchys 2017   3328 Feb 26 13:46 ft_strtrim.c.o
+-rw-r--r--   1 ymarchys 2017   3016 Feb 26 13:46 ft_strsub.c.o
+-rw-r--r--   1 ymarchys 2017   2724 Feb 26 13:46 ft_strstr.c.o
+-rw-r--r--   1 ymarchys 2017   4672 Feb 26 13:46 ft_strsplit.c.o
+-rw-r--r--   1 ymarchys 2017   2868 Feb 26 13:46 ft_strrchr.c.o
+-rw-r--r--   1 ymarchys 2017   3204 Feb 26 13:46 ft_strnstr.c.o
+-rw-r--r--   1 ymarchys 2017   2780 Feb 26 13:46 ft_strnew.c.o
+-rw-r--r--   1 ymarchys 2017   2812 Feb 26 13:46 ft_strnequ.c.o
+-rw-r--r--   1 ymarchys 2017   3060 Feb 26 13:46 ft_strncpy.c.o
+-rw-r--r--   1 ymarchys 2017   3104 Feb 26 13:46 ft_strncmp.c.o
+-rw-r--r--   1 ymarchys 2017   2948 Feb 26 13:46 ft_strncat.c.o
+-rw-r--r--   1 ymarchys 2017   2968 Feb 26 13:46 ft_strmapi.c.o
+-rw-r--r--   1 ymarchys 2017   2856 Feb 26 13:46 ft_strmap.c.o
+-rw-r--r--   1 ymarchys 2017   2668 Feb 26 13:46 ft_strlen.c.o
+-rw-r--r--   1 ymarchys 2017   2964 Feb 26 13:46 ft_strlcat.c.o
+-rw-r--r--   1 ymarchys 2017   2732 Feb 26 13:46 ft_strjoin.c.o
+-rw-r--r--   1 ymarchys 2017   2588 Feb 26 13:46 ft_striteri.c.o
+-rw-r--r--   1 ymarchys 2017   2476 Feb 26 13:46 ft_striter.c.o
+-rw-r--r--   1 ymarchys 2017   2536 Feb 26 13:46 ft_strequ.c.o
+-rw-r--r--   1 ymarchys 2017   2748 Feb 26 13:46 ft_strdup.c.o
+-rw-r--r--   1 ymarchys 2017   2400 Feb 26 13:46 ft_strdel.c.o
+-rw-r--r--   1 ymarchys 2017   2524 Feb 26 13:46 ft_strcpy.c.o
+-rw-r--r--   1 ymarchys 2017   2684 Feb 26 13:46 ft_strcmp.c.o
+-rw-r--r--   1 ymarchys 2017   2520 Feb 26 13:46 ft_strclr.c.o
+-rw-r--r--   1 ymarchys 2017   2696 Feb 26 13:46 ft_strchr.c.o
+-rw-r--r--   1 ymarchys 2017   2620 Feb 26 13:46 ft_strcat.c.o
+-rw-r--r--   1 ymarchys 2017   2560 Feb 26 13:46 ft_putstr.c.o
+-rw-r--r--   1 ymarchys 2017   2636 Feb 26 13:46 ft_putnbr.c.o
+-rw-r--r--   1 ymarchys 2017   2424 Feb 26 13:46 ft_putchar.c.o
+-rw-r--r--   1 ymarchys 2017   9860 Feb 26 13:46 ft_printf.c.o
+-rw-r--r--   1 ymarchys 2017   2756 Feb 26 13:46 ft_power.c.o
+-rw-r--r--   1 ymarchys 2017   2796 Feb 26 13:46 ft_memset.c.o
+-rw-r--r--   1 ymarchys 2017   2896 Feb 26 13:46 ft_memmove.c.o
+-rw-r--r--   1 ymarchys 2017   2352 Feb 26 13:46 ft_memdel.c.o
+-rw-r--r--   1 ymarchys 2017   2796 Feb 26 13:46 ft_memcpy.c.o
+-rw-r--r--   1 ymarchys 2017   2996 Feb 26 13:46 ft_memcmp.c.o
+-rw-r--r--   1 ymarchys 2017   2892 Feb 26 13:46 ft_memchr.c.o
+-rw-r--r--   1 ymarchys 2017   2972 Feb 26 13:46 ft_memccpy.c.o
+-rw-r--r--   1 ymarchys 2017   2732 Feb 26 13:46 ft_memalloc.c.o
+-rw-r--r--   1 ymarchys 2017   3212 Feb 26 13:46 ft_lstnew.c.o
+-rw-r--r--   1 ymarchys 2017   3124 Feb 26 13:46 ft_lstmap.c.o
+-rw-r--r--   1 ymarchys 2017   2948 Feb 26 13:46 ft_lstiter.c.o
+-rw-r--r--   1 ymarchys 2017   3012 Feb 26 13:46 ft_lstdelone.c.o
+-rw-r--r--   1 ymarchys 2017   3108 Feb 26 13:46 ft_lstdel.c.o
+-rw-r--r--   1 ymarchys 2017   3488 Feb 26 13:46 ft_lstascii.c.o
+-rw-r--r--   1 ymarchys 2017   2872 Feb 26 13:46 ft_lstadd.c.o
+-rw-r--r--   1 ymarchys 2017   3032 Feb 26 13:46 ft_lst_push_back.c.o
+-rw-r--r--   1 ymarchys 2017   2664 Feb 26 13:46 ft_itoa_len.c.o
+-rw-r--r--   1 ymarchys 2017   3192 Feb 26 13:46 ft_itoa.c.o
+-rw-r--r--   1 ymarchys 2017   2348 Feb 26 13:46 ft_isprint.c.o
+-rw-r--r--   1 ymarchys 2017   2348 Feb 26 13:46 ft_isdigit.c.o
+-rw-r--r--   1 ymarchys 2017   2348 Feb 26 13:46 ft_isascii.c.o
+-rw-r--r--   1 ymarchys 2017   2384 Feb 26 13:46 ft_isalpha.c.o
+-rw-r--r--   1 ymarchys 2017   2456 Feb 26 13:46 ft_isalnum.c.o
+-rw-r--r--   1 ymarchys 2017   5748 Feb 26 13:46 get_next_line.c.o
+-rw-r--r--   1 ymarchys 2017   2364 Feb 26 13:46 ft_toupper.c.o
+-rw-r--r--   1 ymarchys 2017   2364 Feb 26 13:46 ft_tolower.c.o
 
 ./cmake-build-debug/CMakeFiles/ft_ls.dir/libft/ft_printf:
-active_bits.c.o
-annulation.c.o
-check_flags_modif.c.o
-color_off.c.o
-count_bytes.c.o
-ibs.c.o
-ibs_uns.c.o
-if_color.c.o
-is_flag_mod.c.o
-is_modificator.c.o
-is_parse_char.c.o
-is_type.c.o
-m_putchar.c.o
-m_putstr.c.o
-modificator_dec.c.o
-modificator_hex.c.o
-modificator_octal.c.o
-modificator_uns.c.o
-prec_diff.c.o
-put_binary.c.o
-put_c.c.o
-put_dec.c.o
-put_float.c.o
-put_hex.c.o
-put_lc.c.o
-put_ls.c.o
-put_octal.c.o
-put_p.c.o
-put_padding.c.o
-put_percent.c.o
-put_s.c.o
-put_unknown_type.c.o
-put_unsigned.c.o
-putstr_ls.c.o
-set_to_zero.c.o
-strlen_ls.c.o
-
-./dir:
+total 416
+-rw-r--r--   1 ymarchys 2017   2792 Feb 26 13:46 strlen_ls.c.o
+-rw-r--r--   1 ymarchys 2017   2456 Feb 26 13:46 set_to_zero.c.o
+-rw-r--r--   1 ymarchys 2017   3116 Feb 26 13:46 putstr_ls.c.o
+-rw-r--r--   1 ymarchys 2017   5008 Feb 26 13:46 put_unsigned.c.o
+-rw-r--r--   1 ymarchys 2017   3504 Feb 26 13:46 put_unknown_type.c.o
+-rw-r--r--   1 ymarchys 2017   5920 Feb 26 13:46 put_s.c.o
+-rw-r--r--   1 ymarchys 2017   3484 Feb 26 13:46 put_percent.c.o
+-rw-r--r--   1 ymarchys 2017   3080 Feb 26 13:46 put_padding.c.o
+-rw-r--r--   1 ymarchys 2017   6496 Feb 26 13:46 put_p.c.o
+-rw-r--r--   1 ymarchys 2017   7004 Feb 26 13:46 put_octal.c.o
+-rw-r--r--   1 ymarchys 2017   6200 Feb 26 13:46 put_ls.c.o
+-rw-r--r--   1 ymarchys 2017   4428 Feb 26 13:46 put_lc.c.o
+-rw-r--r--   1 ymarchys 2017   6208 Feb 26 13:46 put_hex.c.o
+-rw-r--r--   1 ymarchys 2017   8540 Feb 26 13:46 put_float.c.o
+-rw-r--r--   1 ymarchys 2017   6964 Feb 26 13:46 put_dec.c.o
+-rw-r--r--   1 ymarchys 2017   4048 Feb 26 13:46 put_c.c.o
+-rw-r--r--   1 ymarchys 2017   3572 Feb 26 13:46 put_binary.c.o
+-rw-r--r--   1 ymarchys 2017   2932 Feb 26 13:46 prec_diff.c.o
+-rw-r--r--   1 ymarchys 2017   6280 Feb 26 13:46 modificator_uns.c.o
+-rw-r--r--   1 ymarchys 2017   6132 Feb 26 13:46 modificator_octal.c.o
+-rw-r--r--   1 ymarchys 2017   5016 Feb 26 13:46 modificator_hex.c.o
+-rw-r--r--   1 ymarchys 2017   6104 Feb 26 13:46 modificator_dec.c.o
+-rw-r--r--   1 ymarchys 2017   2736 Feb 26 13:46 m_putstr.c.o
+-rw-r--r--   1 ymarchys 2017   4564 Feb 26 13:46 m_putchar.c.o
+-rw-r--r--   1 ymarchys 2017   2756 Feb 26 13:46 is_type.c.o
+-rw-r--r--   1 ymarchys 2017   2568 Feb 26 13:46 is_parse_char.c.o
+-rw-r--r--   1 ymarchys 2017   2484 Feb 26 13:46 is_modificator.c.o
+-rw-r--r--   1 ymarchys 2017   2612 Feb 26 13:46 is_flag_mod.c.o
+-rw-r--r--   1 ymarchys 2017   5428 Feb 26 13:46 if_color.c.o
+-rw-r--r--   1 ymarchys 2017   3744 Feb 26 13:46 ibs_uns.c.o
+-rw-r--r--   1 ymarchys 2017   3976 Feb 26 13:46 ibs.c.o
+-rw-r--r--   1 ymarchys 2017   2576 Feb 26 13:46 count_bytes.c.o
+-rw-r--r--   1 ymarchys 2017   2504 Feb 26 13:46 color_off.c.o
+-rw-r--r--   1 ymarchys 2017   3468 Feb 26 13:46 check_flags_modif.c.o
+-rw-r--r--   1 ymarchys 2017   3204 Feb 26 13:46 annulation.c.o
+-rw-r--r--   1 ymarchys 2017   2532 Feb 26 13:46 active_bits.c.o
 
 ./libft:
-Makefile
-ft_atoi.c
-ft_atoi.o
-ft_bzero.c
-ft_bzero.o
-ft_isalnum.c
-ft_isalnum.o
-ft_isalpha.c
-ft_isalpha.o
-ft_isascii.c
-ft_isascii.o
-ft_isdigit.c
-ft_isdigit.o
-ft_isprint.c
-ft_isprint.o
-ft_itoa.c
-ft_itoa.o
-ft_itoa_len.c
-ft_itoa_len.o
-ft_lst_push_back.c
-ft_lst_push_back.o
-ft_lstadd.c
-ft_lstadd.o
-ft_lstascii.c
-ft_lstascii.o
-ft_lstdel.c
-ft_lstdel.o
-ft_lstdelone.c
-ft_lstdelone.o
-ft_lstiter.c
-ft_lstiter.o
-ft_lstmap.c
-ft_lstmap.o
-ft_lstnew.c
-ft_lstnew.o
-ft_memalloc.c
-ft_memalloc.o
-ft_memccpy.c
-ft_memccpy.o
-ft_memchr.c
-ft_memchr.o
-ft_memcmp.c
-ft_memcmp.o
-ft_memcpy.c
-ft_memcpy.o
-ft_memdel.c
-ft_memdel.o
-ft_memmove.c
-ft_memmove.o
-ft_memset.c
-ft_memset.o
-ft_power.c
-ft_power.o
-ft_printf
-ft_printf.c
-ft_printf.o
-ft_putchar.c
-ft_putchar.o
-ft_putnbr.c
-ft_putnbr.o
-ft_putstr.c
-ft_putstr.o
-ft_strcat.c
-ft_strcat.o
-ft_strchr.c
-ft_strchr.o
-ft_strclr.c
-ft_strclr.o
-ft_strcmp.c
-ft_strcmp.o
-ft_strcpy.c
-ft_strcpy.o
-ft_strdel.c
-ft_strdel.o
-ft_strdup.c
-ft_strdup.o
-ft_strequ.c
-ft_strequ.o
-ft_striter.c
-ft_striter.o
-ft_striteri.c
-ft_striteri.o
-ft_strjoin.c
-ft_strjoin.o
-ft_strlcat.c
-ft_strlcat.o
-ft_strlen.c
-ft_strlen.o
-ft_strmap.c
-ft_strmap.o
-ft_strmapi.c
-ft_strmapi.o
-ft_strncat.c
-ft_strncat.o
-ft_strncmp.c
-ft_strncmp.o
-ft_strncpy.c
-ft_strncpy.o
-ft_strnequ.c
-ft_strnequ.o
-ft_strnew.c
-ft_strnew.o
-ft_strnstr.c
-ft_strnstr.o
-ft_strrchr.c
-ft_strrchr.o
-ft_strsplit.c
-ft_strsplit.o
-ft_strstr.c
-ft_strstr.o
-ft_strsub.c
-ft_strsub.o
-ft_strtrim.c
-ft_strtrim.o
-ft_tolower.c
-ft_tolower.o
-ft_toupper.c
-ft_toupper.o
-get_next_line.c
-get_next_line.h
-get_next_line.o
-libft.a
-libft.h
-link
+total 1216
+lrwxr-xr-x   1 ymarchys 2017        4 Feb 26 12:36 link -> link
+-rw-r--r--   1 ymarchys 2017     3849 Feb 26 12:36 libft.h
+-rw-r--r--   1 ymarchys 2017     1086 Feb 26 12:36 get_next_line.h
+-rw-r--r--   1 ymarchys 2017     2422 Feb 26 12:36 get_next_line.c
+-rw-r--r--   1 ymarchys 2017     1005 Feb 26 12:36 ft_toupper.c
+-rw-r--r--   1 ymarchys 2017     1003 Feb 26 12:36 ft_tolower.c
+-rw-r--r--   1 ymarchys 2017     1382 Feb 26 12:36 ft_strtrim.c
+-rw-r--r--   1 ymarchys 2017     1218 Feb 26 12:36 ft_strsub.c
+-rw-r--r--   1 ymarchys 2017     1232 Feb 26 12:36 ft_strstr.c
+-rw-r--r--   1 ymarchys 2017     1891 Feb 26 12:36 ft_strsplit.c
+-rw-r--r--   1 ymarchys 2017     1260 Feb 26 12:36 ft_strrchr.c
+-rw-r--r--   1 ymarchys 2017     1399 Feb 26 12:36 ft_strnstr.c
+-rw-r--r--   1 ymarchys 2017     1085 Feb 26 12:36 ft_strnew.c
+-rw-r--r--   1 ymarchys 2017     1072 Feb 26 12:36 ft_strnequ.c
+-rw-r--r--   1 ymarchys 2017     1191 Feb 26 12:36 ft_strncpy.c
+-rw-r--r--   1 ymarchys 2017     1225 Feb 26 12:36 ft_strncmp.c
+-rw-r--r--   1 ymarchys 2017     1128 Feb 26 12:36 ft_strncat.c
+-rw-r--r--   1 ymarchys 2017     1313 Feb 26 12:36 ft_strmapi.c
+-rw-r--r--   1 ymarchys 2017     1241 Feb 26 12:36 ft_strmap.c
+-rw-r--r--   1 ymarchys 2017     1024 Feb 26 12:36 ft_strlen.c
+-rw-r--r--   1 ymarchys 2017     1158 Feb 26 12:36 ft_strlcat.c
+-rw-r--r--   1 ymarchys 2017     1176 Feb 26 12:36 ft_strjoin.c
+-rw-r--r--   1 ymarchys 2017     1068 Feb 26 12:36 ft_striteri.c
+-rw-r--r--   1 ymarchys 2017     1028 Feb 26 12:36 ft_striter.c
+-rw-r--r--   1 ymarchys 2017     1057 Feb 26 12:36 ft_strequ.c
+-rw-r--r--   1 ymarchys 2017     1188 Feb 26 12:36 ft_strdup.c
+-rw-r--r--   1 ymarchys 2017      984 Feb 26 12:36 ft_strdel.c
+-rw-r--r--   1 ymarchys 2017     1056 Feb 26 12:36 ft_strcpy.c
+-rw-r--r--   1 ymarchys 2017     1155 Feb 26 12:36 ft_strcmp.c
+-rw-r--r--   1 ymarchys 2017     1011 Feb 26 12:36 ft_strclr.c
+-rw-r--r--   1 ymarchys 2017     1135 Feb 26 12:36 ft_strchr.c
+-rw-r--r--   1 ymarchys 2017     1110 Feb 26 12:36 ft_strcat.c
+-rw-r--r--   1 ymarchys 2017     1050 Feb 26 12:36 ft_putstr.c
+-rw-r--r--   1 ymarchys 2017     1141 Feb 26 12:36 ft_putnbr.c
+-rw-r--r--   1 ymarchys 2017      985 Feb 26 12:36 ft_putchar.c
+-rw-r--r--   1 ymarchys 2017     3722 Feb 26 12:36 ft_printf.c
+-rw-r--r--   1 ymarchys 2017     1111 Feb 26 12:36 ft_power.c
+-rw-r--r--   1 ymarchys 2017     1093 Feb 26 12:36 ft_memset.c
+-rw-r--r--   1 ymarchys 2017     1112 Feb 26 12:36 ft_memmove.c
+-rw-r--r--   1 ymarchys 2017      984 Feb 26 12:36 ft_memdel.c
+-rw-r--r--   1 ymarchys 2017     1138 Feb 26 12:36 ft_memcpy.c
+-rw-r--r--   1 ymarchys 2017     1258 Feb 26 12:36 ft_memcmp.c
+-rw-r--r--   1 ymarchys 2017     1171 Feb 26 12:36 ft_memchr.c
+-rw-r--r--   1 ymarchys 2017     1222 Feb 26 12:36 ft_memccpy.c
+-rw-r--r--   1 ymarchys 2017     1078 Feb 26 12:36 ft_memalloc.c
+-rw-r--r--   1 ymarchys 2017     1370 Feb 26 12:36 ft_lstnew.c
+-rw-r--r--   1 ymarchys 2017     1227 Feb 26 12:36 ft_lstmap.c
+-rw-r--r--   1 ymarchys 2017     1052 Feb 26 12:36 ft_lstiter.c
+-rw-r--r--   1 ymarchys 2017     1081 Feb 26 12:36 ft_lstdelone.c
+-rw-r--r--   1 ymarchys 2017     1175 Feb 26 12:36 ft_lstdel.c
+-rw-r--r--   1 ymarchys 2017     1510 Feb 26 12:36 ft_lstascii.c
+-rw-r--r--   1 ymarchys 2017     1019 Feb 26 12:36 ft_lstadd.c
+-rw-r--r--   1 ymarchys 2017     1148 Feb 26 12:36 ft_lst_push_back.c
+-rw-r--r--   1 ymarchys 2017     1041 Feb 26 12:36 ft_itoa_len.c
+-rw-r--r--   1 ymarchys 2017     1507 Feb 26 12:36 ft_itoa.c
+-rw-r--r--   1 ymarchys 2017      999 Feb 26 12:36 ft_isprint.c
+-rw-r--r--   1 ymarchys 2017     1000 Feb 26 12:36 ft_isdigit.c
+-rw-r--r--   1 ymarchys 2017      998 Feb 26 12:36 ft_isascii.c
+-rw-r--r--   1 ymarchys 2017     1028 Feb 26 12:36 ft_isalpha.c
+-rw-r--r--   1 ymarchys 2017     1020 Feb 26 12:36 ft_isalnum.c
+-rw-r--r--   1 ymarchys 2017     1025 Feb 26 12:36 ft_bzero.c
+-rw-r--r--   1 ymarchys 2017     1268 Feb 26 12:36 ft_atoi.c
+-rw-r--r--   1 ymarchys 2017     3341 Feb 26 12:36 Makefile
+-rw-r--r--   1 ymarchys 2017     5100 Feb 26 17:38 ft_printf.o
+-rw-r--r--   1 ymarchys 2017      660 Feb 26 17:38 ft_strlen.o
+-rw-r--r--   1 ymarchys 2017      828 Feb 26 17:38 ft_strdup.o
+drwxr-xr-x  75 ymarchys 2017     2550 Feb 26 17:38 ft_printf
+-rw-r--r--   1 ymarchys 2017      684 Feb 26 17:38 ft_memset.o
+-rw-r--r--   1 ymarchys 2017      820 Feb 26 17:38 ft_memmove.o
+-rw-r--r--   1 ymarchys 2017      700 Feb 26 17:38 ft_memcpy.o
+-rw-r--r--   1 ymarchys 2017      796 Feb 26 17:38 ft_memcmp.o
+-rw-r--r--   1 ymarchys 2017      724 Feb 26 17:38 ft_memchr.o
+-rw-r--r--   1 ymarchys 2017      760 Feb 26 17:38 ft_memccpy.o
+-rw-r--r--   1 ymarchys 2017      668 Feb 26 17:38 ft_bzero.o
+-rw-r--r--   1 ymarchys 2017      656 Feb 26 17:38 ft_toupper.o
+-rw-r--r--   1 ymarchys 2017      656 Feb 26 17:38 ft_tolower.o
+-rw-r--r--   1 ymarchys 2017      804 Feb 26 17:38 ft_strstr.o
+-rw-r--r--   1 ymarchys 2017      864 Feb 26 17:38 ft_strrchr.o
+-rw-r--r--   1 ymarchys 2017      968 Feb 26 17:38 ft_strnstr.o
+-rw-r--r--   1 ymarchys 2017      760 Feb 26 17:38 ft_strnew.o
+-rw-r--r--   1 ymarchys 2017      748 Feb 26 17:38 ft_strnequ.o
+-rw-r--r--   1 ymarchys 2017      868 Feb 26 17:38 ft_strncpy.o
+-rw-r--r--   1 ymarchys 2017      848 Feb 26 17:38 ft_strncmp.o
+-rw-r--r--   1 ymarchys 2017      800 Feb 26 17:38 ft_strncat.o
+-rw-r--r--   1 ymarchys 2017      896 Feb 26 17:38 ft_strmapi.o
+-rw-r--r--   1 ymarchys 2017      880 Feb 26 17:38 ft_strmap.o
+-rw-r--r--   1 ymarchys 2017      852 Feb 26 17:38 ft_strlcat.o
+-rw-r--r--   1 ymarchys 2017      720 Feb 26 17:38 ft_striteri.o
+-rw-r--r--   1 ymarchys 2017      696 Feb 26 17:38 ft_striter.o
+-rw-r--r--   1 ymarchys 2017      736 Feb 26 17:38 ft_strequ.o
+-rw-r--r--   1 ymarchys 2017      684 Feb 26 17:38 ft_strdel.o
+-rw-r--r--   1 ymarchys 2017      692 Feb 26 17:38 ft_strcpy.o
+-rw-r--r--   1 ymarchys 2017      740 Feb 26 17:38 ft_strcmp.o
+-rw-r--r--   1 ymarchys 2017      732 Feb 26 17:38 ft_strclr.o
+-rw-r--r--   1 ymarchys 2017      796 Feb 26 17:38 ft_strchr.o
+-rw-r--r--   1 ymarchys 2017      748 Feb 26 17:38 ft_strcat.o
+-rw-r--r--   1 ymarchys 2017      684 Feb 26 17:38 ft_memdel.o
+-rw-r--r--   1 ymarchys 2017      760 Feb 26 17:38 ft_memalloc.o
+-rw-r--r--   1 ymarchys 2017      656 Feb 26 17:38 ft_isprint.o
+-rw-r--r--   1 ymarchys 2017      656 Feb 26 17:38 ft_isdigit.o
+-rw-r--r--   1 ymarchys 2017      656 Feb 26 17:38 ft_isascii.o
+-rw-r--r--   1 ymarchys 2017      672 Feb 26 17:38 ft_isalpha.o
+-rw-r--r--   1 ymarchys 2017      752 Feb 26 17:38 ft_isalnum.o
+-rw-r--r--   1 ymarchys 2017      932 Feb 26 17:38 ft_atoi.o
+-rw-r--r--   1 ymarchys 2017   117736 Feb 26 17:38 libft.a
+-rw-r--r--   1 ymarchys 2017     2288 Feb 26 17:38 get_next_line.o
+-rw-r--r--   1 ymarchys 2017     1268 Feb 26 17:38 ft_strtrim.o
+-rw-r--r--   1 ymarchys 2017      828 Feb 26 17:38 ft_strsub.o
+-rw-r--r--   1 ymarchys 2017     1992 Feb 26 17:38 ft_strsplit.o
+-rw-r--r--   1 ymarchys 2017      888 Feb 26 17:38 ft_strjoin.o
+-rw-r--r--   1 ymarchys 2017      736 Feb 26 17:38 ft_putstr.o
+-rw-r--r--   1 ymarchys 2017      800 Feb 26 17:38 ft_putnbr.o
+-rw-r--r--   1 ymarchys 2017      684 Feb 26 17:38 ft_putchar.o
+-rw-r--r--   1 ymarchys 2017      700 Feb 26 17:38 ft_power.o
+-rw-r--r--   1 ymarchys 2017      888 Feb 26 17:38 ft_lstnew.o
+-rw-r--r--   1 ymarchys 2017      756 Feb 26 17:38 ft_lstmap.o
+-rw-r--r--   1 ymarchys 2017      696 Feb 26 17:38 ft_lstiter.o
+-rw-r--r--   1 ymarchys 2017      736 Feb 26 17:38 ft_lstdelone.o
+-rw-r--r--   1 ymarchys 2017      772 Feb 26 17:38 ft_lstdel.o
+-rw-r--r--   1 ymarchys 2017     1012 Feb 26 17:38 ft_lstascii.o
+-rw-r--r--   1 ymarchys 2017      660 Feb 26 17:38 ft_lstadd.o
+-rw-r--r--   1 ymarchys 2017      724 Feb 26 17:38 ft_lst_push_back.o
+-rw-r--r--   1 ymarchys 2017      680 Feb 26 17:38 ft_itoa_len.o
+-rw-r--r--   1 ymarchys 2017     1000 Feb 26 17:38 ft_itoa.o
 
 ./libft/ft_printf:
-active_bits.c
-active_bits.o
-annulation.c
-annulation.o
-check_flags_modif.c
-check_flags_modif.o
-color_off.c
-color_off.o
-count_bytes.c
-count_bytes.o
-ft_printf.h
-ibs.c
-ibs.o
-ibs_uns.c
-ibs_uns.o
-if_color.c
-if_color.o
-is_flag_mod.c
-is_flag_mod.o
-is_modificator.c
-is_modificator.o
-is_parse_char.c
-is_parse_char.o
-is_type.c
-is_type.o
-m_putchar.c
-m_putchar.o
-m_putstr.c
-m_putstr.o
-modificator_dec.c
-modificator_dec.o
-modificator_hex.c
-modificator_hex.o
-modificator_octal.c
-modificator_octal.o
-modificator_uns.c
-modificator_uns.o
-prec_diff.c
-prec_diff.o
-put_binary.c
-put_binary.o
-put_c.c
-put_c.o
-put_dec.c
-put_dec.o
-put_float.c
-put_float.o
-put_hex.c
-put_hex.o
-put_lc.c
-put_lc.o
-put_ls.c
-put_ls.o
-put_octal.c
-put_octal.o
-put_p.c
-put_p.o
-put_padding.c
-put_padding.o
-put_percent.c
-put_percent.o
-put_s.c
-put_s.o
-put_unknown_type.c
-put_unknown_type.o
-put_unsigned.c
-put_unsigned.o
-putstr_ls.c
-putstr_ls.o
-set_to_zero.c
-set_to_zero.o
-strlen_ls.c
-strlen_ls.o
+total 584
+-rw-r--r--   1 ymarchys 2017   1072 Feb 26 12:36 strlen_ls.c
+-rw-r--r--   1 ymarchys 2017   1005 Feb 26 12:36 set_to_zero.c
+-rw-r--r--   1 ymarchys 2017   1280 Feb 26 12:36 putstr_ls.c
+-rw-r--r--   1 ymarchys 2017   1941 Feb 26 12:36 put_unsigned.c
+-rw-r--r--   1 ymarchys 2017   1279 Feb 26 12:36 put_unknown_type.c
+-rw-r--r--   1 ymarchys 2017   2230 Feb 26 12:36 put_s.c
+-rw-r--r--   1 ymarchys 2017   1242 Feb 26 12:36 put_percent.c
+-rw-r--r--   1 ymarchys 2017   1221 Feb 26 12:36 put_padding.c
+-rw-r--r--   1 ymarchys 2017   2532 Feb 26 12:36 put_p.c
+-rw-r--r--   1 ymarchys 2017   3040 Feb 26 12:36 put_octal.c
+-rw-r--r--   1 ymarchys 2017   2365 Feb 26 12:36 put_ls.c
+-rw-r--r--   1 ymarchys 2017   1452 Feb 26 12:36 put_lc.c
+-rw-r--r--   1 ymarchys 2017   2554 Feb 26 12:36 put_hex.c
+-rw-r--r--   1 ymarchys 2017   3008 Feb 26 12:36 put_float.c
+-rw-r--r--   1 ymarchys 2017   2807 Feb 26 12:36 put_dec.c
+-rw-r--r--   1 ymarchys 2017   1309 Feb 26 12:36 put_c.c
+-rw-r--r--   1 ymarchys 2017   1320 Feb 26 12:36 put_binary.c
+-rw-r--r--   1 ymarchys 2017   1219 Feb 26 12:36 prec_diff.c
+-rw-r--r--   1 ymarchys 2017   2185 Feb 26 12:36 modificator_uns.c
+-rw-r--r--   1 ymarchys 2017   2083 Feb 26 12:36 modificator_octal.c
+-rw-r--r--   1 ymarchys 2017   1513 Feb 26 12:36 modificator_hex.c
+-rw-r--r--   1 ymarchys 2017   1970 Feb 26 12:36 modificator_dec.c
+-rw-r--r--   1 ymarchys 2017   1148 Feb 26 12:36 m_putstr.c
+-rw-r--r--   1 ymarchys 2017   2424 Feb 26 12:36 m_putchar.c
+-rw-r--r--   1 ymarchys 2017   1138 Feb 26 12:36 is_type.c
+-rw-r--r--   1 ymarchys 2017   1015 Feb 26 12:36 is_parse_char.c
+-rw-r--r--   1 ymarchys 2017   1004 Feb 26 12:36 is_modificator.c
+-rw-r--r--   1 ymarchys 2017   1064 Feb 26 12:36 is_flag_mod.c
+-rw-r--r--   1 ymarchys 2017   2380 Feb 26 12:36 if_color.c
+-rw-r--r--   1 ymarchys 2017   1522 Feb 26 12:36 ibs_uns.c
+-rw-r--r--   1 ymarchys 2017   1666 Feb 26 12:36 ibs.c
+-rw-r--r--   1 ymarchys 2017   2976 Feb 26 12:36 ft_printf.h
+-rw-r--r--   1 ymarchys 2017   1112 Feb 26 12:36 count_bytes.c
+-rw-r--r--   1 ymarchys 2017    986 Feb 26 12:36 color_off.c
+-rw-r--r--   1 ymarchys 2017   1311 Feb 26 12:36 check_flags_modif.c
+-rw-r--r--   1 ymarchys 2017   1200 Feb 26 12:36 annulation.c
+-rw-r--r--   1 ymarchys 2017   1084 Feb 26 12:36 active_bits.c
+-rw-r--r--   1 ymarchys 2017    664 Feb 26 17:38 set_to_zero.o
+-rw-r--r--   1 ymarchys 2017   1004 Feb 26 17:38 put_percent.o
+-rw-r--r--   1 ymarchys 2017   3136 Feb 26 17:38 put_dec.o
+-rw-r--r--   1 ymarchys 2017    824 Feb 26 17:38 m_putstr.o
+-rw-r--r--   1 ymarchys 2017   1864 Feb 26 17:38 m_putchar.o
+-rw-r--r--   1 ymarchys 2017    884 Feb 26 17:38 is_type.o
+-rw-r--r--   1 ymarchys 2017    788 Feb 26 17:38 is_parse_char.o
+-rw-r--r--   1 ymarchys 2017    692 Feb 26 17:38 is_modificator.o
+-rw-r--r--   1 ymarchys 2017    784 Feb 26 17:38 is_flag_mod.o
+-rw-r--r--   1 ymarchys 2017   1264 Feb 26 17:38 ibs_uns.o
+-rw-r--r--   1 ymarchys 2017   1428 Feb 26 17:38 ibs.o
+-rw-r--r--   1 ymarchys 2017    916 Feb 26 17:38 check_flags_modif.o
+-rw-r--r--   1 ymarchys 2017    752 Feb 26 17:38 annulation.o
+-rw-r--r--   1 ymarchys 2017    680 Feb 26 17:38 active_bits.o
+-rw-r--r--   1 ymarchys 2017    756 Feb 26 17:38 strlen_ls.o
+-rw-r--r--   1 ymarchys 2017    948 Feb 26 17:38 putstr_ls.o
+-rw-r--r--   1 ymarchys 2017   1840 Feb 26 17:38 put_unsigned.o
+-rw-r--r--   1 ymarchys 2017    984 Feb 26 17:38 put_unknown_type.o
+-rw-r--r--   1 ymarchys 2017   2204 Feb 26 17:38 put_s.o
+-rw-r--r--   1 ymarchys 2017    888 Feb 26 17:38 put_padding.o
+-rw-r--r--   1 ymarchys 2017   2820 Feb 26 17:38 put_p.o
+-rw-r--r--   1 ymarchys 2017   3180 Feb 26 17:38 put_octal.o
+-rw-r--r--   1 ymarchys 2017   2300 Feb 26 17:38 put_ls.o
+-rw-r--r--   1 ymarchys 2017   1212 Feb 26 17:38 put_lc.o
+-rw-r--r--   1 ymarchys 2017   2652 Feb 26 17:38 put_hex.o
+-rw-r--r--   1 ymarchys 2017   3852 Feb 26 17:38 put_float.o
+-rw-r--r--   1 ymarchys 2017   1004 Feb 26 17:38 put_c.o
+-rw-r--r--   1 ymarchys 2017   1032 Feb 26 17:38 put_binary.o
+-rw-r--r--   1 ymarchys 2017    804 Feb 26 17:38 prec_diff.o
+-rw-r--r--   1 ymarchys 2017   2564 Feb 26 17:38 modificator_uns.o
+-rw-r--r--   1 ymarchys 2017   2468 Feb 26 17:38 modificator_octal.o
+-rw-r--r--   1 ymarchys 2017   1612 Feb 26 17:38 modificator_hex.o
+-rw-r--r--   1 ymarchys 2017   2456 Feb 26 17:38 modificator_dec.o
+-rw-r--r--   1 ymarchys 2017   2384 Feb 26 17:38 if_color.o
+-rw-r--r--   1 ymarchys 2017    740 Feb 26 17:38 count_bytes.o
+-rw-r--r--   1 ymarchys 2017    804 Feb 26 17:38 color_off.o
+
+./A:
+total 0
+-rw-r--r--   1 ymarchys 2017      0 Feb 26 17:40 file
