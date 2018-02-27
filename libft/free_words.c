@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ls_link.c                                          :+:      :+:    :+:   */
+/*   free_words.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/26 20:21:00 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/26 20:21:00 by ymarchys         ###   ########.fr       */
+/*   Created: 2018/02/27 14:37:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/02/27 14:37:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_ls.h"
+#include "libft.h"
 
-void		ls_link(char *linkname, t_ls *ls, char *path)
+void	free_words(char **files)
 {
-	char		*link_path;
-	char		*tmp;
+	int i;
 
-	if (path)
+	i = 0;
+	while (files[i] != NULL)
 	{
-		tmp = ft_strjoin(path, linkname);
-		link_path = linkpath(tmp);
-		ft_strdel(&tmp);
+		free(files[i]);
+		files[i] = NULL;
+		i++;
 	}
-	else
-		link_path = linkpath(linkname);
-	ls_dir(link_path, ls, NULL);
-	ft_strdel(&link_path);
+	free(files);
 }

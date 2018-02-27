@@ -47,32 +47,37 @@ static void		ls_dir_ext_recurs(t_ls *ls, char **files, char *path3, int n)
 static void		ls_dir_recursion(char *dirname, t_ls *ls, char *path)
 {
 	char			**files;
-	char			*path2;
-	char			*path3;
+	char			*tmp1;
+	char			*tmp2;
 	int				n;
 
-	path2 = ft_strjoin(path, dirname);
-	path3 = ft_strjoin(path2, "/");
-	if ((n = ls_count_files(dirname, path3)))
+	tmp1 = ft_strjoin(path, dirname);
+	tmp2 = ft_strjoin(tmp1, "/");
+	ft_strdel(&tmp1);
+	if ((n = ls_count_files(dirname, tmp2)))
 	{
 		files = (char **)malloc(sizeof(char *) * (n + 1));
-		files = ls_read_files_recursion(files, path3);
-		ls_dir_ext_recurs(ls, files, path3, n);
+		files = ls_read_files_recursion(files, tmp2);
+		ls_dir_ext_recurs(ls, files, tmp2, n);
 	}
+	ft_strdel(&tmp2);
 }
 
 void			ft_ls_recursion(char **files, t_ls *ls, char *path)
 {
-	int i;
+	int		i;
+	char 	*tmp;
 
 	i = 0;
+	tmp = NULL;
 	if (ls->long_format)
 		long_format(files, ls, path);
 	else
 		print_files(files, ls, path);
 	while (files[i])
 	{
-		if (is_dir(ft_strjoin(path, files[i]), NULL))
+		tmp = ft_strjoin(path, files[i]);
+		if (is_dir(tmp, NULL))
 		{
 			if (print_dot(files[i], ls) && skip_dots(files[i]))
 			{
@@ -80,6 +85,8 @@ void			ft_ls_recursion(char **files, t_ls *ls, char *path)
 				ls_dir_recursion(files[i], ls, path);
 			}
 		}
+		if (tmp != NULL)
+			ft_strdel(&tmp);
 		i++;
 	}
 }

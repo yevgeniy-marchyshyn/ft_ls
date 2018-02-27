@@ -86,5 +86,6 @@ char				**ft_strsplit(char const *s, char c);
 char				*ft_itoa(int nbr);
 int					ft_itoa_len(ssize_t n);
 size_t				ft_power(size_t value, unsigned int power);
+void				free_words(char **files);
 
 #endif

@@ -17,6 +17,7 @@ int		ls_total(char **files, t_ls *ls, char *path)
 	struct stat		buf;
 	int				i;
 	int				sum;
+	char 			*tmp;
 
 	i = 0;
 	sum = 0;
@@ -27,7 +28,11 @@ int		ls_total(char **files, t_ls *ls, char *path)
 			if (path == NULL)
 				lstat(files[i++], &buf);
 			else
-				lstat(ft_strjoin(path, files[i++]), &buf);
+			{
+				tmp = ft_strjoin(path, files[i++]);
+				lstat(tmp, &buf);
+				ft_strdel(&tmp);
+			}
 			sum += buf.st_blocks;
 		}
 		else

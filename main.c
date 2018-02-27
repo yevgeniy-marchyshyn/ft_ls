@@ -25,6 +25,7 @@ static char		**current_directory(void)
 int				main(int argc, char **argv)
 {
 	t_ls		ls;
+	char 		**files;
 	int			i;
 
 	i = 1;
@@ -38,6 +39,10 @@ int				main(int argc, char **argv)
 	if (argv[i])
 		parse_arguments(argv + i, argc - i, &ls);
 	else
-		ft_ls(current_directory(), &ls);
+	{
+		files = current_directory();
+		ft_ls(files, &ls);
+		free_words(files);
+	}
 	return (0);
 }

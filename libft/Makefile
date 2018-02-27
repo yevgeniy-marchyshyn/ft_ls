@@ -112,6 +112,7 @@ LIBFT = ft_memset.c\
 		ft_itoa.c\
 		ft_itoa_len.c\
 		get_next_line.c\
+		free_words.c\
 
 
 LIBFT_OBJ = $(LIBFT:.c=.o)
