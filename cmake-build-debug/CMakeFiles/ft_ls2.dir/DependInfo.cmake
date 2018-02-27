@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/ymarchys/Documents/ft_ls2/ft_ls_recursion.c" "/Users/ymarchys/Documents/ft_ls2/cmake-build-debug/CMakeFiles/ft_ls2.dir/ft_ls_recursion.c.o"
   "/Users/ymarchys/Documents/ft_ls2/is_dir.c" "/Users/ymarchys/Documents/ft_ls2/cmake-build-debug/CMakeFiles/ft_ls2.dir/is_dir.c.o"
   "/Users/ymarchys/Documents/ft_ls2/is_option.c" "/Users/ymarchys/Documents/ft_ls2/cmake-build-debug/CMakeFiles/ft_ls2.dir/is_option.c.o"
+  "/Users/ymarchys/Documents/ft_ls2/join_a_path.c" "/Users/ymarchys/Documents/ft_ls2/cmake-build-debug/CMakeFiles/ft_ls2.dir/join_a_path.c.o"
   "/Users/ymarchys/Documents/ft_ls2/libft/free_words.c" "/Users/ymarchys/Documents/ft_ls2/cmake-build-debug/CMakeFiles/ft_ls2.dir/libft/free_words.c.o"
   "/Users/ymarchys/Documents/ft_ls2/libft/ft_atoi.c" "/Users/ymarchys/Documents/ft_ls2/cmake-build-debug/CMakeFiles/ft_ls2.dir/libft/ft_atoi.c.o"
   "/Users/ymarchys/Documents/ft_ls2/libft/ft_bzero.c" "/Users/ymarchys/Documents/ft_ls2/cmake-build-debug/CMakeFiles/ft_ls2.dir/libft/ft_bzero.c.o"

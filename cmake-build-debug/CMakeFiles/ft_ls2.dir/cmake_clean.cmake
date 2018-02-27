@@ -127,6 +127,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_ls2.dir/print_long_format.c.o"
   "CMakeFiles/ft_ls2.dir/skip_dots.c.o"
   "CMakeFiles/ft_ls2.dir/sort_ascii_bubble.c.o"
+  "CMakeFiles/ft_ls2.dir/join_a_path.c.o"
   "ft_ls2.pdb"
   "ft_ls2"
 )

@@ -50,34 +50,8 @@ static void 	print_time(time_t n)
 	year ? ft_strdel(&year) : 0;
 }
 
-void			print_long_format(char *filename, int *w, char *path)
+static void		format(struct passwd *pw, struct group *gr)
 {
-	struct stat		buf;
-	struct passwd	*pw;
-	struct group	*gr;
-	char 			*link_path;
-	char 			*tmp1;
-	char 			*tmp2;
-
-//	if (path != NULL)
-//	{
-//		path2 = ft_strjoin(path, "/");
-//		path3 = ft_strjoin(path2, filename);
-//		lstat(path3, &buf);
-//	}
-	if (path != NULL)
-	{
-		tmp1 = ft_strjoin(path, "/");
-		tmp2 = ft_strjoin(tmp1, filename);
-		lstat(tmp2, &buf);
-//		ft_strdel(&tmp1);
-	}
-	else
-		lstat(filename, &buf);
-	if (!(pw = getpwuid(buf.st_uid)))
-		return ;
-	if (!(gr = getgrgid(buf.st_gid)))
-		return ;
 	ft_printf("%c", define_type(&buf));
 	print_access(buf.st_mode);
 	ft_printf(" %*zu", w[0] + 1, buf.st_nlink);
@@ -88,6 +62,29 @@ void			print_long_format(char *filename, int *w, char *path)
 	else
 		ft_printf("%*zu", w[3], buf.st_size);
 	print_time(buf.st_mtime);
+}
+
+void			print_long_format(char *filename, int *w, char *path)
+{
+	struct stat		buf;
+	struct passwd	*pw;
+	struct group	*gr;
+	char 			*link_path;
+	char 			*tmp1;
+	char 			*tmp2;
+
+	if (path != NULL)
+	{
+		tmp1 = ft_strjoin(path, "/");
+		tmp2 = ft_strjoin(tmp1, filename);
+		lstat(tmp2, &buf);
+	}
+	else
+		lstat(filename, &buf);
+	if (!(pw = getpwuid(buf.st_uid)))
+		return ;
+	if (!(gr = getgrgid(buf.st_gid)))
+		return ;
 	if (define_type(&buf) == 'l')
 	{
 		link_path = linkpath(path ? tmp2 : filename);
@@ -96,6 +93,4 @@ void			print_long_format(char *filename, int *w, char *path)
 	}
 	else
 		ft_printf("%s\n", filename);
-//	if (tmp2)
-//		ft_strdel(&tmp2);
 }

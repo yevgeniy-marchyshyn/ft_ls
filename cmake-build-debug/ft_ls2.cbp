@@ -103,6 +103,9 @@
 		<Unit filename="/Users/ymarchys/Documents/ft_ls2/is_option.c">
 			<Option target="ft_ls2"/>
 		</Unit>
+		<Unit filename="/Users/ymarchys/Documents/ft_ls2/join_a_path.c">
+			<Option target="ft_ls2"/>
+		</Unit>
 		<Unit filename="/Users/ymarchys/Documents/ft_ls2/libft/free_words.c">
 			<Option target="ft_ls2"/>
 		</Unit>

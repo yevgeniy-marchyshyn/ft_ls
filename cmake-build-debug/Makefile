@@ -285,6 +285,33 @@ is_option.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls2.dir/build.make CMakeFiles/ft_ls2.dir/is_option.c.s
 .PHONY : is_option.c.s
 
+join_a_path.o: join_a_path.c.o
+
+.PHONY : join_a_path.o
+
+# target to build an object file
+join_a_path.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls2.dir/build.make CMakeFiles/ft_ls2.dir/join_a_path.c.o
+.PHONY : join_a_path.c.o
+
+join_a_path.i: join_a_path.c.i
+
+.PHONY : join_a_path.i
+
+# target to preprocess a source file
+join_a_path.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls2.dir/build.make CMakeFiles/ft_ls2.dir/join_a_path.c.i
+.PHONY : join_a_path.c.i
+
+join_a_path.s: join_a_path.c.s
+
+.PHONY : join_a_path.s
+
+# target to generate assembly for a file
+join_a_path.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls2.dir/build.make CMakeFiles/ft_ls2.dir/join_a_path.c.s
+.PHONY : join_a_path.c.s
+
 libft/free_words.o: libft/free_words.c.o
 
 .PHONY : libft/free_words.o
@@ -3606,6 +3633,9 @@ help:
 	@echo "... is_option.o"
 	@echo "... is_option.i"
 	@echo "... is_option.s"
+	@echo "... join_a_path.o"
+	@echo "... join_a_path.i"
+	@echo "... join_a_path.s"
 	@echo "... libft/free_words.o"
 	@echo "... libft/free_words.i"
 	@echo "... libft/free_words.s"
