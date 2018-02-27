@@ -17,11 +17,14 @@ void	free_words(char **files)
 	int i;
 
 	i = 0;
-	while (files[i] != NULL)
+	if (files)
 	{
-		free(files[i]);
-		files[i] = NULL;
-		i++;
+		while (files[i] != NULL)
+		{
+			free(files[i]);
+			files[i] = NULL;
+			i++;
+		}
+		free(files);
 	}
-	free(files);
 }

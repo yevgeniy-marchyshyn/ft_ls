@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.9)
-project(ft_ls)
+project(ft_ls2)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(ft_ls
+add_executable(ft_ls2
         libft/ft_printf/active_bits.c
         libft/ft_printf/annulation.c
         libft/ft_printf/check_flags_modif.c
@@ -41,6 +41,7 @@ add_executable(ft_ls
         libft/ft_printf/putstr_ls.c
         libft/ft_printf/set_to_zero.c
         libft/ft_printf/strlen_ls.c
+        libft/free_words.c
         libft/ft_atoi.c
         libft/ft_bzero.c
         libft/ft_isalnum.c
@@ -134,4 +135,4 @@ add_executable(ft_ls
         print_files.c
         print_long_format.c
         skip_dots.c
-        sort_ascii_bubble.c libft/free_words.c)
+        sort_ascii_bubble.c)

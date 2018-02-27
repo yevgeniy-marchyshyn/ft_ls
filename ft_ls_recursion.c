@@ -51,6 +51,7 @@ static void		ls_dir_recursion(char *dirname, t_ls *ls, char *path)
 	char			*tmp2;
 	int				n;
 
+	files = NULL;
 	tmp1 = ft_strjoin(path, dirname);
 	tmp2 = ft_strjoin(tmp1, "/");
 	ft_strdel(&tmp1);
@@ -59,6 +60,7 @@ static void		ls_dir_recursion(char *dirname, t_ls *ls, char *path)
 		files = (char **)malloc(sizeof(char *) * (n + 1));
 		files = ls_read_files_recursion(files, tmp2);
 		ls_dir_ext_recurs(ls, files, tmp2, n);
+		free_words(files);
 	}
 	ft_strdel(&tmp2);
 }

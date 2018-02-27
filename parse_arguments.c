@@ -59,4 +59,5 @@ void				parse_arguments(char **argv, int n, t_ls *ls)
 	}
 	ls_sort(files, n - count_removed, ls, NULL);
 	ft_ls(files, ls);
+//	free_words(files);
 }

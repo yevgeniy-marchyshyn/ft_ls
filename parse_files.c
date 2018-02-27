@@ -27,12 +27,15 @@ void				parse_files(char **files, int n, t_ls *ls, char *path)
 	struct stat		buf;
 	int				i;
 	int				count_removed;
+	char 			*tmp;
 
 	i = 0;
+	tmp = NULL;
 	count_removed = 0;
 	while (files[i])
 	{
-		if (lstat(ft_strjoin(path, files[i]), &buf) == -1)
+		tmp = ft_strjoin(path, files[i]);
+		if (lstat(tmp, &buf) == -1)
 		{
 			write(2, "ls: ", 4);
 			perror(files[i]);
@@ -41,6 +44,7 @@ void				parse_files(char **files, int n, t_ls *ls, char *path)
 		}
 		else
 			i++;
+		ft_strdel(&tmp);
 	}
 	ls_sort(files, n - count_removed, ls, path);
 	ft_ls_recursion(files, ls, path);

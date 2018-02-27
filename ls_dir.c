@@ -32,6 +32,8 @@ void		ls_dir(char *dirname, t_ls *ls, char *path)
 		}
 		else
 			ls_dir_ext(files, n, ls);
+		ft_strdel(&path);
+		free_words(files);
 	}
 	ft_strdel(&path);
 }
