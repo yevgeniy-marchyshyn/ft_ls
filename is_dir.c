@@ -28,8 +28,5 @@ int		is_dir(char *filename, char *path)
 		ft_strdel(&tmp);
 	}
 	type = define_type(&buf);
-	if (type == 'd')
-		return (1);
-	else
-		return (0);
+	return (type == 'd' ? 1 : 0);
 }

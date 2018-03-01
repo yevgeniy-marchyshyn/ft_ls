@@ -23,7 +23,7 @@ FT_LS = main.c\
 		define_type.c\
 		sort_ascii_bubble.c\
 		parse_files.c\
-		ft_ls_recursion.c\
+		recursion_branch.c\
 		ls_sort.c\
 		skip_dots.c\
 		print_dot.c\

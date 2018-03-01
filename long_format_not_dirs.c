@@ -59,13 +59,13 @@ int					long_format_not_dirs(char **files, t_ls *ls, char *path)
 	if ((n = count_not_dirs(files, path)) < 1)
 		return (0);
 	not_dirs = fill_files(files, n, path);
-	w[0] = max_links(not_dirs);
-	if ((w[1] = max_len_user(not_dirs)) == -1)
+	w[0] = max_links(not_dirs, path);
+	if ((w[1] = max_len_user(not_dirs, path)) == -1)
 		return (0);
-	if ((w[2] = max_len_group(not_dirs)) == -1)
+	if ((w[2] = max_len_group(not_dirs, path)) == -1)
 		return (0);
-	w[2] = max_len_group(not_dirs);
-	w[3] = max_size(not_dirs);
+	w[2] = max_len_group(not_dirs, path);
+	w[3] = max_size(not_dirs, path);
 	while (not_dirs[i])
 	{
 		if (print_dot(not_dirs[i], ls))

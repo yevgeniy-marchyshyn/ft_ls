@@ -21,10 +21,7 @@ char		**ls_read_files(char **files, char *dirname)
 	i = 0;
 	dir = opendir(dirname);
 	while ((sd = readdir(dir)) != NULL)
-	{
-		files[i] = ft_strdup(sd->d_name);
-		i++;
-	}
+		files[i++] = ft_strdup(sd->d_name);
 	files[i] = NULL;
 	closedir(dir);
 	return (files);
