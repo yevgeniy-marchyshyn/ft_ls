@@ -107,15 +107,14 @@ add_executable(ft_ls
         define_type.c
         ft_ls.c
         ft_ls.h
-        ft_ls_recursion.c
         is_dir.c
         is_option.c
+        lf.c
+        lf_not_dirs.c
         link_to_dir.c
         linkpath.c
-        long_format_not_dirs.c
         ls_count_files.c
         ls_dir.c
-        ls_dir_ext.c
         ls_link.c
         ls_read_files.c
         ls_sort.c
@@ -132,6 +131,7 @@ add_executable(ft_ls
         print_access.c
         print_dot.c
         print_files.c
-        print_long_format.c
+        print_lf.c
+        recursion_branch.c
         skip_dots.c
         sort_ascii_bubble.c)

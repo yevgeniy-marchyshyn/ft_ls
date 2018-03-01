@@ -106,15 +106,19 @@ grp.h
 time.h
 -
 
-/Users/marchyshyn/Documents/C/ft_ls/ft_ls_recursion.c
-ft_ls.h
-/Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
-
 /Users/marchyshyn/Documents/C/ft_ls/is_dir.c
 ft_ls.h
 /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
 
 /Users/marchyshyn/Documents/C/ft_ls/is_option.c
+ft_ls.h
+/Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
+
+/Users/marchyshyn/Documents/C/ft_ls/lf.c
+ft_ls.h
+/Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
+
+/Users/marchyshyn/Documents/C/ft_ls/lf_not_dirs.c
 ft_ls.h
 /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
 
@@ -630,23 +634,11 @@ ft_ls.h
 ft_ls.h
 /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
 
-/Users/marchyshyn/Documents/C/ft_ls/long_format.c
-ft_ls.h
-/Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
-
-/Users/marchyshyn/Documents/C/ft_ls/long_format_not_dirs.c
-ft_ls.h
-/Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
-
 /Users/marchyshyn/Documents/C/ft_ls/ls_count_files.c
 ft_ls.h
 /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
 
 /Users/marchyshyn/Documents/C/ft_ls/ls_dir.c
-ft_ls.h
-/Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
-
-/Users/marchyshyn/Documents/C/ft_ls/ls_dir_ext.c
 ft_ls.h
 /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
 
@@ -714,7 +706,11 @@ ft_ls.h
 ft_ls.h
 /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
 
-/Users/marchyshyn/Documents/C/ft_ls/print_long_format.c
+/Users/marchyshyn/Documents/C/ft_ls/print_lf.c
+ft_ls.h
+/Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
+
+/Users/marchyshyn/Documents/C/ft_ls/recursion_branch.c
 ft_ls.h
 /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
 

@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-char		define_type(struct stat *buf)
+char		define_type(t_stat *buf)
 {
 	if ((buf->st_mode & S_IFMT) == S_IFIFO)
 		return ('p');

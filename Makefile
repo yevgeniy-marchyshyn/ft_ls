@@ -29,7 +29,7 @@ FT_LS = main.c\
 		print_dot.c\
 		lf.c\
 		ls_total.c\
-		print_long_format.c\
+		print_lf.c\
 		print_access.c\
 		linkpath.c\
 		print_files.c\

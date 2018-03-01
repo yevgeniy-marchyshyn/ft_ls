@@ -25,14 +25,6 @@ CMakeFiles/ft_ls.dir/ft_ls.c.o
  /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
  /Users/marchyshyn/Documents/C/ft_ls/ft_ls.c
  /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
-CMakeFiles/ft_ls.dir/ft_ls_recursion.c.o
- /Users/marchyshyn/Documents/C/ft_ls/./libft/././libft.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/./ft_printf/ft_printf.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/./get_next_line.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/ft_printf/ft_printf.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
- /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
- /Users/marchyshyn/Documents/C/ft_ls/ft_ls_recursion.c
 CMakeFiles/ft_ls.dir/is_dir.c.o
  /Users/marchyshyn/Documents/C/ft_ls/./libft/././libft.h
  /Users/marchyshyn/Documents/C/ft_ls/./libft/./ft_printf/ft_printf.h
@@ -49,6 +41,22 @@ CMakeFiles/ft_ls.dir/is_option.c.o
  /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
  /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
  /Users/marchyshyn/Documents/C/ft_ls/is_option.c
+CMakeFiles/ft_ls.dir/lf.c.o
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/././libft.h
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/./ft_printf/ft_printf.h
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/./get_next_line.h
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/ft_printf/ft_printf.h
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
+ /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
+ /Users/marchyshyn/Documents/C/ft_ls/lf.c
+CMakeFiles/ft_ls.dir/lf_not_dirs.c.o
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/././libft.h
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/./ft_printf/ft_printf.h
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/./get_next_line.h
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/ft_printf/ft_printf.h
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
+ /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
+ /Users/marchyshyn/Documents/C/ft_ls/lf_not_dirs.c
 CMakeFiles/ft_ls.dir/libft/free_words.c.o
  /Users/marchyshyn/Documents/C/ft_ls/libft/././libft.h
  /Users/marchyshyn/Documents/C/ft_ls/libft/./ft_printf/ft_printf.h
@@ -736,22 +744,6 @@ CMakeFiles/ft_ls.dir/linkpath.c.o
  /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
  /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
  /Users/marchyshyn/Documents/C/ft_ls/linkpath.c
-CMakeFiles/ft_ls.dir/long_format.c.o
- /Users/marchyshyn/Documents/C/ft_ls/./libft/././libft.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/./ft_printf/ft_printf.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/./get_next_line.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/ft_printf/ft_printf.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
- /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
- /Users/marchyshyn/Documents/C/ft_ls/long_format.c
-CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o
- /Users/marchyshyn/Documents/C/ft_ls/./libft/././libft.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/./ft_printf/ft_printf.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/./get_next_line.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/ft_printf/ft_printf.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
- /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
- /Users/marchyshyn/Documents/C/ft_ls/long_format_not_dirs.c
 CMakeFiles/ft_ls.dir/ls_count_files.c.o
  /Users/marchyshyn/Documents/C/ft_ls/./libft/././libft.h
  /Users/marchyshyn/Documents/C/ft_ls/./libft/./ft_printf/ft_printf.h
@@ -768,14 +760,6 @@ CMakeFiles/ft_ls.dir/ls_dir.c.o
  /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
  /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
  /Users/marchyshyn/Documents/C/ft_ls/ls_dir.c
-CMakeFiles/ft_ls.dir/ls_dir_ext.c.o
- /Users/marchyshyn/Documents/C/ft_ls/./libft/././libft.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/./ft_printf/ft_printf.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/./get_next_line.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/ft_printf/ft_printf.h
- /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
- /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
- /Users/marchyshyn/Documents/C/ft_ls/ls_dir_ext.c
 CMakeFiles/ft_ls.dir/ls_link.c.o
  /Users/marchyshyn/Documents/C/ft_ls/./libft/././libft.h
  /Users/marchyshyn/Documents/C/ft_ls/./libft/./ft_printf/ft_printf.h
@@ -904,14 +888,22 @@ CMakeFiles/ft_ls.dir/print_files.c.o
  /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
  /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
  /Users/marchyshyn/Documents/C/ft_ls/print_files.c
-CMakeFiles/ft_ls.dir/print_long_format.c.o
+CMakeFiles/ft_ls.dir/print_lf.c.o
  /Users/marchyshyn/Documents/C/ft_ls/./libft/././libft.h
  /Users/marchyshyn/Documents/C/ft_ls/./libft/./ft_printf/ft_printf.h
  /Users/marchyshyn/Documents/C/ft_ls/./libft/./get_next_line.h
  /Users/marchyshyn/Documents/C/ft_ls/./libft/ft_printf/ft_printf.h
  /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
  /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
- /Users/marchyshyn/Documents/C/ft_ls/print_long_format.c
+ /Users/marchyshyn/Documents/C/ft_ls/print_lf.c
+CMakeFiles/ft_ls.dir/recursion_branch.c.o
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/././libft.h
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/./ft_printf/ft_printf.h
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/./get_next_line.h
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/ft_printf/ft_printf.h
+ /Users/marchyshyn/Documents/C/ft_ls/./libft/libft.h
+ /Users/marchyshyn/Documents/C/ft_ls/ft_ls.h
+ /Users/marchyshyn/Documents/C/ft_ls/recursion_branch.c
 CMakeFiles/ft_ls.dir/skip_dots.c.o
  /Users/marchyshyn/Documents/C/ft_ls/./libft/././libft.h
  /Users/marchyshyn/Documents/C/ft_ls/./libft/./ft_printf/ft_printf.h

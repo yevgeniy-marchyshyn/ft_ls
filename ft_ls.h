@@ -36,12 +36,16 @@ typedef struct			s_ls
 	int					count_directories;
 }						t_ls;
 
+typedef struct stat		t_stat;
+typedef struct passwd	t_pw;
+typedef struct group	t_group;
+
 int						is_option(char c);
 void					annulation_opt(t_ls *ls);
 int						parse_options(t_ls *ls, char *argv);
 void					parse_arguments(char **argv, int n, t_ls *ls);
 void					ft_ls(char **files, t_ls *ls);
-char					define_type(struct stat *buf);
+char					define_type(t_stat *buf);
 void					sort_ascii_bubble(char **file, int n);
 void					parse_files(char **files, int n, t_ls *ls, char *path);
 void					recursion_branch(char **files, t_ls *ls, char *path);
@@ -51,7 +55,7 @@ int						print_dot(char *filename, t_ls *ls);
 void					lf(char **files, t_ls *ls, char *path);
 int						lf_not_dirs(char **files, t_ls *ls, char *path);
 int						ls_total(char **files, t_ls *ls, char *path);
-void					print_long_format(char *filename, int *w, char *path);
+void					print_lf(char *filename, int *w, char *path);
 void					print_access(mode_t st_mode);
 char					*linkpath(char *filename);
 int						max_links(char **files, char *path);
@@ -65,7 +69,6 @@ int						not_empty_directory(char *dirname, t_ls *ls);
 int						link_to_dir(char *filename, char *path);
 void					ls_dir(char *dirname, t_ls *ls, char *path);
 char					**ls_read_files(char **files, char *dirname);
-//void					ls_dir_ext(char **files, int n, t_ls *ls);
 void					ls_link(char *linkname, t_ls *ls, char *path);
 
 #endif

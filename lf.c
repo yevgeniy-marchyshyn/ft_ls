@@ -27,7 +27,7 @@ void				lf(char **files, t_ls *ls, char *path)
 	while (files[i])
 	{
 		if (print_dot(files[i], ls))
-			print_long_format(files[i], w, path);
+			print_lf(files[i], w, path);
 		i++;
 	}
 }

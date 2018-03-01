@@ -50,6 +50,31 @@ static void		ls_dir_recursion(char *dirname, t_ls *ls, char *path)
 	ft_strdel(&tmp2);
 }
 
+//static int		recursion_end(char **files, char *path, t_ls *ls)
+//{
+//	int i;
+//	int dirs;
+//
+//	i = 0;
+//	dirs = 0;
+//	if (ls->include_dot)
+//	{
+//		while (files[i])
+//			if (is_dir(files[i++], path) && (dirs += 1) > 2)
+//				return (0);
+//	}
+//	else
+//	{
+//		while (files[i])
+//		{
+//			if (skip_dots(files[i]) && is_dir(files[i], path))
+//				return (0);
+//			i++;
+//		}
+//	}
+//	return (1);
+//}
+
 void			recursion_branch(char **files, t_ls *ls, char *path)
 {
 	int		i;
@@ -61,6 +86,16 @@ void			recursion_branch(char **files, t_ls *ls, char *path)
 		lf(files, ls, path);
 	else
 		print_files(files, ls, path);
+//	while (files[i])
+//		ft_printf("FILE >> %s\n", files[i++]);
+//	ft_printf("%s\n", path);
+//	i = 0;
+//	if (recursion_end(files, path, ls))
+//	{
+////		free_words(files);
+//		ft_strdel(&path);
+//		return ;
+//	}
 	while (files[i])
 	{
 		tmp = ft_strjoin(path, files[i]);

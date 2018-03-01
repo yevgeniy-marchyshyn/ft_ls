@@ -25,14 +25,6 @@ CMakeFiles/ft_ls.dir/ft_ls.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/ft_ls.c.o: ../ft_ls.c
 CMakeFiles/ft_ls.dir/ft_ls.c.o: ../ft_ls.h
 
-CMakeFiles/ft_ls.dir/ft_ls_recursion.c.o: .././libft/././libft.h
-CMakeFiles/ft_ls.dir/ft_ls_recursion.c.o: .././libft/./ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/ft_ls_recursion.c.o: .././libft/./get_next_line.h
-CMakeFiles/ft_ls.dir/ft_ls_recursion.c.o: .././libft/ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/ft_ls_recursion.c.o: .././libft/libft.h
-CMakeFiles/ft_ls.dir/ft_ls_recursion.c.o: ../ft_ls.h
-CMakeFiles/ft_ls.dir/ft_ls_recursion.c.o: ../ft_ls_recursion.c
-
 CMakeFiles/ft_ls.dir/is_dir.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/is_dir.c.o: .././libft/./ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/is_dir.c.o: .././libft/./get_next_line.h
@@ -48,6 +40,22 @@ CMakeFiles/ft_ls.dir/is_option.c.o: .././libft/ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/is_option.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/is_option.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/is_option.c.o: ../is_option.c
+
+CMakeFiles/ft_ls.dir/lf.c.o: .././libft/././libft.h
+CMakeFiles/ft_ls.dir/lf.c.o: .././libft/./ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/lf.c.o: .././libft/./get_next_line.h
+CMakeFiles/ft_ls.dir/lf.c.o: .././libft/ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/lf.c.o: .././libft/libft.h
+CMakeFiles/ft_ls.dir/lf.c.o: ../ft_ls.h
+CMakeFiles/ft_ls.dir/lf.c.o: ../lf.c
+
+CMakeFiles/ft_ls.dir/lf_not_dirs.c.o: .././libft/././libft.h
+CMakeFiles/ft_ls.dir/lf_not_dirs.c.o: .././libft/./ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/lf_not_dirs.c.o: .././libft/./get_next_line.h
+CMakeFiles/ft_ls.dir/lf_not_dirs.c.o: .././libft/ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/lf_not_dirs.c.o: .././libft/libft.h
+CMakeFiles/ft_ls.dir/lf_not_dirs.c.o: ../ft_ls.h
+CMakeFiles/ft_ls.dir/lf_not_dirs.c.o: ../lf_not_dirs.c
 
 CMakeFiles/ft_ls.dir/libft/free_words.c.o: ../libft/././libft.h
 CMakeFiles/ft_ls.dir/libft/free_words.c.o: ../libft/./ft_printf/ft_printf.h
@@ -736,22 +744,6 @@ CMakeFiles/ft_ls.dir/linkpath.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/linkpath.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/linkpath.c.o: ../linkpath.c
 
-CMakeFiles/ft_ls.dir/long_format.c.o: .././libft/././libft.h
-CMakeFiles/ft_ls.dir/long_format.c.o: .././libft/./ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/long_format.c.o: .././libft/./get_next_line.h
-CMakeFiles/ft_ls.dir/long_format.c.o: .././libft/ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/long_format.c.o: .././libft/libft.h
-CMakeFiles/ft_ls.dir/long_format.c.o: ../ft_ls.h
-CMakeFiles/ft_ls.dir/long_format.c.o: ../long_format.c
-
-CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: .././libft/././libft.h
-CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: .././libft/./ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: .././libft/./get_next_line.h
-CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: .././libft/ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: .././libft/libft.h
-CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: ../ft_ls.h
-CMakeFiles/ft_ls.dir/long_format_not_dirs.c.o: ../long_format_not_dirs.c
-
 CMakeFiles/ft_ls.dir/ls_count_files.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/ls_count_files.c.o: .././libft/./ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/ls_count_files.c.o: .././libft/./get_next_line.h
@@ -767,14 +759,6 @@ CMakeFiles/ft_ls.dir/ls_dir.c.o: .././libft/ft_printf/ft_printf.h
 CMakeFiles/ft_ls.dir/ls_dir.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/ls_dir.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/ls_dir.c.o: ../ls_dir.c
-
-CMakeFiles/ft_ls.dir/ls_dir_ext.c.o: .././libft/././libft.h
-CMakeFiles/ft_ls.dir/ls_dir_ext.c.o: .././libft/./ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/ls_dir_ext.c.o: .././libft/./get_next_line.h
-CMakeFiles/ft_ls.dir/ls_dir_ext.c.o: .././libft/ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/ls_dir_ext.c.o: .././libft/libft.h
-CMakeFiles/ft_ls.dir/ls_dir_ext.c.o: ../ft_ls.h
-CMakeFiles/ft_ls.dir/ls_dir_ext.c.o: ../ls_dir_ext.c
 
 CMakeFiles/ft_ls.dir/ls_link.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/ls_link.c.o: .././libft/./ft_printf/ft_printf.h
@@ -904,13 +888,21 @@ CMakeFiles/ft_ls.dir/print_files.c.o: .././libft/libft.h
 CMakeFiles/ft_ls.dir/print_files.c.o: ../ft_ls.h
 CMakeFiles/ft_ls.dir/print_files.c.o: ../print_files.c
 
-CMakeFiles/ft_ls.dir/print_long_format.c.o: .././libft/././libft.h
-CMakeFiles/ft_ls.dir/print_long_format.c.o: .././libft/./ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/print_long_format.c.o: .././libft/./get_next_line.h
-CMakeFiles/ft_ls.dir/print_long_format.c.o: .././libft/ft_printf/ft_printf.h
-CMakeFiles/ft_ls.dir/print_long_format.c.o: .././libft/libft.h
-CMakeFiles/ft_ls.dir/print_long_format.c.o: ../ft_ls.h
-CMakeFiles/ft_ls.dir/print_long_format.c.o: ../print_long_format.c
+CMakeFiles/ft_ls.dir/print_lf.c.o: .././libft/././libft.h
+CMakeFiles/ft_ls.dir/print_lf.c.o: .././libft/./ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/print_lf.c.o: .././libft/./get_next_line.h
+CMakeFiles/ft_ls.dir/print_lf.c.o: .././libft/ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/print_lf.c.o: .././libft/libft.h
+CMakeFiles/ft_ls.dir/print_lf.c.o: ../ft_ls.h
+CMakeFiles/ft_ls.dir/print_lf.c.o: ../print_lf.c
+
+CMakeFiles/ft_ls.dir/recursion_branch.c.o: .././libft/././libft.h
+CMakeFiles/ft_ls.dir/recursion_branch.c.o: .././libft/./ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/recursion_branch.c.o: .././libft/./get_next_line.h
+CMakeFiles/ft_ls.dir/recursion_branch.c.o: .././libft/ft_printf/ft_printf.h
+CMakeFiles/ft_ls.dir/recursion_branch.c.o: .././libft/libft.h
+CMakeFiles/ft_ls.dir/recursion_branch.c.o: ../ft_ls.h
+CMakeFiles/ft_ls.dir/recursion_branch.c.o: ../recursion_branch.c
 
 CMakeFiles/ft_ls.dir/skip_dots.c.o: .././libft/././libft.h
 CMakeFiles/ft_ls.dir/skip_dots.c.o: .././libft/./ft_printf/ft_printf.h
