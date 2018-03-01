@@ -27,7 +27,7 @@ FT_LS = main.c\
 		ls_sort.c\
 		skip_dots.c\
 		print_dot.c\
-		long_format.c\
+		lf.c\
 		ls_total.c\
 		print_long_format.c\
 		print_access.c\
@@ -38,13 +38,12 @@ FT_LS = main.c\
 	    max_len_user.c\
 	    max_len_group.c\
 	    is_dir.c\
-	    long_format_not_dirs.c\
+	    lf_not_dirs.c\
 	    ls_count_files.c\
 	    not_empty_directory.c\
 	    link_to_dir.c\
 	    ls_read_files.c\
 	    ls_dir.c\
-	    ls_dir_ext.c\
 	    ls_link.c\
 
 OBJ = $(FT_LS:.c=.o)

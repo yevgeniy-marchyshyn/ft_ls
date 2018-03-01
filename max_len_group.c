@@ -44,11 +44,6 @@ int				max_len_group(char **files, char *path)
 		}
 		if ((max_length = length_compare(&buf, max_length)) < 0)
 			return (-1);
-//		if (!(gr = getgrgid(buf.st_gid)))
-//			return (-1);
-//		len = ft_strlen(gr->gr_name);
-//		if (len > max_length)
-//			max_length = len;
 	}
 	return (max_length);
 }

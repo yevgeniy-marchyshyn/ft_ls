@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   long_format.c                                      :+:      :+:    :+:   */
+/*   lf.c                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/20 13:30:00 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/20 13:30:00 by ymarchys         ###   ########.fr       */
+/*   Created: 2018/03/01 17:43:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/03/01 17:43:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-void				long_format(char **files, t_ls *ls, char *path)
+void				lf(char **files, t_ls *ls, char *path)
 {
 	int			i;
 	int			w[4];

@@ -24,16 +24,14 @@ int					link_to_dir(char *filename, char *path)
 	{
 		tmp = ft_strjoin(path, filename);
 		lstat(tmp, &buf);
+		ft_strdel(&tmp);
 	}
 	type = define_type(&buf);
 	if (type == 'l')
 	{
 		stat(path ? tmp : filename, &buf);
 		type = define_type(&buf);
-		if (type == 'd')
-			return (1);
-		else
-			return (0);
+		return (type == 'd' ? 1 : 0);
 	}
 	return (0);
 }

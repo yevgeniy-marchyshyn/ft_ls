@@ -48,9 +48,8 @@ void					recursion_branch(char **files, t_ls *ls, char *path);
 void					ls_sort(char **files, int n, t_ls *ls, char *path);
 int						skip_dots(char *filename);
 int						print_dot(char *filename, t_ls *ls);
-void					long_format(char **files, t_ls *ls, char *path);
-int						long_format_not_dirs(char **files, t_ls *ls,
-												char *path);
+void					lf(char **files, t_ls *ls, char *path);
+int						lf_not_dirs(char **files, t_ls *ls, char *path);
 int						ls_total(char **files, t_ls *ls, char *path);
 void					print_long_format(char *filename, int *w, char *path);
 void					print_access(mode_t st_mode);
@@ -66,7 +65,7 @@ int						not_empty_directory(char *dirname, t_ls *ls);
 int						link_to_dir(char *filename, char *path);
 void					ls_dir(char *dirname, t_ls *ls, char *path);
 char					**ls_read_files(char **files, char *dirname);
-void					ls_dir_ext(char **files, int n, t_ls *ls);
+//void					ls_dir_ext(char **files, int n, t_ls *ls);
 void					ls_link(char *linkname, t_ls *ls, char *path);
 
 #endif

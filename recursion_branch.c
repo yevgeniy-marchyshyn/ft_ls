@@ -58,7 +58,7 @@ void			recursion_branch(char **files, t_ls *ls, char *path)
 	i = 0;
 	tmp = NULL;
 	if (ls->long_format)
-		long_format(files, ls, path);
+		lf(files, ls, path);
 	else
 		print_files(files, ls, path);
 	while (files[i])

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   long_format.c                                      :+:      :+:    :+:   */
+/*   lf_not_dirs.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/20 13:30:00 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/20 13:30:00 by ymarchys         ###   ########.fr       */
+/*   Created: 2018/03/01 17:51:00 by ymarchys          #+#    #+#             */
+/*   Updated: 2018/03/01 17:51:00 by ymarchys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int					count_not_dirs(char **files, char *path)
 	return (not_dirs);
 }
 
-int					long_format_not_dirs(char **files, t_ls *ls, char *path)
+int					lf_not_dirs(char **files, t_ls *ls, char *path)
 {
 	int			i;
 	int			n;

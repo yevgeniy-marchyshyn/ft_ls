@@ -1,128 +1,153 @@
-total 688
--rw-r--r--   1 marchyshyn  staff    3842 Mar  1 13:07 CMakeLists.txt
--rw-r--r--   1 marchyshyn  staff    1880 Mar  1 14:50 Makefile
+total 920
+drwxr-xr-x   5 marchyshyn  staff     160 Mar  1 13:05 ..
 -rw-r--r--   1 marchyshyn  staff    1099 Mar  1 13:05 annulation_opt.c
 -rw-r--r--   1 marchyshyn  staff       9 Mar  1 13:05 author
-drwxr-xr-x   8 marchyshyn  staff     256 Mar  1 13:08 cmake-build-debug
 -rw-r--r--   1 marchyshyn  staff    1342 Mar  1 13:05 define_type.c
--rw-r--r--   1 marchyshyn  staff   21930 Mar  1 17:34 diff_ls
--rw-r--r--   1 marchyshyn  staff     476 Mar  1 17:34 diff_my
--rwxr-xr-x   1 marchyshyn  staff   56248 Mar  1 17:34 ft_ls
--rw-r--r--   1 marchyshyn  staff    1540 Mar  1 15:06 ft_ls.c
--rw-r--r--   1 marchyshyn  staff    2980 Mar  1 17:31 ft_ls.h
--rw-r--r--   1 marchyshyn  staff    1203 Mar  1 15:00 is_dir.c
 -rw-r--r--   1 marchyshyn  staff    1022 Mar  1 13:05 is_option.c
-drwxr-xr-x  69 marchyshyn  staff    2208 Mar  1 17:34 libft
 -rw-r--r--   1 marchyshyn  staff  117736 Mar  1 13:05 libft.a
 -rw-r--r--   1 marchyshyn  staff    1302 Mar  1 13:05 link_to_dir.c
 -rw-r--r--   1 marchyshyn  staff    1034 Mar  1 13:05 linkpath.c
--rw-r--r--   1 marchyshyn  staff    1333 Mar  1 15:20 long_format.c
--rw-r--r--   1 marchyshyn  staff    2096 Mar  1 17:33 long_format_not_dirs.c
 -rw-r--r--   1 marchyshyn  staff    1236 Mar  1 13:05 ls_count_files.c
--rw-r--r--   1 marchyshyn  staff    1458 Mar  1 15:15 ls_dir.c
 -rw-r--r--   1 marchyshyn  staff    1187 Mar  1 13:05 ls_dir_ext.c
 -rw-r--r--   1 marchyshyn  staff    1196 Mar  1 13:05 ls_link.c
--rw-r--r--   1 marchyshyn  staff    1175 Mar  1 15:09 ls_read_files.c
 -rw-r--r--   1 marchyshyn  staff    2765 Mar  1 13:05 ls_sort.c
 -rw-r--r--   1 marchyshyn  staff    1312 Mar  1 13:05 ls_total.c
--rwxr-xr-x   1 marchyshyn  staff    1497 Mar  1 14:03 main.c
--rw-r--r--   1 marchyshyn  staff    1690 Mar  1 17:33 max_len_group.c
--rw-r--r--   1 marchyshyn  staff    1688 Mar  1 17:32 max_len_user.c
--rw-r--r--   1 marchyshyn  staff    1329 Mar  1 15:22 max_links.c
--rw-r--r--   1 marchyshyn  staff    1325 Mar  1 15:22 max_size.c
 -rw-r--r--   1 marchyshyn  staff    1242 Mar  1 13:05 not_empty_directory.c
--rw-r--r--   1 marchyshyn  staff    1690 Mar  1 14:48 parse_arguments.c
--rw-r--r--   1 marchyshyn  staff    1560 Mar  1 14:53 parse_files.c
 -rw-r--r--   1 marchyshyn  staff    1531 Mar  1 13:05 parse_options.c
 -rw-r--r--   1 marchyshyn  staff    3434 Mar  1 13:05 print_access.c
 -rw-r--r--   1 marchyshyn  staff    1050 Mar  1 13:05 print_dot.c
--rw-r--r--   1 marchyshyn  staff    1455 Mar  1 15:07 print_files.c
--rw-r--r--   1 marchyshyn  staff    2734 Mar  1 13:56 print_long_format.c
--rw-r--r--   1 marchyshyn  staff    2133 Mar  1 15:19 recursion_branch.c
 -rw-r--r--   1 marchyshyn  staff    1022 Mar  1 13:05 skip_dots.c
 -rw-r--r--   1 marchyshyn  staff    1223 Mar  1 13:05 sort_ascii_bubble.c
 -rwxr-xr-x   1 marchyshyn  staff     105 Mar  1 13:05 zzz.sh
+-rw-r--r--   1 marchyshyn  staff   10244 Mar  1 13:06 .DS_Store
+drwxr-xr-x   8 marchyshyn  staff     256 Mar  1 13:08 cmake-build-debug
+-rw-r--r--   1 marchyshyn  staff    2734 Mar  1 13:56 print_long_format.c
+-rw-r--r--   1 marchyshyn  staff    1690 Mar  1 14:48 parse_arguments.c
+-rw-r--r--   1 marchyshyn  staff    1560 Mar  1 14:53 parse_files.c
+-rw-r--r--   1 marchyshyn  staff    1203 Mar  1 15:00 is_dir.c
+-rw-r--r--   1 marchyshyn  staff    1455 Mar  1 15:07 print_files.c
+-rw-r--r--   1 marchyshyn  staff    1175 Mar  1 15:09 ls_read_files.c
+-rw-r--r--   1 marchyshyn  staff    1329 Mar  1 15:22 max_links.c
+-rw-r--r--   1 marchyshyn  staff    1325 Mar  1 15:22 max_size.c
+-rw-r--r--   1 marchyshyn  staff    1531 Mar  1 17:41 ft_ls.c
+-rw-r--r--   1 marchyshyn  staff    1549 Mar  1 17:42 max_len_user.c
+-rw-r--r--   1 marchyshyn  staff    1551 Mar  1 17:42 max_len_group.c
+-rw-r--r--   1 marchyshyn  staff    2950 Mar  1 17:44 ft_ls.h
+-rw-r--r--   1 marchyshyn  staff    3820 Mar  1 17:44 CMakeLists.txt
+-rw-r--r--   1 marchyshyn  staff    1862 Mar  1 17:46 Makefile
+-rw-r--r--   1 marchyshyn  staff    2124 Mar  1 17:47 recursion_branch.c
+-rw-r--r--   1 marchyshyn  staff    2087 Mar  1 17:51 lf_not_dirs.c
+-rw-r--r--   1 marchyshyn  staff    1449 Mar  1 17:51 ls_dir.c
+-rwxr-xr-x   1 marchyshyn  staff   56224 Mar  1 17:54 ft_ls
+drwxr-xr-x  69 marchyshyn  staff    2208 Mar  1 17:55 libft
+-rw-r--r--   1 marchyshyn  staff    1323 Mar  1 17:57 lf.c
+-rwxr-xr-x   1 marchyshyn  staff    1495 Mar  1 18:26 main.c
+drwxr-xr-x  48 marchyshyn  staff    1536 Mar  1 18:26 .
+drwxr-xr-x  14 marchyshyn  staff     448 Mar  1 18:27 .git
+drwxr-xr-x   9 marchyshyn  staff     288 Mar  1 18:27 .idea
+-rw-r--r--   1 marchyshyn  staff   85474 Mar  1 18:27 diff_ls
+-rw-r--r--   1 marchyshyn  staff    3099 Mar  1 18:27 diff_my
 
 ./cmake-build-debug:
 total 576
 -rw-r--r--   1 marchyshyn  staff   38950 Mar  1 13:07 CMakeCache.txt
-drwxr-xr-x  17 marchyshyn  staff     544 Mar  1 14:06 CMakeFiles
 -rw-r--r--   1 marchyshyn  staff  115278 Mar  1 13:07 Makefile
 -rw-r--r--   1 marchyshyn  staff    1265 Mar  1 13:07 cmake_install.cmake
--rwxr-xr-x   1 marchyshyn  staff  103712 Mar  1 14:04 ft_ls
 -rw-r--r--   1 marchyshyn  staff   20851 Mar  1 13:07 ft_ls.cbp
+drwxr-xr-x   8 marchyshyn  staff     256 Mar  1 13:08 .
+-rwxr-xr-x   1 marchyshyn  staff  103712 Mar  1 14:04 ft_ls
+drwxr-xr-x  17 marchyshyn  staff     544 Mar  1 14:06 CMakeFiles
+drwxr-xr-x  48 marchyshyn  staff    1536 Mar  1 18:26 ..
 
 ./cmake-build-debug/CMakeFiles:
 total 208
-drwxr-xr-x   9 marchyshyn  staff    288 Mar  1 13:07 3.9.6
--rw-r--r--   1 marchyshyn  staff    663 Mar  1 13:07 CMakeDirectoryInformation.cmake
--rw-r--r--   1 marchyshyn  staff  34221 Mar  1 13:07 CMakeOutput.log
-drwxr-xr-x   2 marchyshyn  staff     64 Mar  1 13:07 CMakeTmp
--rw-r--r--   1 marchyshyn  staff  10410 Mar  1 13:07 Makefile.cmake
--rw-r--r--   1 marchyshyn  staff   3548 Mar  1 13:07 Makefile2
--rw-r--r--   1 marchyshyn  staff    238 Mar  1 13:07 TargetDirectories.txt
 -rw-r--r--   1 marchyshyn  staff     19 Mar  1 13:07 clion-environment.txt
--rw-r--r--   1 marchyshyn  staff   1213 Mar  1 13:07 clion-log.txt
--rw-r--r--   1 marchyshyn  staff     85 Mar  1 13:07 cmake.check_cache
--rwxr-xr-x   1 marchyshyn  staff   8376 Mar  1 13:07 feature_tests.bin
 -rw-r--r--   1 marchyshyn  staff    728 Mar  1 13:07 feature_tests.c
 -rw-r--r--   1 marchyshyn  staff   8844 Mar  1 13:07 feature_tests.cxx
-drwxr-xr-x  44 marchyshyn  staff   1408 Mar  1 14:04 ft_ls.dir
+-rwxr-xr-x   1 marchyshyn  staff   8376 Mar  1 13:07 feature_tests.bin
+drwxr-xr-x   2 marchyshyn  staff     64 Mar  1 13:07 CMakeTmp
+-rw-r--r--   1 marchyshyn  staff  34221 Mar  1 13:07 CMakeOutput.log
+drwxr-xr-x   9 marchyshyn  staff    288 Mar  1 13:07 3.9.6
+-rw-r--r--   1 marchyshyn  staff    663 Mar  1 13:07 CMakeDirectoryInformation.cmake
+-rw-r--r--   1 marchyshyn  staff    238 Mar  1 13:07 TargetDirectories.txt
 -rw-r--r--   1 marchyshyn  staff      4 Mar  1 13:07 progress.marks
+-rw-r--r--   1 marchyshyn  staff   3548 Mar  1 13:07 Makefile2
+-rw-r--r--   1 marchyshyn  staff  10410 Mar  1 13:07 Makefile.cmake
+-rw-r--r--   1 marchyshyn  staff     85 Mar  1 13:07 cmake.check_cache
+-rw-r--r--   1 marchyshyn  staff   1213 Mar  1 13:07 clion-log.txt
+drwxr-xr-x   8 marchyshyn  staff    256 Mar  1 13:08 ..
+drwxr-xr-x  44 marchyshyn  staff   1408 Mar  1 14:04 ft_ls.dir
+drwxr-xr-x  17 marchyshyn  staff    544 Mar  1 14:06 .
+
+./cmake-build-debug/CMakeFiles/CMakeTmp:
+total 0
+drwxr-xr-x   2 marchyshyn  staff   64 Mar  1 13:07 .
+drwxr-xr-x  17 marchyshyn  staff  544 Mar  1 14:06 ..
 
 ./cmake-build-debug/CMakeFiles/3.9.6:
 total 64
--rw-r--r--   1 marchyshyn  staff  2385 Mar  1 13:07 CMakeCCompiler.cmake
--rw-r--r--   1 marchyshyn  staff  5007 Mar  1 13:07 CMakeCXXCompiler.cmake
--rwxr-xr-x   1 marchyshyn  staff  4304 Mar  1 13:07 CMakeDetermineCompilerABI_C.bin
--rwxr-xr-x   1 marchyshyn  staff  4288 Mar  1 13:07 CMakeDetermineCompilerABI_CXX.bin
 -rw-r--r--   1 marchyshyn  staff   362 Mar  1 13:07 CMakeSystem.cmake
 drwxr-xr-x   5 marchyshyn  staff   160 Mar  1 13:07 CompilerIdC
 drwxr-xr-x   5 marchyshyn  staff   160 Mar  1 13:07 CompilerIdCXX
+-rwxr-xr-x   1 marchyshyn  staff  4304 Mar  1 13:07 CMakeDetermineCompilerABI_C.bin
+-rw-r--r--   1 marchyshyn  staff  2385 Mar  1 13:07 CMakeCCompiler.cmake
+-rwxr-xr-x   1 marchyshyn  staff  4288 Mar  1 13:07 CMakeDetermineCompilerABI_CXX.bin
+-rw-r--r--   1 marchyshyn  staff  5007 Mar  1 13:07 CMakeCXXCompiler.cmake
+drwxr-xr-x   9 marchyshyn  staff   288 Mar  1 13:07 .
+drwxr-xr-x  17 marchyshyn  staff   544 Mar  1 14:06 ..
 
 ./cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC:
 total 64
--rw-r--r--  1 marchyshyn  staff  17086 Mar  1 13:07 CMakeCCompilerId.c
--rwxr-xr-x  1 marchyshyn  staff   8616 Mar  1 13:07 a.out
 drwxr-xr-x  2 marchyshyn  staff     64 Mar  1 13:07 tmp
+-rw-r--r--  1 marchyshyn  staff  17086 Mar  1 13:07 CMakeCCompilerId.c
+drwxr-xr-x  5 marchyshyn  staff    160 Mar  1 13:07 .
+-rwxr-xr-x  1 marchyshyn  staff   8616 Mar  1 13:07 a.out
+drwxr-xr-x  9 marchyshyn  staff    288 Mar  1 13:07 ..
 
 ./cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/tmp:
+total 0
+drwxr-xr-x  2 marchyshyn  staff   64 Mar  1 13:07 .
+drwxr-xr-x  5 marchyshyn  staff  160 Mar  1 13:07 ..
 
 ./cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX:
 total 64
--rw-r--r--  1 marchyshyn  staff  16539 Mar  1 13:07 CMakeCXXCompilerId.cpp
--rwxr-xr-x  1 marchyshyn  staff   8600 Mar  1 13:07 a.out
 drwxr-xr-x  2 marchyshyn  staff     64 Mar  1 13:07 tmp
+-rw-r--r--  1 marchyshyn  staff  16539 Mar  1 13:07 CMakeCXXCompilerId.cpp
+drwxr-xr-x  5 marchyshyn  staff    160 Mar  1 13:07 .
+-rwxr-xr-x  1 marchyshyn  staff   8600 Mar  1 13:07 a.out
+drwxr-xr-x  9 marchyshyn  staff    288 Mar  1 13:07 ..
 
 ./cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/tmp:
-
-./cmake-build-debug/CMakeFiles/CMakeTmp:
+total 0
+drwxr-xr-x  2 marchyshyn  staff   64 Mar  1 13:07 .
+drwxr-xr-x  5 marchyshyn  staff  160 Mar  1 13:07 ..
 
 ./cmake-build-debug/CMakeFiles/ft_ls.dir:
 total 1320
--rw-r--r--   1 marchyshyn  staff   18869 Mar  1 14:04 C.includecache
--rw-r--r--   1 marchyshyn  staff   20916 Mar  1 13:07 DependInfo.cmake
--rw-r--r--   1 marchyshyn  staff    2812 Mar  1 14:04 annulation_opt.c.o
--rw-r--r--   1 marchyshyn  staff  279465 Mar  1 13:07 build.make
+-rw-r--r--   1 marchyshyn  staff    5718 Mar  1 13:07 link.txt
 -rw-r--r--   1 marchyshyn  staff    6264 Mar  1 13:07 cmake_clean.cmake
--rw-r--r--   1 marchyshyn  staff    4928 Mar  1 14:04 define_type.c.o
+-rw-r--r--   1 marchyshyn  staff  279465 Mar  1 13:07 build.make
+-rw-r--r--   1 marchyshyn  staff   20916 Mar  1 13:07 DependInfo.cmake
+-rw-r--r--   1 marchyshyn  staff     251 Mar  1 13:07 flags.make
+-rw-r--r--   1 marchyshyn  staff    2923 Mar  1 13:07 progress.make
 -rw-r--r--   1 marchyshyn  staff   52280 Mar  1 14:04 depend.internal
 -rw-r--r--   1 marchyshyn  staff   54966 Mar  1 14:04 depend.make
--rw-r--r--   1 marchyshyn  staff     251 Mar  1 13:07 flags.make
--rw-r--r--   1 marchyshyn  staff    3784 Mar  1 14:04 ft_ls.c.o
--rw-r--r--   1 marchyshyn  staff    7100 Mar  1 14:04 ft_ls_recursion.c.o
--rw-r--r--   1 marchyshyn  staff    5084 Mar  1 14:04 is_dir.c.o
--rw-r--r--   1 marchyshyn  staff    2504 Mar  1 14:04 is_option.c.o
+-rw-r--r--   1 marchyshyn  staff   18869 Mar  1 14:04 C.includecache
 drwxr-xr-x  63 marchyshyn  staff    2016 Mar  1 14:04 libft
--rw-r--r--   1 marchyshyn  staff    5718 Mar  1 13:07 link.txt
--rw-r--r--   1 marchyshyn  staff    5244 Mar  1 14:04 link_to_dir.c.o
+-rw-r--r--   1 marchyshyn  staff    2812 Mar  1 14:04 annulation_opt.c.o
+-rw-r--r--   1 marchyshyn  staff    4928 Mar  1 14:04 define_type.c.o
+-rw-r--r--   1 marchyshyn  staff    7100 Mar  1 14:04 ft_ls_recursion.c.o
+-rw-r--r--   1 marchyshyn  staff    3784 Mar  1 14:04 ft_ls.c.o
+-rw-r--r--   1 marchyshyn  staff    2504 Mar  1 14:04 is_option.c.o
+-rw-r--r--   1 marchyshyn  staff    5084 Mar  1 14:04 is_dir.c.o
 -rw-r--r--   1 marchyshyn  staff    2488 Mar  1 14:04 linkpath.c.o
+-rw-r--r--   1 marchyshyn  staff    5244 Mar  1 14:04 link_to_dir.c.o
 -rw-r--r--   1 marchyshyn  staff    3756 Mar  1 14:04 long_format.c.o
 -rw-r--r--   1 marchyshyn  staff    4984 Mar  1 14:04 long_format_not_dirs.c.o
 -rw-r--r--   1 marchyshyn  staff    4220 Mar  1 14:04 ls_count_files.c.o
 -rw-r--r--   1 marchyshyn  staff    3724 Mar  1 14:04 ls_dir.c.o
--rw-r--r--   1 marchyshyn  staff    3272 Mar  1 14:04 ls_dir_ext.c.o
 -rw-r--r--   1 marchyshyn  staff    3132 Mar  1 14:04 ls_link.c.o
+-rw-r--r--   1 marchyshyn  staff    3272 Mar  1 14:04 ls_dir_ext.c.o
 -rw-r--r--   1 marchyshyn  staff    4140 Mar  1 14:04 ls_read_files.c.o
 -rw-r--r--   1 marchyshyn  staff    8396 Mar  1 14:04 ls_sort.c.o
 -rw-r--r--   1 marchyshyn  staff    5616 Mar  1 14:04 ls_total.c.o
@@ -135,44 +160,45 @@ drwxr-xr-x  63 marchyshyn  staff    2016 Mar  1 14:04 libft
 -rw-r--r--   1 marchyshyn  staff    6704 Mar  1 14:04 parse_arguments.c.o
 -rw-r--r--   1 marchyshyn  staff    6324 Mar  1 14:04 parse_files.c.o
 -rw-r--r--   1 marchyshyn  staff    3968 Mar  1 14:04 parse_options.c.o
--rw-r--r--   1 marchyshyn  staff    5880 Mar  1 14:04 print_access.c.o
 -rw-r--r--   1 marchyshyn  staff    2852 Mar  1 14:04 print_dot.c.o
+-rw-r--r--   1 marchyshyn  staff    5880 Mar  1 14:04 print_access.c.o
 -rw-r--r--   1 marchyshyn  staff    3836 Mar  1 14:04 print_files.c.o
 -rw-r--r--   1 marchyshyn  staff    8416 Mar  1 14:04 print_long_format.c.o
--rw-r--r--   1 marchyshyn  staff    2923 Mar  1 13:07 progress.make
 -rw-r--r--   1 marchyshyn  staff    2596 Mar  1 14:04 skip_dots.c.o
 -rw-r--r--   1 marchyshyn  staff    2848 Mar  1 14:04 sort_ascii_bubble.c.o
+drwxr-xr-x  44 marchyshyn  staff    1408 Mar  1 14:04 .
+drwxr-xr-x  17 marchyshyn  staff     544 Mar  1 14:06 ..
 
 ./cmake-build-debug/CMakeFiles/ft_ls.dir/libft:
 total 512
--rw-r--r--   1 marchyshyn  staff  2600 Mar  1 14:04 free_words.c.o
+drwxr-xr-x  38 marchyshyn  staff  1216 Mar  1 14:04 ft_printf
 -rw-r--r--   1 marchyshyn  staff  3156 Mar  1 14:04 ft_atoi.c.o
+-rw-r--r--   1 marchyshyn  staff  2600 Mar  1 14:04 free_words.c.o
 -rw-r--r--   1 marchyshyn  staff  2712 Mar  1 14:04 ft_bzero.c.o
 -rw-r--r--   1 marchyshyn  staff  2468 Mar  1 14:04 ft_isalnum.c.o
 -rw-r--r--   1 marchyshyn  staff  2396 Mar  1 14:04 ft_isalpha.c.o
 -rw-r--r--   1 marchyshyn  staff  2360 Mar  1 14:04 ft_isascii.c.o
 -rw-r--r--   1 marchyshyn  staff  2360 Mar  1 14:04 ft_isdigit.c.o
 -rw-r--r--   1 marchyshyn  staff  2360 Mar  1 14:04 ft_isprint.c.o
--rw-r--r--   1 marchyshyn  staff  3204 Mar  1 14:04 ft_itoa.c.o
 -rw-r--r--   1 marchyshyn  staff  2676 Mar  1 14:04 ft_itoa_len.c.o
+-rw-r--r--   1 marchyshyn  staff  3204 Mar  1 14:04 ft_itoa.c.o
 -rw-r--r--   1 marchyshyn  staff  3048 Mar  1 14:04 ft_lst_push_back.c.o
 -rw-r--r--   1 marchyshyn  staff  2888 Mar  1 14:04 ft_lstadd.c.o
--rw-r--r--   1 marchyshyn  staff  3504 Mar  1 14:04 ft_lstascii.c.o
 -rw-r--r--   1 marchyshyn  staff  3124 Mar  1 14:04 ft_lstdel.c.o
--rw-r--r--   1 marchyshyn  staff  3028 Mar  1 14:04 ft_lstdelone.c.o
+-rw-r--r--   1 marchyshyn  staff  3504 Mar  1 14:04 ft_lstascii.c.o
 -rw-r--r--   1 marchyshyn  staff  2964 Mar  1 14:04 ft_lstiter.c.o
+-rw-r--r--   1 marchyshyn  staff  3028 Mar  1 14:04 ft_lstdelone.c.o
 -rw-r--r--   1 marchyshyn  staff  3140 Mar  1 14:04 ft_lstmap.c.o
 -rw-r--r--   1 marchyshyn  staff  3228 Mar  1 14:04 ft_lstnew.c.o
--rw-r--r--   1 marchyshyn  staff  2744 Mar  1 14:04 ft_memalloc.c.o
 -rw-r--r--   1 marchyshyn  staff  2984 Mar  1 14:04 ft_memccpy.c.o
+-rw-r--r--   1 marchyshyn  staff  2744 Mar  1 14:04 ft_memalloc.c.o
 -rw-r--r--   1 marchyshyn  staff  2904 Mar  1 14:04 ft_memchr.c.o
 -rw-r--r--   1 marchyshyn  staff  3008 Mar  1 14:04 ft_memcmp.c.o
 -rw-r--r--   1 marchyshyn  staff  2808 Mar  1 14:04 ft_memcpy.c.o
 -rw-r--r--   1 marchyshyn  staff  2364 Mar  1 14:04 ft_memdel.c.o
--rw-r--r--   1 marchyshyn  staff  2908 Mar  1 14:04 ft_memmove.c.o
 -rw-r--r--   1 marchyshyn  staff  2808 Mar  1 14:04 ft_memset.c.o
+-rw-r--r--   1 marchyshyn  staff  2908 Mar  1 14:04 ft_memmove.c.o
 -rw-r--r--   1 marchyshyn  staff  2768 Mar  1 14:04 ft_power.c.o
-drwxr-xr-x  38 marchyshyn  staff  1216 Mar  1 14:04 ft_printf
 -rw-r--r--   1 marchyshyn  staff  9876 Mar  1 14:04 ft_printf.c.o
 -rw-r--r--   1 marchyshyn  staff  2436 Mar  1 14:04 ft_putchar.c.o
 -rw-r--r--   1 marchyshyn  staff  2648 Mar  1 14:04 ft_putnbr.c.o
@@ -190,12 +216,12 @@ drwxr-xr-x  38 marchyshyn  staff  1216 Mar  1 14:04 ft_printf
 -rw-r--r--   1 marchyshyn  staff  2744 Mar  1 14:04 ft_strjoin.c.o
 -rw-r--r--   1 marchyshyn  staff  2976 Mar  1 14:04 ft_strlcat.c.o
 -rw-r--r--   1 marchyshyn  staff  2680 Mar  1 14:04 ft_strlen.c.o
--rw-r--r--   1 marchyshyn  staff  2868 Mar  1 14:04 ft_strmap.c.o
 -rw-r--r--   1 marchyshyn  staff  2980 Mar  1 14:04 ft_strmapi.c.o
+-rw-r--r--   1 marchyshyn  staff  2868 Mar  1 14:04 ft_strmap.c.o
 -rw-r--r--   1 marchyshyn  staff  2960 Mar  1 14:04 ft_strncat.c.o
 -rw-r--r--   1 marchyshyn  staff  3116 Mar  1 14:04 ft_strncmp.c.o
--rw-r--r--   1 marchyshyn  staff  3072 Mar  1 14:04 ft_strncpy.c.o
 -rw-r--r--   1 marchyshyn  staff  2824 Mar  1 14:04 ft_strnequ.c.o
+-rw-r--r--   1 marchyshyn  staff  3072 Mar  1 14:04 ft_strncpy.c.o
 -rw-r--r--   1 marchyshyn  staff  2792 Mar  1 14:04 ft_strnew.c.o
 -rw-r--r--   1 marchyshyn  staff  3216 Mar  1 14:04 ft_strnstr.c.o
 -rw-r--r--   1 marchyshyn  staff  2880 Mar  1 14:04 ft_strrchr.c.o
@@ -206,6 +232,8 @@ drwxr-xr-x  38 marchyshyn  staff  1216 Mar  1 14:04 ft_printf
 -rw-r--r--   1 marchyshyn  staff  2376 Mar  1 14:04 ft_tolower.c.o
 -rw-r--r--   1 marchyshyn  staff  2376 Mar  1 14:04 ft_toupper.c.o
 -rw-r--r--   1 marchyshyn  staff  5764 Mar  1 14:04 get_next_line.c.o
+drwxr-xr-x  63 marchyshyn  staff  2016 Mar  1 14:04 .
+drwxr-xr-x  44 marchyshyn  staff  1408 Mar  1 14:04 ..
 
 ./cmake-build-debug/CMakeFiles/ft_ls.dir/libft/ft_printf:
 total 416
@@ -223,16 +251,16 @@ total 416
 -rw-r--r--   1 marchyshyn  staff  2768 Mar  1 14:04 is_type.c.o
 -rw-r--r--   1 marchyshyn  staff  4576 Mar  1 14:04 m_putchar.c.o
 -rw-r--r--   1 marchyshyn  staff  2748 Mar  1 14:04 m_putstr.c.o
--rw-r--r--   1 marchyshyn  staff  6120 Mar  1 14:04 modificator_dec.c.o
 -rw-r--r--   1 marchyshyn  staff  5032 Mar  1 14:04 modificator_hex.c.o
--rw-r--r--   1 marchyshyn  staff  6148 Mar  1 14:04 modificator_octal.c.o
+-rw-r--r--   1 marchyshyn  staff  6120 Mar  1 14:04 modificator_dec.c.o
 -rw-r--r--   1 marchyshyn  staff  6296 Mar  1 14:04 modificator_uns.c.o
+-rw-r--r--   1 marchyshyn  staff  6148 Mar  1 14:04 modificator_octal.c.o
 -rw-r--r--   1 marchyshyn  staff  2944 Mar  1 14:04 prec_diff.c.o
 -rw-r--r--   1 marchyshyn  staff  3588 Mar  1 14:04 put_binary.c.o
 -rw-r--r--   1 marchyshyn  staff  4064 Mar  1 14:04 put_c.c.o
 -rw-r--r--   1 marchyshyn  staff  6980 Mar  1 14:04 put_dec.c.o
--rw-r--r--   1 marchyshyn  staff  8556 Mar  1 14:04 put_float.c.o
 -rw-r--r--   1 marchyshyn  staff  6224 Mar  1 14:04 put_hex.c.o
+-rw-r--r--   1 marchyshyn  staff  8556 Mar  1 14:04 put_float.c.o
 -rw-r--r--   1 marchyshyn  staff  4444 Mar  1 14:04 put_lc.c.o
 -rw-r--r--   1 marchyshyn  staff  6216 Mar  1 14:04 put_ls.c.o
 -rw-r--r--   1 marchyshyn  staff  7020 Mar  1 14:04 put_octal.c.o
@@ -241,13 +269,16 @@ total 416
 -rw-r--r--   1 marchyshyn  staff  3500 Mar  1 14:04 put_percent.c.o
 -rw-r--r--   1 marchyshyn  staff  5936 Mar  1 14:04 put_s.c.o
 -rw-r--r--   1 marchyshyn  staff  3520 Mar  1 14:04 put_unknown_type.c.o
--rw-r--r--   1 marchyshyn  staff  5024 Mar  1 14:04 put_unsigned.c.o
 -rw-r--r--   1 marchyshyn  staff  3128 Mar  1 14:04 putstr_ls.c.o
+-rw-r--r--   1 marchyshyn  staff  5024 Mar  1 14:04 put_unsigned.c.o
 -rw-r--r--   1 marchyshyn  staff  2468 Mar  1 14:04 set_to_zero.c.o
 -rw-r--r--   1 marchyshyn  staff  2804 Mar  1 14:04 strlen_ls.c.o
+drwxr-xr-x  38 marchyshyn  staff  1216 Mar  1 14:04 .
+drwxr-xr-x  63 marchyshyn  staff  2016 Mar  1 14:04 ..
 
 ./libft:
-total 736
+total 768
+-rw-r--r--   1 marchyshyn  staff   12292 Mar  1 13:05 .DS_Store
 -rw-r--r--   1 marchyshyn  staff    3357 Mar  1 13:05 Makefile
 -rw-r--r--   1 marchyshyn  staff    1077 Mar  1 13:05 free_words.c
 -rw-r--r--   1 marchyshyn  staff    1271 Mar  1 13:05 ft_atoi.c
@@ -276,7 +307,6 @@ total 736
 -rw-r--r--   1 marchyshyn  staff    1112 Mar  1 13:05 ft_memmove.c
 -rw-r--r--   1 marchyshyn  staff    1093 Mar  1 13:05 ft_memset.c
 -rw-r--r--   1 marchyshyn  staff    1111 Mar  1 13:05 ft_power.c
-drwxr-xr-x  39 marchyshyn  staff    1248 Mar  1 17:34 ft_printf
 -rw-r--r--   1 marchyshyn  staff    3722 Mar  1 13:05 ft_printf.c
 -rw-r--r--   1 marchyshyn  staff     985 Mar  1 13:05 ft_putchar.c
 -rw-r--r--   1 marchyshyn  staff    1141 Mar  1 13:05 ft_putnbr.c
@@ -311,9 +341,12 @@ drwxr-xr-x  39 marchyshyn  staff    1248 Mar  1 17:34 ft_printf
 -rw-r--r--   1 marchyshyn  staff    1005 Mar  1 13:05 ft_toupper.c
 -rw-r--r--   1 marchyshyn  staff    2422 Mar  1 13:05 get_next_line.c
 -rw-r--r--   1 marchyshyn  staff    1086 Mar  1 13:05 get_next_line.h
--rw-r--r--   1 marchyshyn  staff  118600 Mar  1 17:34 libft.a
--rw-r--r--   1 marchyshyn  staff    3883 Mar  1 13:48 libft.h
 lrwxr-xr-x   1 marchyshyn  staff       4 Mar  1 13:05 link -> link
+-rw-r--r--   1 marchyshyn  staff    3883 Mar  1 13:48 libft.h
+-rw-r--r--   1 marchyshyn  staff  118600 Mar  1 17:54 libft.a
+drwxr-xr-x  39 marchyshyn  staff    1248 Mar  1 17:55 ft_printf
+drwxr-xr-x  69 marchyshyn  staff    2208 Mar  1 17:55 .
+drwxr-xr-x  48 marchyshyn  staff    1536 Mar  1 18:26 ..
 
 ./libft/ft_printf:
 total 296
@@ -354,3 +387,1393 @@ total 296
 -rw-r--r--   1 marchyshyn  staff  1280 Mar  1 13:05 putstr_ls.c
 -rw-r--r--   1 marchyshyn  staff  1005 Mar  1 13:05 set_to_zero.c
 -rw-r--r--   1 marchyshyn  staff  1072 Mar  1 13:05 strlen_ls.c
+drwxr-xr-x  39 marchyshyn  staff  1248 Mar  1 17:55 .
+drwxr-xr-x  69 marchyshyn  staff  2208 Mar  1 17:55 ..
+
+./.git:
+total 112
+drwxr-xr-x    3 marchyshyn  staff     96 Mar  1 13:05 info
+-rw-r--r--    1 marchyshyn  staff     73 Mar  1 13:05 description
+drwxr-xr-x   12 marchyshyn  staff    384 Mar  1 13:05 hooks
+drwxr-xr-x    2 marchyshyn  staff     64 Mar  1 13:05 branches
+-rw-r--r--    1 marchyshyn  staff    311 Mar  1 13:05 packed-refs
+drwxr-xr-x    5 marchyshyn  staff    160 Mar  1 13:05 refs
+-rw-r--r--    1 marchyshyn  staff     23 Mar  1 13:05 HEAD
+drwxr-xr-x    4 marchyshyn  staff    128 Mar  1 13:05 logs
+-rw-r--r--    1 marchyshyn  staff    310 Mar  1 13:05 config
+-rw-r--r--    1 marchyshyn  staff      8 Mar  1 17:37 COMMIT_EDITMSG
+drwxr-xr-x  167 marchyshyn  staff   5344 Mar  1 17:51 objects
+-rw-r--r--    1 marchyshyn  staff  33958 Mar  1 17:51 index
+drwxr-xr-x   48 marchyshyn  staff   1536 Mar  1 18:26 ..
+drwxr-xr-x   14 marchyshyn  staff    448 Mar  1 18:27 .
+
+./.git/info:
+total 8
+drwxr-xr-x   3 marchyshyn  staff   96 Mar  1 13:05 .
+-rw-r--r--   1 marchyshyn  staff  240 Mar  1 13:05 exclude
+drwxr-xr-x  14 marchyshyn  staff  448 Mar  1 18:27 ..
+
+./.git/hooks:
+total 88
+-rwxr-xr-x   1 marchyshyn  staff   896 Mar  1 13:05 commit-msg.sample
+-rwxr-xr-x   1 marchyshyn  staff  4951 Mar  1 13:05 pre-rebase.sample
+-rwxr-xr-x   1 marchyshyn  staff  1642 Mar  1 13:05 pre-commit.sample
+-rwxr-xr-x   1 marchyshyn  staff   478 Mar  1 13:05 applypatch-msg.sample
+-rw-r--r--   1 marchyshyn  staff   544 Mar  1 13:05 pre-receive.sample
+-rwxr-xr-x   1 marchyshyn  staff  1239 Mar  1 13:05 prepare-commit-msg.sample
+-rwxr-xr-x   1 marchyshyn  staff   189 Mar  1 13:05 post-update.sample
+-rwxr-xr-x   1 marchyshyn  staff   424 Mar  1 13:05 pre-applypatch.sample
+-rwxr-xr-x   1 marchyshyn  staff  1348 Mar  1 13:05 pre-push.sample
+drwxr-xr-x  12 marchyshyn  staff   384 Mar  1 13:05 .
+-rwxr-xr-x   1 marchyshyn  staff  3610 Mar  1 13:05 update.sample
+drwxr-xr-x  14 marchyshyn  staff   448 Mar  1 18:27 ..
+
+./.git/branches:
+total 0
+drwxr-xr-x   2 marchyshyn  staff   64 Mar  1 13:05 .
+drwxr-xr-x  14 marchyshyn  staff  448 Mar  1 18:27 ..
+
+./.git/refs:
+total 0
+drwxr-xr-x   2 marchyshyn  staff   64 Mar  1 13:05 tags
+drwxr-xr-x   5 marchyshyn  staff  160 Mar  1 13:05 .
+drwxr-xr-x   3 marchyshyn  staff   96 Mar  1 13:05 remotes
+drwxr-xr-x   3 marchyshyn  staff   96 Mar  1 17:37 heads
+drwxr-xr-x  14 marchyshyn  staff  448 Mar  1 18:27 ..
+
+./.git/refs/tags:
+total 0
+drwxr-xr-x  2 marchyshyn  staff   64 Mar  1 13:05 .
+drwxr-xr-x  5 marchyshyn  staff  160 Mar  1 13:05 ..
+
+./.git/refs/remotes:
+total 0
+drwxr-xr-x  5 marchyshyn  staff  160 Mar  1 13:05 ..
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  1 13:05 .
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  1 17:37 origin
+
+./.git/refs/remotes/origin:
+total 16
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  1 13:05 ..
+-rw-r--r--  1 marchyshyn  staff   32 Mar  1 13:05 HEAD
+-rw-r--r--  1 marchyshyn  staff   41 Mar  1 17:37 ft_ls4
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  1 17:37 .
+
+./.git/refs/heads:
+total 8
+drwxr-xr-x  5 marchyshyn  staff  160 Mar  1 13:05 ..
+-rw-r--r--  1 marchyshyn  staff   41 Mar  1 17:37 ft_ls4
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  1 17:37 .
+
+./.git/logs:
+total 8
+drwxr-xr-x   4 marchyshyn  staff  128 Mar  1 13:05 .
+drwxr-xr-x   4 marchyshyn  staff  128 Mar  1 13:05 refs
+-rw-r--r--   1 marchyshyn  staff  733 Mar  1 17:37 HEAD
+drwxr-xr-x  14 marchyshyn  staff  448 Mar  1 18:27 ..
+
+./.git/logs/refs:
+total 0
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  1 13:05 remotes
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  1 13:05 ..
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  1 13:05 .
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  1 13:05 heads
+
+./.git/logs/refs/remotes:
+total 0
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  1 13:05 .
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  1 13:05 ..
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  1 14:42 origin
+
+./.git/logs/refs/remotes/origin:
+total 16
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  1 13:05 ..
+-rw-r--r--  1 marchyshyn  staff  212 Mar  1 13:05 HEAD
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  1 14:42 .
+-rw-r--r--  1 marchyshyn  staff  348 Mar  1 17:37 ft_ls4
+
+./.git/logs/refs/heads:
+total 8
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  1 13:05 ..
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  1 13:05 .
+-rw-r--r--  1 marchyshyn  staff  733 Mar  1 17:37 ft_ls4
+
+./.git/objects:
+total 0
+drwxr-xr-x    2 marchyshyn  staff    64 Mar  1 13:05 info
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 13:05 pack
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 77
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 6f
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 cf
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 d7
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 4b
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 6a
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 39
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 c2
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 4d
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 0b
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 8a
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 aa
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 d3
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 37
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 2e
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 99
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 fc
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 b1
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 a8
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 05
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 87
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 3c
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 69
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 a6
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 23
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 da
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 4e
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 09
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 a4
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 10
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 72
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 e7
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 97
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 1e
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 fe
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 03
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 34
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 3d
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 33
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 2d
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 80
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 b3
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 16
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 f2
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 84
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 66
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 76
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 28
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 85
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 8f
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 14:42 d0
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 9b
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 f4
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 07
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 a5
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 55
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 68
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 eb
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 ef
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 11
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 b0
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 fa
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 c0
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 67
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 d4
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 58
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 fb
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 46
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 fd
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 57
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 ae
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 90
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 18
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 bf
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 14:42 51
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 98
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 8e
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 25
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 96
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 7f
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 d6
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 c8
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 0e
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 ab
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 14:42 52
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 71
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 f7
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:52 b8
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 ca
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 6b
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 95
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 73
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 b5
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 0a
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 50
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 45
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 61
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 e6
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 38
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 00
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 c9
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 19
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 f5
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 29
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 ac
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 75
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 f9
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 49
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 9f
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 e9
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 7d
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 01
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 a7
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 c1
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 ad
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 1c
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 af
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 b9
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 60
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 62
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 e4
+drwxr-xr-x    6 marchyshyn  staff   192 Mar  1 17:37 63
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 41
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 de
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 24
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 d9
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 08
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 f3
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 bd
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 ce
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 db
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 78
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 e1
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 7a
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 b7
+drwxr-xr-x    6 marchyshyn  staff   192 Mar  1 17:37 4f
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 04
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 06
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 b2
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 f0
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 3f
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 e8
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 ea
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 56
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 9a
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 3e
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 c7
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 70
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 bb
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 1f
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 c5
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 12
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 e3
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 e5
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 8d
+drwxr-xr-x    7 marchyshyn  staff   224 Mar  1 17:37 ec
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 dd
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 1d
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 31
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 5c
+drwxr-xr-x    6 marchyshyn  staff   192 Mar  1 17:41 a3
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:43 1b
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 .
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:51 5a
+drwxr-xr-x   14 marchyshyn  staff   448 Mar  1 18:27 ..
+
+./.git/objects/info:
+total 0
+drwxr-xr-x    2 marchyshyn  staff    64 Mar  1 13:05 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/pack:
+total 4296
+-r--r--r--    1 marchyshyn  staff    50436 Mar  1 13:05 pack-91a884d0a2ab5380c6e460574e22608bdd84d5c3.idx
+drwxr-xr-x    4 marchyshyn  staff      128 Mar  1 13:05 .
+-r--r--r--    1 marchyshyn  staff  1539149 Mar  1 17:37 pack-91a884d0a2ab5380c6e460574e22608bdd84d5c3.pack
+drwxr-xr-x  167 marchyshyn  staff     5344 Mar  1 17:51 ..
+
+./.git/objects/77:
+total 8
+-r--r--r--    1 marchyshyn  staff   395 Mar  1 14:42 7708c261b7efe3ad19374782d0fa2d3e1614c6
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/6f:
+total 8
+-r--r--r--    1 marchyshyn  staff  3745 Mar  1 14:42 3ad37a939573118f445a96d5dbbe0d5a2fc0c9
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/cf:
+total 8
+-r--r--r--    1 marchyshyn  staff   538 Mar  1 14:42 ed60e3a451d0d707dae45f11843fea2fc594f8
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/d7:
+total 8
+-r--r--r--    1 marchyshyn  staff   947 Mar  1 14:42 10d8b305d2e8297852971fd620ee5135a710eb
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/4b:
+total 8
+-r--r--r--    1 marchyshyn  staff  1498 Mar  1 14:42 c1f4956cc541c2eac6d59e772e5cd74eee2463
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/6a:
+total 16
+-r--r--r--    1 marchyshyn  staff   889 Mar  1 14:42 cec41738a706f3e07806e138f3e561a5397384
+-r--r--r--    1 marchyshyn  staff  1194 Mar  1 14:42 f3bd23598336852ac5c8779f492288669bbbaf
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/39:
+total 40
+-r--r--r--    1 marchyshyn  staff  18389 Mar  1 14:42 4bb5abfa7052b63cee79e23d4cc936075ebd0e
+drwxr-xr-x    3 marchyshyn  staff     96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff   5344 Mar  1 17:51 ..
+
+./.git/objects/c2:
+total 8
+-r--r--r--    1 marchyshyn  staff  1721 Mar  1 14:42 c86d1848837ee7176310c7f97f8375978ea735
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/4d:
+total 8
+-r--r--r--    1 marchyshyn  staff  2350 Mar  1 14:42 a49ac5c9a07e47731b57944a71db8f028c8d72
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/0b:
+total 8
+-r--r--r--    1 marchyshyn  staff  1466 Mar  1 14:42 07643f2db4c4dc511218e01a4820fe297ced85
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/8a:
+total 8
+-r--r--r--    1 marchyshyn  staff   998 Mar  1 14:42 6f6a23dd8bc3c37bc8b9cce59f0f3abcac2aa1
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/aa:
+total 16
+-r--r--r--    1 marchyshyn  staff  2187 Mar  1 14:42 fa725336aa491119b2ae4ff21b1b5cbefa8285
+-r--r--r--    1 marchyshyn  staff   926 Mar  1 14:42 2d794ef63522c69d70873e6aa3bc8eda36e740
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/d3:
+total 8
+-r--r--r--    1 marchyshyn  staff  1475 Mar  1 14:42 af08fc4891eb577ce0ebf8a2c21fad8476c318
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/37:
+total 8
+-r--r--r--    1 marchyshyn  staff  1331 Mar  1 14:42 cfa2f79cf100d0a2773fd77e317ad53e01650a
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/2e:
+total 8
+-r--r--r--    1 marchyshyn  staff  1317 Mar  1 14:42 146bac0e80540a1074e427d96c5a97668dbf50
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/99:
+total 8
+-r--r--r--    1 marchyshyn  staff  1292 Mar  1 14:42 63d723e300cf9c05d3a036d4eead2aae291338
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/fc:
+total 8
+-r--r--r--    1 marchyshyn  staff  1400 Mar  1 14:42 a8f06ecdba80bf83fc9221326ec25a4a19f769
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/b1:
+total 16
+-r--r--r--    1 marchyshyn  staff  1565 Mar  1 14:42 8fda55f1ea5504edd950233957c0d051232c1c
+-r--r--r--    1 marchyshyn  staff  1189 Mar  1 14:42 d3a55f2850fffc00cd29008225c765401f3fd5
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/a8:
+total 8
+-r--r--r--    1 marchyshyn  staff  1286 Mar  1 14:42 07d5036c77cf2df5a0d5a285251d9ec9f3be4a
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/05:
+total 8
+-r--r--r--    1 marchyshyn  staff   921 Mar  1 14:42 da9f36606b1186cdefbff360a01d6ea9bb54d0
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/87:
+total 8
+-r--r--r--    1 marchyshyn  staff  1227 Mar  1 14:42 3d6467d4041b9d1b9376fdf65ab9229e5cf37d
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/3c:
+total 16
+-r--r--r--    1 marchyshyn  staff  4564 Mar  1 14:42 781875009323a8d01c69a9bbcd402492cf443c
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/69:
+total 16
+-r--r--r--    1 marchyshyn  staff  1779 Mar  1 14:42 a4aa3d64c3f69655eed62eb07401a3193ff39d
+-r--r--r--    1 marchyshyn  staff  1058 Mar  1 14:42 f431ffc02a7229d83cf3e24a2d58ddca2b5845
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/a6:
+total 8
+-r--r--r--    1 marchyshyn  staff  1003 Mar  1 14:42 90724870827471aa9e23fd2b9bf44cb0a2f527
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/23:
+total 16
+-r--r--r--    1 marchyshyn  staff  1221 Mar  1 14:42 f929e5957fe9c7ef337c798c0a689dadbc13a6
+-r--r--r--    1 marchyshyn  staff  1859 Mar  1 14:42 b707e0c5169665e40d91f27fdc9d08b21d71aa
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/da:
+total 8
+-r--r--r--    1 marchyshyn  staff  1091 Mar  1 14:42 14b18c4146c4689850c5ddbc37792271ed4b01
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/4e:
+total 8
+-r--r--r--    1 marchyshyn  staff  1025 Mar  1 14:42 c7567a335badcd25d77506bb38e7b2bb692d41
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/09:
+total 8
+-r--r--r--    1 marchyshyn  staff  1078 Mar  1 14:42 61d3ac80f2fcfb2e692d80209df763febd0d9f
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/a4:
+total 8
+-r--r--r--    1 marchyshyn  staff  1117 Mar  1 14:42 cd851ae25a02e999ca42f2d4196249472ad1f5
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/10:
+total 8
+-r--r--r--    1 marchyshyn  staff  2251 Mar  1 14:42 5a78614618c81b1e1d24f4056f157024bead36
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/72:
+total 8
+-r--r--r--    1 marchyshyn  staff  2513 Mar  1 14:42 1fa5344ca8441262cd39da976f7ce2ac2d9614
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/e7:
+total 8
+-r--r--r--    1 marchyshyn  staff  1295 Mar  1 14:42 de0eb75e864dcdb23eac5b5f592b96338fda1c
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/97:
+total 8
+-r--r--r--    1 marchyshyn  staff  1613 Mar  1 14:42 e0a709a6977fc1eda8c5809b7571ba6bb90e9c
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/1e:
+total 8
+-r--r--r--    1 marchyshyn  staff  3191 Mar  1 14:42 c6ad79654b62c9adc1f95cc7b7c97dfd7f2b91
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/fe:
+total 16
+-r--r--r--    1 marchyshyn  staff  4098 Mar  1 14:42 dac72ff69d7c5e31f21d5ca3a91d717a27eb88
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/03:
+total 16
+-r--r--r--    1 marchyshyn  staff   564 Mar  1 14:42 72095781950bbebab0fd86657b36eaf734b841
+-r--r--r--    1 marchyshyn  staff  2956 Mar  1 14:42 609645959ae4f7ad6b73bdc8d0cd2cee9f763b
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/34:
+total 8
+-r--r--r--    1 marchyshyn  staff  3085 Mar  1 14:42 df69def53c61a9306bc0a2c1de654e53aa5422
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/3d:
+total 8
+-r--r--r--    1 marchyshyn  staff  1540 Mar  1 14:42 4ba26ddc2d36c68cd3b762b5aa3c3194aebfcd
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/33:
+total 8
+-r--r--r--    1 marchyshyn  staff  2813 Mar  1 14:42 ad4842e59a4f9bb0b15280ff815de0460e3e23
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/2d:
+total 16
+-r--r--r--    1 marchyshyn  staff   925 Mar  1 14:42 bed37d610f5fb98826baf53a004c726df0a278
+-r--r--r--    1 marchyshyn  staff  2391 Mar  1 14:42 722e0cd8e83b149fe71df6328996ad5fc070fa
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/80:
+total 8
+-r--r--r--    1 marchyshyn  staff  1408 Mar  1 14:42 e10c681dff1d1266075a4393c6fb8f19c50b0f
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/b3:
+total 16
+-r--r--r--    1 marchyshyn  staff  1382 Mar  1 14:42 bff40f0e219b5673155feb3979b3285ae829d9
+-r--r--r--    1 marchyshyn  staff  1072 Mar  1 14:42 1b3ed6f4495be52a026d995f960583379500f8
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/16:
+total 8
+-r--r--r--    1 marchyshyn  staff   952 Mar  1 14:42 e201c812dd7e19b70bb097167d7fffcd7bc200
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/f2:
+total 16
+-r--r--r--    1 marchyshyn  staff  1540 Mar  1 14:42 3b5f64d71eb737e36bea08e0d8ffc3b15a9b7f
+-r--r--r--    1 marchyshyn  staff  1049 Mar  1 14:42 a7b0acf086653a5cd85b6f263aba60815e0850
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/84:
+total 8
+-r--r--r--    1 marchyshyn  staff  1102 Mar  1 14:42 95e14590af50ed6a22828074e7e1b71d18c229
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/66:
+total 8
+-r--r--r--    1 marchyshyn  staff  1292 Mar  1 14:42 e4cc2da8a492b5ab72363f99a1cea6172d77e0
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/76:
+total 8
+-r--r--r--    1 marchyshyn  staff  1284 Mar  1 14:42 95a7568e02593cd249648d38ecb23d2dace41c
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/28:
+total 8
+-r--r--r--    1 marchyshyn  staff  1346 Mar  1 14:42 3e87a2f2b4554dff49bc3810e970d048bcbd7c
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/85:
+total 8
+-r--r--r--    1 marchyshyn  staff  1338 Mar  1 14:42 80735b5474c16a047aa5327c9058777a1a2e8d
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/8f:
+total 8
+-r--r--r--    1 marchyshyn  staff  1431 Mar  1 14:42 a7d046f5ab24fef24e0401db7a6f34d16aeae2
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/d0:
+total 48
+-r--r--r--    1 marchyshyn  staff  13312 Mar  1 14:42 7e064199cb5e1145ec0ae51e2c269b37c6754d
+-r--r--r--    1 marchyshyn  staff   1138 Mar  1 14:42 e8eef63082873c0ea8992d5b3352eb6d6e9fde
+-r--r--r--    1 marchyshyn  staff   1209 Mar  1 14:42 458257df39f1924b38b85a7b1898b06f485c86
+drwxr-xr-x    5 marchyshyn  staff    160 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff   5344 Mar  1 17:51 ..
+
+./.git/objects/9b:
+total 8
+-r--r--r--    1 marchyshyn  staff  1474 Mar  1 14:42 1804cef3fe268393032f0434a39c99a977e5f2
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/f4:
+total 8
+-r--r--r--    1 marchyshyn  staff  2181 Mar  1 14:42 d7e4d1629ae15cbf410f2a17d585465f4df04d
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/07:
+total 8
+-r--r--r--    1 marchyshyn  staff  1210 Mar  1 14:42 43ecebca3c7782ad212b4ce436162d53f25bf9
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/a5:
+total 8
+-r--r--r--    1 marchyshyn  staff  1494 Mar  1 14:42 e0e267cb33e74392238cd02e97c1b2359bb6ba
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/55:
+total 16
+-r--r--r--    1 marchyshyn  staff  1238 Mar  1 14:42 152d3ad48c7608b087019239d65b917f6db723
+-r--r--r--    1 marchyshyn  staff  2753 Mar  1 14:42 948b1e27c9e869b019e23e3902933223b72e93
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/68:
+total 8
+-r--r--r--    1 marchyshyn  staff   913 Mar  1 14:42 95cb15fbcd03cb9f9cd1ea5a0b5c1ef9fb2c98
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/eb:
+total 8
+-r--r--r--    1 marchyshyn  staff  2433 Mar  1 14:42 39999c5d16a44d3b893eee3dbf89a4414afbbc
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/ef:
+total 8
+-r--r--r--    1 marchyshyn  staff  1032 Mar  1 14:42 4c7c333d62a1f1808e2acf6272c05deb121fb9
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/11:
+total 8
+-r--r--r--    1 marchyshyn  staff  1706 Mar  1 14:42 97a05ff19e9aac6796bf35e26569ddfa72551f
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/b0:
+total 8
+-r--r--r--    1 marchyshyn  staff  2346 Mar  1 14:42 a8413aa2d41b5beed3bdf0e2d2c318d8100dd3
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/fa:
+total 8
+-r--r--r--    1 marchyshyn  staff  1680 Mar  1 14:42 563864d9dc149ce0746f17039ae7366f016ad5
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/c0:
+total 8
+-r--r--r--    1 marchyshyn  staff  1496 Mar  1 14:42 3153a714ee6f2621e076609b292694c61786d9
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/67:
+total 8
+-r--r--r--    1 marchyshyn  staff  1401 Mar  1 14:42 183c83a5d3c67b649c7d4eed661989426a21c3
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/d4:
+total 8
+-r--r--r--    1 marchyshyn  staff  1939 Mar  1 14:42 68a84dc4f47e8b1ea7a106c20df99cad858bf4
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/58:
+total 16
+-r--r--r--    1 marchyshyn  staff  1028 Mar  1 14:42 285714e764676b01171b8c425b3cf5fc964b46
+-r--r--r--    1 marchyshyn  staff  3799 Mar  1 14:42 50b94c30b797468f08a2f143ee14e74c107ad5
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/fb:
+total 8
+-r--r--r--    1 marchyshyn  staff  2586 Mar  1 14:42 8c96885c84d5013f163f182fc6c7afee9050b1
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/46:
+total 8
+-r--r--r--    1 marchyshyn  staff  2315 Mar  1 14:42 78cb652a8d161332d321de1124646ddc1095b8
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/fd:
+total 8
+-r--r--r--    1 marchyshyn  staff  2160 Mar  1 14:42 632a98c6256442aba04169a4096d80e77ed3b8
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/57:
+total 16
+-r--r--r--    1 marchyshyn  staff  1453 Mar  1 14:42 163cd2185b8b4cc14d3cc8c228ad3f62c8978a
+-r--r--r--    1 marchyshyn  staff  3236 Mar  1 14:42 fca4a692cbfcf71e48ab97a9bdea48c71a09c7
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/ae:
+total 8
+-r--r--r--    1 marchyshyn  staff  3032 Mar  1 14:42 470f59c51b34d49c0ce41877a0485c861d5b09
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/90:
+total 8
+-r--r--r--    1 marchyshyn  staff  1805 Mar  1 14:42 c9683d43b764c3aee9fe4ab1f26b41b57f7b59
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/18:
+total 16
+-r--r--r--    1 marchyshyn  staff  1362 Mar  1 14:42 6e51dcbe797cb982f459aa32f38aad57a0ed25
+-r--r--r--    1 marchyshyn  staff  1735 Mar  1 14:42 048760565d0938382745bf0b992d2846924bb5
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/bf:
+total 8
+-r--r--r--    1 marchyshyn  staff  4071 Mar  1 14:42 10dad954bd7b4396a31ea9313d1010ebdd4e03
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/51:
+total 24
+-r--r--r--    1 marchyshyn  staff  1100 Mar  1 14:42 f3bb4cc06fcd61bda08bcec617371124ec0fb2
+-r--r--r--    1 marchyshyn  staff  2495 Mar  1 14:42 99f501a08e455425dc1a4f14ebb69eb6ab4629
+-r--r--r--    1 marchyshyn  staff  1253 Mar  1 14:42 d0b0f1e738a5f132a0a40e00bdb1903e129efb
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/98:
+total 72
+-r--r--r--    1 marchyshyn  staff    956 Mar  1 14:42 6e0d805926b17e7c8b606a34ac1d25221a7968
+-r--r--r--    1 marchyshyn  staff  31698 Mar  1 14:42 859a106757e07672384b87a924cd7f6af430e3
+drwxr-xr-x    4 marchyshyn  staff    128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff   5344 Mar  1 17:51 ..
+
+./.git/objects/8e:
+total 48
+-r--r--r--    1 marchyshyn  staff  20790 Mar  1 14:42 89d27d5116ca18207bae826674a63e98cfbc62
+drwxr-xr-x    3 marchyshyn  staff     96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff   5344 Mar  1 17:51 ..
+
+./.git/objects/25:
+total 64
+-r--r--r--    1 marchyshyn  staff  31260 Mar  1 14:42 37d7cc6b210135f08408f6e7a3c59cc9a63ba3
+drwxr-xr-x    3 marchyshyn  staff     96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff   5344 Mar  1 17:51 ..
+
+./.git/objects/96:
+total 16
+-r--r--r--    1 marchyshyn  staff   931 Mar  1 14:42 591e416e49f9c44c9844ebc76601aa7409fab9
+-r--r--r--    1 marchyshyn  staff    98 Mar  1 14:42 c037f4b8c37a52fd59751f5c486f597f977062
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/7f:
+total 8
+-r--r--r--    1 marchyshyn  staff   100 Mar  1 14:42 478a9a8489de4128178312c86a88e183489344
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/d6:
+total 8
+-r--r--r--    1 marchyshyn  staff  1124 Mar  1 14:42 91edd02cfcab68857ef5fab5ff3f57261514d7
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/c8:
+total 8
+-r--r--r--    1 marchyshyn  staff  1731 Mar  1 14:42 764cb452349fa48c596e440195b45982f961e2
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/0e:
+total 16
+-r--r--r--    1 marchyshyn  staff  1073 Mar  1 14:42 dd50bc26729b959d0bb5520479b1f8c4f0994b
+-r--r--r--    1 marchyshyn  staff  1345 Mar  1 14:42 acba92141c1e60bf1acf940ba86be06703cb25
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/ab:
+total 8
+-r--r--r--    1 marchyshyn  staff   514 Mar  1 14:42 c2ce50e0413227c71f139d9130573accee841e
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/52:
+total 32
+-r--r--r--    1 marchyshyn  staff  6705 Mar  1 14:42 37d7f8b14d17e98bdc1453307edeca4b32f13f
+-r--r--r--    1 marchyshyn  staff   249 Mar  1 14:42 a0ee65bb3f3974580c6849c3192aae5c51e889
+-r--r--r--    1 marchyshyn  staff   223 Mar  1 14:42 b8d6e5b6479fa801bce9d8d7ee902e2ea186cf
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/71:
+total 16
+-r--r--r--    1 marchyshyn  staff  1971 Mar  1 14:42 41ff874950073d0a0e563d9587cd70f11833b5
+-r--r--r--    1 marchyshyn  staff  1425 Mar  1 14:42 b9470bf5cae7160275d4bfade8174530a9d3f9
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/f7:
+total 8
+-r--r--r--    1 marchyshyn  staff   173 Mar  1 14:42 3c58d07c44fbee2d86e883a8dead38b08a4a27
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:42 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/b8:
+total 8
+-r--r--r--    1 marchyshyn  staff   243 Mar  1 14:52 9f8f193a9a5dd086f6b5892768baae881e0d9c
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 14:52 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/ca:
+total 24
+-r--r--r--    1 marchyshyn  staff  1216 Mar  1 14:42 934f7898ddcf48a22582ee201e682db56d3114
+-r--r--r--    1 marchyshyn  staff  7019 Mar  1 17:37 24244bf041f5d264cdfd26455f7ccf84a58cb0
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/6b:
+total 24
+-r--r--r--    1 marchyshyn  staff  2101 Mar  1 14:42 c92ad8cf8550809503a3522e499e2abbda0624
+-r--r--r--    1 marchyshyn  staff  1140 Mar  1 14:42 e96d6f8528446ef809e15d85ce5a3314836eef
+-r--r--r--    1 marchyshyn  staff  3874 Mar  1 17:37 1ed867be6b3785512f782ed10fa928586ca0d6
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/95:
+total 16
+-r--r--r--    1 marchyshyn  staff  2303 Mar  1 14:42 1aafa5b65e4bab10a236ff2215f7e0a28bc52e
+-r--r--r--    1 marchyshyn  staff  3833 Mar  1 17:37 bea97569f70ad43ddbff3910fc60dd126f4ff3
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/73:
+total 56
+-r--r--r--    1 marchyshyn  staff   2693 Mar  1 14:42 36ed0b1a63087e89c0d36cffbc7eb541a9599f
+-r--r--r--    1 marchyshyn  staff  20887 Mar  1 17:37 ae098521506d3eeab64e78c1428d97a3fec745
+drwxr-xr-x    4 marchyshyn  staff    128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff   5344 Mar  1 17:51 ..
+
+./.git/objects/b5:
+total 16
+-r--r--r--    1 marchyshyn  staff   935 Mar  1 14:42 8b3906531dbae51db89c91c9b25ee7e90cee84
+-r--r--r--    1 marchyshyn  staff   870 Mar  1 17:37 24b0b0c664319ba85c8ae6a815dd95875f8656
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/0a:
+total 8
+-r--r--r--    1 marchyshyn  staff   389 Mar  1 17:37 5176008581fcbadc33d3abd7cc4d567102901c
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/50:
+total 64
+-r--r--r--    1 marchyshyn  staff  31253 Mar  1 17:37 9763f5fca732de62cd45e49ff425e1b14b676f
+drwxr-xr-x    3 marchyshyn  staff     96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff   5344 Mar  1 17:51 ..
+
+./.git/objects/45:
+total 24
+-r--r--r--    1 marchyshyn  staff   926 Mar  1 14:42 1f115385a90d87ad78e8ababac362ca900d1fa
+-r--r--r--    1 marchyshyn  staff  1158 Mar  1 14:42 2047dd722c75b063dfed7daed05055c7d2aa4e
+-r--r--r--    1 marchyshyn  staff   644 Mar  1 17:37 10102909c738b2b106d42ee106db698b3ff484
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/61:
+total 16
+-r--r--r--    1 marchyshyn  staff  2100 Mar  1 14:42 393d649ddba08a5096076fe761f685169005c7
+-r--r--r--    1 marchyshyn  staff   386 Mar  1 17:37 381470ac0ef5d30f4cbd703ad35fb9810070a9
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/e6:
+total 16
+-r--r--r--    1 marchyshyn  staff  2493 Mar  1 14:42 a5ffed94761dee6d694f8dcf6f1c635d27f947
+-r--r--r--    1 marchyshyn  staff   575 Mar  1 17:37 c0b111cda8d145f1415d84b119d74d1e8cd881
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/38:
+total 16
+-r--r--r--    1 marchyshyn  staff  1869 Mar  1 14:42 ae4d13415f7602b97bd9090953c659c2d3f921
+-r--r--r--    1 marchyshyn  staff   576 Mar  1 17:37 402ed90a98d437670efe0d89d5c8b170bb03b7
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/00:
+total 8
+-r--r--r--    1 marchyshyn  staff   449 Mar  1 17:37 a697e165b66d6306f7691a10af533b783f6802
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/c9:
+total 8
+-r--r--r--    1 marchyshyn  staff   442 Mar  1 17:37 387d58eefb67a773cb30852dc07871a7338c4b
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/19:
+total 24
+-r--r--r--    1 marchyshyn  staff  1763 Mar  1 14:42 11eb6717ef5fc298d56a050c528651b868c33d
+-r--r--r--    1 marchyshyn  staff  1127 Mar  1 14:42 cc172847279c9f498113f05d75b8e182a5620d
+-r--r--r--    1 marchyshyn  staff   541 Mar  1 17:37 c8e51bb7c7f96715d97468a21b8386afa58cd3
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/f5:
+total 16
+-r--r--r--    1 marchyshyn  staff  1226 Mar  1 14:42 d97f1165281db5f901fb6d8704cc8eaa2181ed
+-r--r--r--    1 marchyshyn  staff   325 Mar  1 17:37 b2b0f0be462bdf87af00bf38d150c343062527
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/29:
+total 16
+-r--r--r--    1 marchyshyn  staff   940 Mar  1 14:42 d25c513e63de4909251ff342d75d87a88560b6
+-r--r--r--    1 marchyshyn  staff   386 Mar  1 17:37 e169138a4803be0073ad0f91581e96b2338526
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/ac:
+total 16
+-r--r--r--    1 marchyshyn  staff  1411 Mar  1 14:42 91899ef89406cfc170995e3c14967843cc958a
+-r--r--r--    1 marchyshyn  staff   660 Mar  1 17:37 58f14d6e737617836783537c6e2afa0b4d8fd4
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/75:
+total 8
+-r--r--r--    1 marchyshyn  staff   491 Mar  1 17:37 987ddfc79b8bdc3d386f72e901617fc96e083d
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/f9:
+total 16
+-r--r--r--    1 marchyshyn  staff  1285 Mar  1 14:42 0831ab7111449a11e35a8a878faf1e54325338
+-r--r--r--    1 marchyshyn  staff   362 Mar  1 17:37 5c8f6295a52e935a25d5edf3299317bcf05067
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/49:
+total 8
+-r--r--r--    1 marchyshyn  staff   397 Mar  1 17:37 7d61f0d90373548909fb618410c6e3f025b4e4
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/9f:
+total 16
+-r--r--r--    1 marchyshyn  staff  1133 Mar  1 14:42 77fb92afc478e2065b5fd10df9a8df579309f5
+-r--r--r--    1 marchyshyn  staff   343 Mar  1 17:37 dcbc4694d3943cb070edd5c5e3e33dee1c641d
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/e9:
+total 24
+-r--r--r--    1 marchyshyn  staff   947 Mar  1 14:42 45c47f8f52a5fe0c466d8ab67a05530f22d603
+-r--r--r--    1 marchyshyn  staff  2031 Mar  1 14:42 a5c9ccc7c5e34f3f706393ea41eb6ba829df7c
+-r--r--r--    1 marchyshyn  staff   538 Mar  1 17:37 162f8ae538693e71f29b8e7f158fa3a1e7b83f
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/7d:
+total 8
+-r--r--r--    1 marchyshyn  staff   406 Mar  1 17:37 4dd9bc261acf29a04a33a18c2a982de84de8db
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/01:
+total 16
+-r--r--r--    1 marchyshyn  staff  2115 Mar  1 14:42 44f9b7f2cee05ea785c44e5946c8320d1f4b92
+-r--r--r--    1 marchyshyn  staff   357 Mar  1 17:37 6e49f200b338d97e784ba55c206835a1389331
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/a7:
+total 8
+-r--r--r--    1 marchyshyn  staff   425 Mar  1 17:37 769c0d0591c9d57b6e6752ac94b8db416f5cf1
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/c1:
+total 16
+-r--r--r--    1 marchyshyn  staff  1212 Mar  1 14:42 0becddd5de2372ffaa0f068367c91599f085a0
+-r--r--r--    1 marchyshyn  staff   431 Mar  1 17:37 9c25420c6ee28adc926cf8efd4f3de77565052
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/ad:
+total 16
+-r--r--r--    1 marchyshyn  staff  3370 Mar  1 14:42 8ad9f38573e3049345a87ca359f06e32e3c656
+-r--r--r--    1 marchyshyn  staff  1848 Mar  1 17:37 49f773a925fcfa8c77db1a0878f9662292e3c4
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/1c:
+total 24
+-r--r--r--    1 marchyshyn  staff  4538 Mar  1 14:42 24723f712aea903a3b19b7bed3296510143a8b
+-r--r--r--    1 marchyshyn  staff   498 Mar  1 17:37 ab0a5cc8c7d182013d8b641e49adc7959aab7a
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/af:
+total 8
+-r--r--r--    1 marchyshyn  staff   405 Mar  1 17:37 fd1412f36cbe0acf387295941bbead71943b5c
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/b9:
+total 8
+-r--r--r--    1 marchyshyn  staff   384 Mar  1 17:37 2ea66f3fa4a277c9716010713647a6c0278e61
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/60:
+total 8
+-r--r--r--    1 marchyshyn  staff   392 Mar  1 17:37 4e357ffc19dd1fbecff73bb604149e34d190ca
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/62:
+total 8
+-r--r--r--    1 marchyshyn  staff   348 Mar  1 17:37 f3f0790089ae5ae5ff46e3e560c4200aa16b59
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/e4:
+total 8
+-r--r--r--    1 marchyshyn  staff   458 Mar  1 17:37 e05b8c13edfdd26412e21d331bbf00fba7824c
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/63:
+total 32
+-r--r--r--    1 marchyshyn  staff   943 Mar  1 14:42 b71e64c539e224640865d182ad97e8de262f7d
+-r--r--r--    1 marchyshyn  staff  1666 Mar  1 14:42 96815bc6bd274f8ce90b5f6ff638c3bafa8832
+-r--r--r--    1 marchyshyn  staff   347 Mar  1 17:37 d105d6b711575a92f1676b29c51c2116e74012
+-r--r--r--    1 marchyshyn  staff   483 Mar  1 17:37 3b4eb27f3ccf454822e480c2ca2a95302a7f7f
+drwxr-xr-x    6 marchyshyn  staff   192 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/41:
+total 8
+-r--r--r--    1 marchyshyn  staff   500 Mar  1 17:37 128b65d6a8bcb40d2ca06729a4b313b1bffee9
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/de:
+total 24
+-r--r--r--    1 marchyshyn  staff  1454 Mar  1 14:42 78c311ffe2ec4b6296606160944f0509a259f8
+-r--r--r--    1 marchyshyn  staff  1395 Mar  1 14:42 0baed0960f9576746b40287848fc14858a3af7
+-r--r--r--    1 marchyshyn  staff   448 Mar  1 17:37 80b09e029ce783ca3905652904af30a5cc73e0
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/24:
+total 8
+-r--r--r--    1 marchyshyn  staff   463 Mar  1 17:37 e6416fe683554f7f09928b2cfc546a98e24e19
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/d9:
+total 16
+-r--r--r--    1 marchyshyn  staff   976 Mar  1 14:42 61ac96e46481e77dbf72fe18466baadfb570b6
+-r--r--r--    1 marchyshyn  staff   477 Mar  1 17:37 513bb237befb3af71d3a9790fe05ff35a9b613
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/08:
+total 8
+-r--r--r--    1 marchyshyn  staff   435 Mar  1 17:37 39f6ab5494d2bcc8c206d16bab5ba6ee05a0e4
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/f3:
+total 8
+-r--r--r--    1 marchyshyn  staff   446 Mar  1 17:37 f8ac6e259df6455f25977db8842f04efa9635e
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/bd:
+total 16
+-r--r--r--    1 marchyshyn  staff  3737 Mar  1 14:42 b1c09b74cc20ca471e89248b4b10e1757ae4ac
+-r--r--r--    1 marchyshyn  staff   642 Mar  1 17:37 3e1d2e7538268a5a4309761d49714d5bc8b375
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/ce:
+total 16
+-r--r--r--    1 marchyshyn  staff  1164 Mar  1 14:42 04234bcb447094ea99cf3c970d170ab714b326
+-r--r--r--    1 marchyshyn  staff  1140 Mar  1 17:37 6f386f930336b466b14fcb81f1808b53c7b9a4
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/db:
+total 16
+-r--r--r--    1 marchyshyn  staff   951 Mar  1 14:42 a475fad36529bb6f539bd4bb437c0136b308ad
+-r--r--r--    1 marchyshyn  staff   541 Mar  1 17:37 3fb89bd49d5a5a870fb123be275ee3b61b7469
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/78:
+total 8
+-r--r--r--    1 marchyshyn  staff   676 Mar  1 17:37 0f47867d07408d3e5842dc1d470397c731fe81
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/e1:
+total 8
+-r--r--r--    1 marchyshyn  staff   974 Mar  1 17:37 b631f644eeab54e5064045163b6c5cf5b6b549
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/7a:
+total 8
+-r--r--r--    1 marchyshyn  staff   651 Mar  1 17:37 3e4138a3d2135d662ffad3841c5b9b7a776392
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/b7:
+total 16
+-r--r--r--    1 marchyshyn  staff   693 Mar  1 17:37 d8147a431ed2cbbe92ce8940aa221b5e520b01
+-r--r--r--    1 marchyshyn  staff   531 Mar  1 17:37 b1a0c82258a92dc8d990ad3c39c4e56b0b50d8
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/4f:
+total 32
+-r--r--r--    1 marchyshyn  staff  1049 Mar  1 14:42 e9f171b1bf5dcd31fabd0e763051a9b0903c15
+-r--r--r--    1 marchyshyn  staff  2250 Mar  1 17:37 d7159e5824f221139124b82269090e45faa0c1
+-r--r--r--    1 marchyshyn  staff   732 Mar  1 17:37 da6039071bb0420fb3402c8dcc123f85b230e2
+-r--r--r--    1 marchyshyn  staff   438 Mar  1 17:37 89a7e21fbbbffd74130f408ea7dd0cb8a537c8
+drwxr-xr-x    6 marchyshyn  staff   192 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/04:
+total 8
+-r--r--r--    1 marchyshyn  staff   480 Mar  1 17:37 46479dde7fe8d9035babc82f6effea24d0e591
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/06:
+total 8
+-r--r--r--    1 marchyshyn  staff  1053 Mar  1 17:37 8d9f081f3b3b6910d4bdbab46a509e31fb5c77
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/b2:
+total 8
+-r--r--r--    1 marchyshyn  staff   554 Mar  1 17:37 3966b163afe3aa3598fba9bc18ec174e279e8e
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/f0:
+total 24
+-r--r--r--    1 marchyshyn  staff  1916 Mar  1 14:42 aab7482013ba187f5855926b4f8f0f11a2535c
+-r--r--r--    1 marchyshyn  staff   484 Mar  1 17:37 b4834306cc78a359d0da7829cb8d66a1325efa
+-r--r--r--    1 marchyshyn  staff   761 Mar  1 17:37 f9edaece853ffe9beb81f53249bd1f36539a52
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/3f:
+total 24
+-r--r--r--    1 marchyshyn  staff  1185 Mar  1 14:42 708cb4f23fe60276f614460acaf5b21f31b53d
+-r--r--r--    1 marchyshyn  staff   438 Mar  1 17:37 5f9aa42fcb035302d282d9f7e26241a4b5b1c6
+-r--r--r--    1 marchyshyn  staff   678 Mar  1 17:37 5f34c103a939e4eed61cd7c77e5368bbcdca24
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/e8:
+total 16
+-r--r--r--    1 marchyshyn  staff   650 Mar  1 17:37 c7359d5d9904b7eb7b1476ec32027296312687
+-r--r--r--    1 marchyshyn  staff   539 Mar  1 17:37 89e126e3d77c681c0405131ac1c5138cc97c3e
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/ea:
+total 16
+-r--r--r--    1 marchyshyn  staff   968 Mar  1 14:42 3ddee35ddd419958c69cb4332514f210623338
+-r--r--r--    1 marchyshyn  staff   536 Mar  1 17:37 d70c06303e0529ffe69e036f5fb78af00c6653
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/56:
+total 16
+-r--r--r--    1 marchyshyn  staff  1198 Mar  1 14:42 da569135b902cf97bbae6155eb14714fec4915
+-r--r--r--    1 marchyshyn  staff   518 Mar  1 17:37 caf4337842e5080615d847a7bc96d19311ee9b
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/9a:
+total 16
+-r--r--r--    1 marchyshyn  staff  2231 Mar  1 14:42 861fecf44c1c9b7b13918f0474ca042c46630d
+-r--r--r--    1 marchyshyn  staff   795 Mar  1 17:37 5d5b002d5e62eb6afe4e2ea4d078f19a5b1d89
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/3e:
+total 24
+-r--r--r--    1 marchyshyn  staff  3708 Mar  1 14:42 ca7f9e1a7d893b400154a28bc498005a00de1c
+-r--r--r--    1 marchyshyn  staff   257 Mar  1 14:42 5769a89b2397228c17db221a041104cfbace32
+-r--r--r--    1 marchyshyn  staff   756 Mar  1 17:37 a61bd147154973ddfedd8faa45e16a7bf2c568
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/c7:
+total 8
+-r--r--r--    1 marchyshyn  staff   954 Mar  1 17:37 8c9f3e4972aec5994729609c09f8b768fa0e01
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/70:
+total 24
+-r--r--r--    1 marchyshyn  staff  1361 Mar  1 14:42 99fbeac9180c5c9c382ea0160066bcc9b458ed
+-r--r--r--    1 marchyshyn  staff   386 Mar  1 17:37 df7e700b8026c739109c1aa2980b74f9836240
+-r--r--r--    1 marchyshyn  staff   349 Mar  1 17:37 2d79eba1ce9dba5c5672ba977c144e310b2479
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/bb:
+total 24
+-r--r--r--    1 marchyshyn  staff  1144 Mar  1 14:42 2d83a14ec4647e89e9d43063551bc16e5acbbe
+-r--r--r--    1 marchyshyn  staff   512 Mar  1 17:37 65a9ddee5cc10f40337abc0f2436bc4319553c
+-r--r--r--    1 marchyshyn  staff   629 Mar  1 17:37 6c4992cb1407deaf2e1fb31be0f8c800513903
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/1f:
+total 24
+-r--r--r--    1 marchyshyn  staff  1894 Mar  1 14:42 72b0d5bce4b48b497146d7d58d5edb9a6053b0
+-r--r--r--    1 marchyshyn  staff   497 Mar  1 17:37 3e1132c2574bd7c8c0f241607fb3b9ae0f17e9
+-r--r--r--    1 marchyshyn  staff  1435 Mar  1 17:37 200f3c67f2d2c57b0bdc27d4f866e79eed272e
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/c5:
+total 24
+-r--r--r--    1 marchyshyn  staff  1152 Mar  1 14:42 763f56eb549c67af7ced5b683d281969e82e01
+-r--r--r--    1 marchyshyn  staff   749 Mar  1 17:37 f357c914952a0a960712d3c235a5a42e0f0365
+-r--r--r--    1 marchyshyn  staff  1055 Mar  1 17:37 23e1350290f9bf8603ae53777d887b951ddaa2
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/12:
+total 8
+-r--r--r--    1 marchyshyn  staff   411 Mar  1 17:37 b38da8b7ec5f0ba5b51dce9e1fd0ed977dfd24
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/e3:
+total 16
+-r--r--r--    1 marchyshyn  staff   328 Mar  1 17:37 4632c22f2d2920bfeb7688ef2dde22e29ac87e
+-r--r--r--    1 marchyshyn  staff   480 Mar  1 17:37 73968d78820a1da8a669c207792569e7e59a95
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/e5:
+total 16
+-r--r--r--    1 marchyshyn  staff  1036 Mar  1 14:42 e263ed09ee4d978da18ba71927c864d4837718
+-r--r--r--    1 marchyshyn  staff   249 Mar  1 17:37 9969df1f3577484a0f85d8ef5ed42fca922c6c
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/8d:
+total 16
+-r--r--r--    1 marchyshyn  staff  1061 Mar  1 14:42 d54b8b3710162a52c6d02547c9ec88fd27ea37
+-r--r--r--    1 marchyshyn  staff  2038 Mar  1 17:37 832fc723f50f40045671f080fda56f76732148
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/ec:
+total 40
+-r--r--r--    1 marchyshyn  staff  1329 Mar  1 14:42 dd54e6e534b9c5cfe65bdb6a3747b4913e1444
+-r--r--r--    1 marchyshyn  staff  3301 Mar  1 14:42 440f469589e5b95efb9b365d6754bf88b708bd
+-r--r--r--    1 marchyshyn  staff  2507 Mar  1 14:42 88e5df7e95300fa64f6ac976d24c42c3a00768
+-r--r--r--    1 marchyshyn  staff   862 Mar  1 17:37 11dd73d9ab345d0997e3734041e22aee5f2d48
+-r--r--r--    1 marchyshyn  staff  3390 Mar  1 17:37 458c910522a92f4e8fb85b51a687d5ac4c4984
+drwxr-xr-x    7 marchyshyn  staff   224 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/dd:
+total 40
+-r--r--r--    1 marchyshyn  staff  8482 Mar  1 14:42 f5b466b39d10eb68bc005de6465f2f71c97f63
+-r--r--r--    1 marchyshyn  staff   375 Mar  1 17:37 0023111c87097216a58271dd316c21d3767458
+-r--r--r--    1 marchyshyn  staff  2217 Mar  1 17:37 8a2b0bb31f948b73920be562b2a3c2f7bf0abc
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/1d:
+total 16
+-r--r--r--    1 marchyshyn  staff   497 Mar  1 17:37 8c8be8794585122ecd52a2c36ec0c45b35a5f8
+-r--r--r--    1 marchyshyn  staff   174 Mar  1 17:37 ef57b3040614a245fcf47460592e774f2a7417
+drwxr-xr-x    4 marchyshyn  staff   128 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/31:
+total 24
+-r--r--r--    1 marchyshyn  staff  2893 Mar  1 14:42 7bcc33c7f0560978f4275249e0c17d8a4d5d3c
+-r--r--r--    1 marchyshyn  staff   681 Mar  1 17:37 d16958475e614e05fecd8ab625f0e511f1a961
+-r--r--r--    1 marchyshyn  staff  1395 Mar  1 17:37 5e307cf1ee97c974b6d8a15a5ce02061f12e53
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/5c:
+total 8
+-r--r--r--    1 marchyshyn  staff   177 Mar  1 17:37 e18b6c46e7e316cd1a4de1bce68aca7679fc88
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:37 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/a3:
+total 32
+-r--r--r--    1 marchyshyn  staff  1328 Mar  1 14:42 7241368d59b5b8a214a5b39ebbe40f65c3ecba
+-r--r--r--    1 marchyshyn  staff  1065 Mar  1 14:42 1e6c8ba01926db0495b9518841c7db1238412b
+-r--r--r--    1 marchyshyn  staff  1273 Mar  1 14:42 72a1a09defab03994d95e1391edf2ead11c768
+-r--r--r--    1 marchyshyn  staff   238 Mar  1 17:41 2df128ffee6dc6cc74c65882e1192e6fd7490d
+drwxr-xr-x    6 marchyshyn  staff   192 Mar  1 17:41 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/1b:
+total 24
+-r--r--r--    1 marchyshyn  staff  1247 Mar  1 14:42 71d30fdf5fee3a03fb548e2e4d887e4a8b5894
+-r--r--r--    1 marchyshyn  staff   991 Mar  1 17:37 9057c92bca9ec5ae8395949d5cf60514b5c5e3
+-r--r--r--    1 marchyshyn  staff   232 Mar  1 17:43 fe9070de125abf87f8f5e1863bf713a121e932
+drwxr-xr-x    5 marchyshyn  staff   160 Mar  1 17:43 .
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+
+./.git/objects/5a:
+total 8
+drwxr-xr-x  167 marchyshyn  staff  5344 Mar  1 17:51 ..
+-r--r--r--    1 marchyshyn  staff   238 Mar  1 17:51 f8951f922f4988f228ba1f4b8c8fbbf2783176
+drwxr-xr-x    3 marchyshyn  staff    96 Mar  1 17:51 .
+
+./.idea:
+total 128
+drwxr-xr-x   4 marchyshyn  staff    128 Mar  1 13:05 codeStyles
+drwxr-xr-x   3 marchyshyn  staff     96 Mar  1 13:05 dictionaries
+-rw-r--r--   1 marchyshyn  staff     97 Mar  1 13:05 ft_ls.iml
+-rw-r--r--   1 marchyshyn  staff    137 Mar  1 13:05 misc.xml
+-rw-r--r--   1 marchyshyn  staff    262 Mar  1 13:05 modules.xml
+-rw-r--r--   1 marchyshyn  staff    180 Mar  1 13:05 vcs.xml
+drwxr-xr-x  48 marchyshyn  staff   1536 Mar  1 18:26 ..
+-rw-r--r--   1 marchyshyn  staff  46988 Mar  1 18:27 workspace.xml
+drwxr-xr-x   9 marchyshyn  staff    288 Mar  1 18:27 .
+
+./.idea/codeStyles:
+total 16
+-rw-r--r--  1 marchyshyn  staff  1775 Mar  1 13:05 Project.xml
+drwxr-xr-x  4 marchyshyn  staff   128 Mar  1 13:05 .
+-rw-r--r--  1 marchyshyn  staff   149 Mar  1 13:05 codeStyleConfig.xml
+drwxr-xr-x  9 marchyshyn  staff   288 Mar  1 18:27 ..
+
+./.idea/dictionaries:
+total 8
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  1 13:05 .
+-rw-r--r--  1 marchyshyn  staff   89 Mar  1 13:05 marchyshyn.xml
+drwxr-xr-x  9 marchyshyn  staff  288 Mar  1 18:27 ..

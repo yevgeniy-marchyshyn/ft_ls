@@ -20,7 +20,7 @@ void			ft_ls(char **files, t_ls *ls)
 	i = 0;
 	path = NULL;
 	if (ls->long_format)
-		ls->indents = long_format_not_dirs(files, ls, path);
+		ls->indents = lf_not_dirs(files, ls, path);
 	else
 		ls->count_directories = print_files(files, ls, path);
 	while (files[i])

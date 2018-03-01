@@ -12,7 +12,27 @@
 
 #include "ft_ls.h"
 
-void		ls_dir(char *dirname, t_ls *ls, char *path)
+static void		ls_dir_continue(char **files, int n, t_ls *ls)
+{
+	int i;
+
+	i = 0;
+	ls_sort(files, n, ls, NULL);
+	if (ls->include_dot)
+		while (i < n)
+			ft_printf("%s\n", files[i++]);
+	else
+	{
+		while (i < n)
+		{
+			if (files[i][0] != '.')
+				ft_printf("%s\n", files[i]);
+			i++;
+		}
+	}
+}
+
+void			ls_dir(char *dirname, t_ls *ls, char *path)
 {
 	char			**files;
 	int				n;
@@ -28,10 +48,10 @@ void		ls_dir(char *dirname, t_ls *ls, char *path)
 		else if (ls->long_format)
 		{
 			ls_sort(files, n, ls, NULL);
-			long_format(files, ls, path);
+			lf(files, ls, path);
 		}
 		else
-			ls_dir_ext(files, n, ls);
+			ls_dir_continue(files, n, ls);
 		ft_strdel(&path);
 		free_words(files);
 	}

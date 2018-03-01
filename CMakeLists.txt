@@ -112,7 +112,6 @@ add_executable(ft_ls
         is_option.c
         link_to_dir.c
         linkpath.c
-        long_format.c
         long_format_not_dirs.c
         ls_count_files.c
         ls_dir.c
