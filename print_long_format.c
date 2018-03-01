@@ -59,18 +59,14 @@ void			print_long_format(char *filename, int *w, char *path)
 	char 			*tmp1;
 	char 			*tmp2;
 
-//	if (path != NULL)
-//	{
-//		path2 = ft_strjoin(path, "/");
-//		path3 = ft_strjoin(path2, filename);
-//		lstat(path3, &buf);
-//	}
+	tmp1 = NULL;
+	tmp2 = NULL;
 	if (path != NULL)
 	{
 		tmp1 = ft_strjoin(path, "/");
 		tmp2 = ft_strjoin(tmp1, filename);
+		ft_strdel(&tmp1);
 		lstat(tmp2, &buf);
-//		ft_strdel(&tmp1);
 	}
 	else
 		lstat(filename, &buf);
@@ -96,6 +92,5 @@ void			print_long_format(char *filename, int *w, char *path)
 	}
 	else
 		ft_printf("%s\n", filename);
-//	if (tmp2)
-//		ft_strdel(&tmp2);
+	ft_strdel(&tmp2);
 }

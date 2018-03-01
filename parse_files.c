@@ -17,7 +17,8 @@ static void			remove_file(char **files, int i)
 	while (files[i])
 	{
 		ft_strdel(&files[i]);
-		files[i] = ft_strdup(files[i + 1]);
+		if (files[i + 1])
+			files[i] = ft_strdup(files[i + 1]);
 		i++;
 	}
 }

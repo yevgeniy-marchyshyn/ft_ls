@@ -72,5 +72,6 @@ int					long_format_not_dirs(char **files, t_ls *ls, char *path)
 			print_long_format(not_dirs[i], w, path);
 		i++;
 	}
+	free_words(not_dirs);
 	return (1);
 }

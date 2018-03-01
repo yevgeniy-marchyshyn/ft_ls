@@ -6,7 +6,7 @@
 /*   By: ymarchys <ymarchys@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/16 12:32:00 by ymarchys          #+#    #+#             */
-/*   Updated: 2018/02/16 12:32:00 by ymarchys         ###   ########.fr       */
+/*   Updated: 2018/03/01 13:59:54 by marchyshy        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ int				main(int argc, char **argv)
 		ft_ls(files, &ls);
 		free_words(files);
 	}
+//	while (1) ;
 	return (0);
 }
