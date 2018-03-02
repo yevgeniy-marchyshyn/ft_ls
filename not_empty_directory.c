@@ -15,7 +15,7 @@
 int					not_empty_directory(char *dirname, t_ls *ls)
 {
 	DIR					*dir;
-	struct dirent		*sd;
+	t_dir				*sd;
 	int					n;
 
 	n = 0;

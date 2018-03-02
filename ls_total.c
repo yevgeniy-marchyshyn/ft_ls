@@ -14,7 +14,7 @@
 
 int		ls_total(char **files, t_ls *ls, char *path)
 {
-	struct stat		buf;
+	t_stat			buf;
 	int				i;
 	int				sum;
 	char 			*tmp;

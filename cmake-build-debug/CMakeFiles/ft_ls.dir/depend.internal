@@ -920,3 +920,11 @@ CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.o
  /Users/ymarchys/Documents/ft_ls/./libft/libft.h
  /Users/ymarchys/Documents/ft_ls/ft_ls.h
  /Users/ymarchys/Documents/ft_ls/sort_ascii_bubble.c
+CMakeFiles/ft_ls.dir/timecmp.c.o
+ /Users/ymarchys/Documents/ft_ls/./libft/././libft.h
+ /Users/ymarchys/Documents/ft_ls/./libft/./ft_printf/ft_printf.h
+ /Users/ymarchys/Documents/ft_ls/./libft/./get_next_line.h
+ /Users/ymarchys/Documents/ft_ls/./libft/ft_printf/ft_printf.h
+ /Users/ymarchys/Documents/ft_ls/./libft/libft.h
+ /Users/ymarchys/Documents/ft_ls/ft_ls.h
+ /Users/ymarchys/Documents/ft_ls/timecmp.c

@@ -14,6 +14,5 @@
 
 int			print_dot(char *filename, t_ls *ls)
 {
-	return ((ls->include_dot && ((char*)filename)[0] == '.') ||
-	((char*)filename)[0] != '.');
+	return ((ls->include_dot && filename[0] == '.') || filename[0] != '.');
 }

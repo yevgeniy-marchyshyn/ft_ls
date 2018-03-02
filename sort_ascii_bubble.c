@@ -18,7 +18,6 @@ void		sort_ascii_bubble(char **file, int n)
 	int			i;
 	int			k;
 
-	i = 0;
 	k = 0;
 	while (k < n - 1)
 	{

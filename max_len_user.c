@@ -15,7 +15,7 @@
 static int 			length_compare(struct stat *buf, int max_length)
 {
 	int 			len;
-	struct passwd	*pw;
+	t_pw			*pw;
 
 	if (!(pw = getpwuid(buf->st_uid)))
 		return (-1);
@@ -25,7 +25,7 @@ static int 			length_compare(struct stat *buf, int max_length)
 
 int					max_len_user(char **files, char *path)
 {
-	struct stat		buf;
+	t_stat			buf;
 	int				i;
 	int				max_length;
 	char 			*tmp;

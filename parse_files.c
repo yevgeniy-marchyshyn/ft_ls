@@ -25,7 +25,7 @@ static void			remove_file(char **files, int i)
 
 void				parse_files(char **files, int n, t_ls *ls, char *path)
 {
-	struct stat		buf;
+	t_stat			buf;
 	int				i;
 	int				count_removed;
 	char 			*tmp;

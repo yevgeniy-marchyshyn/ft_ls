@@ -14,7 +14,7 @@
 
 int				max_size(char **files, char *path)
 {
-	struct stat		buf;
+	t_stat			buf;
 	int				i;
 	int				max_length;
 	char 			*tmp;

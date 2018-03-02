@@ -15,7 +15,7 @@
 int		ls_count_files(char *dirname, char *path)
 {
 	DIR					*dir;
-	struct dirent		*sd;
+	t_dir				*sd;
 	int					n;
 
 	n = 0;

@@ -15,7 +15,7 @@
 static int 		length_compare(struct stat *buf, int max_length)
 {
 	int 			len;
-	struct group	*gr;
+	t_group			*gr;
 
 	if (!(gr = getgrgid(buf->st_gid)))
 		return (-1);
@@ -25,7 +25,7 @@ static int 		length_compare(struct stat *buf, int max_length)
 
 int				max_len_group(char **files, char *path)
 {
-	struct stat			buf;
+	t_stat				buf;
 	int					i;
 	int					max_length;
 	char 				*tmp;

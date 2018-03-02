@@ -37,7 +37,7 @@ static void			remove_file(char **files, int i)
 
 void				parse_arguments(char **argv, int n, t_ls *ls)
 {
-	struct stat			buf;
+	t_stat				buf;
 	char				**files;
 	int					i;
 	int					count_removed;

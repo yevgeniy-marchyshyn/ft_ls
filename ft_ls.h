@@ -39,6 +39,7 @@ typedef struct			s_ls
 typedef struct stat		t_stat;
 typedef struct passwd	t_pw;
 typedef struct group	t_group;
+typedef struct dirent	t_dir;
 
 int						is_option(char c);
 void					annulation_opt(t_ls *ls);

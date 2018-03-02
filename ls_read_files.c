@@ -15,7 +15,7 @@
 char		**ls_read_files(char **files, char *dirname)
 {
 	DIR					*dir;
-	struct dirent		*sd;
+	t_dir				*sd;
 	int					i;
 
 	i = 0;
