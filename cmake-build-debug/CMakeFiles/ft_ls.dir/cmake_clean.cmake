@@ -126,6 +126,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_ls.dir/recursion_branch.c.o"
   "CMakeFiles/ft_ls.dir/skip_dots.c.o"
   "CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.o"
+  "CMakeFiles/ft_ls.dir/timecmp.c.o"
   "ft_ls.pdb"
   "ft_ls"
 )

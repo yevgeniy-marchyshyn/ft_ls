@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/marchyshyn/Documents/C/ft_ls
+CMAKE_SOURCE_DIR = /Users/ymarchys/Documents/ft_ls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ymarchys/Documents/ft_ls/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles /Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -3552,6 +3552,33 @@ sort_ascii_bubble.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/sort_ascii_bubble.c.s
 .PHONY : sort_ascii_bubble.c.s
 
+timecmp.o: timecmp.c.o
+
+.PHONY : timecmp.o
+
+# target to build an object file
+timecmp.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/timecmp.c.o
+.PHONY : timecmp.c.o
+
+timecmp.i: timecmp.c.i
+
+.PHONY : timecmp.i
+
+# target to preprocess a source file
+timecmp.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/timecmp.c.i
+.PHONY : timecmp.c.i
+
+timecmp.s: timecmp.c.s
+
+.PHONY : timecmp.s
+
+# target to generate assembly for a file
+timecmp.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/timecmp.c.s
+.PHONY : timecmp.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3942,6 +3969,9 @@ help:
 	@echo "... sort_ascii_bubble.o"
 	@echo "... sort_ascii_bubble.i"
 	@echo "... sort_ascii_bubble.s"
+	@echo "... timecmp.o"
+	@echo "... timecmp.i"
+	@echo "... timecmp.s"
 .PHONY : help
 
 

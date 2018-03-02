@@ -45,6 +45,7 @@ FT_LS = main.c\
 	    ls_read_files.c\
 	    ls_dir.c\
 	    ls_link.c\
+	    timecmp.c\
 
 OBJ = $(FT_LS:.c=.o)
 

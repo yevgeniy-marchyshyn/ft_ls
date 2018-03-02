@@ -70,5 +70,6 @@ int						link_to_dir(char *filename, char *path);
 void					ls_dir(char *dirname, t_ls *ls, char *path);
 char					**ls_read_files(char **files, char *dirname);
 void					ls_link(char *linkname, t_ls *ls, char *path);
+int						timecmp(char *file1, char *file2, char *path);
 
 #endif

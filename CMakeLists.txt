@@ -134,4 +134,4 @@ add_executable(ft_ls
         print_lf.c
         recursion_branch.c
         skip_dots.c
-        sort_ascii_bubble.c)
+        sort_ascii_bubble.c timecmp.c)
