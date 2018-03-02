@@ -53,6 +53,7 @@ void				parse_arguments(char **argv, int n, t_ls *ls)
 			perror(files[i]);
 			remove_file(files, i);
 			count_removed++;
+			ls->indents = 1;
 		}
 		else
 			i++;
