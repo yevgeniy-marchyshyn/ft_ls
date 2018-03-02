@@ -26,5 +26,6 @@ void	free_words(char **files)
 			i++;
 		}
 		free(files);
+		files = NULL;
 	}
 }
