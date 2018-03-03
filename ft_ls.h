@@ -25,18 +25,32 @@
 # include <grp.h>
 # include <time.h>
 
+//typedef struct			s_ls
+//{
+//	unsigned char		long_format;
+//	unsigned char		recursion;
+//	unsigned char		include_dot;
+//	unsigned char		rev_lexic;
+//	unsigned char		sort_mtime;
+//	int					new_line;
+//	int					dirs;
+//	int 				argc;
+//	unsigned char 		handled_args;
+//	unsigned char		error;
+//}						t_ls;
+
 typedef struct			s_ls
 {
-	unsigned char		long_format;
-	unsigned char		recursion;
-	unsigned char		include_dot;
-	unsigned char		rev_lexic;
-	unsigned char		sort_mtime;
-	int					new_line;
-	int					dirs;
-	int 				argc;
-	unsigned char 		handled_args;
-	unsigned char		error;
+	int					argc;
+	unsigned			long_format : 1;
+	unsigned			recursion : 1;
+	unsigned			include_dot : 1;
+	unsigned			rev_lexic : 1;
+	unsigned			sort_mtime : 1;
+	unsigned			new_line : 1;
+	unsigned			dirs : 1;
+	unsigned 			handled_args : 1;
+	unsigned			error : 1;
 }						t_ls;
 
 typedef struct stat		t_stat;
