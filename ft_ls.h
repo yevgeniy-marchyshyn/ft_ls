@@ -25,20 +25,6 @@
 # include <grp.h>
 # include <time.h>
 
-//typedef struct			s_ls
-//{
-//	unsigned char		long_format;
-//	unsigned char		recursion;
-//	unsigned char		include_dot;
-//	unsigned char		rev_lexic;
-//	unsigned char		sort_mtime;
-//	int					new_line;
-//	int					dirs;
-//	int 				argc;
-//	unsigned char 		handled_args;
-//	unsigned char		error;
-//}						t_ls;
-
 typedef struct			s_ls
 {
 	int					argc;
@@ -76,10 +62,10 @@ int						ls_total(char **files, t_ls *ls, char *path);
 void					print_lf(char *filename, int *w, char *path);
 void					print_access(mode_t st_mode);
 char					*linkpath(char *filename);
-int						max_links(char **files, char *path);
-int						max_size(char **files, char *path);
-int						max_len_user(char **files, char *path);
-int						max_len_group(char **files, char *path);
+int						max_links(char **files, t_ls *ls, char *path);
+int						max_size(char **files, t_ls *ls, char *path);
+int						max_len_user(char **files, t_ls *ls, char *path);
+int						max_len_group(char **files, t_ls *ls, char *path);
 void					print_files(char **files, t_ls *ls, char *path);
 int						is_dir(char *filename, char *path);
 int						ls_count_files(char *dirname, char *path);

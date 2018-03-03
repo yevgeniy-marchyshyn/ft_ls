@@ -12,27 +12,32 @@
 
 #include "ft_ls.h"
 
-int					max_links(char **files, char *path)
+int					max_links(char **files, t_ls *ls, char *path)
 {
 	t_stat			buf;
 	int				i;
 	int				max_length;
+	int 			len;
 	char 			*tmp;
 
 	i = 0;
 	max_length = 0;
 	while (files[i])
 	{
-		if (path == NULL)
-			lstat(files[i++], &buf);
-		else
+		if (print_dot(files[i], ls))
 		{
-			tmp = ft_strjoin(path, files[i++]);
-			lstat(tmp, &buf);
-			ft_strdel(&tmp);
+			if (path == NULL)
+				lstat(files[i], &buf);
+			else
+			{
+				tmp = ft_strjoin(path, files[i]);
+				lstat(tmp, &buf);
+				ft_strdel(&tmp);
+			}
+			len = ft_itoa_len(buf.st_nlink);
+			len > max_length ? max_length = len : 0;
 		}
-		if (ft_itoa_len(buf.st_nlink) > max_length)
-			max_length = ft_itoa_len(buf.st_nlink);
+		i++;
 	}
 	return (max_length);
 }

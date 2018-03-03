@@ -57,8 +57,8 @@ static void		print_lf_continue(t_stat *buf, t_pw *pw, t_group *gr, int *w)
 	type = define_type(buf);
 	ft_printf("%c", type);
 	print_access(buf->st_mode);
-	ft_printf(" %*zu", w[0] + 1, buf->st_nlink);
-	ft_printf(" %-*s", w[1] + 1, pw->pw_name);
+	ft_printf(" %*zu", w[0], buf->st_nlink);
+	ft_printf(" %-*s ", w[1], pw->pw_name);
 	ft_printf(" %-*s ", w[2], gr->gr_name);
 	if (type == 'c' || type == 'b')
 		device_number(buf);

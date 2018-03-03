@@ -59,13 +59,13 @@ void				lf_not_dirs(char **files, t_ls *ls, char *path)
 	if ((n = count_not_dirs(files, path)) < 1)
 		return ;
 	not_dirs = fill_files(files, n, path);
-	w[0] = max_links(not_dirs, path);
-	if ((w[1] = max_len_user(not_dirs, path)) == -1)
+	w[0] = max_links(not_dirs, ls, path);
+	if ((w[1] = max_len_user(not_dirs, ls, path)) == -1)
 		return ;
-	if ((w[2] = max_len_group(not_dirs, path)) == -1)
+	if ((w[2] = max_len_group(not_dirs, ls, path)) == -1)
 		return ;
-	w[2] = max_len_group(not_dirs, path);
-	w[3] = max_size(not_dirs, path);
+	w[2] = max_len_group(not_dirs, ls, path);
+	w[3] = max_size(not_dirs, ls, path);
 	while (not_dirs[i])
 	{
 		if (print_dot(not_dirs[i], ls))

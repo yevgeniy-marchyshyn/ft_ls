@@ -108,6 +108,6 @@ void				print_access(mode_t st_mode)
 	set_user_flags(&access_flags, st_mode);
 	set_group_flags(&access_flags, st_mode);
 	set_others_flags(&access_flags, st_mode);
-	ft_printf("%s", access_flags);
+	ft_printf("%s ", access_flags);
 	ft_strdel(&access_flags);
 }

@@ -25,6 +25,7 @@ int		ls_count_files(char *dirname, char *path)
 		dir = opendir(path);
 	if (dir == NULL)
 	{
+		write(2, "ls: ", 4);
 		perror(dirname);
 		return (n);
 	}

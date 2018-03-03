@@ -23,7 +23,7 @@ static int 			length_compare(struct stat *buf, int max_length)
 	return (len > max_length ? len : max_length);
 }
 
-int					max_len_user(char **files, char *path)
+int					max_len_user(char **files, t_ls *ls, char *path)
 {
 	t_stat			buf;
 	int				i;
@@ -34,16 +34,20 @@ int					max_len_user(char **files, char *path)
 	max_length = 0;
 	while (files[i])
 	{
-		if (path == NULL)
-			lstat(files[i++], &buf);
-		else
+		if (print_dot(files[i], ls))
 		{
-			tmp = ft_strjoin(path, files[i++]);
-			lstat(tmp, &buf);
-			ft_strdel(&tmp);
+			if (path == NULL)
+				lstat(files[i], &buf);
+			else
+			{
+				tmp = ft_strjoin(path, files[i]);
+				lstat(tmp, &buf);
+				ft_strdel(&tmp);
+			}
+			if ((max_length = length_compare(&buf, max_length)) < 0)
+				return (-1);
 		}
-		if ((max_length = length_compare(&buf, max_length)) < 0)
-			return (-1);
+		i++;
 	}
 	return (max_length);
 }
