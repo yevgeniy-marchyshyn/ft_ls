@@ -56,7 +56,7 @@ void				lf_not_dirs(char **files, t_ls *ls, char *path)
 	int			w[4];
 
 	i = 0;
-	if ((n = count_not_dirs(files, path)) < 1)
+	if (!(n = count_not_dirs(files, path)))
 		return ;
 	not_dirs = fill_files(files, n, path);
 	w[0] = max_links(not_dirs, ls, path);

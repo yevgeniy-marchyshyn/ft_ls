@@ -22,6 +22,7 @@ int					not_empty_directory(char *dirname, t_ls *ls)
 	dir = opendir(dirname);
 	if (dir == NULL)
 	{
+		write(2, "ls: ", 4);
 		perror(dirname);
 		return (n);
 	}
