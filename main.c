@@ -29,7 +29,7 @@ int				main(int argc, char **argv)
 	int			i;
 
 	i = 1;
-	annulation_opt(&ls);
+	annulation_ls(&ls);
 	if (argc > 1)
 	{
 		while (argv[i] && argv[i][0] == '-' && argv[i][1] != '\0')

@@ -28,7 +28,7 @@
 typedef struct			s_ls
 {
 	unsigned char		long_format;
-	unsigned char		recursively;
+	unsigned char		recursion;
 	unsigned char		include_dot;
 	unsigned char		rev_lexic;
 	unsigned char		sort_mtime;
@@ -42,7 +42,7 @@ typedef struct group	t_group;
 typedef struct dirent	t_dir;
 
 int						is_option(char c);
-void					annulation_opt(t_ls *ls);
+void					annulation_ls(t_ls *ls);
 int						parse_options(t_ls *ls, char *argv);
 void					parse_arguments(char **argv, int n, t_ls *ls);
 void					ft_ls(char **files, t_ls *ls);

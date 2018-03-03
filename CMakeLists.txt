@@ -103,7 +103,6 @@ add_executable(ft_ls
         libft/get_next_line.c
         libft/get_next_line.h
         libft/libft.h
-        annulation_opt.c
         define_type.c
         ft_ls.c
         ft_ls.h
@@ -134,4 +133,5 @@ add_executable(ft_ls
         print_lf.c
         recursion_branch.c
         skip_dots.c
-        sort_ascii_bubble.c timecmp.c)
+        sort_ascii_bubble.c
+        timecmp.c)

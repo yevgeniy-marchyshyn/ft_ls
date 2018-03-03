@@ -17,7 +17,7 @@ void			tous_les_options(char c, t_ls *ls)
 	if (c == 'l')
 		ls->long_format = 1;
 	else if (c == 'R')
-		ls->recursively = 1;
+		ls->recursion = 1;
 	else if (c == 'a')
 		ls->include_dot = 1;
 	else if (c == 'r')

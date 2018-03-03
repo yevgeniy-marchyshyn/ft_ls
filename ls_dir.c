@@ -43,7 +43,7 @@ void			ls_dir(char *dirname, t_ls *ls, char *path)
 		files = (char **)malloc(sizeof(char *) * (n + 1));
 		files = ls_read_files(files, dirname);
 		sort_ascii_bubble(files, n);
-		if (ls->recursively)
+		if (ls->recursion)
 			parse_files(files, n, ls, path);
 		else if (ls->long_format)
 		{

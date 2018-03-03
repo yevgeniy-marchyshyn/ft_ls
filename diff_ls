@@ -1,44 +1,548 @@
-total 656
--rw-r--r--   1 ymarchys  2017    3805 Mar  2 13:44 CMakeLists.txt
--rw-r--r--   1 ymarchys  2017    1850 Mar  2 13:52 Makefile
--rw-r--r--   1 ymarchys  2017    1099 Mar  2 13:17 annulation_opt.c
--rw-r--r--   1 ymarchys  2017       9 Mar  2 13:17 author
-drwxr-xr-x   9 ymarchys  2017     306 Mar  2 16:02 cmake-build-debug
--rw-r--r--   1 ymarchys  2017    1337 Mar  2 13:17 define_type.c
--rw-r--r--   1 ymarchys  2017       0 Mar  2 17:59 diff_ls
--rw-r--r--   1 ymarchys  2017    4991 Mar  2 16:59 diff_my
--rwxr-xr-x   1 ymarchys  2017   56304 Mar  2 17:58 ft_ls
--rw-r--r--   1 ymarchys  2017    1531 Mar  2 15:27 ft_ls.c
--rw-r--r--   1 ymarchys  2017    3057 Mar  2 15:07 ft_ls.h
--rw-r--r--   1 ymarchys  2017    1203 Mar  2 13:17 is_dir.c
--rw-r--r--   1 ymarchys  2017    1022 Mar  2 13:17 is_option.c
--rw-r--r--   1 ymarchys  2017    1315 Mar  2 13:17 lf.c
--rw-r--r--   1 ymarchys  2017    2078 Mar  2 13:17 lf_not_dirs.c
-drwxr-xr-x  69 ymarchys  2017    2346 Mar  2 17:58 libft
--rw-r--r--   1 ymarchys  2017  117736 Mar  2 13:17 libft.a
--rw-r--r--   1 ymarchys  2017    1371 Mar  2 15:06 link_to_dir.c
--rw-r--r--   1 ymarchys  2017    1034 Mar  2 13:17 linkpath.c
--rw-r--r--   1 ymarchys  2017    1230 Mar  2 15:07 ls_count_files.c
--rw-r--r--   1 ymarchys  2017    1761 Mar  2 15:59 ls_dir.c
--rw-r--r--   1 ymarchys  2017    1196 Mar  2 13:17 ls_link.c
--rw-r--r--   1 ymarchys  2017    1169 Mar  2 15:07 ls_read_files.c
--rw-r--r--   1 ymarchys  2017    2171 Mar  2 15:11 ls_sort.c
--rw-r--r--   1 ymarchys  2017    1308 Mar  2 15:08 ls_total.c
--rwxr-xr-x   1 ymarchys  2017    1497 Mar  2 13:17 main.c
--rw-r--r--   1 ymarchys  2017    1544 Mar  2 15:09 max_len_group.c
--rw-r--r--   1 ymarchys  2017    1538 Mar  2 15:09 max_len_user.c
--rw-r--r--   1 ymarchys  2017    1325 Mar  2 15:09 max_links.c
--rw-r--r--   1 ymarchys  2017    1321 Mar  2 15:08 max_size.c
--rw-r--r--   1 ymarchys  2017    1236 Mar  2 15:09 not_empty_directory.c
--rw-r--r--   1 ymarchys  2017    1700 Mar  2 15:38 parse_arguments.c
--rw-r--r--   1 ymarchys  2017    1556 Mar  2 15:10 parse_files.c
--rw-r--r--   1 ymarchys  2017    1531 Mar  2 13:17 parse_options.c
--rw-r--r--   1 ymarchys  2017    3434 Mar  2 13:17 print_access.c
--rw-r--r--   1 ymarchys  2017    1031 Mar  2 15:10 print_dot.c
--rw-r--r--   1 ymarchys  2017    1455 Mar  2 13:17 print_files.c
--rw-r--r--   1 ymarchys  2017    3376 Mar  2 17:57 print_lf.c
--rw-r--r--   1 ymarchys  2017    2124 Mar  2 15:10 recursion_branch.c
--rw-r--r--   1 ymarchys  2017    1022 Mar  2 13:17 skip_dots.c
--rw-r--r--   1 ymarchys  2017    1215 Mar  2 15:11 sort_ascii_bubble.c
--rw-r--r--   1 ymarchys  2017    1647 Mar  2 14:01 timecmp.c
--rwxr-xr-x   1 ymarchys  2017     105 Mar  2 13:17 zzz.sh
+total 680
+drwxr-xr-x  48 marchyshyn  staff    1536 Mar  3 15:46 .
+drwxr-xr-x   5 marchyshyn  staff     160 Mar  3 15:45 ..
+-rw-r--r--   1 marchyshyn  staff    8196 Mar  3 15:45 .DS_Store
+drwxr-xr-x  13 marchyshyn  staff     416 Mar  3 15:45 .git
+drwxr-xr-x   9 marchyshyn  staff     288 Mar  3 15:45 .idea
+-rw-r--r--   1 marchyshyn  staff    3805 Mar  3 15:45 CMakeLists.txt
+-rw-r--r--   1 marchyshyn  staff    1850 Mar  3 15:45 Makefile
+-rw-r--r--   1 marchyshyn  staff    1099 Mar  3 15:45 annulation_opt.c
+-rw-r--r--   1 marchyshyn  staff       9 Mar  3 15:45 author
+drwxr-xr-x   9 marchyshyn  staff     288 Mar  3 15:45 cmake-build-debug
+-rw-r--r--   1 marchyshyn  staff    1337 Mar  3 15:45 define_type.c
+-rw-r--r--   1 marchyshyn  staff       0 Mar  3 15:47 diff_ls
+-rw-r--r--   1 marchyshyn  staff    6181 Mar  3 15:47 diff_my
+-rwxr-xr-x   1 marchyshyn  staff   56304 Mar  3 15:46 ft_ls
+-rw-r--r--   1 marchyshyn  staff    1531 Mar  3 15:45 ft_ls.c
+-rw-r--r--   1 marchyshyn  staff    3057 Mar  3 15:45 ft_ls.h
+-rw-r--r--   1 marchyshyn  staff    1203 Mar  3 15:45 is_dir.c
+-rw-r--r--   1 marchyshyn  staff    1022 Mar  3 15:45 is_option.c
+-rwxr-xr-x   1 marchyshyn  staff    1315 Mar  3 15:45 lf.c
+-rw-r--r--   1 marchyshyn  staff    2078 Mar  3 15:45 lf_not_dirs.c
+drwxr-xr-x  69 marchyshyn  staff    2208 Mar  3 15:46 libft
+-rw-r--r--   1 marchyshyn  staff  117736 Mar  3 15:45 libft.a
+-rw-r--r--   1 marchyshyn  staff    1371 Mar  3 15:45 link_to_dir.c
+-rw-r--r--   1 marchyshyn  staff    1034 Mar  3 15:45 linkpath.c
+-rw-r--r--   1 marchyshyn  staff    1230 Mar  3 15:45 ls_count_files.c
+-rw-r--r--   1 marchyshyn  staff    1761 Mar  3 15:45 ls_dir.c
+-rw-r--r--   1 marchyshyn  staff    1196 Mar  3 15:45 ls_link.c
+-rw-r--r--   1 marchyshyn  staff    1169 Mar  3 15:45 ls_read_files.c
+-rw-r--r--   1 marchyshyn  staff    2171 Mar  3 15:45 ls_sort.c
+-rw-r--r--   1 marchyshyn  staff    1308 Mar  3 15:45 ls_total.c
+-rwxr-xr-x   1 marchyshyn  staff    1497 Mar  3 15:45 main.c
+-rw-r--r--   1 marchyshyn  staff    1544 Mar  3 15:45 max_len_group.c
+-rw-r--r--   1 marchyshyn  staff    1538 Mar  3 15:45 max_len_user.c
+-rw-r--r--   1 marchyshyn  staff    1325 Mar  3 15:45 max_links.c
+-rw-r--r--   1 marchyshyn  staff    1321 Mar  3 15:45 max_size.c
+-rw-r--r--   1 marchyshyn  staff    1236 Mar  3 15:45 not_empty_directory.c
+-rw-r--r--   1 marchyshyn  staff    1720 Mar  3 15:45 parse_arguments.c
+-rw-r--r--   1 marchyshyn  staff    1556 Mar  3 15:45 parse_files.c
+-rw-r--r--   1 marchyshyn  staff    1531 Mar  3 15:45 parse_options.c
+-rw-r--r--   1 marchyshyn  staff    3434 Mar  3 15:45 print_access.c
+-rw-r--r--   1 marchyshyn  staff    1031 Mar  3 15:45 print_dot.c
+-rw-r--r--   1 marchyshyn  staff    1455 Mar  3 15:45 print_files.c
+-rw-r--r--   1 marchyshyn  staff    2907 Mar  3 15:45 print_lf.c
+-rw-r--r--   1 marchyshyn  staff    2124 Mar  3 15:45 recursion_branch.c
+-rw-r--r--   1 marchyshyn  staff    1022 Mar  3 15:45 skip_dots.c
+-rw-r--r--   1 marchyshyn  staff    1215 Mar  3 15:45 sort_ascii_bubble.c
+-rw-r--r--   1 marchyshyn  staff    1647 Mar  3 15:45 timecmp.c
+-rwxr-xr-x   1 marchyshyn  staff     105 Mar  3 15:45 zzz.sh
+
+./.git:
+total 104
+drwxr-xr-x  13 marchyshyn  staff    416 Mar  3 15:45 .
+drwxr-xr-x  48 marchyshyn  staff   1536 Mar  3 15:46 ..
+-rw-r--r--   1 marchyshyn  staff     23 Mar  3 15:45 HEAD
+drwxr-xr-x   2 marchyshyn  staff     64 Mar  3 15:45 branches
+-rw-r--r--   1 marchyshyn  staff    309 Mar  3 15:45 config
+-rw-r--r--   1 marchyshyn  staff     73 Mar  3 15:45 description
+drwxr-xr-x  12 marchyshyn  staff    384 Mar  3 15:45 hooks
+-rw-r--r--   1 marchyshyn  staff  34295 Mar  3 15:45 index
+drwxr-xr-x   3 marchyshyn  staff     96 Mar  3 15:45 info
+drwxr-xr-x   4 marchyshyn  staff    128 Mar  3 15:45 logs
+drwxr-xr-x   4 marchyshyn  staff    128 Mar  3 15:45 objects
+-rw-r--r--   1 marchyshyn  staff    311 Mar  3 15:45 packed-refs
+drwxr-xr-x   5 marchyshyn  staff    160 Mar  3 15:45 refs
+
+./.git/branches:
+total 0
+drwxr-xr-x   2 marchyshyn  staff   64 Mar  3 15:45 .
+drwxr-xr-x  13 marchyshyn  staff  416 Mar  3 15:45 ..
+
+./.git/hooks:
+total 88
+drwxr-xr-x  12 marchyshyn  staff   384 Mar  3 15:45 .
+drwxr-xr-x  13 marchyshyn  staff   416 Mar  3 15:45 ..
+-rwxr-xr-x   1 marchyshyn  staff   478 Mar  3 15:45 applypatch-msg.sample
+-rwxr-xr-x   1 marchyshyn  staff   896 Mar  3 15:45 commit-msg.sample
+-rwxr-xr-x   1 marchyshyn  staff   189 Mar  3 15:45 post-update.sample
+-rwxr-xr-x   1 marchyshyn  staff   424 Mar  3 15:45 pre-applypatch.sample
+-rwxr-xr-x   1 marchyshyn  staff  1642 Mar  3 15:45 pre-commit.sample
+-rwxr-xr-x   1 marchyshyn  staff  1348 Mar  3 15:45 pre-push.sample
+-rwxr-xr-x   1 marchyshyn  staff  4951 Mar  3 15:45 pre-rebase.sample
+-rw-r--r--   1 marchyshyn  staff   544 Mar  3 15:45 pre-receive.sample
+-rwxr-xr-x   1 marchyshyn  staff  1239 Mar  3 15:45 prepare-commit-msg.sample
+-rwxr-xr-x   1 marchyshyn  staff  3610 Mar  3 15:45 update.sample
+
+./.git/info:
+total 8
+drwxr-xr-x   3 marchyshyn  staff   96 Mar  3 15:45 .
+drwxr-xr-x  13 marchyshyn  staff  416 Mar  3 15:45 ..
+-rw-r--r--   1 marchyshyn  staff  240 Mar  3 15:45 exclude
+
+./.git/logs:
+total 8
+drwxr-xr-x   4 marchyshyn  staff  128 Mar  3 15:45 .
+drwxr-xr-x  13 marchyshyn  staff  416 Mar  3 15:45 ..
+-rw-r--r--   1 marchyshyn  staff  211 Mar  3 15:45 HEAD
+drwxr-xr-x   4 marchyshyn  staff  128 Mar  3 15:45 refs
+
+./.git/logs/refs:
+total 0
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  3 15:45 .
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  3 15:45 ..
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 heads
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 remotes
+
+./.git/logs/refs/heads:
+total 8
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 .
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  3 15:45 ..
+-rw-r--r--  1 marchyshyn  staff  211 Mar  3 15:45 ft_ls4
+
+./.git/logs/refs/remotes:
+total 0
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 .
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  3 15:45 ..
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 origin
+
+./.git/logs/refs/remotes/origin:
+total 8
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 .
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 ..
+-rw-r--r--  1 marchyshyn  staff  211 Mar  3 15:45 HEAD
+
+./.git/objects:
+total 0
+drwxr-xr-x   4 marchyshyn  staff  128 Mar  3 15:45 .
+drwxr-xr-x  13 marchyshyn  staff  416 Mar  3 15:45 ..
+drwxr-xr-x   2 marchyshyn  staff   64 Mar  3 15:45 info
+drwxr-xr-x   4 marchyshyn  staff  128 Mar  3 15:45 pack
+
+./.git/objects/info:
+total 0
+drwxr-xr-x  2 marchyshyn  staff   64 Mar  3 15:45 .
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  3 15:45 ..
+
+./.git/objects/pack:
+total 4272
+drwxr-xr-x  4 marchyshyn  staff      128 Mar  3 15:45 .
+drwxr-xr-x  4 marchyshyn  staff      128 Mar  3 15:45 ..
+-r--r--r--  1 marchyshyn  staff    64520 Mar  3 15:45 pack-7ac7bef4b8171d104b13142fcda2bf1d04f665ce.idx
+-r--r--r--  1 marchyshyn  staff  1954855 Mar  3 15:45 pack-7ac7bef4b8171d104b13142fcda2bf1d04f665ce.pack
+
+./.git/refs:
+total 0
+drwxr-xr-x   5 marchyshyn  staff  160 Mar  3 15:45 .
+drwxr-xr-x  13 marchyshyn  staff  416 Mar  3 15:45 ..
+drwxr-xr-x   3 marchyshyn  staff   96 Mar  3 15:45 heads
+drwxr-xr-x   3 marchyshyn  staff   96 Mar  3 15:45 remotes
+drwxr-xr-x   2 marchyshyn  staff   64 Mar  3 15:45 tags
+
+./.git/refs/heads:
+total 8
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 .
+drwxr-xr-x  5 marchyshyn  staff  160 Mar  3 15:45 ..
+-rw-r--r--  1 marchyshyn  staff   41 Mar  3 15:45 ft_ls4
+
+./.git/refs/remotes:
+total 0
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 .
+drwxr-xr-x  5 marchyshyn  staff  160 Mar  3 15:45 ..
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 origin
+
+./.git/refs/remotes/origin:
+total 8
+drwxr-xr-x  3 marchyshyn  staff  96 Mar  3 15:45 .
+drwxr-xr-x  3 marchyshyn  staff  96 Mar  3 15:45 ..
+-rw-r--r--  1 marchyshyn  staff  32 Mar  3 15:45 HEAD
+
+./.git/refs/tags:
+total 0
+drwxr-xr-x  2 marchyshyn  staff   64 Mar  3 15:45 .
+drwxr-xr-x  5 marchyshyn  staff  160 Mar  3 15:45 ..
+
+./.idea:
+total 136
+drwxr-xr-x   9 marchyshyn  staff    288 Mar  3 15:45 .
+drwxr-xr-x  48 marchyshyn  staff   1536 Mar  3 15:46 ..
+drwxr-xr-x   4 marchyshyn  staff    128 Mar  3 15:45 codeStyles
+drwxr-xr-x   3 marchyshyn  staff     96 Mar  3 15:45 dictionaries
+-rw-r--r--   1 marchyshyn  staff     97 Mar  3 15:45 ft_ls.iml
+-rw-r--r--   1 marchyshyn  staff    137 Mar  3 15:45 misc.xml
+-rw-r--r--   1 marchyshyn  staff    262 Mar  3 15:45 modules.xml
+-rw-r--r--   1 marchyshyn  staff    180 Mar  3 15:45 vcs.xml
+-rw-r--r--   1 marchyshyn  staff  50573 Mar  3 15:45 workspace.xml
+
+./.idea/codeStyles:
+total 16
+drwxr-xr-x  4 marchyshyn  staff   128 Mar  3 15:45 .
+drwxr-xr-x  9 marchyshyn  staff   288 Mar  3 15:45 ..
+-rw-r--r--  1 marchyshyn  staff  1775 Mar  3 15:45 Project.xml
+-rw-r--r--  1 marchyshyn  staff   149 Mar  3 15:45 codeStyleConfig.xml
+
+./.idea/dictionaries:
+total 8
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 .
+drwxr-xr-x  9 marchyshyn  staff  288 Mar  3 15:45 ..
+-rw-r--r--  1 marchyshyn  staff   89 Mar  3 15:45 marchyshyn.xml
+
+./cmake-build-debug:
+total 560
+drwxr-xr-x   9 marchyshyn  staff     288 Mar  3 15:45 .
+drwxr-xr-x  48 marchyshyn  staff    1536 Mar  3 15:46 ..
+-rw-r--r--   1 marchyshyn  staff   38891 Mar  3 15:45 CMakeCache.txt
+drwxr-xr-x  16 marchyshyn  staff     512 Mar  3 15:45 CMakeFiles
+-rw-r--r--   1 marchyshyn  staff  114649 Mar  3 15:45 Makefile
+-rw-r--r--   1 marchyshyn  staff    1257 Mar  3 15:45 cmake_install.cmake
+-rwxr-xr-x   1 marchyshyn  staff  103528 Mar  3 15:45 ft_ls
+-rw-r--r--   1 marchyshyn  staff   20182 Mar  3 15:45 ft_ls.cbp
+drwxr-xr-x   3 marchyshyn  staff      96 Mar  3 15:45 ft_ls.dSYM
+
+./cmake-build-debug/CMakeFiles:
+total 192
+drwxr-xr-x  16 marchyshyn  staff    512 Mar  3 15:45 .
+drwxr-xr-x   9 marchyshyn  staff    288 Mar  3 15:45 ..
+drwxr-xr-x   9 marchyshyn  staff    288 Mar  3 15:45 3.9.4
+-rw-r--r--   1 marchyshyn  staff    655 Mar  3 15:45 CMakeDirectoryInformation.cmake
+-rw-r--r--   1 marchyshyn  staff  34125 Mar  3 15:45 CMakeOutput.log
+-rw-r--r--   1 marchyshyn  staff   3114 Mar  3 15:45 Makefile.cmake
+-rw-r--r--   1 marchyshyn  staff   3528 Mar  3 15:45 Makefile2
+-rw-r--r--   1 marchyshyn  staff    226 Mar  3 15:45 TargetDirectories.txt
+-rw-r--r--   1 marchyshyn  staff     19 Mar  3 15:45 clion-environment.txt
+-rw-r--r--   1 marchyshyn  staff    269 Mar  3 15:45 clion-log.txt
+-rw-r--r--   1 marchyshyn  staff     85 Mar  3 15:45 cmake.check_cache
+-rwxr-xr-x   1 marchyshyn  staff   8376 Mar  3 15:45 feature_tests.bin
+-rw-r--r--   1 marchyshyn  staff    728 Mar  3 15:45 feature_tests.c
+-rw-r--r--   1 marchyshyn  staff   8844 Mar  3 15:45 feature_tests.cxx
+drwxr-xr-x  44 marchyshyn  staff   1408 Mar  3 15:45 ft_ls.dir
+-rw-r--r--   1 marchyshyn  staff      4 Mar  3 15:45 progress.marks
+
+./cmake-build-debug/CMakeFiles/3.9.4:
+total 64
+drwxr-xr-x   9 marchyshyn  staff   288 Mar  3 15:45 .
+drwxr-xr-x  16 marchyshyn  staff   512 Mar  3 15:45 ..
+-rw-r--r--   1 marchyshyn  staff  2385 Mar  3 15:45 CMakeCCompiler.cmake
+-rw-r--r--   1 marchyshyn  staff  5007 Mar  3 15:45 CMakeCXXCompiler.cmake
+-rwxr-xr-x   1 marchyshyn  staff  4304 Mar  3 15:45 CMakeDetermineCompilerABI_C.bin
+-rwxr-xr-x   1 marchyshyn  staff  4288 Mar  3 15:45 CMakeDetermineCompilerABI_CXX.bin
+-rw-r--r--   1 marchyshyn  staff   362 Mar  3 15:45 CMakeSystem.cmake
+drwxr-xr-x   4 marchyshyn  staff   128 Mar  3 15:45 CompilerIdC
+drwxr-xr-x   4 marchyshyn  staff   128 Mar  3 15:45 CompilerIdCXX
+
+./cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC:
+total 64
+drwxr-xr-x  4 marchyshyn  staff    128 Mar  3 15:45 .
+drwxr-xr-x  9 marchyshyn  staff    288 Mar  3 15:45 ..
+-rw-r--r--  1 marchyshyn  staff  17086 Mar  3 15:45 CMakeCCompilerId.c
+-rwxr-xr-x  1 marchyshyn  staff   8616 Mar  3 15:45 a.out
+
+./cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX:
+total 64
+drwxr-xr-x  4 marchyshyn  staff    128 Mar  3 15:45 .
+drwxr-xr-x  9 marchyshyn  staff    288 Mar  3 15:45 ..
+-rw-r--r--  1 marchyshyn  staff  16539 Mar  3 15:45 CMakeCXXCompilerId.cpp
+-rwxr-xr-x  1 marchyshyn  staff   8600 Mar  3 15:45 a.out
+
+./cmake-build-debug/CMakeFiles/ft_ls.dir:
+total 1304
+drwxr-xr-x  44 marchyshyn  staff    1408 Mar  3 15:45 .
+drwxr-xr-x  16 marchyshyn  staff     512 Mar  3 15:45 ..
+-rw-r--r--   1 marchyshyn  staff   17660 Mar  3 15:45 C.includecache
+-rw-r--r--   1 marchyshyn  staff   19834 Mar  3 15:45 DependInfo.cmake
+-rw-r--r--   1 marchyshyn  staff    2800 Mar  3 15:45 annulation_opt.c.o
+-rw-r--r--   1 marchyshyn  staff  276656 Mar  3 15:45 build.make
+-rw-r--r--   1 marchyshyn  staff    6235 Mar  3 15:45 cmake_clean.cmake
+-rw-r--r--   1 marchyshyn  staff    4976 Mar  3 15:45 define_type.c.o
+-rw-r--r--   1 marchyshyn  staff   49026 Mar  3 15:45 depend.internal
+-rw-r--r--   1 marchyshyn  staff   54734 Mar  3 15:45 depend.make
+-rw-r--r--   1 marchyshyn  staff     251 Mar  3 15:45 flags.make
+-rw-r--r--   1 marchyshyn  staff    3764 Mar  3 15:45 ft_ls.c.o
+-rw-r--r--   1 marchyshyn  staff    5048 Mar  3 15:45 is_dir.c.o
+-rw-r--r--   1 marchyshyn  staff    2492 Mar  3 15:45 is_option.c.o
+-rw-r--r--   1 marchyshyn  staff    3744 Mar  3 15:45 lf.c.o
+-rw-r--r--   1 marchyshyn  staff    4960 Mar  3 15:45 lf_not_dirs.c.o
+drwxr-xr-x  63 marchyshyn  staff    2016 Mar  3 15:45 libft
+-rw-r--r--   1 marchyshyn  staff    5689 Mar  3 15:45 link.txt
+-rw-r--r--   1 marchyshyn  staff    5436 Mar  3 15:45 link_to_dir.c.o
+-rw-r--r--   1 marchyshyn  staff    2476 Mar  3 15:45 linkpath.c.o
+-rw-r--r--   1 marchyshyn  staff    4268 Mar  3 15:45 ls_count_files.c.o
+-rw-r--r--   1 marchyshyn  staff    4380 Mar  3 15:45 ls_dir.c.o
+-rw-r--r--   1 marchyshyn  staff    3120 Mar  3 15:45 ls_link.c.o
+-rw-r--r--   1 marchyshyn  staff    4188 Mar  3 15:45 ls_read_files.c.o
+-rw-r--r--   1 marchyshyn  staff    5144 Mar  3 15:45 ls_sort.c.o
+-rw-r--r--   1 marchyshyn  staff    5644 Mar  3 15:45 ls_total.c.o
+-rw-r--r--   1 marchyshyn  staff    3904 Mar  3 15:45 main.c.o
+-rw-r--r--   1 marchyshyn  staff    6044 Mar  3 15:45 max_len_group.c.o
+-rw-r--r--   1 marchyshyn  staff    6180 Mar  3 15:45 max_len_user.c.o
+-rw-r--r--   1 marchyshyn  staff    5296 Mar  3 15:45 max_links.c.o
+-rw-r--r--   1 marchyshyn  staff    5280 Mar  3 15:45 max_size.c.o
+-rw-r--r--   1 marchyshyn  staff    4588 Mar  3 15:45 not_empty_directory.c.o
+-rw-r--r--   1 marchyshyn  staff    6788 Mar  3 15:45 parse_arguments.c.o
+-rw-r--r--   1 marchyshyn  staff    6388 Mar  3 15:45 parse_files.c.o
+-rw-r--r--   1 marchyshyn  staff    3956 Mar  3 15:45 parse_options.c.o
+-rw-r--r--   1 marchyshyn  staff    5868 Mar  3 15:45 print_access.c.o
+-rw-r--r--   1 marchyshyn  staff    2828 Mar  3 15:45 print_dot.c.o
+-rw-r--r--   1 marchyshyn  staff    3824 Mar  3 15:45 print_files.c.o
+-rw-r--r--   1 marchyshyn  staff    9164 Mar  3 15:45 print_lf.c.o
+-rw-r--r--   1 marchyshyn  staff    2923 Mar  3 15:45 progress.make
+-rw-r--r--   1 marchyshyn  staff    5180 Mar  3 15:45 recursion_branch.c.o
+-rw-r--r--   1 marchyshyn  staff    2584 Mar  3 15:45 skip_dots.c.o
+-rw-r--r--   1 marchyshyn  staff    2828 Mar  3 15:45 sort_ascii_bubble.c.o
+-rw-r--r--   1 marchyshyn  staff    5808 Mar  3 15:45 timecmp.c.o
+
+./cmake-build-debug/CMakeFiles/ft_ls.dir/libft:
+total 512
+drwxr-xr-x  63 marchyshyn  staff  2016 Mar  3 15:45 .
+drwxr-xr-x  44 marchyshyn  staff  1408 Mar  3 15:45 ..
+-rw-r--r--   1 marchyshyn  staff  2596 Mar  3 15:45 free_words.c.o
+-rw-r--r--   1 marchyshyn  staff  3144 Mar  3 15:45 ft_atoi.c.o
+-rw-r--r--   1 marchyshyn  staff  2700 Mar  3 15:45 ft_bzero.c.o
+-rw-r--r--   1 marchyshyn  staff  2456 Mar  3 15:45 ft_isalnum.c.o
+-rw-r--r--   1 marchyshyn  staff  2384 Mar  3 15:45 ft_isalpha.c.o
+-rw-r--r--   1 marchyshyn  staff  2348 Mar  3 15:45 ft_isascii.c.o
+-rw-r--r--   1 marchyshyn  staff  2348 Mar  3 15:45 ft_isdigit.c.o
+-rw-r--r--   1 marchyshyn  staff  2348 Mar  3 15:45 ft_isprint.c.o
+-rw-r--r--   1 marchyshyn  staff  3192 Mar  3 15:45 ft_itoa.c.o
+-rw-r--r--   1 marchyshyn  staff  2664 Mar  3 15:45 ft_itoa_len.c.o
+-rw-r--r--   1 marchyshyn  staff  3032 Mar  3 15:45 ft_lst_push_back.c.o
+-rw-r--r--   1 marchyshyn  staff  2872 Mar  3 15:45 ft_lstadd.c.o
+-rw-r--r--   1 marchyshyn  staff  3488 Mar  3 15:45 ft_lstascii.c.o
+-rw-r--r--   1 marchyshyn  staff  3108 Mar  3 15:45 ft_lstdel.c.o
+-rw-r--r--   1 marchyshyn  staff  3012 Mar  3 15:45 ft_lstdelone.c.o
+-rw-r--r--   1 marchyshyn  staff  2948 Mar  3 15:45 ft_lstiter.c.o
+-rw-r--r--   1 marchyshyn  staff  3124 Mar  3 15:45 ft_lstmap.c.o
+-rw-r--r--   1 marchyshyn  staff  3212 Mar  3 15:45 ft_lstnew.c.o
+-rw-r--r--   1 marchyshyn  staff  2732 Mar  3 15:45 ft_memalloc.c.o
+-rw-r--r--   1 marchyshyn  staff  2972 Mar  3 15:45 ft_memccpy.c.o
+-rw-r--r--   1 marchyshyn  staff  2892 Mar  3 15:45 ft_memchr.c.o
+-rw-r--r--   1 marchyshyn  staff  2996 Mar  3 15:45 ft_memcmp.c.o
+-rw-r--r--   1 marchyshyn  staff  2796 Mar  3 15:45 ft_memcpy.c.o
+-rw-r--r--   1 marchyshyn  staff  2352 Mar  3 15:45 ft_memdel.c.o
+-rw-r--r--   1 marchyshyn  staff  2896 Mar  3 15:45 ft_memmove.c.o
+-rw-r--r--   1 marchyshyn  staff  2796 Mar  3 15:45 ft_memset.c.o
+-rw-r--r--   1 marchyshyn  staff  2756 Mar  3 15:45 ft_power.c.o
+drwxr-xr-x  38 marchyshyn  staff  1216 Mar  3 15:45 ft_printf
+-rw-r--r--   1 marchyshyn  staff  9860 Mar  3 15:45 ft_printf.c.o
+-rw-r--r--   1 marchyshyn  staff  2424 Mar  3 15:45 ft_putchar.c.o
+-rw-r--r--   1 marchyshyn  staff  2636 Mar  3 15:45 ft_putnbr.c.o
+-rw-r--r--   1 marchyshyn  staff  2560 Mar  3 15:45 ft_putstr.c.o
+-rw-r--r--   1 marchyshyn  staff  2620 Mar  3 15:45 ft_strcat.c.o
+-rw-r--r--   1 marchyshyn  staff  2696 Mar  3 15:45 ft_strchr.c.o
+-rw-r--r--   1 marchyshyn  staff  2520 Mar  3 15:45 ft_strclr.c.o
+-rw-r--r--   1 marchyshyn  staff  2684 Mar  3 15:45 ft_strcmp.c.o
+-rw-r--r--   1 marchyshyn  staff  2524 Mar  3 15:45 ft_strcpy.c.o
+-rw-r--r--   1 marchyshyn  staff  2400 Mar  3 15:45 ft_strdel.c.o
+-rw-r--r--   1 marchyshyn  staff  2748 Mar  3 15:45 ft_strdup.c.o
+-rw-r--r--   1 marchyshyn  staff  2536 Mar  3 15:45 ft_strequ.c.o
+-rw-r--r--   1 marchyshyn  staff  2476 Mar  3 15:45 ft_striter.c.o
+-rw-r--r--   1 marchyshyn  staff  2588 Mar  3 15:45 ft_striteri.c.o
+-rw-r--r--   1 marchyshyn  staff  2732 Mar  3 15:45 ft_strjoin.c.o
+-rw-r--r--   1 marchyshyn  staff  2964 Mar  3 15:45 ft_strlcat.c.o
+-rw-r--r--   1 marchyshyn  staff  2668 Mar  3 15:45 ft_strlen.c.o
+-rw-r--r--   1 marchyshyn  staff  2856 Mar  3 15:45 ft_strmap.c.o
+-rw-r--r--   1 marchyshyn  staff  2968 Mar  3 15:45 ft_strmapi.c.o
+-rw-r--r--   1 marchyshyn  staff  2948 Mar  3 15:45 ft_strncat.c.o
+-rw-r--r--   1 marchyshyn  staff  3104 Mar  3 15:45 ft_strncmp.c.o
+-rw-r--r--   1 marchyshyn  staff  3060 Mar  3 15:45 ft_strncpy.c.o
+-rw-r--r--   1 marchyshyn  staff  2812 Mar  3 15:45 ft_strnequ.c.o
+-rw-r--r--   1 marchyshyn  staff  2780 Mar  3 15:45 ft_strnew.c.o
+-rw-r--r--   1 marchyshyn  staff  3204 Mar  3 15:45 ft_strnstr.c.o
+-rw-r--r--   1 marchyshyn  staff  2868 Mar  3 15:45 ft_strrchr.c.o
+-rw-r--r--   1 marchyshyn  staff  4672 Mar  3 15:45 ft_strsplit.c.o
+-rw-r--r--   1 marchyshyn  staff  2724 Mar  3 15:45 ft_strstr.c.o
+-rw-r--r--   1 marchyshyn  staff  3016 Mar  3 15:45 ft_strsub.c.o
+-rw-r--r--   1 marchyshyn  staff  3328 Mar  3 15:45 ft_strtrim.c.o
+-rw-r--r--   1 marchyshyn  staff  2364 Mar  3 15:45 ft_tolower.c.o
+-rw-r--r--   1 marchyshyn  staff  2364 Mar  3 15:45 ft_toupper.c.o
+-rw-r--r--   1 marchyshyn  staff  5748 Mar  3 15:45 get_next_line.c.o
+
+./cmake-build-debug/CMakeFiles/ft_ls.dir/libft/ft_printf:
+total 416
+drwxr-xr-x  38 marchyshyn  staff  1216 Mar  3 15:45 .
+drwxr-xr-x  63 marchyshyn  staff  2016 Mar  3 15:45 ..
+-rw-r--r--   1 marchyshyn  staff  2532 Mar  3 15:45 active_bits.c.o
+-rw-r--r--   1 marchyshyn  staff  3204 Mar  3 15:45 annulation.c.o
+-rw-r--r--   1 marchyshyn  staff  3468 Mar  3 15:45 check_flags_modif.c.o
+-rw-r--r--   1 marchyshyn  staff  2504 Mar  3 15:45 color_off.c.o
+-rw-r--r--   1 marchyshyn  staff  2576 Mar  3 15:45 count_bytes.c.o
+-rw-r--r--   1 marchyshyn  staff  3976 Mar  3 15:45 ibs.c.o
+-rw-r--r--   1 marchyshyn  staff  3744 Mar  3 15:45 ibs_uns.c.o
+-rw-r--r--   1 marchyshyn  staff  5428 Mar  3 15:45 if_color.c.o
+-rw-r--r--   1 marchyshyn  staff  2612 Mar  3 15:45 is_flag_mod.c.o
+-rw-r--r--   1 marchyshyn  staff  2484 Mar  3 15:45 is_modificator.c.o
+-rw-r--r--   1 marchyshyn  staff  2568 Mar  3 15:45 is_parse_char.c.o
+-rw-r--r--   1 marchyshyn  staff  2756 Mar  3 15:45 is_type.c.o
+-rw-r--r--   1 marchyshyn  staff  4564 Mar  3 15:45 m_putchar.c.o
+-rw-r--r--   1 marchyshyn  staff  2736 Mar  3 15:45 m_putstr.c.o
+-rw-r--r--   1 marchyshyn  staff  6104 Mar  3 15:45 modificator_dec.c.o
+-rw-r--r--   1 marchyshyn  staff  5016 Mar  3 15:45 modificator_hex.c.o
+-rw-r--r--   1 marchyshyn  staff  6132 Mar  3 15:45 modificator_octal.c.o
+-rw-r--r--   1 marchyshyn  staff  6280 Mar  3 15:45 modificator_uns.c.o
+-rw-r--r--   1 marchyshyn  staff  2932 Mar  3 15:45 prec_diff.c.o
+-rw-r--r--   1 marchyshyn  staff  3572 Mar  3 15:45 put_binary.c.o
+-rw-r--r--   1 marchyshyn  staff  4048 Mar  3 15:45 put_c.c.o
+-rw-r--r--   1 marchyshyn  staff  6964 Mar  3 15:45 put_dec.c.o
+-rw-r--r--   1 marchyshyn  staff  8540 Mar  3 15:45 put_float.c.o
+-rw-r--r--   1 marchyshyn  staff  6208 Mar  3 15:45 put_hex.c.o
+-rw-r--r--   1 marchyshyn  staff  4428 Mar  3 15:45 put_lc.c.o
+-rw-r--r--   1 marchyshyn  staff  6200 Mar  3 15:45 put_ls.c.o
+-rw-r--r--   1 marchyshyn  staff  7004 Mar  3 15:45 put_octal.c.o
+-rw-r--r--   1 marchyshyn  staff  6496 Mar  3 15:45 put_p.c.o
+-rw-r--r--   1 marchyshyn  staff  3080 Mar  3 15:45 put_padding.c.o
+-rw-r--r--   1 marchyshyn  staff  3484 Mar  3 15:45 put_percent.c.o
+-rw-r--r--   1 marchyshyn  staff  5920 Mar  3 15:45 put_s.c.o
+-rw-r--r--   1 marchyshyn  staff  3504 Mar  3 15:45 put_unknown_type.c.o
+-rw-r--r--   1 marchyshyn  staff  5008 Mar  3 15:45 put_unsigned.c.o
+-rw-r--r--   1 marchyshyn  staff  3116 Mar  3 15:45 putstr_ls.c.o
+-rw-r--r--   1 marchyshyn  staff  2456 Mar  3 15:45 set_to_zero.c.o
+-rw-r--r--   1 marchyshyn  staff  2792 Mar  3 15:45 strlen_ls.c.o
+
+./cmake-build-debug/ft_ls.dSYM:
+total 0
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 .
+drwxr-xr-x  9 marchyshyn  staff  288 Mar  3 15:45 ..
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  3 15:45 Contents
+
+./cmake-build-debug/ft_ls.dSYM/Contents:
+total 8
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  3 15:45 .
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 ..
+-rw-r--r--  1 marchyshyn  staff  634 Mar  3 15:45 Info.plist
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 Resources
+
+./cmake-build-debug/ft_ls.dSYM/Contents/Resources:
+total 0
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 .
+drwxr-xr-x  4 marchyshyn  staff  128 Mar  3 15:45 ..
+drwxr-xr-x  3 marchyshyn  staff   96 Mar  3 15:45 DWARF
+
+./cmake-build-debug/ft_ls.dSYM/Contents/Resources/DWARF:
+total 312
+drwxr-xr-x  3 marchyshyn  staff      96 Mar  3 15:45 .
+drwxr-xr-x  3 marchyshyn  staff      96 Mar  3 15:45 ..
+-rw-r--r--  1 marchyshyn  staff  157256 Mar  3 15:45 ft_ls
+
+./libft:
+total 768
+drwxr-xr-x  69 marchyshyn  staff    2208 Mar  3 15:46 .
+drwxr-xr-x  48 marchyshyn  staff    1536 Mar  3 15:46 ..
+-rw-r--r--   1 marchyshyn  staff   12292 Mar  3 15:45 .DS_Store
+-rw-r--r--   1 marchyshyn  staff    3357 Mar  3 15:45 Makefile
+-rw-r--r--   1 marchyshyn  staff    1093 Mar  3 15:45 free_words.c
+-rw-r--r--   1 marchyshyn  staff    1271 Mar  3 15:45 ft_atoi.c
+-rw-r--r--   1 marchyshyn  staff    1025 Mar  3 15:45 ft_bzero.c
+-rw-r--r--   1 marchyshyn  staff    1020 Mar  3 15:45 ft_isalnum.c
+-rw-r--r--   1 marchyshyn  staff    1028 Mar  3 15:45 ft_isalpha.c
+-rw-r--r--   1 marchyshyn  staff     998 Mar  3 15:45 ft_isascii.c
+-rw-r--r--   1 marchyshyn  staff    1000 Mar  3 15:45 ft_isdigit.c
+-rw-r--r--   1 marchyshyn  staff     999 Mar  3 15:45 ft_isprint.c
+-rw-r--r--   1 marchyshyn  staff    1325 Mar  3 15:45 ft_itoa.c
+-rw-r--r--   1 marchyshyn  staff    1041 Mar  3 15:45 ft_itoa_len.c
+-rw-r--r--   1 marchyshyn  staff    1148 Mar  3 15:45 ft_lst_push_back.c
+-rw-r--r--   1 marchyshyn  staff    1019 Mar  3 15:45 ft_lstadd.c
+-rw-r--r--   1 marchyshyn  staff    1510 Mar  3 15:45 ft_lstascii.c
+-rw-r--r--   1 marchyshyn  staff    1175 Mar  3 15:45 ft_lstdel.c
+-rw-r--r--   1 marchyshyn  staff    1081 Mar  3 15:45 ft_lstdelone.c
+-rw-r--r--   1 marchyshyn  staff    1052 Mar  3 15:45 ft_lstiter.c
+-rw-r--r--   1 marchyshyn  staff    1227 Mar  3 15:45 ft_lstmap.c
+-rw-r--r--   1 marchyshyn  staff    1370 Mar  3 15:45 ft_lstnew.c
+-rw-r--r--   1 marchyshyn  staff    1078 Mar  3 15:45 ft_memalloc.c
+-rw-r--r--   1 marchyshyn  staff    1222 Mar  3 15:45 ft_memccpy.c
+-rw-r--r--   1 marchyshyn  staff    1171 Mar  3 15:45 ft_memchr.c
+-rw-r--r--   1 marchyshyn  staff    1258 Mar  3 15:45 ft_memcmp.c
+-rw-r--r--   1 marchyshyn  staff    1138 Mar  3 15:45 ft_memcpy.c
+-rw-r--r--   1 marchyshyn  staff     984 Mar  3 15:45 ft_memdel.c
+-rw-r--r--   1 marchyshyn  staff    1112 Mar  3 15:45 ft_memmove.c
+-rw-r--r--   1 marchyshyn  staff    1093 Mar  3 15:45 ft_memset.c
+-rw-r--r--   1 marchyshyn  staff    1111 Mar  3 15:45 ft_power.c
+drwxr-xr-x  39 marchyshyn  staff    1248 Mar  3 15:46 ft_printf
+-rw-r--r--   1 marchyshyn  staff    3722 Mar  3 15:45 ft_printf.c
+-rw-r--r--   1 marchyshyn  staff     985 Mar  3 15:45 ft_putchar.c
+-rw-r--r--   1 marchyshyn  staff    1141 Mar  3 15:45 ft_putnbr.c
+-rw-r--r--   1 marchyshyn  staff    1050 Mar  3 15:45 ft_putstr.c
+-rw-r--r--   1 marchyshyn  staff    1110 Mar  3 15:45 ft_strcat.c
+-rw-r--r--   1 marchyshyn  staff    1135 Mar  3 15:45 ft_strchr.c
+-rw-r--r--   1 marchyshyn  staff    1011 Mar  3 15:45 ft_strclr.c
+-rw-r--r--   1 marchyshyn  staff    1155 Mar  3 15:45 ft_strcmp.c
+-rw-r--r--   1 marchyshyn  staff    1056 Mar  3 15:45 ft_strcpy.c
+-rw-r--r--   1 marchyshyn  staff     984 Mar  3 15:45 ft_strdel.c
+-rw-r--r--   1 marchyshyn  staff    1188 Mar  3 15:45 ft_strdup.c
+-rw-r--r--   1 marchyshyn  staff    1057 Mar  3 15:45 ft_strequ.c
+-rw-r--r--   1 marchyshyn  staff    1028 Mar  3 15:45 ft_striter.c
+-rw-r--r--   1 marchyshyn  staff    1068 Mar  3 15:45 ft_striteri.c
+-rw-r--r--   1 marchyshyn  staff    1176 Mar  3 15:45 ft_strjoin.c
+-rw-r--r--   1 marchyshyn  staff    1158 Mar  3 15:45 ft_strlcat.c
+-rw-r--r--   1 marchyshyn  staff    1024 Mar  3 15:45 ft_strlen.c
+-rw-r--r--   1 marchyshyn  staff    1241 Mar  3 15:45 ft_strmap.c
+-rw-r--r--   1 marchyshyn  staff    1313 Mar  3 15:45 ft_strmapi.c
+-rw-r--r--   1 marchyshyn  staff    1128 Mar  3 15:45 ft_strncat.c
+-rw-r--r--   1 marchyshyn  staff    1225 Mar  3 15:45 ft_strncmp.c
+-rw-r--r--   1 marchyshyn  staff    1191 Mar  3 15:45 ft_strncpy.c
+-rw-r--r--   1 marchyshyn  staff    1072 Mar  3 15:45 ft_strnequ.c
+-rw-r--r--   1 marchyshyn  staff    1085 Mar  3 15:45 ft_strnew.c
+-rw-r--r--   1 marchyshyn  staff    1399 Mar  3 15:45 ft_strnstr.c
+-rw-r--r--   1 marchyshyn  staff    1260 Mar  3 15:45 ft_strrchr.c
+-rw-r--r--   1 marchyshyn  staff    1891 Mar  3 15:45 ft_strsplit.c
+-rw-r--r--   1 marchyshyn  staff    1232 Mar  3 15:45 ft_strstr.c
+-rw-r--r--   1 marchyshyn  staff    1218 Mar  3 15:45 ft_strsub.c
+-rw-r--r--   1 marchyshyn  staff    1382 Mar  3 15:45 ft_strtrim.c
+-rw-r--r--   1 marchyshyn  staff    1003 Mar  3 15:45 ft_tolower.c
+-rw-r--r--   1 marchyshyn  staff    1005 Mar  3 15:45 ft_toupper.c
+-rw-r--r--   1 marchyshyn  staff    2422 Mar  3 15:45 get_next_line.c
+-rw-r--r--   1 marchyshyn  staff    1086 Mar  3 15:45 get_next_line.h
+-rw-r--r--   1 marchyshyn  staff  118608 Mar  3 15:46 libft.a
+-rw-r--r--   1 marchyshyn  staff    3883 Mar  3 15:45 libft.h
+lrwxr-xr-x   1 marchyshyn  staff       4 Mar  3 15:45 link -> link
+
+./libft/ft_printf:
+total 296
+drwxr-xr-x  39 marchyshyn  staff  1248 Mar  3 15:46 .
+drwxr-xr-x  69 marchyshyn  staff  2208 Mar  3 15:46 ..
+-rw-r--r--   1 marchyshyn  staff  1084 Mar  3 15:45 active_bits.c
+-rw-r--r--   1 marchyshyn  staff  1200 Mar  3 15:45 annulation.c
+-rw-r--r--   1 marchyshyn  staff  1311 Mar  3 15:45 check_flags_modif.c
+-rw-r--r--   1 marchyshyn  staff   986 Mar  3 15:45 color_off.c
+-rw-r--r--   1 marchyshyn  staff  1112 Mar  3 15:45 count_bytes.c
+-rw-r--r--   1 marchyshyn  staff  2976 Mar  3 15:45 ft_printf.h
+-rw-r--r--   1 marchyshyn  staff  1666 Mar  3 15:45 ibs.c
+-rw-r--r--   1 marchyshyn  staff  1522 Mar  3 15:45 ibs_uns.c
+-rw-r--r--   1 marchyshyn  staff  2380 Mar  3 15:45 if_color.c
+-rw-r--r--   1 marchyshyn  staff  1064 Mar  3 15:45 is_flag_mod.c
+-rw-r--r--   1 marchyshyn  staff  1004 Mar  3 15:45 is_modificator.c
+-rw-r--r--   1 marchyshyn  staff  1015 Mar  3 15:45 is_parse_char.c
+-rw-r--r--   1 marchyshyn  staff  1138 Mar  3 15:45 is_type.c
+-rw-r--r--   1 marchyshyn  staff  2424 Mar  3 15:45 m_putchar.c
+-rw-r--r--   1 marchyshyn  staff  1148 Mar  3 15:45 m_putstr.c
+-rw-r--r--   1 marchyshyn  staff  1970 Mar  3 15:45 modificator_dec.c
+-rw-r--r--   1 marchyshyn  staff  1513 Mar  3 15:45 modificator_hex.c
+-rw-r--r--   1 marchyshyn  staff  2083 Mar  3 15:45 modificator_octal.c
+-rw-r--r--   1 marchyshyn  staff  2185 Mar  3 15:45 modificator_uns.c
+-rw-r--r--   1 marchyshyn  staff  1219 Mar  3 15:45 prec_diff.c
+-rw-r--r--   1 marchyshyn  staff  1320 Mar  3 15:45 put_binary.c
+-rw-r--r--   1 marchyshyn  staff  1309 Mar  3 15:45 put_c.c
+-rw-r--r--   1 marchyshyn  staff  2807 Mar  3 15:45 put_dec.c
+-rw-r--r--   1 marchyshyn  staff  3008 Mar  3 15:45 put_float.c
+-rw-r--r--   1 marchyshyn  staff  2554 Mar  3 15:45 put_hex.c
+-rw-r--r--   1 marchyshyn  staff  1452 Mar  3 15:45 put_lc.c
+-rw-r--r--   1 marchyshyn  staff  2365 Mar  3 15:45 put_ls.c
+-rw-r--r--   1 marchyshyn  staff  3040 Mar  3 15:45 put_octal.c
+-rw-r--r--   1 marchyshyn  staff  2532 Mar  3 15:45 put_p.c
+-rw-r--r--   1 marchyshyn  staff  1221 Mar  3 15:45 put_padding.c
+-rw-r--r--   1 marchyshyn  staff  1242 Mar  3 15:45 put_percent.c
+-rw-r--r--   1 marchyshyn  staff  2230 Mar  3 15:45 put_s.c
+-rw-r--r--   1 marchyshyn  staff  1279 Mar  3 15:45 put_unknown_type.c
+-rw-r--r--   1 marchyshyn  staff  1941 Mar  3 15:45 put_unsigned.c
+-rw-r--r--   1 marchyshyn  staff  1280 Mar  3 15:45 putstr_ls.c
+-rw-r--r--   1 marchyshyn  staff  1005 Mar  3 15:45 set_to_zero.c
+-rw-r--r--   1 marchyshyn  staff  1072 Mar  3 15:45 strlen_ls.c

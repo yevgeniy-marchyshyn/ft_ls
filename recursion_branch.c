@@ -18,7 +18,7 @@ static void		ls_dir_continue(t_ls *ls, char **files, char *path, int n)
 
 	i = 0;
 	sort_ascii_bubble(files, n);
-	if (ls->recursively)
+	if (ls->recursion)
 		parse_files(files, n, ls, path);
 	else
 	{

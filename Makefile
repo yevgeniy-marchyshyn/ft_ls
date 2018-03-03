@@ -15,7 +15,7 @@ CC = @gcc
 CFLAGS = -Wall -Wextra -Werror -Ilib/includes
 
 FT_LS = main.c\
-		annulation_opt.c\
+		annulation_ls.c\
 		is_option.c\
 		parse_options.c\
 		parse_arguments.c\
