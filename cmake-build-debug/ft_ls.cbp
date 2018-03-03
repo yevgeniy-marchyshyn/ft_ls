@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/marchyshyn/Documents/C/ft_ls/annulation_opt.c">
+		<Unit filename="/Users/marchyshyn/Documents/C/ft_ls/annulation_ls.c">
 			<Option target="ft_ls"/>
 		</Unit>
 		<Unit filename="/Users/marchyshyn/Documents/C/ft_ls/define_type.c">

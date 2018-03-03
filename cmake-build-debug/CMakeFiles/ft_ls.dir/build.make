@@ -2361,28 +2361,28 @@ CMakeFiles/ft_ls.dir/libft/get_next_line.c.o.provides: CMakeFiles/ft_ls.dir/libf
 CMakeFiles/ft_ls.dir/libft/get_next_line.c.o.provides.build: CMakeFiles/ft_ls.dir/libft/get_next_line.c.o
 
 
-CMakeFiles/ft_ls.dir/annulation_opt.c.o: CMakeFiles/ft_ls.dir/flags.make
-CMakeFiles/ft_ls.dir/annulation_opt.c.o: ../annulation_opt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/ft_ls.dir/annulation_opt.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_ls.dir/annulation_opt.c.o   -c /Users/marchyshyn/Documents/C/ft_ls/annulation_opt.c
+CMakeFiles/ft_ls.dir/annulation_ls.c.o: CMakeFiles/ft_ls.dir/flags.make
+CMakeFiles/ft_ls.dir/annulation_ls.c.o: ../annulation_ls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/ft_ls.dir/annulation_ls.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_ls.dir/annulation_ls.c.o   -c /Users/marchyshyn/Documents/C/ft_ls/annulation_ls.c
 
-CMakeFiles/ft_ls.dir/annulation_opt.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_ls.dir/annulation_opt.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/marchyshyn/Documents/C/ft_ls/annulation_opt.c > CMakeFiles/ft_ls.dir/annulation_opt.c.i
+CMakeFiles/ft_ls.dir/annulation_ls.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_ls.dir/annulation_ls.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/marchyshyn/Documents/C/ft_ls/annulation_ls.c > CMakeFiles/ft_ls.dir/annulation_ls.c.i
 
-CMakeFiles/ft_ls.dir/annulation_opt.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_ls.dir/annulation_opt.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/marchyshyn/Documents/C/ft_ls/annulation_opt.c -o CMakeFiles/ft_ls.dir/annulation_opt.c.s
+CMakeFiles/ft_ls.dir/annulation_ls.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_ls.dir/annulation_ls.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/marchyshyn/Documents/C/ft_ls/annulation_ls.c -o CMakeFiles/ft_ls.dir/annulation_ls.c.s
 
-CMakeFiles/ft_ls.dir/annulation_opt.c.o.requires:
+CMakeFiles/ft_ls.dir/annulation_ls.c.o.requires:
 
-.PHONY : CMakeFiles/ft_ls.dir/annulation_opt.c.o.requires
+.PHONY : CMakeFiles/ft_ls.dir/annulation_ls.c.o.requires
 
-CMakeFiles/ft_ls.dir/annulation_opt.c.o.provides: CMakeFiles/ft_ls.dir/annulation_opt.c.o.requires
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/annulation_opt.c.o.provides.build
-.PHONY : CMakeFiles/ft_ls.dir/annulation_opt.c.o.provides
+CMakeFiles/ft_ls.dir/annulation_ls.c.o.provides: CMakeFiles/ft_ls.dir/annulation_ls.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/annulation_ls.c.o.provides.build
+.PHONY : CMakeFiles/ft_ls.dir/annulation_ls.c.o.provides
 
-CMakeFiles/ft_ls.dir/annulation_opt.c.o.provides.build: CMakeFiles/ft_ls.dir/annulation_opt.c.o
+CMakeFiles/ft_ls.dir/annulation_ls.c.o.provides.build: CMakeFiles/ft_ls.dir/annulation_ls.c.o
 
 
 CMakeFiles/ft_ls.dir/define_type.c.o: CMakeFiles/ft_ls.dir/flags.make
@@ -3227,7 +3227,7 @@ ft_ls_OBJECTS = \
 "CMakeFiles/ft_ls.dir/libft/ft_tolower.c.o" \
 "CMakeFiles/ft_ls.dir/libft/ft_toupper.c.o" \
 "CMakeFiles/ft_ls.dir/libft/get_next_line.c.o" \
-"CMakeFiles/ft_ls.dir/annulation_opt.c.o" \
+"CMakeFiles/ft_ls.dir/annulation_ls.c.o" \
 "CMakeFiles/ft_ls.dir/define_type.c.o" \
 "CMakeFiles/ft_ls.dir/ft_ls.c.o" \
 "CMakeFiles/ft_ls.dir/is_dir.c.o" \
@@ -3359,7 +3359,7 @@ ft_ls: CMakeFiles/ft_ls.dir/libft/ft_strtrim.c.o
 ft_ls: CMakeFiles/ft_ls.dir/libft/ft_tolower.c.o
 ft_ls: CMakeFiles/ft_ls.dir/libft/ft_toupper.c.o
 ft_ls: CMakeFiles/ft_ls.dir/libft/get_next_line.c.o
-ft_ls: CMakeFiles/ft_ls.dir/annulation_opt.c.o
+ft_ls: CMakeFiles/ft_ls.dir/annulation_ls.c.o
 ft_ls: CMakeFiles/ft_ls.dir/define_type.c.o
 ft_ls: CMakeFiles/ft_ls.dir/ft_ls.c.o
 ft_ls: CMakeFiles/ft_ls.dir/is_dir.c.o
@@ -3497,7 +3497,7 @@ CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/libft/ft_strtrim.c.o.require
 CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/libft/ft_tolower.c.o.requires
 CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/libft/ft_toupper.c.o.requires
 CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/libft/get_next_line.c.o.requires
-CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/annulation_opt.c.o.requires
+CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/annulation_ls.c.o.requires
 CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/define_type.c.o.requires
 CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/ft_ls.c.o.requires
 CMakeFiles/ft_ls.dir/requires: CMakeFiles/ft_ls.dir/is_dir.c.o.requires

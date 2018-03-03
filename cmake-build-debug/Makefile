@@ -123,32 +123,32 @@ ft_ls/fast:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/build
 .PHONY : ft_ls/fast
 
-annulation_opt.o: annulation_opt.c.o
+annulation_ls.o: annulation_ls.c.o
 
-.PHONY : annulation_opt.o
+.PHONY : annulation_ls.o
 
 # target to build an object file
-annulation_opt.c.o:
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/annulation_opt.c.o
-.PHONY : annulation_opt.c.o
+annulation_ls.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/annulation_ls.c.o
+.PHONY : annulation_ls.c.o
 
-annulation_opt.i: annulation_opt.c.i
+annulation_ls.i: annulation_ls.c.i
 
-.PHONY : annulation_opt.i
+.PHONY : annulation_ls.i
 
 # target to preprocess a source file
-annulation_opt.c.i:
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/annulation_opt.c.i
-.PHONY : annulation_opt.c.i
+annulation_ls.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/annulation_ls.c.i
+.PHONY : annulation_ls.c.i
 
-annulation_opt.s: annulation_opt.c.s
+annulation_ls.s: annulation_ls.c.s
 
-.PHONY : annulation_opt.s
+.PHONY : annulation_ls.s
 
 # target to generate assembly for a file
-annulation_opt.c.s:
-	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/annulation_opt.c.s
-.PHONY : annulation_opt.c.s
+annulation_ls.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/annulation_ls.c.s
+.PHONY : annulation_ls.c.s
 
 define_type.o: define_type.c.o
 
@@ -3588,9 +3588,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ft_ls"
-	@echo "... annulation_opt.o"
-	@echo "... annulation_opt.i"
-	@echo "... annulation_opt.s"
+	@echo "... annulation_ls.o"
+	@echo "... annulation_ls.i"
+	@echo "... annulation_ls.s"
 	@echo "... define_type.o"
 	@echo "... define_type.i"
 	@echo "... define_type.s"

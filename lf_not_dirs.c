@@ -48,7 +48,7 @@ int					count_not_dirs(char **files, char *path)
 	return (not_dirs);
 }
 
-int					lf_not_dirs(char **files, t_ls *ls, char *path)
+void				lf_not_dirs(char **files, t_ls *ls, char *path)
 {
 	int			i;
 	int			n;
@@ -57,13 +57,13 @@ int					lf_not_dirs(char **files, t_ls *ls, char *path)
 
 	i = 0;
 	if ((n = count_not_dirs(files, path)) < 1)
-		return (0);
+		return ;
 	not_dirs = fill_files(files, n, path);
 	w[0] = max_links(not_dirs, path);
 	if ((w[1] = max_len_user(not_dirs, path)) == -1)
-		return (0);
+		return ;
 	if ((w[2] = max_len_group(not_dirs, path)) == -1)
-		return (0);
+		return ;
 	w[2] = max_len_group(not_dirs, path);
 	w[3] = max_size(not_dirs, path);
 	while (not_dirs[i])
@@ -73,5 +73,5 @@ int					lf_not_dirs(char **files, t_ls *ls, char *path)
 		i++;
 	}
 	free_words(not_dirs);
-	return (1);
+	ls->new_line = 1;
 }

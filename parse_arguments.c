@@ -40,11 +40,10 @@ void				parse_arguments(char **argv, int n, t_ls *ls)
 	t_stat				buf;
 	char				**files;
 	int					i;
-	int					count_removed;
 
 	i = 0;
-	count_removed = 0;
 	files = fill_files(argv, n);
+	ls->argc = n;
 	while (files[i])
 	{
 		if (lstat(files[i], &buf) == -1)
@@ -52,13 +51,13 @@ void				parse_arguments(char **argv, int n, t_ls *ls)
 			write(2, "ls: ", 4);
 			perror(files[i]);
 			remove_file(files, i);
-			count_removed++;
-			ls->indents = 1;
+			ls->argc--;
+			ls->error = 1;
 		}
 		else
 			i++;
 	}
-	ls_sort(files, n - count_removed, ls, NULL);
+	ls_sort(files, ls->argc, ls, NULL);
 	ft_ls(files, ls);
 	free(files);
 }

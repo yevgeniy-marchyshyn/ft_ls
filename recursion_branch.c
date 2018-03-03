@@ -57,6 +57,7 @@ void			recursion_branch(char **files, t_ls *ls, char *path)
 
 	i = 0;
 	tmp = NULL;
+	ls->handled_args = 1;
 	if (ls->long_format)
 		lf(files, ls, path);
 	else

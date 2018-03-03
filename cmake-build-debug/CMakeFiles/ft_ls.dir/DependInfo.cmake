@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/marchyshyn/Documents/C/ft_ls/annulation_opt.c" "/Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/annulation_opt.c.o"
+  "/Users/marchyshyn/Documents/C/ft_ls/annulation_ls.c" "/Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/annulation_ls.c.o"
   "/Users/marchyshyn/Documents/C/ft_ls/define_type.c" "/Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/define_type.c.o"
   "/Users/marchyshyn/Documents/C/ft_ls/ft_ls.c" "/Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/ft_ls.c.o"
   "/Users/marchyshyn/Documents/C/ft_ls/is_dir.c" "/Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/is_dir.c.o"

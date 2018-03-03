@@ -19,6 +19,9 @@ void	annulation_ls(t_ls *ls)
 	ls->include_dot = 0;
 	ls->rev_lexic = 0;
 	ls->sort_mtime = 0;
-	ls->indents = 0;
-	ls->count_directories = 0;
+	ls->new_line = 0;
+	ls->dirs = 0;
+	ls->argc = 0;
+	ls->handled_args = 0;
+	ls->error = 0;
 }

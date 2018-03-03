@@ -95,7 +95,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_ls.dir/libft/ft_tolower.c.o"
   "CMakeFiles/ft_ls.dir/libft/ft_toupper.c.o"
   "CMakeFiles/ft_ls.dir/libft/get_next_line.c.o"
-  "CMakeFiles/ft_ls.dir/annulation_opt.c.o"
+  "CMakeFiles/ft_ls.dir/annulation_ls.c.o"
   "CMakeFiles/ft_ls.dir/define_type.c.o"
   "CMakeFiles/ft_ls.dir/ft_ls.c.o"
   "CMakeFiles/ft_ls.dir/is_dir.c.o"

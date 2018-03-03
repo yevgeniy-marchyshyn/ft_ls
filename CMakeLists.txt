@@ -103,6 +103,7 @@ add_executable(ft_ls
         libft/get_next_line.c
         libft/get_next_line.h
         libft/libft.h
+        annulation_ls.c
         define_type.c
         ft_ls.c
         ft_ls.h
