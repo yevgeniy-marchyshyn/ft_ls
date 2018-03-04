@@ -47,6 +47,7 @@ void				parse_files(char **files, int n, t_ls *ls, char *path)
 			i++;
 		ft_strdel(&tmp);
 	}
-	ls_sort(files, n - count_removed, ls, path);
+	if (!ls->not_sort)
+		ls_sort(files, n - count_removed, ls, path);
 	recursion_branch(files, ls, path);
 }

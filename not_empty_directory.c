@@ -30,7 +30,7 @@ int					not_empty_directory(char *dirname, t_ls *ls)
 	{
 		while ((sd = readdir(dir)) != NULL)
 		{
-			if (print_dot(sd->d_name, ls))
+			if (print_dot(sd->d_name, ls) || ls->not_sort)
 				n++;
 		}
 	}

@@ -99,7 +99,7 @@ static void			set_others_flags(char **access_flags, mode_t st_mode)
 	}
 }
 
-void				print_access(mode_t st_mode)
+char				*print_access(mode_t st_mode)
 {
 	char			*access_flags;
 
@@ -108,6 +108,5 @@ void				print_access(mode_t st_mode)
 	set_user_flags(&access_flags, st_mode);
 	set_group_flags(&access_flags, st_mode);
 	set_others_flags(&access_flags, st_mode);
-	ft_printf("%s ", access_flags);
-	ft_strdel(&access_flags);
+	return (access_flags);
 }

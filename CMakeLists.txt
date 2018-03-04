@@ -103,6 +103,7 @@ add_executable(ft_ls
         libft/get_next_line.c
         libft/get_next_line.h
         libft/libft.h
+        access_flags.c
         annulation_ls.c
         define_type.c
         ft_ls.c
@@ -132,6 +133,9 @@ add_executable(ft_ls
         print_dot.c
         print_files.c
         print_lf.c
+        print_lf_p1.c
+        print_lf_p2.c
+        print_lf_p3.c
         recursion_branch.c
         skip_dots.c
         sort_ascii_bubble.c

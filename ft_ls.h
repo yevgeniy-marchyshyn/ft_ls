@@ -24,6 +24,7 @@
 # include <uuid/uuid.h>
 # include <grp.h>
 # include <time.h>
+# include <sys/xattr.h>
 
 typedef struct			s_ls
 {
@@ -37,6 +38,9 @@ typedef struct			s_ls
 	unsigned			dirs : 1;
 	unsigned 			handled_args : 1;
 	unsigned			error : 1;
+	unsigned			attr : 1;
+	unsigned			not_sort : 1;
+	unsigned			skip_dots : 1;
 }						t_ls;
 
 typedef struct stat		t_stat;
@@ -59,8 +63,8 @@ int						print_dot(char *filename, t_ls *ls);
 void					lf(char **files, t_ls *ls, char *path);
 void					lf_not_dirs(char **files, t_ls *ls, char *path);
 int						ls_total(char **files, t_ls *ls, char *path);
-void					print_lf(char *filename, int *w, char *path);
-void					print_access(mode_t st_mode);
+void					print_lf(char *filename, int *w, char *path, t_ls *ls);
+char					*access_flags(mode_t st_mode);
 char					*linkpath(char *filename);
 int						max_links(char **files, t_ls *ls, char *path);
 int						max_size(char **files, t_ls *ls, char *path);
@@ -75,5 +79,8 @@ void					ls_dir(char *dirname, t_ls *ls, char *path);
 char					**ls_read_files(char **files, char *dirname);
 void					ls_link(char *linkname, t_ls *ls, char *path);
 int						timecmp(char *file1, char *file2, char *path);
+int 					print_lf_p1(t_stat *buf, char *path);
+void					print_lf_p2(t_stat *buf, t_pw *pw, t_group *gr, int *w);
+int 					print_lf_p3(char *path);
 
 #endif

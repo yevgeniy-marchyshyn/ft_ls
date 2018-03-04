@@ -24,6 +24,12 @@ void			tous_les_options(char c, t_ls *ls)
 		ls->rev_lexic = 1;
 	else if (c == 't')
 		ls->sort_mtime = 1;
+	else if (c == '@')
+		ls->attr = 1;
+	else if (c == 'f')
+		ls->not_sort = 1;
+	else if (c == 'A')
+		ls->skip_dots = 1;
 }
 
 int				parse_options(t_ls *ls, char *argv)
@@ -39,7 +45,7 @@ int				parse_options(t_ls *ls, char *argv)
 		write(2, "ls: illegal option -- ", 22);
 		write(2, &argv[0], 1);
 		write(2, "\n", 1);
-		write(2, "usage: ls [-Ralrt] [file ...]\n", 34);
+		write(2, "usage: ls [-Ralrt@fA] [file ...]\n", 34);
 		exit(1);
 	}
 }

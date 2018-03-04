@@ -69,7 +69,7 @@ void				lf_not_dirs(char **files, t_ls *ls, char *path)
 	while (not_dirs[i])
 	{
 		if (print_dot(not_dirs[i], ls))
-			print_lf(not_dirs[i], w, path);
+			print_lf(not_dirs[i], w, path, ls);
 		i++;
 	}
 	free_words(not_dirs);

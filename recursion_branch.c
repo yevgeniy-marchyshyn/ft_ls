@@ -17,7 +17,8 @@ static void		ls_dir_continue(t_ls *ls, char **files, char *path, int n)
 	int i;
 
 	i = 0;
-	sort_ascii_bubble(files, n);
+	if (!ls->not_sort)
+		sort_ascii_bubble(files, n);
 	if (ls->recursion)
 		parse_files(files, n, ls, path);
 	else
@@ -67,7 +68,8 @@ void			recursion_branch(char **files, t_ls *ls, char *path)
 		tmp = ft_strjoin(path, files[i]);
 		if (is_dir(tmp, NULL))
 		{
-			if (print_dot(files[i], ls) && skip_dots(files[i]))
+			if ((print_dot(files[i], ls) || ls->not_sort) &&
+					skip_dots(files[i]))
 			{
 				ft_printf("\n%s%s:\n", path, files[i]);
 				ls_dir_recursion(files[i], ls, path);

@@ -30,7 +30,7 @@ FT_LS = main.c\
 		lf.c\
 		ls_total.c\
 		print_lf.c\
-		print_access.c\
+		access_flags.c\
 		linkpath.c\
 		print_files.c\
 	    max_size.c\
@@ -46,6 +46,9 @@ FT_LS = main.c\
 	    ls_dir.c\
 	    ls_link.c\
 	    timecmp.c\
+	    print_lf_p1.c\
+	    print_lf_p2.c\
+	    print_lf_p3.c\
 
 OBJ = $(FT_LS:.c=.o)
 

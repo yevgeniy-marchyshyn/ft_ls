@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/marchyshyn/Documents/C/ft_ls
+CMAKE_SOURCE_DIR = /Users/ymarchys/Documents/ft_ls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ymarchys/Documents/ft_ls/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles /Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchyshyn/Documents/C/ft_ls/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ymarchys/Documents/ft_ls/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ ft_ls: cmake_check_build_system
 ft_ls/fast:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/build
 .PHONY : ft_ls/fast
+
+access_flags.o: access_flags.c.o
+
+.PHONY : access_flags.o
+
+# target to build an object file
+access_flags.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/access_flags.c.o
+.PHONY : access_flags.c.o
+
+access_flags.i: access_flags.c.i
+
+.PHONY : access_flags.i
+
+# target to preprocess a source file
+access_flags.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/access_flags.c.i
+.PHONY : access_flags.c.i
+
+access_flags.s: access_flags.c.s
+
+.PHONY : access_flags.s
+
+# target to generate assembly for a file
+access_flags.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/access_flags.c.s
+.PHONY : access_flags.c.s
 
 annulation_ls.o: annulation_ls.c.o
 
@@ -3471,6 +3498,87 @@ print_lf.c.s:
 	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_lf.c.s
 .PHONY : print_lf.c.s
 
+print_lf_p1.o: print_lf_p1.c.o
+
+.PHONY : print_lf_p1.o
+
+# target to build an object file
+print_lf_p1.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_lf_p1.c.o
+.PHONY : print_lf_p1.c.o
+
+print_lf_p1.i: print_lf_p1.c.i
+
+.PHONY : print_lf_p1.i
+
+# target to preprocess a source file
+print_lf_p1.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_lf_p1.c.i
+.PHONY : print_lf_p1.c.i
+
+print_lf_p1.s: print_lf_p1.c.s
+
+.PHONY : print_lf_p1.s
+
+# target to generate assembly for a file
+print_lf_p1.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_lf_p1.c.s
+.PHONY : print_lf_p1.c.s
+
+print_lf_p2.o: print_lf_p2.c.o
+
+.PHONY : print_lf_p2.o
+
+# target to build an object file
+print_lf_p2.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_lf_p2.c.o
+.PHONY : print_lf_p2.c.o
+
+print_lf_p2.i: print_lf_p2.c.i
+
+.PHONY : print_lf_p2.i
+
+# target to preprocess a source file
+print_lf_p2.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_lf_p2.c.i
+.PHONY : print_lf_p2.c.i
+
+print_lf_p2.s: print_lf_p2.c.s
+
+.PHONY : print_lf_p2.s
+
+# target to generate assembly for a file
+print_lf_p2.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_lf_p2.c.s
+.PHONY : print_lf_p2.c.s
+
+print_lf_p3.o: print_lf_p3.c.o
+
+.PHONY : print_lf_p3.o
+
+# target to build an object file
+print_lf_p3.c.o:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_lf_p3.c.o
+.PHONY : print_lf_p3.c.o
+
+print_lf_p3.i: print_lf_p3.c.i
+
+.PHONY : print_lf_p3.i
+
+# target to preprocess a source file
+print_lf_p3.c.i:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_lf_p3.c.i
+.PHONY : print_lf_p3.c.i
+
+print_lf_p3.s: print_lf_p3.c.s
+
+.PHONY : print_lf_p3.s
+
+# target to generate assembly for a file
+print_lf_p3.c.s:
+	$(MAKE) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/print_lf_p3.c.s
+.PHONY : print_lf_p3.c.s
+
 recursion_branch.o: recursion_branch.c.o
 
 .PHONY : recursion_branch.o
@@ -3588,6 +3696,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ft_ls"
+	@echo "... access_flags.o"
+	@echo "... access_flags.i"
+	@echo "... access_flags.s"
 	@echo "... annulation_ls.o"
 	@echo "... annulation_ls.i"
 	@echo "... annulation_ls.s"
@@ -3960,6 +4071,15 @@ help:
 	@echo "... print_lf.o"
 	@echo "... print_lf.i"
 	@echo "... print_lf.s"
+	@echo "... print_lf_p1.o"
+	@echo "... print_lf_p1.i"
+	@echo "... print_lf_p1.s"
+	@echo "... print_lf_p2.o"
+	@echo "... print_lf_p2.i"
+	@echo "... print_lf_p2.s"
+	@echo "... print_lf_p3.o"
+	@echo "... print_lf_p3.i"
+	@echo "... print_lf_p3.s"
 	@echo "... recursion_branch.o"
 	@echo "... recursion_branch.i"
 	@echo "... recursion_branch.s"

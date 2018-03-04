@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-static char			**fill_files(char **argv, int n)
+static char			**fill_files(char **argv, int n, t_ls *ls)
 {
 	char	**files;
 	int		i;
@@ -22,7 +22,8 @@ static char			**fill_files(char **argv, int n)
 	while (i < n)
 		files[i++] = *argv++;
 	files[i] = NULL;
-	sort_ascii_bubble(files, n);
+	if (!ls->not_sort)
+		sort_ascii_bubble(files, n);
 	return (files);
 }
 
@@ -42,7 +43,7 @@ void				parse_arguments(char **argv, int n, t_ls *ls)
 	int					i;
 
 	i = 0;
-	files = fill_files(argv, n);
+	files = fill_files(argv, n, ls);
 	ls->argc = n;
 	while (files[i])
 	{
@@ -57,7 +58,8 @@ void				parse_arguments(char **argv, int n, t_ls *ls)
 		else
 			i++;
 	}
-	ls_sort(files, ls->argc, ls, NULL);
+	if (!ls->not_sort)
+		ls_sort(files, ls->argc, ls, NULL);
 	ft_ls(files, ls);
 	free(files);
 }

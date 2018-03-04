@@ -44,6 +44,5 @@ int				main(int argc, char **argv)
 		ft_ls(files, &ls);
 		free_words(files);
 	}
-//	while (1) ;
 	return (0);
 }

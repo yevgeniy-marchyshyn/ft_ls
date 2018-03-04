@@ -23,7 +23,7 @@ int		ls_total(char **files, t_ls *ls, char *path)
 	sum = 0;
 	while (files[i])
 	{
-		if (print_dot(files[i], ls))
+		if (print_dot(files[i], ls) || ls->not_sort)
 		{
 			if (path == NULL)
 				lstat(files[i++], &buf);

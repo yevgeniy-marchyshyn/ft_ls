@@ -86,13 +86,16 @@ static void			sort_mtime(char **files, int n, char *path)
 
 void				ls_sort(char **files, int n, t_ls *ls, char *path)
 {
-	if (ls->rev_lexic && !ls->sort_mtime)
-		sort_rev(files, n);
-	else if (ls->sort_mtime && !ls->rev_lexic)
-		sort_mtime(files, n, path);
-	else if (ls->sort_mtime && ls->rev_lexic)
+	if (ls->not_sort == 0)
 	{
-		sort_rev(files, n);
-		sort_mtime_rev(files, n, path);
+		if (ls->rev_lexic && !ls->sort_mtime)
+			sort_rev(files, n);
+		else if (ls->sort_mtime && !ls->rev_lexic)
+			sort_mtime(files, n, path);
+		else if (ls->sort_mtime && ls->rev_lexic)
+		{
+			sort_rev(files, n);
+			sort_mtime_rev(files, n, path);
+		}
 	}
 }

@@ -25,7 +25,7 @@ static void		ls_dir_continue(char **files, int n, t_ls *ls, char *path)
 	{
 		while (i < n)
 		{
-			if (files[i][0] != '.')
+			if (print_dot(files[i], ls) || ls->not_sort)
 				ft_printf("%s\n", files[i]);
 			i++;
 		}
@@ -42,12 +42,13 @@ void			ls_dir(char *dirname, t_ls *ls, char *path)
 	{
 		files = (char **)malloc(sizeof(char *) * (n + 1));
 		files = ls_read_files(files, dirname);
-		sort_ascii_bubble(files, n);
+		if (!ls->not_sort)
+			sort_ascii_bubble(files, n);
 		if (ls->recursion)
 			parse_files(files, n, ls, path);
 		else if (ls->long_format)
 		{
-			ls_sort(files, n, ls, NULL);
+			ls_sort(files, n, ls, path);
 			lf(files, ls, path);
 		}
 		else

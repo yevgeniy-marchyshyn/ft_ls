@@ -59,7 +59,7 @@ void						print_files(char **files, t_ls *ls, char *path)
 	}
 	while (files[i])
 	{
-		if (print_dot(files[i], ls))
+		if (print_dot(files[i], ls) || ls->not_sort)
 			ft_printf("%s\n", files[i]);
 		i++;
 	}
