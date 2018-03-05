@@ -25,7 +25,8 @@ static void		ls_dir_continue(char **files, int n, t_ls *ls, char *path)
 	{
 		while (i < n)
 		{
-			if (print_dot(files[i], ls) || ls->not_sort)
+			if (print_dot(files[i], ls) || ls->not_sort ||
+					(ls->skip_dots && skip_dots(files[i])))
 				ft_printf("%s\n", files[i]);
 			i++;
 		}

@@ -25,7 +25,7 @@ static char		**current_directory(void)
 int				main(int argc, char **argv)
 {
 	t_ls		ls;
-	char 		**files;
+	char		**files;
 	int			i;
 
 	i = 1;

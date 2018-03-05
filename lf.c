@@ -26,7 +26,8 @@ void				lf(char **files, t_ls *ls, char *path)
 		ft_printf("total %lld\n", ls_total(files, ls, path));
 	while (files[i])
 	{
-		if (print_dot(files[i], ls) || ls->not_sort)
+		if (print_dot(files[i], ls) || ls->not_sort ||
+				(ls->skip_dots && skip_dots(files[i])))
 			print_lf(files[i], w, path, ls);
 		i++;
 	}

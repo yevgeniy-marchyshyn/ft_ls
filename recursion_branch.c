@@ -51,25 +51,21 @@ static void		ls_dir_recursion(char *dirname, t_ls *ls, char *path)
 	ft_strdel(&tmp2);
 }
 
-void			recursion_branch(char **files, t_ls *ls, char *path)
+static void 	recursion_continue(char **files, t_ls *ls, char *path)
 {
 	int		i;
-	char 	*tmp;
+	char	*tmp;
 
 	i = 0;
 	tmp = NULL;
-	ls->handled_args = 1;
-	if (ls->long_format)
-		lf(files, ls, path);
-	else
-		print_files(files, ls, path);
 	while (files[i])
 	{
 		tmp = ft_strjoin(path, files[i]);
 		if (is_dir(tmp, NULL))
 		{
-			if ((print_dot(files[i], ls) || ls->not_sort) &&
-					skip_dots(files[i]))
+			if ((print_dot(files[i], ls) || ls->not_sort ||
+				 (ls->skip_dots && skip_dots(files[i]))) &&
+				skip_dots(files[i]))
 			{
 				ft_printf("\n%s%s:\n", path, files[i]);
 				ls_dir_recursion(files[i], ls, path);
@@ -79,4 +75,16 @@ void			recursion_branch(char **files, t_ls *ls, char *path)
 			ft_strdel(&tmp);
 		i++;
 	}
+
+}
+
+void			recursion_branch(char **files, t_ls *ls, char *path)
+{
+
+	ls->handled_args = 1;
+	if (ls->long_format)
+		lf(files, ls, path);
+	else
+		print_files(files, ls, path);
+	recursion_continue(files, ls, path);
 }

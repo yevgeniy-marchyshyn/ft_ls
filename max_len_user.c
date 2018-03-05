@@ -12,9 +12,9 @@
 
 #include "ft_ls.h"
 
-static int 			length_compare(struct stat *buf, int max_length)
+static int			length_compare(struct stat *buf, int max_length)
 {
-	int 			len;
+	int				len;
 	t_pw			*pw;
 
 	if (!(pw = getpwuid(buf->st_uid)))
@@ -28,7 +28,7 @@ int					max_len_user(char **files, t_ls *ls, char *path)
 	t_stat			buf;
 	int				i;
 	int				max_length;
-	char 			*tmp;
+	char			*tmp;
 
 	i = 0;
 	max_length = 0;

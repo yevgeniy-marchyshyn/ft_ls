@@ -48,7 +48,7 @@ FT_LS = main.c\
 	    timecmp.c\
 	    print_lf_p1.c\
 	    print_lf_p2.c\
-	    print_lf_p3.c\
+	    print_lf_p4.c\
 
 OBJ = $(FT_LS:.c=.o)
 

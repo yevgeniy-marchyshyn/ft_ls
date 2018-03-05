@@ -29,7 +29,7 @@ static void					print_not_dirs(char **files, t_ls *ls, char *path)
 	ls->handled_args = 1;
 }
 
-static int 					count_dirs(char **files, char *path)
+static int					count_dirs(char **files, char *path)
 {
 	int i;
 	int dirs;
@@ -59,7 +59,8 @@ void						print_files(char **files, t_ls *ls, char *path)
 	}
 	while (files[i])
 	{
-		if (print_dot(files[i], ls) || ls->not_sort)
+		if (print_dot(files[i], ls) || ls->not_sort ||
+				(ls->skip_dots && skip_dots(files[i])))
 			ft_printf("%s\n", files[i]);
 		i++;
 	}

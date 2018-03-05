@@ -12,11 +12,11 @@
 
 #include "ft_ls.h"
 
-static void		sort_rev(char **file, int n)
+static void			sort_rev(char **file, int n)
 {
-	char 	*tmp;
+	char	*tmp;
 	int		i;
-	int 	k;
+	int		k;
 
 	k = 0;
 	while (k < n - 1)
@@ -38,9 +38,9 @@ static void		sort_rev(char **file, int n)
 
 static void			sort_mtime_rev(char **files, int n, char *path)
 {
-	char 	*tmp;
+	char	*tmp;
 	int		i;
-	int 	k;
+	int		k;
 
 	k = 0;
 	while (k < n - 1)
@@ -62,9 +62,9 @@ static void			sort_mtime_rev(char **files, int n, char *path)
 
 static void			sort_mtime(char **files, int n, char *path)
 {
-	char 	*tmp;
+	char	*tmp;
 	int		i;
-	int 	k;
+	int		k;
 
 	k = 0;
 	while (k < n - 1)

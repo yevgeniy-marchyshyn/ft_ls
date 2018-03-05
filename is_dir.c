@@ -16,7 +16,7 @@ int		is_dir(char *filename, char *path)
 {
 	struct stat			buf;
 	char				type;
-	char 				*tmp;
+	char				*tmp;
 
 	tmp = NULL;
 	if (!path)

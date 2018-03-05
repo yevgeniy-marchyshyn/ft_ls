@@ -36,7 +36,7 @@ typedef struct			s_ls
 	unsigned			sort_mtime : 1;
 	unsigned			new_line : 1;
 	unsigned			dirs : 1;
-	unsigned 			handled_args : 1;
+	unsigned			handled_args : 1;
 	unsigned			error : 1;
 	unsigned			attr : 1;
 	unsigned			not_sort : 1;
@@ -79,8 +79,8 @@ void					ls_dir(char *dirname, t_ls *ls, char *path);
 char					**ls_read_files(char **files, char *dirname);
 void					ls_link(char *linkname, t_ls *ls, char *path);
 int						timecmp(char *file1, char *file2, char *path);
-int 					print_lf_p1(t_stat *buf, char *path);
+int						print_lf_p1(t_stat *buf, char *path);
 void					print_lf_p2(t_stat *buf, t_pw *pw, t_group *gr, int *w);
-int 					print_lf_p3(char *path);
+int						print_lf_p4(char *path);
 
 #endif

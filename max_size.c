@@ -12,16 +12,21 @@
 
 #include "ft_ls.h"
 
-int				max_size(char **files, t_ls *ls, char *path)
+static void			max_size_annulation(int *i, int *max_length)
+{
+	*i = 0;
+	*max_length = 0;
+}
+
+int					max_size(char **files, t_ls *ls, char *path)
 {
 	t_stat			buf;
 	int				i;
 	int				max_length;
-	int 			len;
-	char 			*tmp;
+	int				len;
+	char			*tmp;
 
-	i = 0;
-	max_length = 0;
+	max_size_annulation(&i, &max_length);
 	while (files[i])
 	{
 		if (print_dot(files[i], ls))

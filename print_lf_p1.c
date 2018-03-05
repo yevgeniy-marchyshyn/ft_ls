@@ -12,11 +12,11 @@
 
 #include "ft_ls.h"
 
-int 		print_lf_p1(t_stat *buf, char *path)
+int				print_lf_p1(t_stat *buf, char *path)
 {
 	char		type;
-	ssize_t 	res;
-	char 		*flags;
+	ssize_t		res;
+	char		*flags;
 	char		attr[1024];
 
 	type = define_type(buf);

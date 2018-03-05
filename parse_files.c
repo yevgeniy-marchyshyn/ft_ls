@@ -28,7 +28,7 @@ void				parse_files(char **files, int n, t_ls *ls, char *path)
 	t_stat			buf;
 	int				i;
 	int				count_removed;
-	char 			*tmp;
+	char			*tmp;
 
 	i = 0;
 	tmp = NULL;

@@ -30,6 +30,8 @@ void			tous_les_options(char c, t_ls *ls)
 		ls->not_sort = 1;
 	else if (c == 'A')
 		ls->skip_dots = 1;
+	else if (c == '1')
+		ls->long_format = 0;
 }
 
 int				parse_options(t_ls *ls, char *argv)

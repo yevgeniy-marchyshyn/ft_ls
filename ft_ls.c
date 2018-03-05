@@ -12,20 +12,11 @@
 
 #include "ft_ls.h"
 
-void			ft_ls(char **files, t_ls *ls)
+static void		ft_ls_continue(char **files, t_ls *ls, char *path)
 {
-	char		*path;
-	int			i;
+	int i;
 
 	i = 0;
-	path = NULL;
-	if (ls->argc)
-	{
-		if (ls->long_format)
-			lf_not_dirs(files, ls, path);
-		else
-			print_files(files, ls, path);
-	}
 	while (files[i])
 	{
 		if (is_dir(files[i], path) || link_to_dir(files[i], path))
@@ -42,4 +33,19 @@ void			ft_ls(char **files, t_ls *ls)
 		}
 		i++;
 	}
+}
+
+void			ft_ls(char **files, t_ls *ls)
+{
+	char		*path;
+
+	path = NULL;
+	if (ls->argc)
+	{
+		if (ls->long_format)
+			lf_not_dirs(files, ls, path);
+		else
+			print_files(files, ls, path);
+	}
+	ft_ls_continue(files, ls, path);
 }

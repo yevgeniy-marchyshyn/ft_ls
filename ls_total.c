@@ -17,7 +17,7 @@ int		ls_total(char **files, t_ls *ls, char *path)
 	t_stat			buf;
 	int				i;
 	int				sum;
-	char 			*tmp;
+	char			*tmp;
 
 	i = 0;
 	sum = 0;
