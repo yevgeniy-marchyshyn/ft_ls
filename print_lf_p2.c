@@ -20,20 +20,25 @@ static void		device_number(t_stat *buf)
 	ft_printf(" ");
 }
 
-static void 	print_time(time_t n)
+static void		print_time_annulation(char **year, char **mtime)
 {
-	time_t 		current_time;
+	*year = NULL;
+	*mtime = NULL;
+}
+
+static void		print_time(time_t n)
+{
+	time_t		current_time;
 	char		*ctime_format;
 	char		*mtime;
-	char 		*end_of_line;
-	char 		*year;
+	char		*end_of_line;
+	char		*year;
 
 	ctime_format = ctime(&n);
 	if ((end_of_line = ft_strchr(ctime_format, '\n')))
 		*end_of_line = '\0';
 	current_time = time(NULL);
-	year = NULL;
-	mtime = NULL;
+	print_time_annulation(&year, &mtime);
 	if (ABS(current_time - n) > 15778463)
 	{
 		mtime = ft_strsub(ctime_format, 4, 7);
@@ -50,7 +55,7 @@ static void 	print_time(time_t n)
 	year ? ft_strdel(&year) : 0;
 }
 
-void	print_lf_p2(t_stat *buf, t_pw *pw, t_group *gr, int *w)
+void			print_lf_p2(t_stat *buf, t_pw *pw, t_group *gr, int *w)
 {
 	char type;
 

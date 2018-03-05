@@ -32,8 +32,8 @@ int				timecmp(char *file1, char *file2, char *path)
 {
 	t_stat			buf1;
 	t_stat			buf2;
-	char 			*tmp1;
-	char 			*tmp2;
+	char			*tmp1;
+	char			*tmp2;
 
 	if (!path)
 		lstat(file1, &buf1);
@@ -51,8 +51,8 @@ int				timecmp(char *file1, char *file2, char *path)
 		lstat(tmp2, &buf2);
 		ft_strdel(&tmp2);
 	}
-	return (compare_time(buf1.st_mtimespec.tv_sec,
-						 buf2.st_mtimespec.tv_sec,
-						 buf1.st_mtimespec.tv_nsec,
-						 buf2.st_mtimespec.tv_nsec));
+	return (compare_time(buf1.st_mtimespec.tv_sec, \
+	buf2.st_mtimespec.tv_sec, \
+	buf1.st_mtimespec.tv_nsec, \
+	buf2.st_mtimespec.tv_nsec));
 }

@@ -12,27 +12,10 @@
 
 #include "ft_ls.h"
 
-static void		is_link(char *path, char *filename, char *tmp2)
-{
-	char *link_path;
-
-	link_path = linkpath(path ? tmp2 : filename);
-	ft_printf("%s -> %s\n", filename, link_path);
-	ft_strdel(&link_path);
-}
-
 static void		print_lf_annulation(char **tmp1, char **tmp2)
 {
 	*tmp1 = NULL;
 	*tmp2 = NULL;
-}
-
-static void		print_lf_p3(char *path, char *f, char *tmp, t_stat *buf)
-{
-	if (define_type(buf) == 'l')
-		is_link(path, f, tmp);
-	else
-		ft_printf("%-s\n", f);
 }
 
 static void		print_lf_continue(char *tmp, char *filename, t_ls *ls)

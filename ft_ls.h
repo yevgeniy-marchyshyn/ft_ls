@@ -81,6 +81,8 @@ void					ls_link(char *linkname, t_ls *ls, char *path);
 int						timecmp(char *file1, char *file2, char *path);
 int						print_lf_p1(t_stat *buf, char *path);
 void					print_lf_p2(t_stat *buf, t_pw *pw, t_group *gr, int *w);
+void					print_lf_p3(char *path, char *f, \
+char *tmp, t_stat *buf);
 int						print_lf_p4(char *path);
 
 #endif
